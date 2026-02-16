@@ -1,31 +1,71 @@
 using UnityEngine;
-using TMPro; // Required library for handling TextMeshPro components
+using TMPro;
+using System.Collections.Generic; // Required for using Lists
 
 public class LoopBlockLogic : MonoBehaviour
 {
     [Header("UI References")]
-    [Tooltip("The input field where the child enters the number of repetitions")]
     public TMP_InputField iterationInput;
 
     [Header("Settings")]
-    [Tooltip("The correct number of loops required for the story (e.g., 7 for Makkah story)")]
     public int correctNumber = 7;
 
-    /// <summary>
-    /// Checks if the child's input matches the required number of repetitions.
-    /// This is used by the AI Companion to provide feedback.
-    /// </summary>
-    /// <returns>True if input matches correctNumber, otherwise false.</returns>
+    public void EnableInput()
+    {
+        if (iterationInput != null)
+        {
+            iterationInput.interactable = true;
+        }
+    }
+
     public bool IsInputCorrect()
     {
-        // Check if the input field is not empty to avoid errors
         if (iterationInput == null || string.IsNullOrEmpty(iterationInput.text))
         {
             Debug.LogWarning("Input Field is empty or not assigned!");
             return false;
         }
+        return iterationInput.text.Trim() == correctNumber.ToString();
+    }
 
-        // Compare the text input with the correct number converted to string
-        return iterationInput.text == correctNumber.ToString();
+    /// <summary>
+    /// Checks if the blocks inside the loop are in the correct sequence:
+    /// 1. Block2 (بسم الله والله أكبر)
+    /// 2. Block3 (طواف شوط كامل)
+    /// </summary>
+    public bool IsSequenceCorrect()
+    {
+        if (!IsInputCorrect()) return false;
+
+        // الحصول على جميع البلوكات حتى لو كانت داخل بعضها (Nested)
+        LoopBlockLogic[] allSubLogics = GetComponentsInChildren<LoopBlockLogic>();
+        List<Transform> sortedBlocks = new List<Transform>();
+
+        foreach (Transform child in transform.GetComponentsInChildren<Transform>())
+        {
+            // نتأكد أننا نأخذ البلوكات فقط ولا نأخذ اللوب الرئيسي نفسه
+            if (child != this.transform && child.name.Contains("block"))
+            {
+                // نتحقق أن الكائن لديه Collider أو اسم محدد لنتجنب أخذ نقاط الـ Snap
+                if (child.name.Contains("(Clone)"))
+                {
+                    sortedBlocks.Add(child);
+                }
+            }
+        }
+
+        // ترتيب البلوكات بناءً على موقعها في العالم (Y) من الأعلى للأسفل
+        sortedBlocks.Sort((a, b) => b.position.y.CompareTo(a.position.y));
+
+        if (sortedBlocks.Count >= 2)
+        {
+            // التحقق من أن الأعلى هو block2 (طف شوطاً) والأسفل هو block3 (الذكر)
+            bool isOrderCorrect = sortedBlocks[0].name.ToLower().Contains("block2") &&
+                                 sortedBlocks[1].name.ToLower().Contains("block3");
+
+            return isOrderCorrect;
+        }
+
+        return false;
     }
 }

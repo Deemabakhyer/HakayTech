@@ -61,6 +61,12 @@ public class BlockSnap : MonoBehaviour
         Vector3 adjustment = new Vector3(0.2f, -0.1f, 0);
 
         transform.position = snapPoint.position + offset + adjustment;
+
+        // Enable the Arabic input field only when the block is correctly placed in the workspace
+        if (TryGetComponent(out LoopBlockLogic loopLogic))
+        {
+            loopLogic.EnableInput();
+        }
     }
 }
 

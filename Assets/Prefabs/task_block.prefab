@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.013999306, y: -0.51989937, z: 0}
-  m_LocalScale: {x: 2.4728124, y: 2.5556247, z: 1}
+  m_LocalScale: {x: 2.0690486, y: 2.5556247, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4795051775895915924}
@@ -161,6 +161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topSnap: {fileID: 4795051775895915924}
   bottomSnap: {fileID: 4313426723452139842}
+  innerSnap: {fileID: 0}
   snapDistance: 0.3
 --- !u!1 &3691808754830891694
 GameObject:
@@ -187,7 +188,7 @@ Transform:
   m_GameObject: {fileID: 3691808754830891694}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.158, y: -0.138, z: 0}
+  m_LocalPosition: {x: -0.83, y: -0.197, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -218,7 +219,7 @@ Transform:
   m_GameObject: {fileID: 7971674409968191872}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.139, y: 0.271, z: 0}
+  m_LocalPosition: {x: -0.66, y: 0.162, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
