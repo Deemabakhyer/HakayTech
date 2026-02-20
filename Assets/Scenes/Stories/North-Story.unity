@@ -454,6 +454,7 @@ GameObject:
   - component: {fileID: 483797108}
   - component: {fileID: 483797109}
   - component: {fileID: 483797110}
+  - component: {fileID: 483797111}
   m_Layer: 0
   m_Name: block4
   m_TagString: Untagged
@@ -603,6 +604,20 @@ MonoBehaviour:
   topSnap: {fileID: 847860285}
   bottomSnap: {fileID: 2064079979}
   snapDistance: 0.3
+--- !u!114 &483797111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483797104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537fe28d673f38d4d84c9cb960cd986f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockAction: Pour
+  isInSolution: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,6 +1002,7 @@ GameObject:
   - component: {fileID: 773519738}
   - component: {fileID: 773519739}
   - component: {fileID: 773519740}
+  - component: {fileID: 773519741}
   m_Layer: 0
   m_Name: block1
   m_TagString: Untagged
@@ -1149,6 +1165,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockAction: BoilWater
+  isInSolution: 0
+--- !u!50 &773519741
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773519733}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &847860284
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,6 +1321,7 @@ GameObject:
   - component: {fileID: 922231295}
   - component: {fileID: 922231296}
   - component: {fileID: 922231297}
+  - component: {fileID: 922231298}
   m_Layer: 0
   m_Name: block3
   m_TagString: Untagged
@@ -1426,6 +1471,20 @@ MonoBehaviour:
   topSnap: {fileID: 1547728876}
   bottomSnap: {fileID: 1033337763}
   snapDistance: 0.3
+--- !u!114 &922231298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922231291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537fe28d673f38d4d84c9cb960cd986f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockAction: AddCardamom
+  isInSolution: 0
 --- !u!1 &964545300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1554,6 +1613,7 @@ GameObject:
   - component: {fileID: 1177389552}
   - component: {fileID: 1177389553}
   - component: {fileID: 1177389554}
+  - component: {fileID: 1177389555}
   m_Layer: 0
   m_Name: block2
   m_TagString: Untagged
@@ -1703,6 +1763,20 @@ MonoBehaviour:
   topSnap: {fileID: 1781278245}
   bottomSnap: {fileID: 607721974}
   snapDistance: 0.3
+--- !u!114 &1177389555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177389548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537fe28d673f38d4d84c9cb960cd986f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockAction: AddCoffee
+  isInSolution: 0
 --- !u!1 &1200777197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1809,7 +1883,7 @@ GameObject:
   - component: {fileID: 1260679024}
   m_Layer: 0
   m_Name: SolutionSheet
-  m_TagString: MainCamera
+  m_TagString: SolutionArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
