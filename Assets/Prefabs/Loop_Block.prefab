@@ -448,6 +448,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTemplate: 1
+  dragSound: {fileID: 8300000, guid: 4432a7d8fe24547d5b657c68417fef05, type: 3}
+  dropSound: {fileID: 8300000, guid: 4432a7d8fe24547d5b657c68417fef05, type: 3}
 --- !u!114 &6976936182369130982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -464,6 +466,7 @@ MonoBehaviour:
   bottomSnap: {fileID: 1426921120852718388}
   innerSnap: {fileID: 7279753283182355122}
   snapDistance: 0.3
+  snapSound: {fileID: 8300000, guid: 4432a7d8fe24547d5b657c68417fef05, type: 3}
 --- !u!114 &6733705129945000432
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2,12 +2,19 @@
 
 public class BlockSnap : MonoBehaviour
 {
+    [Header("Snapping Points")]
     public Transform topSnap;
     public Transform bottomSnap;
     public Transform innerSnap; // اسحبي نقطة الـ InnerSnap الجديدة هنا في الـ Inspector
 
+    [Header("Settings")]
     public float snapDistance = 0.5f; // زدت القيمة قليلاً لتسهيل الالتصاق للطفل
     private Drag drag;
+
+    [Header("Audio")]
+    [Tooltip("Attach the snap sound effect here (e.g., Click or Pop)")]
+    public AudioClip snapSound; // اسحبي ملف الصوت هنا في الـ Inspector
+
 
     private void Awake()
     {
@@ -38,11 +45,13 @@ public class BlockSnap : MonoBehaviour
             if (distToBottom <= snapDistance)
             {
                 SnapTo(other, other.bottomSnap);
+                PlaySnapSound();
                 return true;
             }
             else if (distToInner <= snapDistance)
             {
                 SnapTo(other, other.innerSnap);
+                PlaySnapSound();
                 return true;
             }
         }
@@ -66,6 +75,18 @@ public class BlockSnap : MonoBehaviour
         if (TryGetComponent(out LoopBlockLogic loopLogic))
         {
             loopLogic.EnableInput();
+        }
+    }
+
+    /// <summary>
+    /// Plays the snapping sound effect at the block's current position.
+    /// </summary>
+    private void PlaySnapSound()
+    {
+        if (snapSound != null)
+        {
+            // PlayClipAtPoint creates a temporary audio object that destroys itself after finishing
+            AudioSource.PlayClipAtPoint(snapSound, Camera.main.transform.position, 1.0f);
         }
     }
 }

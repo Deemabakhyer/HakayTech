@@ -11,11 +11,26 @@ public class Drag : MonoBehaviour
     private Camera cam;
     private BlockSnap snap;
 
+    [Header("Audio Settings")]
+    [Tooltip("Sound when you start dragging the block")]
+    public AudioClip dragSound;
+    [Tooltip("Sound when you release the block without a snap")]
+    public AudioClip dropSound;
+    private AudioSource audioSource;
+
     private void Awake()
     {
         col = GetComponent<Collider2D>();
         cam = Camera.main;
         snap = GetComponent<BlockSnap>();
+
+        // Ensure there is an AudioSource to play Drag/Drop sounds
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+        audioSource.playOnAwake = false;
 
         if (solutionSheet == null)
         {
@@ -24,8 +39,13 @@ public class Drag : MonoBehaviour
                 solutionSheet = sheet.transform;
         }
 
+        if (solutionSheet == null)
+        {
+            GameObject sheet = GameObject.Find("SolutionSheet");
+            if (sheet != null)
+                solutionSheet = sheet.transform;
+        }
     }
-
     private void OnMouseDown()
     {
         if (isTemplate)
@@ -54,6 +74,7 @@ public class Drag : MonoBehaviour
 
         // Detach from parent when dragging (important for chains)
         transform.SetParent(null);
+        PlaySound(dragSound);
     }
 
     private void OnMouseDrag()
@@ -85,13 +106,24 @@ public class Drag : MonoBehaviour
             if (hit != null && hit.TryGetComponent(out DropArea drop))
             {
                 drop.OnDrop(this);
+                PlaySound(dropSound);
             }
             else
             {
                 transform.position = startPos;
+                PlaySound(dropSound);
             }
         }
     }
+
+    private void PlaySound(AudioClip clip)
+    {
+        if (clip != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
+    }
+
 
     private Vector3 GetMouseWorldPos()
     {

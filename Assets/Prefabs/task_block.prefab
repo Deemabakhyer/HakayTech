@@ -147,6 +147,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTemplate: 1
+  dragSound: {fileID: 8300000, guid: 4432a7d8fe24547d5b657c68417fef05, type: 3}
+  dropSound: {fileID: 8300000, guid: 4432a7d8fe24547d5b657c68417fef05, type: 3}
 --- !u!114 &3752966646074497712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,6 +165,7 @@ MonoBehaviour:
   bottomSnap: {fileID: 4313426723452139842}
   innerSnap: {fileID: 0}
   snapDistance: 0.3
+  snapSound: {fileID: 8300000, guid: 4432a7d8fe24547d5b657c68417fef05, type: 3}
 --- !u!1 &3691808754830891694
 GameObject:
   m_ObjectHideFlags: 0
