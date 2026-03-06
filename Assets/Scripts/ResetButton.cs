@@ -2,25 +2,27 @@ using UnityEngine;
 
 public class ResetButton : MonoBehaviour
 {
+    // If you are using a Sprite with a Collider
     private void OnMouseDown()
     {
-        ResetSolution();
+        ExecuteReset();
     }
 
-    private void ResetSolution()
+    // If you are using a UI Button, link this function to the OnClick event
+    public void ExecuteReset()
     {
-        if (Drag.solutionSheet == null)
+        // Find all blocks in the scene
+        CodingBlock[] allBlocks = Object.FindObjectsByType<CodingBlock>(FindObjectsSortMode.None);
+
+        foreach (CodingBlock block in allBlocks)
         {
-            Debug.LogWarning("No SolutionSheet found");
-            return;
+            // Move back to the saved start position
+            block.transform.position = block.startPosition;
+
+            // Tell the block it is no longer in the solution
+            block.ResetBlockStatus();
         }
 
-        // Delete all blocks in the solution sheet
-        for (int i = Drag.solutionSheet.childCount - 1; i >= 0; i--)
-        {
-            Destroy(Drag.solutionSheet.GetChild(i).gameObject);
-        }
-
-        Debug.Log("Solution reset");
+        Debug.Log("All blocks reset to original positions.");
     }
 }
