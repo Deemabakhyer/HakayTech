@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Overviews/North-Overview.unity
     guid: 39e141324f6f9f44185e1f39e7678e9f
+  - enabled: 1
+    path: Assets/Scenes/Authentication/Splash-Screen.unity
+    guid: cfc6278579be6504f8fc2caad02b15a2
+  - enabled: 1
+    path: Assets/Scenes/Authentication/Sign-Up.unity
+    guid: a05fc700b0e791c41ab9102ae1aace13
   m_configObjects: {}
