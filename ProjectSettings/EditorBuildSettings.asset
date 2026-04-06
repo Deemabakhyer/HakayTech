@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Authentication/Sign-Up.unity
     guid: a05fc700b0e791c41ab9102ae1aace13
+  - enabled: 1
+    path: Assets/Scenes/Overviews/Qassim-Overview.unity
+    guid: ec3771f9083dfdf4aa6ede4c65e8b11e
+  - enabled: 1
+    path: Assets/Scenes/Stories/Qassim-Story.unity
+    guid: 3c7c3e8ab3a1a7d419191ee9793a0ced
+  - enabled: 1
+    path: Assets/Scenes/Map/Map.unity
+    guid: 322310817a81ad24b9f7b3427f29115b
   m_configObjects: {}

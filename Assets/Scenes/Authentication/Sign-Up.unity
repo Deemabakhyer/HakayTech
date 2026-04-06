@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 22157021}
   - component: {fileID: 22157020}
   m_Layer: 5
-  m_Name: Text - RTLTMP (3)
+  m_Name: age
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -345,10 +345,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 36
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 10
   m_fontSizeMax: 100
   m_fontStyle: 0
@@ -381,7 +381,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 4.5}
+  m_margin: {x: 0, y: 55.153854, z: 0, w: 56.995834}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -770,7 +770,7 @@ GameObject:
   - component: {fileID: 187949216}
   - component: {fileID: 187949215}
   m_Layer: 0
-  m_Name: Button
+  m_Name: sign_up_btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1191,10 +1191,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 36
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 10
   m_fontSizeMax: 100
   m_fontStyle: 0
@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 4.5}
+  m_margin: {x: 0, y: 55.25293, z: 0, w: 57.276276}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1656,7 +1656,7 @@ GameObject:
   - component: {fileID: 517314517}
   - component: {fileID: 517314516}
   m_Layer: 5
-  m_Name: Dropdown - RTLTMP (2)
+  m_Name: age_Dropdown - RTLTMP (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1795,7 +1795,7 @@ GameObject:
   - component: {fileID: 541168309}
   - component: {fileID: 541168308}
   m_Layer: 5
-  m_Name: Dropdown - RTLTMP
+  m_Name: class_Dropdown - RTLTMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2147,7 +2147,7 @@ GameObject:
   - component: {fileID: 656232779}
   - component: {fileID: 656232778}
   m_Layer: 5
-  m_Name: Text - RTLTMP (2)
+  m_Name: class
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2464,7 +2464,7 @@ GameObject:
   - component: {fileID: 866034399}
   - component: {fileID: 866034398}
   m_Layer: 5
-  m_Name: InputField - RTLTMP
+  m_Name: email_InputField - RTLTMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3326,7 +3326,7 @@ GameObject:
   - component: {fileID: 1088612620}
   - component: {fileID: 1088612619}
   m_Layer: 5
-  m_Name: InputField - RTLTMP (1)
+  m_Name: name_InputField - RTLTMP (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4291,6 +4291,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340100493}
   m_CullTransparentMesh: 1
+--- !u!1 &1357486870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1357486872}
+  - component: {fileID: 1357486871}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1357486871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357486870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5a273e5557befc4dbd3abc1a3db9e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: 2
+--- !u!4 &1357486872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357486870}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 241.36641, y: 254.91298, z: -0.41786945}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1396076677
 GameObject:
   m_ObjectHideFlags: 0
@@ -4304,7 +4349,7 @@ GameObject:
   - component: {fileID: 1396076680}
   - component: {fileID: 1396076679}
   m_Layer: 5
-  m_Name: Dropdown - RTLTMP (1)
+  m_Name: sex_Dropdown - RTLTMP (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5175,7 +5220,7 @@ GameObject:
   - component: {fileID: 1802261070}
   - component: {fileID: 1802261069}
   m_Layer: 5
-  m_Name: Text - RTLTMP (4)
+  m_Name: sex
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5589,7 +5634,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -40.1, y: -4}
   m_SizeDelta: {x: 532.47, y: 111.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1854319232
@@ -5612,8 +5657,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
-  m_isRightToLeft: 0
+  m_text: "\uFEA9\uFBFE\uFEE4\uFE94 \uFECB\uFEE0\uFBFD"
+  m_isRightToLeft: 1
   m_fontAsset: {fileID: 11400000, guid: 8131a155667d81146b91d5f111088b2a, type: 2}
   m_sharedMaterial: {fileID: 1002383807772867010, guid: 8131a155667d81146b91d5f111088b2a, type: 2}
   m_fontSharedMaterials: []
@@ -5642,10 +5687,10 @@ MonoBehaviour:
   m_fontSize: 14
   m_fontSizeBase: 14
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 10
   m_fontSizeMax: 100
-  m_fontStyle: 2
+  m_fontStyle: 0
   m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -5675,7 +5720,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 261.59558, y: 53.592392, z: 232.34125, w: 60.122314}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5683,7 +5728,7 @@ MonoBehaviour:
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
   preserveNumbers: 0
   farsi: 1
-  originalText: 
+  originalText: "\u062F\u064A\u0645\u0629 \u0639\u0644\u064A"
   fixTags: 1
   forceFix: 0
 --- !u!222 &1854319233
@@ -5781,7 +5826,7 @@ GameObject:
   - component: {fileID: 1901421614}
   - component: {fileID: 1901421613}
   m_Layer: 5
-  m_Name: Text - RTLTMP (1)
+  m_Name: name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6060,7 +6105,7 @@ GameObject:
   - component: {fileID: 2008558005}
   - component: {fileID: 2008558004}
   m_Layer: 0
-  m_Name: Button
+  m_Name: back_button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6128,7 +6173,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2008558005}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1357486871}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Splash-Screen
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2008558005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6179,7 +6236,7 @@ GameObject:
   - component: {fileID: 2015530563}
   - component: {fileID: 2015530562}
   m_Layer: 5
-  m_Name: Text - RTLTMP
+  m_Name: email
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6604,6 +6661,7 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1357486872}
   - {fileID: 1431166932}
   - {fileID: 857227082}
   - {fileID: 2018558120}
