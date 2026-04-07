@@ -5,15 +5,15 @@ public class BlockSnap : MonoBehaviour
     [Header("Snapping Points")]
     public Transform topSnap;
     public Transform bottomSnap;
-    public Transform innerSnap; // اسحبي نقطة الـ InnerSnap الجديدة هنا في الـ Inspector
+    public Transform innerSnap; 
 
     [Header("Settings")]
-    public float snapDistance = 0.5f; // زدت القيمة قليلاً لتسهيل الالتصاق للطفل
+    public float snapDistance = 0.5f;
     private Drag drag;
 
     [Header("Audio")]
     [Tooltip("Attach the snap sound effect here (e.g., Click or Pop)")]
-    public AudioClip snapSound; // اسحبي ملف الصوت هنا في الـ Inspector
+    public AudioClip snapSound; 
 
 
     private void Awake()

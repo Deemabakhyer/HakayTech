@@ -5,7 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Story-1.unity
+  - enabled: 0
+    path: Assets/Scenes/Stories/North-Story.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Overviews/Eastern-Overview.unity
+    guid: f39c46e9d554c4c3a804b9e66116857a
+  - enabled: 1
+    path: Assets/Scenes/Stories/Eastern-Region-Story.unity
+    guid: 1c9547de23e471a4fa3c16f132365d63
+  - enabled: 1
+    path: Assets/Scenes/Overviews/Makkah-Overview 1.unity
+    guid: 35e5758ce2688497f8be05e88e65bc89
+  - enabled: 1
+    path: Assets/Scenes/Stories/Mecca-Story.unity
+    guid: bdc18b0d012f78444abd8a6fea0ca22e
   m_configObjects: {}
