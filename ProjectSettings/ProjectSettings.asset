@@ -728,11 +728,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: aa58a68c-57ee-4ce2-9cb2-8b73ecaedbfd
+  cloudProjectId: c39afaf8-dae1-4c6d-aaed-6005562b30cc
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: HakayTech-demo
-  organizationId: deemaali
+  projectName: HakayTech
+  organizationId: progg_remas11
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

@@ -1,0 +1,254 @@
+using UnityEngine;
+using TMPro;
+using System.Collections;
+
+public class OTPManager : MonoBehaviour
+{
+    [Header("UI References")]
+    public TMP_Text errorText;
+    public TMP_Text timerText;
+    public UnityEngine.UI.Button resendButton;
+
+    private float timeRemaining = 120f; // دقيقتين
+    private bool timerRunning = false;
+    private string idToken;
+    private string email;
+    [Header("UI References")]
+    public TMP_Text infoText; // اسحبي نص "سيتم ارسال رمز التحقق..." هنا
+
+
+
+    void Start()
+    {
+        // استرجاع البيانات من SignUpManager
+        idToken = PlayerPrefs.GetString("pendingIdToken");
+        email = PlayerPrefs.GetString("pendingEmail");
+
+
+        // تحديث نص الواجهة ليعرض الإيميل الفعلي
+        if (infoText != null && !string.IsNullOrEmpty(email))
+        {
+            infoText.text = $"ادخل الرمز المرسل الى البريد\n{MaskEmail(email)}";
+        }
+
+        // ابدي العداد
+        StartTimer();
+
+        // أخفي زر الإعادة في البداية
+        resendButton.gameObject.SetActive(false);
+    }
+
+
+
+    string MaskEmail(string email)
+    {
+        var parts = email.Split('@');
+        if (parts[0].Length <= 2) return email; // إيميل قصير جداً لا يتم تمويهه
+
+        string name = parts[0];
+        string maskedName = name.Substring(0, 3) + new string('*', 7) + name.Substring(name.Length - 2);
+        return maskedName + "@" + parts[1];
+    }
+
+    void Update()
+    {
+        if (!timerRunning) return;
+
+        timeRemaining -= Time.deltaTime;
+
+        // تحديث العداد على الشاشة
+        int minutes = Mathf.FloorToInt(timeRemaining / 60);
+        int seconds = Mathf.FloorToInt(timeRemaining % 60);
+        timerText.text = $"{minutes:00}:{seconds:00}";
+
+        // انتهى الوقت
+        if (timeRemaining <= 0)
+        {
+            timerRunning = false;
+            timerText.text = "00:00";
+            resendButton.gameObject.SetActive(true);
+            ShowError("OTP expired! Please resend.");
+        }
+    }
+
+
+    [Header("OTP Input Fields")]
+    public TMP_InputField[] otpFields; // اسحبي الـ 6 خانات هنا بالترتيب
+
+    string GetOTPCode()
+    {
+        string code = "";
+        foreach (var field in otpFields)
+            code += field.text;
+        return code;
+    }
+
+    public void OnVerifyClicked()
+    {
+        string otp = GetOTPCode();
+
+        if (otp.Length < 6) 
+        {
+            ShowError("Please enter the complete code!");
+            return;
+        }
+
+        StartCoroutine(VerifyOTP());
+    }
+
+   
+    void StartTimer()
+    {
+        timeRemaining = 120f;
+        timerRunning = true;
+        resendButton.gameObject.SetActive(false);
+    }
+
+
+    IEnumerator VerifyOTP()
+    {
+        string enteredOTP = GetOTPCode();
+        string savedOTP = PlayerPrefs.GetString("otpCode");
+        string expiryStr = PlayerPrefs.GetString("otpExpiry");
+
+        System.DateTime expiry = System.DateTime.Parse(expiryStr);
+        if (System.DateTime.UtcNow > expiry)
+        {
+            ShowError("انتهى وقت الرمز! اضغط إعادة إرسال");
+            yield break;
+        }
+
+        if (enteredOTP == savedOTP)
+        {
+            Debug.Log("OTP Verified!");
+            PlayerPrefs.DeleteKey("otpCode");
+            PlayerPrefs.DeleteKey("otpExpiry");
+
+            string mode = PlayerPrefs.GetString("loginMode", "signup");
+            Debug.Log("MODE: " + mode); // 👈 هنا
+
+            if (mode == "login")
+                StartCoroutine(LoadUserAndProceed()); // تسجيل دخول
+            else
+                StartCoroutine(SaveUserAndProceed()); // تسجيل جديد
+        }
+        else
+        {
+            ShowError("الرمز غير صحيح! حاولي مرة ثانية");
+        }
+
+        yield return null;
+    }
+
+    IEnumerator LoadUserAndProceed()
+    {
+        string email = PlayerPrefs.GetString("pendingEmail");
+
+        // ابحثي عن userId بالإيميل
+        string foundUserId = "";
+        yield return StartCoroutine(FirebaseManager.Instance.GetUserIdByEmail(
+            email,
+            (uid) => foundUserId = uid,
+            (error) => ShowError("فشل إيجاد المستخدم: " + error)
+        ));
+
+        if (string.IsNullOrEmpty(foundUserId))
+        {
+            ShowError("المستخدم غير موجود!");
+            yield break;
+        }
+
+        yield return StartCoroutine(FirestoreManager.Instance.LoadUser(
+            foundUserId,
+            (user) =>
+            {
+                Debug.Log("Login successful: " + user.name);
+                PlayerPrefs.SetString("currentUserId", foundUserId);
+                PlayerPrefs.DeleteKey("pendingEmail");
+                PlayerPrefs.DeleteKey("loginMode");
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Home");
+            },
+            (error) => ShowError("فشل تحميل البيانات: " + error)
+        ));
+    }
+
+    IEnumerator SaveUserAndProceed()
+    {
+        Debug.Log("🔥 SAVING USER NOW");
+
+        string userId = PlayerPrefs.GetString("pendingUserId");
+        string gender = PlayerPrefs.GetString("pendingGender");
+
+        // تحديد المينتور حسب الجنس
+        string aiCompanion = (gender == "انثى" || gender == "female")
+            ? "girl_comp"
+            : "boy_comp";
+
+        // إنشاء المستخدم كامل
+        UserGameData newUser = new UserGameData
+        {
+            userId = userId,
+            name = PlayerPrefs.GetString("pendingName"),
+            email = PlayerPrefs.GetString("pendingEmail"),
+            age = PlayerPrefs.GetInt("pendingAge"),
+            gender = gender,
+            grade = PlayerPrefs.GetString("pendingGrade"),
+
+            // 🔥 القيم الناقصة (تم حلها)
+            aiCompanionId = aiCompanion,
+            avatar = "avatar1",
+            accumulatedCoins = 0,
+            earnedBadges = new System.Collections.Generic.List<string>()
+        };
+
+        // 🧪 تأكيد قبل الإرسال
+        Debug.Log("USER DATA: " + JsonUtility.ToJson(newUser));
+
+        bool saved = false;
+
+        yield return StartCoroutine(FirestoreManager.Instance.SaveUser(
+            newUser,
+            () => saved = true,
+            (error) => ShowError("Failed to save user! " + error)
+        ));
+
+        if (saved)
+        {
+            Debug.Log("✅ USER SAVED SUCCESSFULLY");
+
+            PlayerPrefs.SetString("currentUserId", userId);
+
+            // تنظيف البيانات المؤقتة
+            PlayerPrefs.DeleteKey("pendingIdToken");
+            PlayerPrefs.DeleteKey("pendingUserId");
+            PlayerPrefs.DeleteKey("pendingEmail");
+            PlayerPrefs.DeleteKey("pendingName");
+            PlayerPrefs.DeleteKey("pendingAge");
+            PlayerPrefs.DeleteKey("pendingGender");
+            PlayerPrefs.DeleteKey("pendingGrade");
+
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Home");
+        }
+    }
+
+    // زر إعادة الإرسال
+    public void OnResendClicked()
+    {
+        StartCoroutine(FirebaseManager.Instance.SendOTP(
+            email, // غيّرناها من idToken لـ email ✓
+            (response) =>
+            {
+                Debug.Log("OTP Resent!");
+                StartTimer();
+                ShowError("");
+            },
+            (error) => ShowError("Failed to resend OTP!")
+        ));
+    }
+
+    void ShowError(string message)
+    {
+        if (errorText != null)
+            errorText.text = message;
+    }
+}
