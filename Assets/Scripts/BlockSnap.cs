@@ -5,35 +5,33 @@ public class BlockSnap : MonoBehaviour
     public Transform topSnap;
     public Transform bottomSnap;
 
-    public float snapDistance = 0.3f;
+    public float snapDistance = 30f;
 
-    private Drag drag;
+    private DragBlock drag;
 
     private void Awake()
     {
-        drag = GetComponent<Drag>();
+        drag = GetComponent<DragBlock>();
     }
 
     public bool TrySnap()
     {
-        // Templates should never snap
         if (drag != null && drag.isTemplate)
             return false;
 
-        BlockSnap[] allBlocks = FindObjectsOfType<BlockSnap>();
+        BlockSnap[] allBlocks = FindObjectsByType<BlockSnap>(FindObjectsSortMode.None);
 
         foreach (BlockSnap other in allBlocks)
         {
             if (other == this) continue;
 
-            // Ignore template blocks
             if (other.drag != null && other.drag.isTemplate)
                 continue;
 
-            float dist = Vector2.Distance(
-                bottomSnap.position,
-                other.topSnap.position
-            );
+            if (other.topSnap == null || bottomSnap == null)
+                continue;
+
+            float dist = Vector2.Distance(bottomSnap.position, other.topSnap.position);
 
             if (dist <= snapDistance)
             {
@@ -47,10 +45,11 @@ public class BlockSnap : MonoBehaviour
 
     private void SnapTo(BlockSnap target)
     {
-        // Parent to target
-        transform.SetParent(target.transform);
+        if (target == null || target.topSnap == null || bottomSnap == null)
+            return;
 
-        // Align bottom snap to target top snap
+        transform.SetParent(target.transform.parent);
+
         Vector3 offset = transform.position - bottomSnap.position;
         transform.position = target.topSnap.position + offset;
     }

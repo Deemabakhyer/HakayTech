@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: f188406d22d494fc6887a0fc68ddea71
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2910519787697681839
+    second: ai seleprate_0
+  - first:
+      213: 968996448436452878
+    second: ai seleprate_1
+  - first:
+      213: 7960747859408654281
+    second: ai seleprate_2
+  - first:
+      213: 9114787380402461392
+    second: ai seleprate_3
+  - first:
+      213: -4608957812730194718
+    second: ai seleprate_4
+  - first:
+      213: -3810153801281193334
+    second: ai seleprate_5
+  - first:
+      213: 528431324420934132
+    second: ai seleprate_6
+  - first:
+      213: 485455078375219866
+    second: ai seleprate_7
+  - first:
+      213: -7151313596126343507
+    second: ai seleprate_8
+  - first:
+      213: 847916945841655825
+    second: ai seleprate_9
+  - first:
+      213: 2979593433207699641
+    second: ai seleprate_10
+  - first:
+      213: -5456285649167800850
+    second: ai seleprate_11
+  - first:
+      213: 4859530821867097108
+    second: ai seleprate_12
+  - first:
+      213: 910252924329633956
+    second: ai seleprate_13
+  - first:
+      213: -7303236754315031237
+    second: ai seleprate_14
+  - first:
+      213: 8968117736900545538
+    second: ai seleprate_15
+  - first:
+      213: 3099878349446631711
+    second: ai seleprate_16
+  - first:
+      213: 2081002623958219679
+    second: ai seleprate_17
+  - first:
+      213: -1673554572862231418
+    second: ai seleprate_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ai seleprate_0
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 465
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ac8867ca1cb97d0800000000000000
+      internalID: -2910519787697681839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ai seleprate_1
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 482
+        width: 20
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e7ba9c221927d00800000000000000
+      internalID: 968996448436452878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ai seleprate_2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 488
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf018210024a7e60800000000000000
+      internalID: 7960747859408654281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ai seleprate_3
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 483
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da1a1c84da3e7e70800000000000000
+      internalID: 9114787380402461392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ai seleprate_4
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 475
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e49473e941b900c0800000000000000
+      internalID: -4608957812730194718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ai seleprate_5
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 477
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8ab7070e4d9f1bc0800000000000000
+      internalID: -3810153801281193334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ai seleprate_6
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 426
+        width: 49
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f98c446d7d555700800000000000000
+      internalID: 528431324420934132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ai seleprate_7
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 451
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a92e6fc52deacb600800000000000000
+      internalID: 485455078375219866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ai seleprate_8
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 0
+        width: 540
+        height: 479
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daec7717c2e61cc90800000000000000
+      internalID: -7151313596126343507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ai seleprate_9
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 460
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1101de348f764cb00800000000000000
+      internalID: 847916945841655825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ai seleprate_10
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 424
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b87e61e074a95920800000000000000
+      internalID: 2979593433207699641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ai seleprate_11
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 394
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5aa485c116744b0800000000000000
+      internalID: -5456285649167800850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ai seleprate_12
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 335
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c437c1985807340800000000000000
+      internalID: 4859530821867097108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ai seleprate_13
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 321
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a8ad62463ed1ac00800000000000000
+      internalID: 910252924329633956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ai seleprate_14
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 306
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3dc97cbdd0b5aa90800000000000000
+      internalID: -7303236754315031237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ai seleprate_15
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 294
+        width: 59
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c46db0197257c70800000000000000
+      internalID: 8968117736900545538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ai seleprate_16
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 260
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f11d0b95feaf40b20800000000000000
+      internalID: 3099878349446631711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ai seleprate_17
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 266
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b7fa16cd431ec10800000000000000
+      internalID: 2081002623958219679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ai seleprate_18
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 240
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68ce05c9bf656c8e0800000000000000
+      internalID: -1673554572862231418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ai seleprate_0: -2910519787697681839
+      ai seleprate_1: 968996448436452878
+      ai seleprate_10: 2979593433207699641
+      ai seleprate_11: -5456285649167800850
+      ai seleprate_12: 4859530821867097108
+      ai seleprate_13: 910252924329633956
+      ai seleprate_14: -7303236754315031237
+      ai seleprate_15: 8968117736900545538
+      ai seleprate_16: 3099878349446631711
+      ai seleprate_17: 2081002623958219679
+      ai seleprate_18: -1673554572862231418
+      ai seleprate_2: 7960747859408654281
+      ai seleprate_3: 9114787380402461392
+      ai seleprate_4: -4608957812730194718
+      ai seleprate_5: -3810153801281193334
+      ai seleprate_6: 528431324420934132
+      ai seleprate_7: 485455078375219866
+      ai seleprate_8: -7151313596126343507
+      ai seleprate_9: 847916945841655825
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
