@@ -14,9 +14,8 @@ public class Drop : MonoBehaviour, DropArea
             {
                 loopLogic.EnableInput();
             }
-
-            // إذا كان البلوك متغير، أضفه للقائمة
-            // هذا الكود يشتغل بس إذا في VariableManager في الـ Scene
+            // If the block is a variable, add it to the list
+            // This code only works if there is a VariableManager in the Scene
             VariableManager manager = FindObjectOfType<VariableManager>();
             if (manager != null && drag.TryGetComponent(out VariableBlock varBlock))
             {

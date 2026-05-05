@@ -2,6 +2,12 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 
+
+/// <summary>
+/// Manages the One-Time Password (OTP) verification process.
+/// It handles the countdown timer, email masking for privacy, 
+/// and branches the logic between user registration and existing user login.
+/// </summary>
 public class OTPManager : MonoBehaviour
 {
     [Header("UI References")]
@@ -9,41 +15,35 @@ public class OTPManager : MonoBehaviour
     public TMP_Text timerText;
     public UnityEngine.UI.Button resendButton;
 
-    private float timeRemaining = 120f; // دقيقتين
+    private float timeRemaining = 120f; // 2min
     private bool timerRunning = false;
     private string idToken;
     private string email;
     [Header("UI References")]
-    public TMP_Text infoText; // اسحبي نص "سيتم ارسال رمز التحقق..." هنا
-
-
+    public TMP_Text infoText;
 
     void Start()
     {
-        // استرجاع البيانات من SignUpManager
         idToken = PlayerPrefs.GetString("pendingIdToken");
         email = PlayerPrefs.GetString("pendingEmail");
 
-
-        // تحديث نص الواجهة ليعرض الإيميل الفعلي
         if (infoText != null && !string.IsNullOrEmpty(email))
         {
             infoText.text = $"ادخل الرمز المرسل الى البريد\n{MaskEmail(email)}";
         }
-
-        // ابدي العداد
         StartTimer();
-
-        // أخفي زر الإعادة في البداية
         resendButton.gameObject.SetActive(false);
     }
 
 
-
+    /// <summary>
+    /// Masks the user's email address by hiding middle characters with asterisks.
+    /// This enhances user privacy while providing enough context to identify the recipient inbox.
+    /// </summary>
     string MaskEmail(string email)
     {
         var parts = email.Split('@');
-        if (parts[0].Length <= 2) return email; // إيميل قصير جداً لا يتم تمويهه
+        if (parts[0].Length <= 2) return email; 
 
         string name = parts[0];
         string maskedName = name.Substring(0, 3) + new string('*', 7) + name.Substring(name.Length - 2);
@@ -55,13 +55,10 @@ public class OTPManager : MonoBehaviour
         if (!timerRunning) return;
 
         timeRemaining -= Time.deltaTime;
-
-        // تحديث العداد على الشاشة
         int minutes = Mathf.FloorToInt(timeRemaining / 60);
         int seconds = Mathf.FloorToInt(timeRemaining % 60);
         timerText.text = $"{minutes:00}:{seconds:00}";
 
-        // انتهى الوقت
         if (timeRemaining <= 0)
         {
             timerRunning = false;
@@ -73,7 +70,7 @@ public class OTPManager : MonoBehaviour
 
 
     [Header("OTP Input Fields")]
-    public TMP_InputField[] otpFields; // اسحبي الـ 6 خانات هنا بالترتيب
+    public TMP_InputField[] otpFields; 
 
     string GetOTPCode()
     {
@@ -104,7 +101,10 @@ public class OTPManager : MonoBehaviour
         resendButton.gameObject.SetActive(false);
     }
 
-
+    /// <summary>
+    /// Validates the entered 6-digit code against the locally stored OTP and checks for expiration.
+    /// If valid, it determines whether to proceed with creating a new Firestore document or loading an existing profile.
+    /// </summary>
     IEnumerator VerifyOTP()
     {
         string enteredOTP = GetOTPCode();
@@ -125,7 +125,7 @@ public class OTPManager : MonoBehaviour
             PlayerPrefs.DeleteKey("otpExpiry");
 
             string mode = PlayerPrefs.GetString("loginMode", "signup");
-            Debug.Log("MODE: " + mode); // 👈 هنا
+            Debug.Log("MODE: " + mode); 
 
             if (mode == "login")
                 StartCoroutine(LoadUserAndProceed()); // تسجيل دخول
@@ -139,12 +139,13 @@ public class OTPManager : MonoBehaviour
 
         yield return null;
     }
-
+    /// <summary>
+    /// Retrieves the unique User ID using the verified email and fetches the full profile from Firestore.
+    /// Facilitates the transition to the main dashboard for returning users.
+    /// </summary>
     IEnumerator LoadUserAndProceed()
     {
         string email = PlayerPrefs.GetString("pendingEmail");
-
-        // ابحثي عن userId بالإيميل
         string foundUserId = "";
         yield return StartCoroutine(FirebaseManager.Instance.GetUserIdByEmail(
             email,
@@ -172,19 +173,18 @@ public class OTPManager : MonoBehaviour
         ));
     }
 
+    /// <summary>
+    /// Compiles all temporary 'pending' data from PlayerPrefs to create a new UserGameData profile.
+    /// It automatically assigns an initial "Ai Companion" based on the user's gender and initializes game stats.
+    /// </summary>
     IEnumerator SaveUserAndProceed()
     {
         Debug.Log("🔥 SAVING USER NOW");
-
         string userId = PlayerPrefs.GetString("pendingUserId");
         string gender = PlayerPrefs.GetString("pendingGender");
-
-        // تحديد المينتور حسب الجنس
         string aiCompanion = (gender == "انثى" || gender == "female")
             ? "girl_comp"
             : "boy_comp";
-
-        // إنشاء المستخدم كامل
         UserGameData newUser = new UserGameData
         {
             userId = userId,
@@ -193,19 +193,14 @@ public class OTPManager : MonoBehaviour
             age = PlayerPrefs.GetInt("pendingAge"),
             gender = gender,
             grade = PlayerPrefs.GetString("pendingGrade"),
-
-            // 🔥 القيم الناقصة (تم حلها)
             aiCompanionId = aiCompanion,
             avatar = "avatar1",
             accumulatedCoins = 0,
             earnedBadges = new System.Collections.Generic.List<string>()
         };
 
-        // 🧪 تأكيد قبل الإرسال
         Debug.Log("USER DATA: " + JsonUtility.ToJson(newUser));
-
         bool saved = false;
-
         yield return StartCoroutine(FirestoreManager.Instance.SaveUser(
             newUser,
             () => saved = true,
@@ -217,8 +212,6 @@ public class OTPManager : MonoBehaviour
             Debug.Log("✅ USER SAVED SUCCESSFULLY");
 
             PlayerPrefs.SetString("currentUserId", userId);
-
-            // تنظيف البيانات المؤقتة
             PlayerPrefs.DeleteKey("pendingIdToken");
             PlayerPrefs.DeleteKey("pendingUserId");
             PlayerPrefs.DeleteKey("pendingEmail");
@@ -230,8 +223,9 @@ public class OTPManager : MonoBehaviour
             UnityEngine.SceneManagement.SceneManager.LoadScene("Home");
         }
     }
-
-    // زر إعادة الإرسال
+    /// <summary>
+    /// Triggers a new OTP generation and delivery request, resetting the UI countdown timer.
+    /// </summary>
     public void OnResendClicked()
     {
         StartCoroutine(FirebaseManager.Instance.SendOTP(

@@ -2,12 +2,16 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 
+/// <summary>
+/// Manages the user registration process, including form validation and account creation.
+/// It coordinates with Firebase Authentication for identity management and initiates 
+/// the OTP verification flow by caching temporary user data.
+/// </summary>
 public class SignUpManager : MonoBehaviour
 {
     [Header("Input Fields")]
     public TMP_InputField nameInputField;
     public TMP_InputField emailInputField;
-
     [Header("Dropdowns")]
     public TMP_Dropdown ageDropdown;
     public TMP_Dropdown sexDropdown;
@@ -16,9 +20,12 @@ public class SignUpManager : MonoBehaviour
     [Header("UI Feedback")]
     public TMP_Text errorText;
 
-
-
-
+    /// <summary>
+    /// Orchestrates the asynchronous registration sequence:
+    /// 1. Validates email uniqueness in the database.
+    /// 2. Creates a Firebase Auth record with a secure temporary identifier.
+    /// 3. Caches profile metadata (Name, Age, Gender) locally before redirecting to OTP verification.
+    /// </summary>
     IEnumerator SignUpFlow()
     {
         string email = emailInputField.text;
@@ -34,7 +41,7 @@ public class SignUpManager : MonoBehaviour
 
         if (emailExists)
         {
-            ShowError("ذا البريد الإلكتروني مسجل مسبقاً");
+            ShowError("البريد الإلكتروني مسجل مسبقاً");
             yield break;
         }
 
@@ -49,21 +56,17 @@ public class SignUpManager : MonoBehaviour
                     <System.Collections.Generic.Dictionary<string, object>>(response);
 
                 idToken = data["idToken"].ToString();
-                userId = data["localId"].ToString(); // ✅ المهم
+                userId = data["localId"].ToString(); 
             },
             (error) => ShowError("فشل التسجيل: " + error)
         ));
 
         if (string.IsNullOrEmpty(idToken) || string.IsNullOrEmpty(userId)) yield break;
-
-        // خزنيهم
         PlayerPrefs.SetString("pendingIdToken", idToken);
         PlayerPrefs.SetString("pendingUserId", userId);
         PlayerPrefs.SetString("pendingEmail", email);
 
         if (string.IsNullOrEmpty(idToken)) yield break;
-
-        // 4. Send OTP
         yield return StartCoroutine(FirebaseManager.Instance.SendOTP(
             email,
             (response) => {
@@ -73,7 +76,6 @@ public class SignUpManager : MonoBehaviour
                 PlayerPrefs.SetInt("pendingAge", ageDropdown.value);
                 PlayerPrefs.SetString("pendingGender", sexDropdown.options[sexDropdown.value].text);
                 PlayerPrefs.SetString("pendingGrade", classDropdown.options[classDropdown.value].text);
-                // انتقلي لصفحة OTP
                 PlayerPrefs.SetString("pendingEmail", email);
                 PlayerPrefs.SetString("pendingIdToken", idToken);
                 UnityEngine.SceneManagement.SceneManager.LoadScene("OTP");
@@ -89,23 +91,27 @@ public class SignUpManager : MonoBehaviour
         Debug.LogWarning(message);
     }
 
-
-
+    /// <summary>
+    /// Validates the structure of the provided email address using standard regex patterns.
+    /// </summary>
     bool IsValidEmail(string email)
     {
-        // تحقق من صياغة الإيميل
         string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
         return System.Text.RegularExpressions.Regex.IsMatch(email, pattern);
     }
-
+    /// <summary>
+    /// Ensures the user has entered at least a first and last name for proper academic record keeping.
+    /// </summary>
     bool IsValidName(string name)
     {
-        // تحقق إن الاسم ثنائي (كلمتين على الأقل)
         string[] parts = name.Trim().Split(' ');
         return parts.Length >= 2 && parts[0].Length > 0 && parts[1].Length > 0;
     }
 
-
+    /// <summary>
+    /// Validates all UI input fields for completeness and correct formatting.
+    /// If validation passes, it sets the session mode to 'signup' and triggers the registration flow.
+    /// </summary>
     public void OnSignUpClicked()
     {
         if (string.IsNullOrEmpty(nameInputField.text) ||
@@ -126,8 +132,7 @@ public class SignUpManager : MonoBehaviour
             ShowError("يرجى إدخال بريد إلكتروني صحيح!");
             return;
         }
-        PlayerPrefs.SetString("loginMode", "signup"); // 👈 هنا بالضبط
+        PlayerPrefs.SetString("loginMode", "signup"); 
         StartCoroutine(SignUpFlow());
     }
-
 }
