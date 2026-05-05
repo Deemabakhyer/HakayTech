@@ -2,25 +2,33 @@ using UnityEngine;
 
 public class ResetButton : MonoBehaviour
 {
-    private void OnMouseDown()
-    {
-        ResetSolution();
-    }
+    public Transform solutionSheet;
+    public BlockChecker blockChecker;
+    public BlockExecutionController executionController;
 
-    private void ResetSolution()
+    public void ResetSolution()
     {
-        if (Drag.solutionSheet == null)
+        if (solutionSheet == null)
         {
-            Debug.LogWarning("No SolutionSheet found");
+            Debug.LogWarning("No SolutionSheet assigned");
             return;
         }
 
-        // Delete all blocks in the solution sheet
-        for (int i = Drag.solutionSheet.childCount - 1; i >= 0; i--)
+        for (int i = solutionSheet.childCount - 1; i >= 0; i--)
         {
-            Destroy(Drag.solutionSheet.GetChild(i).gameObject);
+            Destroy(solutionSheet.GetChild(i).gameObject);
         }
 
-        Debug.Log("Solution reset");
+        if (executionController != null)
+            executionController.ResetPreview();
+
+        // انتظر فريم واحد ضمنيًا بعد الحذف ثم حدّث الحالة
+        Invoke(nameof(RefreshAfterReset), 0.02f);
+    }
+
+    void RefreshAfterReset()
+    {
+        if (blockChecker != null)
+            blockChecker.EvaluateLiveState();
     }
 }

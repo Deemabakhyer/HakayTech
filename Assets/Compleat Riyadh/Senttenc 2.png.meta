@@ -1,0 +1,3809 @@
+fileFormatVersion: 2
+guid: c86a5215a9d8d433fadb40cee9791c13
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 410611615983474978
+    second: Senttenc 2_0
+  - first:
+      213: -3298399848420462170
+    second: Senttenc 2_1
+  - first:
+      213: -1666227182021853426
+    second: Senttenc 2_2
+  - first:
+      213: 4284409527453805093
+    second: Senttenc 2_3
+  - first:
+      213: 986714285839392540
+    second: Senttenc 2_4
+  - first:
+      213: -6443752293726038719
+    second: Senttenc 2_5
+  - first:
+      213: -4726334889779165228
+    second: Senttenc 2_6
+  - first:
+      213: 5421525462531195484
+    second: Senttenc 2_7
+  - first:
+      213: -1824865402551281220
+    second: Senttenc 2_8
+  - first:
+      213: -1621029107898301458
+    second: Senttenc 2_9
+  - first:
+      213: 7141304276580992433
+    second: Senttenc 2_10
+  - first:
+      213: -293620897863166274
+    second: Senttenc 2_11
+  - first:
+      213: 1596386506505320157
+    second: Senttenc 2_12
+  - first:
+      213: 1255242935915348236
+    second: Senttenc 2_13
+  - first:
+      213: 3140010850801213706
+    second: Senttenc 2_14
+  - first:
+      213: -2231732031915214676
+    second: Senttenc 2_15
+  - first:
+      213: -5308948714904676396
+    second: Senttenc 2_16
+  - first:
+      213: 6577401663281861972
+    second: Senttenc 2_17
+  - first:
+      213: -6876009725036699845
+    second: Senttenc 2_18
+  - first:
+      213: 5780187829875762052
+    second: Senttenc 2_19
+  - first:
+      213: -3646008112545468736
+    second: Senttenc 2_20
+  - first:
+      213: 7507953545923949159
+    second: Senttenc 2_21
+  - first:
+      213: 4072037600719034645
+    second: Senttenc 2_22
+  - first:
+      213: -7621929948280641045
+    second: Senttenc 2_23
+  - first:
+      213: 3427539762600484716
+    second: Senttenc 2_24
+  - first:
+      213: 4427767153243062950
+    second: Senttenc 2_25
+  - first:
+      213: 5893124059172710280
+    second: Senttenc 2_26
+  - first:
+      213: -7943004230573552074
+    second: Senttenc 2_27
+  - first:
+      213: -4476807514976024625
+    second: Senttenc 2_28
+  - first:
+      213: 8183094007389494284
+    second: Senttenc 2_29
+  - first:
+      213: 1916342580281942840
+    second: Senttenc 2_30
+  - first:
+      213: -689725256147896439
+    second: Senttenc 2_31
+  - first:
+      213: 8668354828837433075
+    second: Senttenc 2_32
+  - first:
+      213: 5452940218003817218
+    second: Senttenc 2_33
+  - first:
+      213: -409712806401394074
+    second: Senttenc 2_34
+  - first:
+      213: 6017387519740681177
+    second: Senttenc 2_35
+  - first:
+      213: -7665067256178204988
+    second: Senttenc 2_36
+  - first:
+      213: 2965198039455988605
+    second: Senttenc 2_37
+  - first:
+      213: 1765375334328038673
+    second: Senttenc 2_38
+  - first:
+      213: -1820152286033944380
+    second: Senttenc 2_39
+  - first:
+      213: -8919702891239193086
+    second: Senttenc 2_40
+  - first:
+      213: -222352594858110874
+    second: Senttenc 2_41
+  - first:
+      213: -6995067209422615762
+    second: Senttenc 2_42
+  - first:
+      213: -8596256233536115251
+    second: Senttenc 2_43
+  - first:
+      213: -8279905450824303989
+    second: Senttenc 2_44
+  - first:
+      213: 5545298553197661273
+    second: Senttenc 2_45
+  - first:
+      213: -7968429124349961236
+    second: Senttenc 2_46
+  - first:
+      213: 8891689542260569244
+    second: Senttenc 2_47
+  - first:
+      213: -3556109312091304725
+    second: Senttenc 2_48
+  - first:
+      213: 7502957733705413639
+    second: Senttenc 2_49
+  - first:
+      213: 5076849147967298750
+    second: Senttenc 2_50
+  - first:
+      213: -6003517362675747696
+    second: Senttenc 2_51
+  - first:
+      213: 7533596853564047291
+    second: Senttenc 2_52
+  - first:
+      213: -8586877883426203667
+    second: Senttenc 2_53
+  - first:
+      213: 5374521052580073918
+    second: Senttenc 2_54
+  - first:
+      213: 6563462404707534241
+    second: Senttenc 2_55
+  - first:
+      213: 8217297453922330436
+    second: Senttenc 2_56
+  - first:
+      213: 8704274087663295601
+    second: Senttenc 2_57
+  - first:
+      213: -5513978168812106869
+    second: Senttenc 2_58
+  - first:
+      213: -8746009877403306362
+    second: Senttenc 2_59
+  - first:
+      213: -7123420584454518600
+    second: Senttenc 2_60
+  - first:
+      213: 4261760161519770476
+    second: Senttenc 2_61
+  - first:
+      213: -8763618276404594164
+    second: Senttenc 2_62
+  - first:
+      213: -1911022867337415757
+    second: Senttenc 2_63
+  - first:
+      213: 7434407450669336581
+    second: Senttenc 2_64
+  - first:
+      213: 3865981965889027687
+    second: Senttenc 2_65
+  - first:
+      213: -7577476559345407774
+    second: Senttenc 2_66
+  - first:
+      213: -1830535420475064856
+    second: Senttenc 2_67
+  - first:
+      213: 3393017954245501604
+    second: Senttenc 2_68
+  - first:
+      213: 4248613424626585350
+    second: Senttenc 2_69
+  - first:
+      213: -405510516697830421
+    second: Senttenc 2_70
+  - first:
+      213: 8443656579783643653
+    second: Senttenc 2_71
+  - first:
+      213: 5180390676210134923
+    second: Senttenc 2_72
+  - first:
+      213: 6982021161665748108
+    second: Senttenc 2_73
+  - first:
+      213: 4104813701417061390
+    second: Senttenc 2_74
+  - first:
+      213: -3758959219509303511
+    second: Senttenc 2_75
+  - first:
+      213: -4456324915100152333
+    second: Senttenc 2_76
+  - first:
+      213: -6858897082491076130
+    second: Senttenc 2_77
+  - first:
+      213: -5396390228248101007
+    second: Senttenc 2_78
+  - first:
+      213: -4591696355680578599
+    second: Senttenc 2_79
+  - first:
+      213: 2322596758480064979
+    second: Senttenc 2_80
+  - first:
+      213: 7297357232992699742
+    second: Senttenc 2_81
+  - first:
+      213: -9112871739434294947
+    second: Senttenc 2_82
+  - first:
+      213: -7191643573003947193
+    second: Senttenc 2_83
+  - first:
+      213: -3284113143016332866
+    second: Senttenc 2_84
+  - first:
+      213: -3014308649824593700
+    second: Senttenc 2_85
+  - first:
+      213: 1666042064753800285
+    second: Senttenc 2_86
+  - first:
+      213: -602226168334208854
+    second: Senttenc 2_87
+  - first:
+      213: 3369147945282396670
+    second: Senttenc 2_88
+  - first:
+      213: 865588531644588972
+    second: Senttenc 2_89
+  - first:
+      213: 1611811949216814817
+    second: Senttenc 2_90
+  - first:
+      213: -4371730199932564041
+    second: Senttenc 2_91
+  - first:
+      213: -1067813266556415425
+    second: Senttenc 2_92
+  - first:
+      213: 5124112369371495772
+    second: Senttenc 2_93
+  - first:
+      213: 862475678928665887
+    second: Senttenc 2_94
+  - first:
+      213: -2827384202837138066
+    second: Senttenc 2_95
+  - first:
+      213: -5617166076661744271
+    second: Senttenc 2_96
+  - first:
+      213: -1504623920666417910
+    second: Senttenc 2_97
+  - first:
+      213: 5228294448253437436
+    second: Senttenc 2_98
+  - first:
+      213: -5440705078336813694
+    second: Senttenc 2_99
+  - first:
+      213: -7706628314593075089
+    second: Senttenc 2_100
+  - first:
+      213: 344409433872996045
+    second: Senttenc 2_101
+  - first:
+      213: -4618599940643779424
+    second: Senttenc 2_102
+  - first:
+      213: -3415510075122758930
+    second: Senttenc 2_103
+  - first:
+      213: -5600148585921578156
+    second: Senttenc 2_104
+  - first:
+      213: -5783604817787376153
+    second: Senttenc 2_105
+  - first:
+      213: -7777513548160663750
+    second: Senttenc 2_106
+  - first:
+      213: -7092971016009979596
+    second: Senttenc 2_107
+  - first:
+      213: -8749079662825049590
+    second: Senttenc 2_108
+  - first:
+      213: 3635913677986486492
+    second: Senttenc 2_109
+  - first:
+      213: 8169805476199454266
+    second: Senttenc 2_110
+  - first:
+      213: -8866665448922194641
+    second: Senttenc 2_111
+  - first:
+      213: 2935055313475492503
+    second: Senttenc 2_112
+  - first:
+      213: 8892807288968639588
+    second: Senttenc 2_113
+  - first:
+      213: -5043751960237111774
+    second: Senttenc 2_114
+  - first:
+      213: -7391069307844792831
+    second: Senttenc 2_115
+  - first:
+      213: -2075987073984454248
+    second: Senttenc 2_116
+  - first:
+      213: -7888307259210962358
+    second: Senttenc 2_117
+  - first:
+      213: -1469268377980929492
+    second: Senttenc 2_118
+  - first:
+      213: 4343979525862720628
+    second: Senttenc 2_119
+  - first:
+      213: 6138356041561393082
+    second: Senttenc 2_120
+  - first:
+      213: 2212702760515859891
+    second: Senttenc 2_121
+  - first:
+      213: 9221931209940220036
+    second: Senttenc 2_122
+  - first:
+      213: 7650523579561942653
+    second: Senttenc 2_123
+  - first:
+      213: -151929356771041065
+    second: Senttenc 2_124
+  - first:
+      213: -2792289490669725809
+    second: Senttenc 2_125
+  - first:
+      213: -9076219139715291945
+    second: Senttenc 2_126
+  - first:
+      213: 6681293246124177595
+    second: Senttenc 2_127
+  - first:
+      213: 3055871167254381193
+    second: Senttenc 2_128
+  - first:
+      213: 4345516148543842117
+    second: Senttenc 2_129
+  - first:
+      213: 1882797076479650268
+    second: Senttenc 2_130
+  - first:
+      213: -8955146278918434755
+    second: Senttenc 2_131
+  - first:
+      213: -6765132707469935512
+    second: Senttenc 2_132
+  - first:
+      213: 647186384729175869
+    second: Senttenc 2_133
+  - first:
+      213: 1165715589460202527
+    second: Senttenc 2_134
+  - first:
+      213: 1655883650541333978
+    second: Senttenc 2_135
+  - first:
+      213: -7163749390681028157
+    second: Senttenc 2_136
+  - first:
+      213: 1383800758819803109
+    second: Senttenc 2_137
+  - first:
+      213: -6432631050748301341
+    second: Senttenc 2_138
+  - first:
+      213: 3943675681110297909
+    second: Senttenc 2_139
+  - first:
+      213: -1350354172166581226
+    second: Senttenc 2_140
+  - first:
+      213: 5163845400668842827
+    second: Senttenc 2_141
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Senttenc 2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 524
+        width: 32
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2291857d619c2b500800000000000000
+      internalID: 410611615983474978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 507
+        width: 53
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a132b340dab932d0800000000000000
+      internalID: -3298399848420462170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_2
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 564
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0fbc7cb43f50e8e0800000000000000
+      internalID: -1666227182021853426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_3
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 573
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52aee24f3c7457b30800000000000000
+      internalID: 4284409527453805093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_4
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 564
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f92464a6381bd00800000000000000
+      internalID: 986714285839392540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_5
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 556
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145d9d7ed613396a0800000000000000
+      internalID: -6443752293726038719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_6
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 559
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d78d2d757fa86eb0800000000000000
+      internalID: -4726334889779165228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_7
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 485
+        width: 238
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5248e60fa02d3b40800000000000000
+      internalID: 5421525462531195484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_8
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 510
+        width: 18
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb9d70eb596cca6e0800000000000000
+      internalID: -1824865402551281220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_9
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 562
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3472d6d92f089e0800000000000000
+      internalID: -1621029107898301458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_10
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 510
+        width: 18
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5869e37620b1360800000000000000
+      internalID: 7141304276580992433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_11
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 563
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb61c3c5959dcebf0800000000000000
+      internalID: -293620897863166274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_12
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 507
+        width: 53
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6f974d111872610800000000000000
+      internalID: 1596386506505320157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_13
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 486
+        width: 68
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c018d06bcc48b6110800000000000000
+      internalID: 1255242935915348236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_14
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 510
+        width: 18
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a01e0e87b3f839b20800000000000000
+      internalID: 3140010850801213706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_15
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 572
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca835db8a8b4701e0800000000000000
+      internalID: -2231732031915214676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_16
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 507
+        width: 174
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d717559543d256b0800000000000000
+      internalID: -5308948714904676396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_17
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 507
+        width: 142
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4559af4d6ff974b50800000000000000
+      internalID: 6577401663281861972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_18
+      rect:
+        serializedVersion: 2
+        x: 2328
+        y: 510
+        width: 17
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f5e03f5918390a0800000000000000
+      internalID: -6876009725036699845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_19
+      rect:
+        serializedVersion: 2
+        x: 2441
+        y: 507
+        width: 115
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 483e7ced43a573050800000000000000
+      internalID: 5780187829875762052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_20
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 571
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cee88360f6c66dc0800000000000000
+      internalID: -3646008112545468736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_21
+      rect:
+        serializedVersion: 2
+        x: 2562
+        y: 523
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7627eee98fb913860800000000000000
+      internalID: 7507953545923949159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_22
+      rect:
+        serializedVersion: 2
+        x: 2566
+        y: 507
+        width: 53
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51954ee8f98c28830800000000000000
+      internalID: 4072037600719034645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_23
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 510
+        width: 18
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be922d14817793690800000000000000
+      internalID: -7621929948280641045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_24
+      rect:
+        serializedVersion: 2
+        x: 2669
+        y: 485
+        width: 92
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6f14531141119f20800000000000000
+      internalID: 3427539762600484716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_25
+      rect:
+        serializedVersion: 2
+        x: 2768
+        y: 507
+        width: 77
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a2023d34c6927d30800000000000000
+      internalID: 4427767153243062950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_26
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 486
+        width: 119
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8872c44db1598c150800000000000000
+      internalID: 5893124059172710280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_27
+      rect:
+        serializedVersion: 2
+        x: 3045
+        y: 510
+        width: 17
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e0d337cb7c4c190800000000000000
+      internalID: -7943004230573552074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_28
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 506
+        width: 208
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc70e06c84f2fd1c0800000000000000
+      internalID: -4476807514976024625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_29
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 486
+        width: 37
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c1412d4a0309170800000000000000
+      internalID: 8183094007389494284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_30
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 507
+        width: 374
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83329ad6c67389a10800000000000000
+      internalID: 1916342580281942840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_31
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 491
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98770baa88a9d66f0800000000000000
+      internalID: -689725256147896439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_32
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 483
+        width: 69
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fea5e73ace2c4870800000000000000
+      internalID: 8668354828837433075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_33
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 507
+        width: 137
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2030f83cc3cbcab40800000000000000
+      internalID: 5452940218003817218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_34
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 507
+        width: 112
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66a34829f58605af0800000000000000
+      internalID: -409712806401394074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_35
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 501
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db1306511e028350800000000000000
+      internalID: 6017387519740681177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_36
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 486
+        width: 52
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce150811f530a590800000000000000
+      internalID: -7665067256178204988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_37
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 486
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7b757618ef762920800000000000000
+      internalID: 2965198039455988605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_38
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 485
+        width: 112
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 115fbd1638fdf7810800000000000000
+      internalID: 1765375334328038673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_39
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 483
+        width: 118
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c0e4d1b3258db6e0800000000000000
+      internalID: -1820152286033944380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_40
+      rect:
+        serializedVersion: 2
+        x: 2371
+        y: 507
+        width: 63
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 206c9a1aa79d63480800000000000000
+      internalID: -8919702891239193086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_41
+      rect:
+        serializedVersion: 2
+        x: 2395
+        y: 490
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66098983e7b0aecf0800000000000000
+      internalID: -222352594858110874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_42
+      rect:
+        serializedVersion: 2
+        x: 2997
+        y: 507
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2bc16a3f678cee90800000000000000
+      internalID: -6995067209422615762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_43
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 490
+        width: 28
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcda7d12086f3b880800000000000000
+      internalID: -8596256233536115251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_44
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 490
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8afbcd7cddd71d80800000000000000
+      internalID: -8279905450824303989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_45
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 490
+        width: 28
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c85d467abd4fc40800000000000000
+      internalID: 5545298553197661273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_46
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 490
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceb5e311ee37a6190800000000000000
+      internalID: -7968429124349961236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_47
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 467
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c943f7b4780a56b70800000000000000
+      internalID: 8891689542260569244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_48
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 467
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: becc656fb6926aec0800000000000000
+      internalID: -3556109312091304725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_49
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 347
+        width: 153
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704f7427e4cdf1860800000000000000
+      internalID: 7502957733705413639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_50
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 411
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebcd5dad667947640800000000000000
+      internalID: 5076849147967298750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_51
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 363
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09472d244c83faca0800000000000000
+      internalID: -6003517362675747696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_52
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 347
+        width: 53
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf7fa17c66bc8860800000000000000
+      internalID: 7533596853564047291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_53
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 350
+        width: 17
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de719bc6f0845d880800000000000000
+      internalID: -8586877883426203667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_54
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 402
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb1d4e00c62269a40800000000000000
+      internalID: 5374521052580073918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_55
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 412
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a54939484a161b50800000000000000
+      internalID: 6563462404707534241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_56
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 325
+        width: 231
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44723ca4f74b90270800000000000000
+      internalID: 8217297453922330436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_57
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 404
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17cdece5a2bcbc870800000000000000
+      internalID: 8704274087663295601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_58
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 326
+        width: 162
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b02bcd11a6a73b0800000000000000
+      internalID: -5513978168812106869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_59
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 350
+        width: 17
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6867157da5eef9680800000000000000
+      internalID: -8746009877403306362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_60
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 414
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b802ed48b6842d90800000000000000
+      internalID: -7123420584454518600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_61
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 326
+        width: 53
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b1c418940d42b30800000000000000
+      internalID: 4261760161519770476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_62
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 363
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a78c7fb9f516680800000000000000
+      internalID: -8763618276404594164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_63
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 347
+        width: 118
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b374b2c3deaa75e0800000000000000
+      internalID: -1911022867337415757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_64
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 413
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508c9acef225c2760800000000000000
+      internalID: 7434407450669336581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_65
+      rect:
+        serializedVersion: 2
+        x: 2258
+        y: 399
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76eb1e87d1ab6a530800000000000000
+      internalID: 3865981965889027687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_66
+      rect:
+        serializedVersion: 2
+        x: 2518
+        y: 346
+        width: 143
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e82e5a673567d690800000000000000
+      internalID: -7577476559345407774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_67
+      rect:
+        serializedVersion: 2
+        x: 2683
+        y: 326
+        width: 221
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ed30d1dbb1a896e0800000000000000
+      internalID: -1830535420475064856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_68
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 339
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a263573adb661f20800000000000000
+      internalID: 3393017954245501604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_69
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 323
+        width: 268
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60fc2da466b16fa30800000000000000
+      internalID: 4248613424626585350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_70
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 325
+        width: 61
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beb6a8365565f5af0800000000000000
+      internalID: -405510516697830421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_71
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 326
+        width: 228
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 502d4634ce4ed2570800000000000000
+      internalID: 8443656579783643653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_72
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 347
+        width: 82
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f20458fd174e740800000000000000
+      internalID: 5180390676210134923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_73
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 331
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8cd853114f15e060800000000000000
+      internalID: 6982021161665748108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_74
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 347
+        width: 51
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0cce1e205a37f830800000000000000
+      internalID: 4104813701417061390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_75
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 347
+        width: 109
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 927e7f3718e75dbc0800000000000000
+      internalID: -3758959219509303511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_76
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 346
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fd8bbfa914f722c0800000000000000
+      internalID: -4456324915100152333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_77
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 326
+        width: 121
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed10827817d40d0a0800000000000000
+      internalID: -6858897082491076130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_78
+      rect:
+        serializedVersion: 2
+        x: 2198
+        y: 326
+        width: 149
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17ff1efbdab2c15b0800000000000000
+      internalID: -5396390228248101007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_79
+      rect:
+        serializedVersion: 2
+        x: 2374
+        y: 326
+        width: 117
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d3143b0e740740c0800000000000000
+      internalID: -4591696355680578599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_80
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 245
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d19da932758b3020800000000000000
+      internalID: 2322596758480064979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_81
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 166
+        width: 185
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5548a78dbb654560800000000000000
+      internalID: 7297357232992699742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_82
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 190
+        width: 17
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d51a25f5f63988180800000000000000
+      internalID: -9112871739434294947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_83
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 251
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 743f0e7f546223c90800000000000000
+      internalID: -7191643573003947193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_84
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 203
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb1e1541f7c7c62d0800000000000000
+      internalID: -3284113143016332866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_85
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 187
+        width: 53
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd851d3e0460b26d0800000000000000
+      internalID: -3014308649824593700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_86
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 190
+        width: 18
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d54328a4e68fe1710800000000000000
+      internalID: 1666042064753800285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_87
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 244
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0bef99d7674a7f0800000000000000
+      internalID: -602226168334208854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_88
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 190
+        width: 18
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef16b4aa43e91ce20800000000000000
+      internalID: 3369147945282396670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_89
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 244
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca3e356fe20330c00800000000000000
+      internalID: 865588531644588972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_90
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 166
+        width: 102
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e65cc59d6e4e5610800000000000000
+      internalID: 1611811949216814817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_91
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 190
+        width: 18
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd0c2bab8e7453c0800000000000000
+      internalID: -4371730199932564041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_92
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 187
+        width: 153
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f329478dd7d5e21f0800000000000000
+      internalID: -1067813266556415425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_93
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 251
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5db29d1d018c1740800000000000000
+      internalID: 5124112369371495772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_94
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 204
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1df4f57f0128fb00800000000000000
+      internalID: 862475678928665887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_95
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 187
+        width: 53
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6567523c0d13c8d0800000000000000
+      internalID: -2827384202837138066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_96
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 190
+        width: 18
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17db33cd631db02b0800000000000000
+      internalID: -5617166076661744271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_97
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 248
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a056f1814808e1be0800000000000000
+      internalID: -1504623920666417910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_98
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 187
+        width: 220
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf50b499912ae8840800000000000000
+      internalID: 5228294448253437436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_99
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 190
+        width: 18
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 285021eae8bbe74b0800000000000000
+      internalID: -5440705078336813694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_100
+      rect:
+        serializedVersion: 2
+        x: 2011
+        y: 187
+        width: 233
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6066bc116e8c0590800000000000000
+      internalID: -7706628314593075089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_101
+      rect:
+        serializedVersion: 2
+        x: 2362
+        y: 170
+        width: 28
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc61b4b2e8697c400800000000000000
+      internalID: 344409433872996045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_102
+      rect:
+        serializedVersion: 2
+        x: 2396
+        y: 186
+        width: 74
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac894a03df67efb0800000000000000
+      internalID: -4618599940643779424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_103
+      rect:
+        serializedVersion: 2
+        x: 2545
+        y: 185
+        width: 68
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea4a8dceaba990d0800000000000000
+      internalID: -3415510075122758930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_104
+      rect:
+        serializedVersion: 2
+        x: 2835
+        y: 251
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45bfcbe28864842b0800000000000000
+      internalID: -5600148585921578156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_105
+      rect:
+        serializedVersion: 2
+        x: 3002
+        y: 170
+        width: 28
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7edab82af028cbfa0800000000000000
+      internalID: -5783604817787376153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_106
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 187
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3f781e82a8b01490800000000000000
+      internalID: -7777513548160663750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_107
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 166
+        width: 102
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 439659ce074b09d90800000000000000
+      internalID: -7092971016009979596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_108
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 166
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a02f7b9b666059680800000000000000
+      internalID: -8749079662825049590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_109
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 187
+        width: 178
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd85e5ae93c557230800000000000000
+      internalID: 3635913677986486492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_110
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 181
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a36d8ec8bcaf06170800000000000000
+      internalID: 8169805476199454266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_111
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 166
+        width: 103
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d53c670c643f480800000000000000
+      internalID: -8866665448922194641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_112
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 166
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a54dbc1496bb820800000000000000
+      internalID: 2935055313475492503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_113
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 186
+        width: 206
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 464fafafc19996b70800000000000000
+      internalID: 8892807288968639588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_114
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 181
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22603eaa05ef00ab0800000000000000
+      internalID: -5043751960237111774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_115
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 179
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e6e93cf95ad6990800000000000000
+      internalID: -7391069307844792831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_116
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 187
+        width: 84
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 891aad851cc9033e0800000000000000
+      internalID: -2075987073984454248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_117
+      rect:
+        serializedVersion: 2
+        x: 2246
+        y: 166
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a689f775a178290800000000000000
+      internalID: -7888307259210962358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_118
+      rect:
+        serializedVersion: 2
+        x: 2331
+        y: 187
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a7bbad13c1c9be0800000000000000
+      internalID: -1469268377980929492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_119
+      rect:
+        serializedVersion: 2
+        x: 2476
+        y: 186
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4740e960d5ae84c30800000000000000
+      internalID: 4343979525862720628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_120
+      rect:
+        serializedVersion: 2
+        x: 2617
+        y: 186
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7c3222c42df2550800000000000000
+      internalID: 6138356041561393082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_121
+      rect:
+        serializedVersion: 2
+        x: 2686
+        y: 165
+        width: 66
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5f212ff6915be10800000000000000
+      internalID: 2212702760515859891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_122
+      rect:
+        serializedVersion: 2
+        x: 2759
+        y: 165
+        width: 67
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48833975391eaff70800000000000000
+      internalID: 9221931209940220036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_123
+      rect:
+        serializedVersion: 2
+        x: 2834
+        y: 184
+        width: 19
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7e1a8159ae1c2a60800000000000000
+      internalID: 7650523579561942653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_124
+      rect:
+        serializedVersion: 2
+        x: 2861
+        y: 185
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d065b21e0d34edf0800000000000000
+      internalID: -151929356771041065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_125
+      rect:
+        serializedVersion: 2
+        x: 2929
+        y: 165
+        width: 66
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87139e908bcf39d0800000000000000
+      internalID: -2792289490669725809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_126
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 170
+        width: 28
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d42ba1c7caca0280800000000000000
+      internalID: -9076219139715291945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_127
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 170
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8b27feec8b8bc50800000000000000
+      internalID: 6681293246124177595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_128
+      rect:
+        serializedVersion: 2
+        x: 2162
+        y: 170
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9824e8bc2a2a86a20800000000000000
+      internalID: 3055871167254381193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_129
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 3
+        width: 235
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 547edafd9ef5e4c30800000000000000
+      internalID: 4345516148543842117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_130
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 6
+        width: 249
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9a6bf27f9012a10800000000000000
+      internalID: 1882797076479650268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_131
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 27
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30d76dd7ede8b380800000000000000
+      internalID: -8955146278918434755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_132
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 6
+        width: 102
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86cb0e055ab6d12a0800000000000000
+      internalID: -6765132707469935512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_133
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 30
+        width: 18
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37704586944bf800800000000000000
+      internalID: 647186384729175869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_134
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 6
+        width: 221
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1419e207247d2010800000000000000
+      internalID: 1165715589460202527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_135
+      rect:
+        serializedVersion: 2
+        x: 1942
+        y: 79
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adda4eb2861eaf610800000000000000
+      internalID: 1655883650541333978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_136
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 85
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9498462ef359c90800000000000000
+      internalID: -7163749390681028157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_137
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 5
+        width: 215
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5efce5d557f343310800000000000000
+      internalID: 1383800758819803109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_138
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 26
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3efeff01424bab6a0800000000000000
+      internalID: -6432631050748301341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_139
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 3
+        width: 116
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d0de13320cab630800000000000000
+      internalID: 3943675681110297909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_140
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 0
+        width: 156
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6145b0fe804924de0800000000000000
+      internalID: -1350354172166581226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Senttenc 2_141
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 27
+        width: 51
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ba6ed580aa9a740800000000000000
+      internalID: 5163845400668842827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Senttenc 2_0: 410611615983474978
+      Senttenc 2_1: -3298399848420462170
+      Senttenc 2_10: 7141304276580992433
+      Senttenc 2_100: -7706628314593075089
+      Senttenc 2_101: 344409433872996045
+      Senttenc 2_102: -4618599940643779424
+      Senttenc 2_103: -3415510075122758930
+      Senttenc 2_104: -5600148585921578156
+      Senttenc 2_105: -5783604817787376153
+      Senttenc 2_106: -7777513548160663750
+      Senttenc 2_107: -7092971016009979596
+      Senttenc 2_108: -8749079662825049590
+      Senttenc 2_109: 3635913677986486492
+      Senttenc 2_11: -293620897863166274
+      Senttenc 2_110: 8169805476199454266
+      Senttenc 2_111: -8866665448922194641
+      Senttenc 2_112: 2935055313475492503
+      Senttenc 2_113: 8892807288968639588
+      Senttenc 2_114: -5043751960237111774
+      Senttenc 2_115: -7391069307844792831
+      Senttenc 2_116: -2075987073984454248
+      Senttenc 2_117: -7888307259210962358
+      Senttenc 2_118: -1469268377980929492
+      Senttenc 2_119: 4343979525862720628
+      Senttenc 2_12: 1596386506505320157
+      Senttenc 2_120: 6138356041561393082
+      Senttenc 2_121: 2212702760515859891
+      Senttenc 2_122: 9221931209940220036
+      Senttenc 2_123: 7650523579561942653
+      Senttenc 2_124: -151929356771041065
+      Senttenc 2_125: -2792289490669725809
+      Senttenc 2_126: -9076219139715291945
+      Senttenc 2_127: 6681293246124177595
+      Senttenc 2_128: 3055871167254381193
+      Senttenc 2_129: 4345516148543842117
+      Senttenc 2_13: 1255242935915348236
+      Senttenc 2_130: 1882797076479650268
+      Senttenc 2_131: -8955146278918434755
+      Senttenc 2_132: -6765132707469935512
+      Senttenc 2_133: 647186384729175869
+      Senttenc 2_134: 1165715589460202527
+      Senttenc 2_135: 1655883650541333978
+      Senttenc 2_136: -7163749390681028157
+      Senttenc 2_137: 1383800758819803109
+      Senttenc 2_138: -6432631050748301341
+      Senttenc 2_139: 3943675681110297909
+      Senttenc 2_14: 3140010850801213706
+      Senttenc 2_140: -1350354172166581226
+      Senttenc 2_141: 5163845400668842827
+      Senttenc 2_15: -2231732031915214676
+      Senttenc 2_16: -5308948714904676396
+      Senttenc 2_17: 6577401663281861972
+      Senttenc 2_18: -6876009725036699845
+      Senttenc 2_19: 5780187829875762052
+      Senttenc 2_2: -1666227182021853426
+      Senttenc 2_20: -3646008112545468736
+      Senttenc 2_21: 7507953545923949159
+      Senttenc 2_22: 4072037600719034645
+      Senttenc 2_23: -7621929948280641045
+      Senttenc 2_24: 3427539762600484716
+      Senttenc 2_25: 4427767153243062950
+      Senttenc 2_26: 5893124059172710280
+      Senttenc 2_27: -7943004230573552074
+      Senttenc 2_28: -4476807514976024625
+      Senttenc 2_29: 8183094007389494284
+      Senttenc 2_3: 4284409527453805093
+      Senttenc 2_30: 1916342580281942840
+      Senttenc 2_31: -689725256147896439
+      Senttenc 2_32: 8668354828837433075
+      Senttenc 2_33: 5452940218003817218
+      Senttenc 2_34: -409712806401394074
+      Senttenc 2_35: 6017387519740681177
+      Senttenc 2_36: -7665067256178204988
+      Senttenc 2_37: 2965198039455988605
+      Senttenc 2_38: 1765375334328038673
+      Senttenc 2_39: -1820152286033944380
+      Senttenc 2_4: 986714285839392540
+      Senttenc 2_40: -8919702891239193086
+      Senttenc 2_41: -222352594858110874
+      Senttenc 2_42: -6995067209422615762
+      Senttenc 2_43: -8596256233536115251
+      Senttenc 2_44: -8279905450824303989
+      Senttenc 2_45: 5545298553197661273
+      Senttenc 2_46: -7968429124349961236
+      Senttenc 2_47: 8891689542260569244
+      Senttenc 2_48: -3556109312091304725
+      Senttenc 2_49: 7502957733705413639
+      Senttenc 2_5: -6443752293726038719
+      Senttenc 2_50: 5076849147967298750
+      Senttenc 2_51: -6003517362675747696
+      Senttenc 2_52: 7533596853564047291
+      Senttenc 2_53: -8586877883426203667
+      Senttenc 2_54: 5374521052580073918
+      Senttenc 2_55: 6563462404707534241
+      Senttenc 2_56: 8217297453922330436
+      Senttenc 2_57: 8704274087663295601
+      Senttenc 2_58: -5513978168812106869
+      Senttenc 2_59: -8746009877403306362
+      Senttenc 2_6: -4726334889779165228
+      Senttenc 2_60: -7123420584454518600
+      Senttenc 2_61: 4261760161519770476
+      Senttenc 2_62: -8763618276404594164
+      Senttenc 2_63: -1911022867337415757
+      Senttenc 2_64: 7434407450669336581
+      Senttenc 2_65: 3865981965889027687
+      Senttenc 2_66: -7577476559345407774
+      Senttenc 2_67: -1830535420475064856
+      Senttenc 2_68: 3393017954245501604
+      Senttenc 2_69: 4248613424626585350
+      Senttenc 2_7: 5421525462531195484
+      Senttenc 2_70: -405510516697830421
+      Senttenc 2_71: 8443656579783643653
+      Senttenc 2_72: 5180390676210134923
+      Senttenc 2_73: 6982021161665748108
+      Senttenc 2_74: 4104813701417061390
+      Senttenc 2_75: -3758959219509303511
+      Senttenc 2_76: -4456324915100152333
+      Senttenc 2_77: -6858897082491076130
+      Senttenc 2_78: -5396390228248101007
+      Senttenc 2_79: -4591696355680578599
+      Senttenc 2_8: -1824865402551281220
+      Senttenc 2_80: 2322596758480064979
+      Senttenc 2_81: 7297357232992699742
+      Senttenc 2_82: -9112871739434294947
+      Senttenc 2_83: -7191643573003947193
+      Senttenc 2_84: -3284113143016332866
+      Senttenc 2_85: -3014308649824593700
+      Senttenc 2_86: 1666042064753800285
+      Senttenc 2_87: -602226168334208854
+      Senttenc 2_88: 3369147945282396670
+      Senttenc 2_89: 865588531644588972
+      Senttenc 2_9: -1621029107898301458
+      Senttenc 2_90: 1611811949216814817
+      Senttenc 2_91: -4371730199932564041
+      Senttenc 2_92: -1067813266556415425
+      Senttenc 2_93: 5124112369371495772
+      Senttenc 2_94: 862475678928665887
+      Senttenc 2_95: -2827384202837138066
+      Senttenc 2_96: -5617166076661744271
+      Senttenc 2_97: -1504623920666417910
+      Senttenc 2_98: 5228294448253437436
+      Senttenc 2_99: -5440705078336813694
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
