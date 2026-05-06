@@ -205,16 +205,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 19790153}
-        m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
-        m_MethodName: OnIconClicked
-        m_Mode: 1
+      - m_Target: {fileID: 1274620420}
+        m_TargetAssemblyTypeName: SceneManeger, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Riyadh-Overview
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &19790151
@@ -1669,16 +1669,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1463506584}
-        m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
-        m_MethodName: OnIconClicked
-        m_Mode: 1
+      - m_Target: {fileID: 1274620420}
+        m_TargetAssemblyTypeName: SceneManeger, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Makkah-Overview
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1463506582
@@ -1908,10 +1908,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1609489739}
-        m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
-        m_MethodName: OnIconClicked
-        m_Mode: 1
+      - m_Target: {fileID: 1274620420}
+        m_TargetAssemblyTypeName: SceneManeger, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2199,7 +2199,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 111.5, y: 24.5}
+  m_AnchoredPosition: {x: 96.3, y: 17.7}
   m_SizeDelta: {x: 67, y: 57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1948955904
@@ -2246,16 +2246,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1948955907}
-        m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
-        m_MethodName: OnIconClicked
-        m_Mode: 1
+      - m_Target: {fileID: 1274620420}
+        m_TargetAssemblyTypeName: SceneManeger, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Eastern-Overview
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1948955905

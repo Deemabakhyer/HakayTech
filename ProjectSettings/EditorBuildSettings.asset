@@ -22,13 +22,13 @@ EditorBuildSettings:
     guid: d51c7a9279296924482b8f9660bf7531
   - enabled: 1
     path: Assets/Scenes/Overviews/Eastern-Overview.unity
-    guid: f39c46e9d554c4c3a804b9e66116857a
+    guid: e4f1f74d56b40406ab4e3ddfe152d499
   - enabled: 1
     path: Assets/Scenes/Stories/Eastern-Region-Story.unity
     guid: 1c9547de23e471a4fa3c16f132365d63
   - enabled: 1
     path: Assets/Scenes/Overviews/Makkah-Overview.unity
-    guid: 35e5758ce2688497f8be05e88e65bc89
+    guid: daee806a1d9544efb84bb8eb5c98c1e5
   - enabled: 1
     path: Assets/Scenes/Stories/Mecca-Story.unity
     guid: bdc18b0d012f78444abd8a6fea0ca22e
@@ -50,7 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Home/Home_Page.unity
     guid: 33fd229768a8f473f96bdc9f4d3ceaa1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stories/Riyadh Remas.unity
     guid: f9576715232814ec89ace541766dbbcf
   - enabled: 1
@@ -58,8 +58,14 @@ EditorBuildSettings:
     guid: dbabbce54a22d4853bfcebd6baa40f18
   - enabled: 1
     path: Assets/Scenes/Overviews/Riyadh-Overview.unity
-    guid: 6e0fd2293258a4472b13cfdffabcb6c9
+    guid: 328f7df4b1ab543968d1140e6f70a881
   - enabled: 1
     path: Assets/Scenes/Overviews/south-Overview.unity
     guid: a385b749e0d0e4ae8bddb846e2bc8ab7
+  - enabled: 1
+    path: Assets/Scenes/Stories/Riyadh-Story.unity
+    guid: 8e3efdbf29767446fb09294be4ad1f10
+  - enabled: 0
+    path: Assets/Scenes/HomePage.unity
+    guid: cfcb90e2a08ea4f86aec6ccc1678c263
   m_configObjects: {}
