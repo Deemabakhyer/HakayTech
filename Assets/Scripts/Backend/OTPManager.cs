@@ -167,7 +167,7 @@ public class OTPManager : MonoBehaviour
                 PlayerPrefs.SetString("currentUserId", foundUserId);
                 PlayerPrefs.DeleteKey("pendingEmail");
                 PlayerPrefs.DeleteKey("loginMode");
-                UnityEngine.SceneManagement.SceneManager.LoadScene("Home");
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Home_Page");
             },
             (error) => ShowError("فشل تحميل البيانات: " + error)
         ));
@@ -220,7 +220,7 @@ public class OTPManager : MonoBehaviour
             PlayerPrefs.DeleteKey("pendingGender");
             PlayerPrefs.DeleteKey("pendingGrade");
 
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Home");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Home_Page");
         }
     }
     /// <summary>

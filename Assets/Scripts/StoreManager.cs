@@ -1,117 +1,153 @@
 using UnityEngine;
-
 using UnityEngine.UI;
-
-using TMPro;
-
 using System.Collections;
-
 using System.Collections.Generic;
+using static UnityEngine.UIElements.UxmlAttributeDescription;
 
-
-
+/// <summary>
+/// Manages the virtual store, item purchasing, and equipment logic.
+/// Delegating coin display updates to the UserCoinsDisplay component.
+/// </summary>
 public class StoreManager : MonoBehaviour
-
 {
-
     [Header("Character Display")]
-
     public Image characterDisplay;
-
     public Sprite boySprite;
-
     public Sprite girlSprite;
 
-
-
     [Header("Items")]
-
-    public ItemData[] boyItems;   // اسحبي أيتمز الولد
-
-    public ItemData[] girlItems;  // اسحبي أيتمز البنت
-
+    public ItemData[] boyItems;
+    public ItemData[] girlItems;
     public Transform itemsContainer;
-
     public GameObject itemCardPrefab;
 
-
-
-    [Header("Coins")]
-
-    public TMP_Text coinsText;
-
-
+    [Header("Currency Integration")]
+    public UserCoinsDisplay userCoinsDisplay; // اسحبي سكربت عرض الكوينز هنا
+    [Header("Companion Integration")]
+    public AiCompanionDisplay aiDisplay;
 
     private string currentUserId;
-
     private string currentGender;
-
     private int currentCoins;
-
     private List<string> ownedItemIds = new List<string>();
-
     private string equippedItemId = "";
 
-
-
     void Start()
-
     {
-
         currentUserId = PlayerPrefs.GetString("currentUserId");
-
-        Debug.Log("User ID: " + currentUserId);
-
         StartCoroutine(LoadUserData());
-
     }
 
+
+    /// <summary>
+    /// Fetches all necessary user data from Firestore and synchronizes independent UI components.
+    /// This includes coins, the AI companion appearance, and purchased store items.
+    /// </summary>
     IEnumerator LoadUserData()
     {
         yield return StartCoroutine(FirestoreManager.Instance.LoadUser(
-        currentUserId,
-        (user) =>
+            currentUserId,
+            (user) =>
+            {
+            currentGender = user.gender; 
+                currentCoins = user.accumulatedCoins;
+
+                if (userCoinsDisplay != null)
+            userCoinsDisplay.RefreshDisplay(); 
+
+                if (aiDisplay != null)
+            aiDisplay.RefreshCompanion(); 
+
+                equippedItemId = PlayerPrefs.GetString("LastEquipped_" + currentUserId, ""); 
+
+                StartCoroutine(FirestoreManager.Instance.LoadOwnedItems(
+                    currentUserId,
+                    (items) => {
+                    ownedItemIds.Clear();
+                    foreach (var item in items)
+                    {
+                        ownedItemIds.Add(item.itemId);
+                        if (item.equipped) equippedItemId = item.itemId; 
+                        }
+
+                        if (!string.IsNullOrEmpty(equippedItemId))
+                            ApplyEquippedSprite(equippedItemId); 
+
+    LoadItems(); 
+},
+                    (error) => Debug.LogError("Error fetching owned items: " + error)
+                ));
+            },
+            (error) => Debug.LogError("Failed to load user: " + error)
+        ));
+    }
+
+
+    public void BuyItem(ItemData item)
+    {
+        if (currentCoins < item.price)
         {
-            currentGender = user.gender;
-            currentCoins = user.accumulatedCoins;
-            coinsText.text = currentCoins.ToString();
-            SetCharacter(currentGender);
-
-            // 1. استرجاع الزي المجهز من ذاكرة الجهاز فوراً
-            equippedItemId = PlayerPrefs.GetString("LastEquipped_" + currentUserId, "");
-
-            // 2. جلب المشتريات من Firestore
-            StartCoroutine(FirestoreManager.Instance.LoadOwnedItems(
-                currentUserId,
-                (items) => {
-                ownedItemIds.Clear();
-                foreach (var item in items)
-                {
-                    ownedItemIds.Add(item.itemId);
-
-                        // إذا كان السيرفر يقول أن هذا العنصر مجهز، نحدث القيمة
-                        if (item.equipped) equippedItemId = item.itemId;
+            Debug.LogWarning("Not enough coins!");
+            return;
         }
 
-                    // 3. الآن بعد أن عرفنا الـ ID المجهز، نغير الصورة ونعرض الكاردات
-                    if (!string.IsNullOrEmpty(equippedItemId))
-        {
-            ApplyEquippedSprite(equippedItemId);
-        }
+        // 1. الخصم محلياً
+        currentCoins -= item.price;
+        ownedItemIds.Add(item.itemId);
 
+        // 2. تحديث الداتابيس
+        StartCoroutine(FirestoreManager.Instance.UpdateCoins(
+            currentUserId, currentCoins,
+            () => {
+                // 3. تحديث الواجهة فورياً عبر السكربت المشترك بعد التأكد من نجاح الخصم
+                if (userCoinsDisplay != null) userCoinsDisplay.RefreshDisplay();
+            },
+            (error) => Debug.LogError(error)
+        ));
+
+        OwnedItem newItem = new OwnedItem
+        {
+            ownedItemId = System.Guid.NewGuid().ToString(),
+            userId = currentUserId,
+            itemId = item.itemId,
+            equipped = false
+        };
+
+        StartCoroutine(FirestoreManager.Instance.SaveOwnedItem(
+            newItem,
+            () => LoadItems(),
+            (error) => Debug.LogError(error)
+        ));
+    }
+    void LoadItems()
+    {
+        foreach (Transform child in itemsContainer)
+            Destroy(child.gameObject);
+
+        bool isGirl = currentGender == "أنثى" || currentGender == "female";
+        ItemData[] items = isGirl ? girlItems : boyItems;
+
+        foreach (ItemData item in items)
+        {
+            GameObject card = Instantiate(itemCardPrefab, itemsContainer);
+            ItemCard itemCard = card.GetComponent<ItemCard>();
+            itemCard.Setup(item, this);
+        }
+    }
+
+    public bool IsOwned(string itemId) => ownedItemIds.Contains(itemId);
+    public bool IsEquipped(string itemId) => equippedItemId == itemId;
+
+    public void EquipItem(ItemData item)
+    {
+        equippedItemId = item.itemId;
+        characterDisplay.sprite = item.characterSprite;
+        PlayerPrefs.SetString("LastEquipped_" + currentUserId, item.itemId);
         LoadItems();
-    },
-                (error) => Debug.LogError("خطأ في جلب المشتريات: " + error)
-            ));
-        },
-        (error) => Debug.LogError("Failed to load user: " + error)
-    ));
-
     }
 
     void ApplyEquippedSprite(string itemId)
     {
-        // نحدد أي مصفوفة نبحث فيها بناءً على الجنس
         bool isGirl = currentGender == "أنثى" || currentGender == "female";
         ItemData[] items = isGirl ? girlItems : boyItems;
 
@@ -119,150 +155,9 @@ public class StoreManager : MonoBehaviour
         {
             if (item.itemId == itemId)
             {
-                // تحديث سبرايت الروبوت بالزي المجهز
                 characterDisplay.sprite = item.characterSprite;
                 break;
             }
         }
     }
-
-
-
-    void SetCharacter(string gender)
-
-    {
-
-        bool isGirl = gender == "أنثى" || gender == "female";
-
-        characterDisplay.sprite = isGirl ? girlSprite : boySprite;
-
-    }
-
-
-
-    void LoadItems()
-
-    {
-
-        // امسحي الكاردات القديمة
-
-        foreach (Transform child in itemsContainer)
-
-            Destroy(child.gameObject);
-
-
-
-        bool isGirl = currentGender == "أنثى" || currentGender == "female";
-
-        ItemData[] items = isGirl ? girlItems : boyItems;
-
-
-
-        foreach (ItemData item in items)
-
-        {
-
-            GameObject card = Instantiate(itemCardPrefab, itemsContainer);
-
-            ItemCard itemCard = card.GetComponent<ItemCard>();
-
-            itemCard.Setup(item, this);
-
-        }
-
-    }
-
-
-
-    public bool IsOwned(string itemId) => ownedItemIds.Contains(itemId);
-
-    public bool IsEquipped(string itemId) => equippedItemId == itemId;
-
-
-
-    public void BuyItem(ItemData item)
-
-    {
-
-        if (currentCoins < item.price)
-
-        {
-
-            Debug.LogWarning("ما يكفي كوينز!");
-
-            return;
-
-        }
-
-
-
-        currentCoins -= item.price;
-
-        coinsText.text = currentCoins.ToString();
-
-        ownedItemIds.Add(item.itemId);
-
-
-
-        // احفظي في Firestore
-
-        StartCoroutine(FirestoreManager.Instance.UpdateCoins(
-
-            currentUserId, currentCoins,
-
-            () => Debug.Log("Coins updated!"),
-
-            (error) => Debug.LogError(error)
-
-        ));
-
-
-
-        OwnedItem newItem = new OwnedItem
-
-        {
-
-            ownedItemId = System.Guid.NewGuid().ToString(),
-
-            userId = currentUserId,
-
-            itemId = item.itemId,
-
-            equipped = false
-
-        };
-
-
-
-        StartCoroutine(FirestoreManager.Instance.SaveOwnedItem(
-
-            newItem,
-
-            () => LoadItems(),
-
-            (error) => Debug.LogError(error)
-
-        ));
-
-    }
-    public void EquipItem(ItemData item)
-    {
-        equippedItemId = item.itemId;
-        characterDisplay.sprite = item.characterSprite;
-
-      PlayerPrefs.SetString("LastEquipped_" + currentUserId, item.itemId);
-
-
-        LoadItems();
-    }
-
-    IEnumerator UpdateEquippedStateInDatabase(string selectedItemId)
-    {
-
-        Debug.Log("جاري حفظ اختيار الزي في الداتابيس..."); 
-    yield return null;
-    }
-
-
-
 }
