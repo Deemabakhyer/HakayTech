@@ -6,24 +6,60 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Stories/North-Story.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Overviews/North-Overview.unity
-    guid: 39e141324f6f9f44185e1f39e7678e9f
-  - enabled: 1
     path: Assets/Scenes/Authentication/Splash-Screen.unity
     guid: cfc6278579be6504f8fc2caad02b15a2
   - enabled: 1
     path: Assets/Scenes/Authentication/Sign-Up.unity
     guid: a05fc700b0e791c41ab9102ae1aace13
   - enabled: 1
-    path: Assets/Scenes/Overviews/Qassim-Overview.unity
-    guid: ec3771f9083dfdf4aa6ede4c65e8b11e
+    path: Assets/Scenes/Authentication/OTP.unity
+    guid: 313bda058151e7f43b2045e038bad4c1
   - enabled: 1
-    path: Assets/Scenes/Stories/Qassim-Story.unity
-    guid: 3c7c3e8ab3a1a7d419191ee9793a0ced
+    path: Assets/Scenes/Authentication/Log-In.unity
+    guid: aaa5c515e9f9e844fa48bb9f6415aa0b
+  - enabled: 1
+    path: Assets/Scenes/Stories/North-Story.unity
+    guid: d51c7a9279296924482b8f9660bf7531
+  - enabled: 1
+    path: Assets/Scenes/Overviews/Eastern-Overview.unity
+    guid: f39c46e9d554c4c3a804b9e66116857a
+  - enabled: 1
+    path: Assets/Scenes/Stories/Eastern-Region-Story.unity
+    guid: 1c9547de23e471a4fa3c16f132365d63
+  - enabled: 1
+    path: Assets/Scenes/Overviews/Makkah-Overview.unity
+    guid: 35e5758ce2688497f8be05e88e65bc89
+  - enabled: 1
+    path: Assets/Scenes/Stories/Mecca-Story.unity
+    guid: bdc18b0d012f78444abd8a6fea0ca22e
+  - enabled: 1
+    path: Assets/Scenes/Overviews/North-Overview.unity
+    guid: 97f5d1b355708402fa51cc8ac3ebe839
+  - enabled: 0
+    path: Assets/Scenes/Home.unity
+    guid: 1eaeb1499a6e04baa8a3443a81c90c2b
+  - enabled: 1
+    path: Assets/Scenes/Store/Store.unity
+    guid: 6d8f9744a87ae47b4b7d987208527d1e
+  - enabled: 1
+    path: Assets/Scenes/Profile/Profile.unity
+    guid: a4e35b624d6714c6d9d5be201769a944
   - enabled: 1
     path: Assets/Scenes/Map/Map.unity
     guid: 322310817a81ad24b9f7b3427f29115b
+  - enabled: 1
+    path: Assets/Scenes/Home/Home_Page.unity
+    guid: 33fd229768a8f473f96bdc9f4d3ceaa1
+  - enabled: 1
+    path: Assets/Scenes/Stories/Riyadh Remas.unity
+    guid: f9576715232814ec89ace541766dbbcf
+  - enabled: 1
+    path: Assets/Scenes/Overviews/Qassim-Overview.unity
+    guid: dbabbce54a22d4853bfcebd6baa40f18
+  - enabled: 1
+    path: Assets/Scenes/Overviews/Riyadh-Overview.unity
+    guid: 6e0fd2293258a4472b13cfdffabcb6c9
+  - enabled: 1
+    path: Assets/Scenes/Overviews/south-Overview.unity
+    guid: a385b749e0d0e4ae8bddb846e2bc8ab7
   m_configObjects: {}
