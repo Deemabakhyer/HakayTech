@@ -484,7 +484,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 8a11f4948c68fe4459ed45131c46a4bb, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -515,6 +515,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isTemplate: 1
   snapDistance: 50
+  animationTriggerName: MovePotToFire
+  blockAnimator: {fileID: 0}
+  actionSound: {fileID: 0}
 --- !u!225 &153402835
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -899,7 +902,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 46d60cf660d3faa438a8abe750a268ed, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.3
   m_Pitch: 1
@@ -1074,7 +1077,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 8a11f4948c68fe4459ed45131c46a4bb, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1105,6 +1108,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isTemplate: 1
   snapDistance: 50
+  animationTriggerName: Pour
+  blockAnimator: {fileID: 0}
+  actionSound: {fileID: 0}
 --- !u!225 &600182608
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1275,7 +1281,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 8a11f4948c68fe4459ed45131c46a4bb, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1306,6 +1312,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isTemplate: 1
   snapDistance: 50
+  animationTriggerName: AddCardamom
+  blockAnimator: {fileID: 0}
+  actionSound: {fileID: 0}
 --- !u!225 &744131622
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2121,6 +2130,7 @@ GameObject:
   - component: {fileID: 1273526463}
   - component: {fileID: 1273526462}
   - component: {fileID: 1273526465}
+  - component: {fileID: 1273526466}
   m_Layer: 0
   m_Name: submit_btn
   m_TagString: Untagged
@@ -2191,19 +2201,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1273526463}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1273526465}
-        m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
-        m_MethodName: OnIconClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1273526463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2256,6 +2254,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickClip: {fileID: 8300000, guid: 05818ae716db6412f9718b9bc1d33237, type: 3}
   sceneToLoad: 
+--- !u!114 &1273526466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273526460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd1ea9a729c7ce4aacd2ae40963aabf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  solutionSheet: {fileID: 1778480425}
+  submitButton: {fileID: 1273526462}
+  characterAnimator: {fileID: 1431899179}
+  correctSequence:
+  - MovePotToFire
+  - AddCoffee
+  - AddCardamom
+  - Pour
+  successTrigger: success
 --- !u!1 &1431899175
 GameObject:
   m_ObjectHideFlags: 0
@@ -2633,7 +2652,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 8a11f4948c68fe4459ed45131c46a4bb, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2664,6 +2683,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isTemplate: 1
   snapDistance: 50
+  animationTriggerName: AddCoffee
+  blockAnimator: {fileID: 0}
+  actionSound: {fileID: 0}
 --- !u!225 &1643657822
 CanvasGroup:
   m_ObjectHideFlags: 0
