@@ -1,8 +1,6 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
-
-
 /// <summary>
 /// Manages the One-Time Password (OTP) verification process.
 /// It handles the countdown timer, email masking for privacy, 
@@ -34,8 +32,6 @@ public class OTPManager : MonoBehaviour
         StartTimer();
         resendButton.gameObject.SetActive(false);
     }
-
-
     /// <summary>
     /// Masks the user's email address by hiding middle characters with asterisks.
     /// This enhances user privacy while providing enough context to identify the recipient inbox.
@@ -79,7 +75,6 @@ public class OTPManager : MonoBehaviour
             code += field.text;
         return code;
     }
-
     public void OnVerifyClicked()
     {
         string otp = GetOTPCode();
@@ -92,8 +87,6 @@ public class OTPManager : MonoBehaviour
 
         StartCoroutine(VerifyOTP());
     }
-
-   
     void StartTimer()
     {
         timeRemaining = 120f;
@@ -179,7 +172,7 @@ public class OTPManager : MonoBehaviour
     /// </summary>
     IEnumerator SaveUserAndProceed()
     {
-        Debug.Log("🔥 SAVING USER NOW");
+        Debug.Log("🔥 يتم حفظ المستخدم الان");
         string userId = PlayerPrefs.GetString("pendingUserId");
         string gender = PlayerPrefs.GetString("pendingGender");
         string aiCompanion = (gender == "انثى" || gender == "female")
@@ -209,7 +202,7 @@ public class OTPManager : MonoBehaviour
 
         if (saved)
         {
-            Debug.Log("✅ USER SAVED SUCCESSFULLY");
+            Debug.Log("✅ تم حفظ المستخدم بنجاح");
 
             PlayerPrefs.SetString("currentUserId", userId);
             PlayerPrefs.DeleteKey("pendingIdToken");
@@ -229,7 +222,7 @@ public class OTPManager : MonoBehaviour
     public void OnResendClicked()
     {
         StartCoroutine(FirebaseManager.Instance.SendOTP(
-            email, // غيّرناها من idToken لـ email ✓
+            email, 
             (response) =>
             {
                 Debug.Log("OTP Resent!");

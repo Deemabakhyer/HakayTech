@@ -1522,7 +1522,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uFE97\uFEB4\uFEA0\uFBFF\uFEDE \uFEA9\uFEA7\uFEEE\uFEDD"
+  m_text: "\uFE97\uFEB4\uFEA0\uFBFF\uFEDE \uFE8D\uFEDF\uFEAA\uFEA7\uFEEE\uFEDD"
   m_isRightToLeft: 1
   m_fontAsset: {fileID: 11400000, guid: 8131a155667d81146b91d5f111088b2a, type: 2}
   m_sharedMaterial: {fileID: 1002383807772867010, guid: 8131a155667d81146b91d5f111088b2a, type: 2}
@@ -1593,7 +1593,7 @@ MonoBehaviour:
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
   preserveNumbers: 0
   farsi: 1
-  originalText: "\u062A\u0633\u062C\u064A\u0644 \u062F\u062E\u0648\u0644"
+  originalText: "\u062A\u0633\u062C\u064A\u0644 \u0627\u0644\u062F\u062E\u0648\u0644"
   fixTags: 1
   forceFix: 0
 --- !u!222 &1340100496

@@ -60,8 +60,7 @@ public class FirebaseManager : MonoBehaviour
         PlayerPrefs.SetString("otpExpiry",
             System.DateTime.UtcNow.AddMinutes(2).ToString());
         // Prepare the payload and send the OTP via EmailJS API
-        var body = new Dictionary<string, object>
-    {
+        var body = new Dictionary<string, object>{
         { "service_id", EmailJSServiceID },
         { "template_id", EmailJSTemplateID },
         { "user_id", EmailJSPublicKey },
@@ -71,8 +70,8 @@ public class FirebaseManager : MonoBehaviour
                 { "otp_code", otpCode }
             }
         } };
-        yield return SendRequest(EmailJSUrl, body, onSuccess, onError);
-    }
+        yield return SendRequest(EmailJSUrl, body, onSuccess, onError);}
+
     /// <summary>
     /// A generic helper method to handle asynchronous HTTP POST requests using UnityWebRequest.
     /// It serializes the request body into JSON format and manages the network lifecycle, including headers and error handling.

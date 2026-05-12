@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using TMPro;
 using System.Collections;
-
 /// <summary>
 /// A reusable component to fetch and display the current user's coin balance from Firestore.
 /// Can be attached to any UI element across different scenes.
@@ -13,10 +12,8 @@ public class UserCoinsDisplay : MonoBehaviour
 
     private void OnEnable()
     {
-        // نستخدم OnEnable لضمان تحديث الكوينز في كل مرة تظهر فيها الواجهة
         RefreshDisplay();
     }
-
     /// <summary>
     /// Public method to manually trigger a coin balance refresh.
     /// </summary>
@@ -32,10 +29,8 @@ public class UserCoinsDisplay : MonoBehaviour
 
         StartCoroutine(FetchCoinsRoutine(userId));
     }
-
     private IEnumerator FetchCoinsRoutine(string userId)
     {
-        // التأكد من وجود الـ Manager في المشهد الحالي
         if (FirestoreManager.Instance == null)
         {
             Debug.LogError("UserCoinsDisplay: FirestoreManager instance is missing!");

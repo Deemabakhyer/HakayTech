@@ -8,16 +8,18 @@ public class FirestoreManager : MonoBehaviour
 {
     public static FirestoreManager Instance;
 
+    /// <summary>
+    /// Implements the Singleton pattern and ensures the manager persists across scene loads using DontDestroyOnLoad.
+    /// </summary>
     void Awake()
     {
         if (Instance == null) { Instance = this; DontDestroyOnLoad(gameObject); }
         else Destroy(gameObject);
     }
-
     string BaseUrl => $"https://firestore.googleapis.com/v1/projects/{FirebaseConfig.ProjectId}/databases/(default)/documents";
-
-    // ========= USER =========
-
+    /// <summary>
+    /// Serializes and uploads the complete UserGameData object to Firestore, including badges and currency.
+    /// </summary>
     public IEnumerator SaveUser(UserGameData user,
     System.Action onSuccess, System.Action<string> onError)
     {
@@ -51,7 +53,9 @@ public class FirestoreManager : MonoBehaviour
 
         yield return Patch(url, fields, onSuccess, onError);
     }
-
+    /// <summary>
+    /// Fetches a specific user document by ID and deserializes the Firestore JSON response into a UserGameData object.
+    /// </summary>
     public IEnumerator LoadUser(string userId,
         System.Action<UserGameData> onSuccess, System.Action<string> onError)
     {
@@ -75,6 +79,9 @@ public class FirestoreManager : MonoBehaviour
         }, onError);
     }
 
+    /// <summary>
+    /// Updates only the accumulatedCoins field in Firestore using an updateMask to prevent overwriting other user data.
+    /// </summary>
     public IEnumerator UpdateCoins(string userId, int coins,
         System.Action onSuccess, System.Action<string> onError)
     {
@@ -89,7 +96,9 @@ public class FirestoreManager : MonoBehaviour
 
         yield return Patch(url, fields, onSuccess, onError);
     }
-
+    /// <summary>
+    /// Updates the user's selected avatar identifier in the database using a targeted PATCH request.
+    /// </summary>
     public IEnumerator UpdateAvatar(string userId, string avatar,
         System.Action onSuccess, System.Action<string> onError)
     {
@@ -104,9 +113,9 @@ public class FirestoreManager : MonoBehaviour
 
         yield return Patch(url, fields, onSuccess, onError);
     }
-
-    // ========= PROGRESS =========
-
+    /// <summary>
+    /// Records challenge-specific progress, including earned coins and completion states, to the progress collection.
+    /// </summary>
     public IEnumerator SaveProgress(ProgressData progress,
         System.Action onSuccess, System.Action<string> onError)
     {
@@ -126,7 +135,9 @@ public class FirestoreManager : MonoBehaviour
 
         yield return Patch(url, fields, onSuccess, onError);
     }
-
+    /// <summary>
+    /// Retrieves a list of all progress documents associated with a specific user to track their journey through the stories.
+    /// </summary>
     public IEnumerator LoadUserProgress(string userId,
         System.Action<List<ProgressData>> onSuccess, System.Action<string> onError)
     {
@@ -144,9 +155,9 @@ public class FirestoreManager : MonoBehaviour
             else onSuccess?.Invoke(progressList);
         }, onError);
     }
-
-    // ========= SESSION =========
-
+    /// <summary>
+    /// Logs play session metrics, such as start/end times and total duration, for analytical tracking.
+    /// </summary>
     public IEnumerator SaveSession(SessionData session,
         System.Action onSuccess, System.Action<string> onError)
     {
@@ -166,9 +177,9 @@ public class FirestoreManager : MonoBehaviour
 
         yield return Patch(url, fields, onSuccess, onError);
     }
-
-    // ========= OWNED ITEMS =========
-
+    /// <summary>
+    /// Records a newly purchased or acquired item in the ownedItems collection for a specific user.
+    /// </summary>
     public IEnumerator SaveOwnedItem(OwnedItem item,
         System.Action onSuccess, System.Action<string> onError)
     {
@@ -187,7 +198,9 @@ public class FirestoreManager : MonoBehaviour
 
         yield return Patch(url, fields, onSuccess, onError);
     }
-
+    /// <summary>
+    /// Modifies the 'equipped' boolean status of a specific owned item in the database.
+    /// </summary>
     public IEnumerator UpdateEquip(string ownedItemId, bool equipped,
         System.Action onSuccess, System.Action<string> onError)
     {
@@ -226,7 +239,9 @@ public class FirestoreManager : MonoBehaviour
 
     int GetInt(Dictionary<string, Dictionary<string, object>> fields, string key) =>
         fields.ContainsKey(key) ? int.Parse(fields[key]["integerValue"].ToString()) : 0;
-
+    /// <summary>
+    /// Executes an HTTP PATCH request to update Firestore documents, handling JSON serialization and byte array conversion.
+    /// </summary>
     IEnumerator Patch(string url, object body,
         System.Action onSuccess, System.Action<string> onError)
     {
@@ -246,7 +261,9 @@ public class FirestoreManager : MonoBehaviour
                 onError?.Invoke(request.downloadHandler.text);
         }
     }
-
+    /// <summary>
+    /// Performs an HTTP GET request to retrieve document data from the Firestore REST API.
+    /// </summary>
     IEnumerator Get(string url, System.Action<string> onSuccess,
         System.Action<string> onError)
     {
@@ -260,11 +277,11 @@ public class FirestoreManager : MonoBehaviour
                 onError?.Invoke(request.downloadHandler.text);
         }
     }
-
-
+    /// <summary>
+    /// Queries the ownedItems collection and filters documents belonging to the current user to populate their inventory.
+    /// </summary>
     public IEnumerator LoadOwnedItems(string userId, System.Action<List<OwnedItem>> onSuccess, System.Action<string> onError)
     {
-        // الرابط الصحيح لجلب الوثائق من كولكشن ownedItems
         string url = $"{BaseUrl}/ownedItems?pageSize=100";
 
         yield return Get(url, (response) =>
@@ -280,8 +297,6 @@ public class FirestoreManager : MonoBehaviour
                     foreach (var doc in documents)
                     {
                         var fields = JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, object>>>(doc["fields"].ToString());
-
-                        // نتحقق إذا كانت الوثيقة تخص المستخدم الحالي
                         if (GetString(fields, "userId") == userId)
                         {
                             ownedList.Add(new OwnedItem
@@ -303,7 +318,4 @@ public class FirestoreManager : MonoBehaviour
             }
         }, onError);
     }
-
-
-
 }
