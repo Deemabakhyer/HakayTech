@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Authentication/OTP.unity
     guid: 313bda058151e7f43b2045e038bad4c1
   - enabled: 1
+    path: Assets/Scenes/Overviews/Riyadh-Overview.unity
+    guid: 328f7df4b1ab543968d1140e6f70a881
+  - enabled: 1
     path: Assets/Scenes/Authentication/Log-In.unity
     guid: aaa5c515e9f9e844fa48bb9f6415aa0b
   - enabled: 1
@@ -35,9 +38,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Overviews/North-Overview.unity
     guid: 97f5d1b355708402fa51cc8ac3ebe839
-  - enabled: 0
-    path: Assets/Scenes/Home.unity
-    guid: 1eaeb1499a6e04baa8a3443a81c90c2b
   - enabled: 1
     path: Assets/Scenes/Store/Store.unity
     guid: 6d8f9744a87ae47b4b7d987208527d1e
@@ -51,15 +51,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Home/Home_Page.unity
     guid: 33fd229768a8f473f96bdc9f4d3ceaa1
   - enabled: 1
-    path: Assets/Scenes/Stories/Riyadh Remas.unity
-    guid: f9576715232814ec89ace541766dbbcf
-  - enabled: 1
     path: Assets/Scenes/Overviews/Qassim-Overview.unity
     guid: dbabbce54a22d4853bfcebd6baa40f18
   - enabled: 1
     path: Assets/Scenes/Overviews/Riyadh-Overview.unity
-    guid: 6e0fd2293258a4472b13cfdffabcb6c9
+    guid: 328f7df4b1ab543968d1140e6f70a881
   - enabled: 1
     path: Assets/Scenes/Overviews/south-Overview.unity
     guid: a385b749e0d0e4ae8bddb846e2bc8ab7
+  - enabled: 1
+    path: Assets/Scenes/Stories/Qassim-Story.unity
+    guid: fdd0a9535c75aac4a8ca8885204d612d
   m_configObjects: {}
