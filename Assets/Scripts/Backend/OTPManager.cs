@@ -1,6 +1,8 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+
+
 /// <summary>
 /// Manages the One-Time Password (OTP) verification process.
 /// It handles the countdown timer, email masking for privacy, 
@@ -32,6 +34,8 @@ public class OTPManager : MonoBehaviour
         StartTimer();
         resendButton.gameObject.SetActive(false);
     }
+
+
     /// <summary>
     /// Masks the user's email address by hiding middle characters with asterisks.
     /// This enhances user privacy while providing enough context to identify the recipient inbox.
@@ -39,7 +43,7 @@ public class OTPManager : MonoBehaviour
     string MaskEmail(string email)
     {
         var parts = email.Split('@');
-        if (parts[0].Length <= 2) return email; 
+        if (parts[0].Length <= 2) return email;
 
         string name = parts[0];
         string maskedName = name.Substring(0, 3) + new string('*', 7) + name.Substring(name.Length - 2);
@@ -66,7 +70,7 @@ public class OTPManager : MonoBehaviour
 
 
     [Header("OTP Input Fields")]
-    public TMP_InputField[] otpFields; 
+    public TMP_InputField[] otpFields;
 
     string GetOTPCode()
     {
@@ -75,11 +79,12 @@ public class OTPManager : MonoBehaviour
             code += field.text;
         return code;
     }
+
     public void OnVerifyClicked()
     {
         string otp = GetOTPCode();
 
-        if (otp.Length < 6) 
+        if (otp.Length < 6)
         {
             ShowError("Please enter the complete code!");
             return;
@@ -87,6 +92,8 @@ public class OTPManager : MonoBehaviour
 
         StartCoroutine(VerifyOTP());
     }
+
+
     void StartTimer()
     {
         timeRemaining = 120f;
@@ -110,7 +117,7 @@ public class OTPManager : MonoBehaviour
             ShowError("انتهى وقت الرمز! اضغط إعادة إرسال");
             yield break;
         }
-
+        
         if (enteredOTP == savedOTP)
         {
             Debug.Log("OTP Verified!");
@@ -118,7 +125,7 @@ public class OTPManager : MonoBehaviour
             PlayerPrefs.DeleteKey("otpExpiry");
 
             string mode = PlayerPrefs.GetString("loginMode", "signup");
-            Debug.Log("MODE: " + mode); 
+            Debug.Log("MODE: " + mode);
 
             if (mode == "login")
                 StartCoroutine(LoadUserAndProceed()); // تسجيل دخول
@@ -172,7 +179,7 @@ public class OTPManager : MonoBehaviour
     /// </summary>
     IEnumerator SaveUserAndProceed()
     {
-        Debug.Log("🔥 يتم حفظ المستخدم الان");
+        Debug.Log("🔥 SAVING USER NOW");
         string userId = PlayerPrefs.GetString("pendingUserId");
         string gender = PlayerPrefs.GetString("pendingGender");
         string aiCompanion = (gender == "انثى" || gender == "female")
@@ -202,7 +209,7 @@ public class OTPManager : MonoBehaviour
 
         if (saved)
         {
-            Debug.Log("✅ تم حفظ المستخدم بنجاح");
+            Debug.Log("✅ USER SAVED SUCCESSFULLY");
 
             PlayerPrefs.SetString("currentUserId", userId);
             PlayerPrefs.DeleteKey("pendingIdToken");
@@ -222,7 +229,7 @@ public class OTPManager : MonoBehaviour
     public void OnResendClicked()
     {
         StartCoroutine(FirebaseManager.Instance.SendOTP(
-            email, 
+            email, // غيّرناها من idToken لـ email ✓
             (response) =>
             {
                 Debug.Log("OTP Resent!");

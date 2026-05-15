@@ -8,7 +8,10 @@ public class SubmitManager : MonoBehaviour
     [Header("References")]
     public Transform solutionSheet;
     public Button submitButton;
-    public Animator characterAnimator; 
+    public Animator characterAnimator;
+
+    [Header("Success UI")]
+    public CompletionPopupController completionPopup; // اسحبي كائن البوب أب هنا في الانسبكتور
 
     [Header("Win Condition")]
     // Enter these exactly as they appear in the block's animationTriggerName
@@ -73,6 +76,15 @@ public class SubmitManager : MonoBehaviour
         }
 
         submitButton.interactable = true;
+        // --- الإضافة هنا ---
+        // ننتظر ثانية واحدة مثلاً بعد خروج آخر صدفة واستقرارها
+        yield return new WaitForSeconds(1.0f);
+
+        // إظهار بوب أب النجاح
+        if (completionPopup != null)
+        {
+            completionPopup.ShowPopup();
+        }
     }
 
     private bool CheckIfSequenceIsCorrect(List<CodingBlock> playerBlocks)

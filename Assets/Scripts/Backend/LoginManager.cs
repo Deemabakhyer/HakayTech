@@ -31,7 +31,8 @@ public class LoginManager : MonoBehaviour
 
     IEnumerator LoginFlow()
     {
-        string email = emailInputField.text;
+   
+        string email = emailInputField.text.Trim().ToLower();
 
         bool emailExists = false;
         yield return StartCoroutine(FirebaseManager.Instance.CheckEmailExists(
@@ -71,4 +72,6 @@ public class LoginManager : MonoBehaviour
             errorText.text = message;
         Debug.LogWarning(message);
     }
+
+
 }

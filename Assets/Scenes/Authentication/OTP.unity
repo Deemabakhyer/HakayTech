@@ -3063,7 +3063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   errorText: {fileID: 361931438}
   timerText: {fileID: 1534390510}
-  resendButton: {fileID: 0}
+  resendButton: {fileID: 48981751}
   infoText: {fileID: 2095166998}
   otpFields:
   - {fileID: 601930382}

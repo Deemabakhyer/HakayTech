@@ -44,6 +44,9 @@ public class VariableManager : MonoBehaviour
     public Transform shellSpawnPoint;
     public float delayBetweenShells = 1f;
 
+    [Header("Success UI")]
+    public CompletionPopupController completionPopup; // اسحبي كائن البوب أب هنا في الانسبكتور
+
 
     void Start()
     {
@@ -304,7 +307,20 @@ public class VariableManager : MonoBehaviour
             index++;
             yield return new WaitForSeconds(delayBetweenShells);
         }
+
+        // --- الإضافة هنا ---
+        // ننتظر ثانية واحدة مثلاً بعد خروج آخر صدفة واستقرارها
+        yield return new WaitForSeconds(1.0f);
+
+        // إظهار بوب أب النجاح
+        if (completionPopup != null)
+        {
+            completionPopup.ShowPopup();
+        }
     }
+
+
+
 
     [Header("Celebration Sound")]
     public AudioClip celebrationSound;

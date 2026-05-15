@@ -108,24 +108,38 @@ public class FirebaseManager : MonoBehaviour
     /// <param name="email">The email address to search for in the users collection.</param>
     /// <param name="onResult">Callback invoked with a boolean indicating if the email exists.</param>
     /// <param name="onError">Callback invoked with the error message if the database query fails.</param>
-    public IEnumerator CheckEmailExists(string email,
-        System.Action<bool> onResult, System.Action<string> onError)
+    /// 
+    public IEnumerator CheckEmailExists(string email, System.Action<bool> onResult, System.Action<string> onError)
     {
-        string url = $"https://firestore.googleapis.com/v1/projects/{FirebaseConfig.ProjectId}/databases/(default)/documents/users";
+        // الرابط المخصص للاستعلام (RunQuery)
+        string url = $"https://firestore.googleapis.com/v1/projects/{FirebaseConfig.ProjectId}/databases/(default)/documents:runQuery";
 
-        using (UnityWebRequest request = UnityWebRequest.Get(url))
+        // إنشاء الطلب بصيغة JSON للبحث عن الإيميل تحديداً
+        string jsonQuery = "{ \"structuredQuery\": { \"from\": [ { \"collectionId\": \"users\" } ], \"where\": { \"fieldFilter\": { \"field\": { \"fieldPath\": \"email\" }, \"op\": \"EQUAL\", \"value\": { \"stringValue\": \"" + email + "\" } } } } }";
+
+        UnityWebRequest request = new UnityWebRequest(url, "POST");
+        byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(jsonQuery);
+        request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+        request.downloadHandler = new DownloadHandlerBuffer();
+        request.SetRequestHeader("Content-Type", "application/json");
+
+        yield return request.SendWebRequest();
+
+        if (request.result == UnityWebRequest.Result.Success)
         {
-            yield return request.SendWebRequest();
+            string response = request.downloadHandler.text;
 
-            if (request.result == UnityWebRequest.Result.Success)
-            {
-                bool exists = request.downloadHandler.text.Contains(email);
-                onResult?.Invoke(exists);
-            }
-            else
-            {
-                onError?.Invoke(request.downloadHandler.text);
-            }
+            // إذا كانت الإجابة تحتوي على "document"، فهذا يعني أنه وجد تطابقاً
+            // الاستعلام يرجع مصفوفة فارغة [ {} ] إذا لم يجد الإيميل
+            bool exists = response.Contains("\"document\"");
+
+            Debug.Log("Firebase Response: " + response);
+            onResult?.Invoke(exists);
+        }
+        else
+        {
+            Debug.LogError("Error checking email: " + request.error);
+            onError?.Invoke("مشكلة في الاتصال بالسيرفر");
         }
     }
     /// <summary>

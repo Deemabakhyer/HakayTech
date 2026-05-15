@@ -18,9 +18,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Authentication/Log-In.unity
     guid: aaa5c515e9f9e844fa48bb9f6415aa0b
   - enabled: 1
-    path: Assets/Scenes/Stories/North-Story.unity
-    guid: d51c7a9279296924482b8f9660bf7531
-  - enabled: 1
     path: Assets/Scenes/Overviews/Eastern-Overview.unity
     guid: e4f1f74d56b40406ab4e3ddfe152d499
   - enabled: 1
@@ -66,6 +63,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Stories/Riyadh-Story.unity
     guid: 8e3efdbf29767446fb09294be4ad1f10
   - enabled: 0
-    path: Assets/Scenes/HomePage.unity
+    path: Assets/Scenes/Home/HomePage.unity
     guid: cfcb90e2a08ea4f86aec6ccc1678c263
+  - enabled: 1
+    path: Assets/Scenes/Stories/North-Story.unity
+    guid: d51c7a9279296924482b8f9660bf7531
   m_configObjects: {}

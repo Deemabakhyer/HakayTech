@@ -318,4 +318,56 @@ public class FirestoreManager : MonoBehaviour
             }
         }, onError);
     }
+
+
+    /// <summary>
+    /// Retrieves a list of all progress documents associated with a specific user using REST API.
+    /// </summary>
+    public IEnumerator LoadAllProgress(string userId,
+        System.Action<List<ProgressData>> onSuccess, System.Action<string> onError)
+    {
+        string url = $"{BaseUrl}/progress?pageSize=100";
+
+        yield return Get(url, (response) =>
+        {
+            List<ProgressData> progressList = new List<ProgressData>();
+
+            try
+            {
+                var data = JsonConvert.DeserializeObject<Dictionary<string, object>>(response);
+                if (data.ContainsKey("documents"))
+                {
+                    var documents = JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(data["documents"].ToString());
+                    foreach (var doc in documents)
+                    {
+                        var fields = JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, object>>>(doc["fields"].ToString());
+
+                        // نتحقق إذا كان الـ userId الخاص بالوثيقة يطابق المستخدم الحالي
+                        if (GetString(fields, "userId") == userId)
+                        {
+                            progressList.Add(new ProgressData
+                            {
+                                // نستخرج الـ ID من اسم الوثيقة (اختياري)
+                                progressId = doc["name"].ToString().Split('/')[^1],
+                                userId = GetString(fields, "userId"),
+                                storyChallengeId = GetString(fields, "storyChallengeId"),
+                                state = GetString(fields, "state"),
+                                coins = GetInt(fields, "coins")
+                            });
+                        }
+                    }
+                }
+                onSuccess?.Invoke(progressList);
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogError("LoadAllProgress Error: " + e.Message);
+                onSuccess?.Invoke(progressList); // نرجع قائمة فارغة في حال الخطأ
+            }
+        }, onError);
+    }
+
+    
+
+
 }

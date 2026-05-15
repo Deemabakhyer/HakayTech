@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 32375211}
   - component: {fileID: 32375213}
   - component: {fileID: 32375212}
+  - component: {fileID: 32375214}
   m_Layer: 5
   m_Name: Star2
   m_TagString: Untagged
@@ -272,6 +273,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32375210}
   m_CullTransparentMesh: 1
+--- !u!225 &32375214
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32375210}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &84590005
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,6 +296,7 @@ GameObject:
   - component: {fileID: 84590006}
   - component: {fileID: 84590008}
   - component: {fileID: 84590007}
+  - component: {fileID: 84590009}
   m_Layer: 5
   m_Name: Star1
   m_TagString: Untagged
@@ -347,6 +361,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 84590005}
   m_CullTransparentMesh: 1
+--- !u!225 &84590009
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84590005}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &128918690
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,7 +592,7 @@ GameObject:
   - component: {fileID: 145446289}
   - component: {fileID: 145446291}
   - component: {fileID: 145446290}
-  - component: {fileID: 145446292}
+  - component: {fileID: 145446293}
   m_Layer: 5
   m_Name: Assistant
   m_TagString: Untagged
@@ -631,21 +657,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145446288}
   m_CullTransparentMesh: 1
---- !u!114 &145446292
-MonoBehaviour:
+--- !u!225 &145446293
+CanvasGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145446288}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cd11425f70234d849404fdbb61fe58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  companionImage: {fileID: 145446290}
-  boyCompanionSprite: {fileID: 21300000, guid: 6e538b7f72e4c4b1d8952b495ff5ae4b, type: 3}
-  girlCompanionSprite: {fileID: 21300000, guid: 7e877a6e0ef6d41fa987ec3a2c9e429c, type: 3}
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &233236657
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,6 +825,7 @@ GameObject:
   - component: {fileID: 539067251}
   - component: {fileID: 539067253}
   - component: {fileID: 539067252}
+  - component: {fileID: 539067254}
   m_Layer: 5
   m_Name: Star
   m_TagString: Untagged
@@ -866,6 +890,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 539067250}
   m_CullTransparentMesh: 1
+--- !u!225 &539067254
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539067250}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &615530983
 GameObject:
   m_ObjectHideFlags: 0
@@ -1522,6 +1558,7 @@ GameObject:
   - component: {fileID: 898889715}
   - component: {fileID: 898889717}
   - component: {fileID: 898889716}
+  - component: {fileID: 898889718}
   m_Layer: 5
   m_Name: Star " 2 "
   m_TagString: Untagged
@@ -1586,6 +1623,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 898889714}
   m_CullTransparentMesh: 1
+--- !u!225 &898889718
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898889714}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &965197038
 GameObject:
   m_ObjectHideFlags: 0
@@ -1597,6 +1646,7 @@ GameObject:
   - component: {fileID: 965197039}
   - component: {fileID: 965197041}
   - component: {fileID: 965197040}
+  - component: {fileID: 965197042}
   m_Layer: 5
   m_Name: Pazel
   m_TagString: Untagged
@@ -1661,6 +1711,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965197038}
   m_CullTransparentMesh: 1
+--- !u!225 &965197042
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965197038}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &969375869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,6 +1734,7 @@ GameObject:
   - component: {fileID: 969375870}
   - component: {fileID: 969375872}
   - component: {fileID: 969375871}
+  - component: {fileID: 969375873}
   m_Layer: 5
   m_Name: Glow
   m_TagString: Untagged
@@ -1736,6 +1799,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969375869}
   m_CullTransparentMesh: 1
+--- !u!225 &969375873
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969375869}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1062661173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,7 +1862,6 @@ GameObject:
   - component: {fileID: 1158844816}
   - component: {fileID: 1158844815}
   - component: {fileID: 1158844814}
-  - component: {fileID: 1158844813}
   - component: {fileID: 1158844818}
   - component: {fileID: 1158844819}
   m_Layer: 5
@@ -1797,50 +1871,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1158844813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1158844812}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6c39a18b9a7349d8ad42b6c3f6c7684, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HomePageIntroController
-  assistant: {fileID: 145446289}
-  bubbleEmpty: {fileID: 0}
-  bubbleWithText: {fileID: 0}
-  startButton: {fileID: 772322568}
-  assistantGlow: {fileID: 0}
-  sparklesRoot: {fileID: 0}
-  assistantSparkles: []
-  sparkleRadius: 180
-  sparkleSpinSpeed: 180
-  magicStars:
-  - {fileID: 84590006}
-  - {fileID: 32375211}
-  - {fileID: 969375870}
-  - {fileID: 1749599396}
-  - {fileID: 965197039}
-  - {fileID: 1311692793}
-  magicAudio: {fileID: 0}
-  appearClip: {fileID: 8300000, guid: f06a3d03673f14bc6b086923f6318eaf, type: 3}
-  homeAudioController: {fileID: 1748871654}
-  assistantDelay: 0.2
-  bubbleDelay: 0.4
-  bubbleTextDelay: 0.3
-  startButtonDelay: 0.3
-  assistantAppearDuration: 0.75
-  assistantStartScale: 0.25
-  assistantEndScale: 1
-  assistantStartOffsetY: -120
-  spinTurns: 2
-  idleFloatAmount: 10
-  idleFloatSpeed: 1.2
-  idleRotateAmount: 2
-  idleScaleAmount: 0.02
 --- !u!114 &1158844814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2064,6 +2094,7 @@ GameObject:
   - component: {fileID: 1311692793}
   - component: {fileID: 1311692795}
   - component: {fileID: 1311692794}
+  - component: {fileID: 1311692796}
   m_Layer: 5
   m_Name: Pazel 2
   m_TagString: Untagged
@@ -2128,6 +2159,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311692792}
   m_CullTransparentMesh: 1
+--- !u!225 &1311692796
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311692792}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1432389584
 GameObject:
   m_ObjectHideFlags: 0
@@ -2137,6 +2180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1432389585}
+  - component: {fileID: 1432389586}
   m_Layer: 5
   m_Name: StarsFX
   m_TagString: Untagged
@@ -2169,6 +2213,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1432389586
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432389584}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1444504264
 GameObject:
   m_ObjectHideFlags: 0
@@ -2726,6 +2782,7 @@ GameObject:
   - component: {fileID: 1544630066}
   - component: {fileID: 1544630068}
   - component: {fileID: 1544630067}
+  - component: {fileID: 1544630069}
   m_Layer: 5
   m_Name: 'Glow '
   m_TagString: Untagged
@@ -2790,6 +2847,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544630065}
   m_CullTransparentMesh: 1
+--- !u!225 &1544630069
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544630065}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1559812641
 GameObject:
   m_ObjectHideFlags: 0
@@ -2801,6 +2870,7 @@ GameObject:
   - component: {fileID: 1559812642}
   - component: {fileID: 1559812644}
   - component: {fileID: 1559812643}
+  - component: {fileID: 1559812645}
   m_Layer: 5
   m_Name: Star " 3 "
   m_TagString: Untagged
@@ -2865,6 +2935,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559812641}
   m_CullTransparentMesh: 1
+--- !u!225 &1559812645
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559812641}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1583297048
 GameObject:
   m_ObjectHideFlags: 0
@@ -3026,6 +3108,7 @@ GameObject:
   - component: {fileID: 1646355561}
   - component: {fileID: 1646355563}
   - component: {fileID: 1646355562}
+  - component: {fileID: 1646355564}
   m_Layer: 5
   m_Name: Glow " 3 "
   m_TagString: Untagged
@@ -3090,6 +3173,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646355560}
   m_CullTransparentMesh: 1
+--- !u!225 &1646355564
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646355560}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &1691338632 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5557717908119734838, guid: 98666c9186f9a47798672103b13d62be, type: 3}
@@ -3153,7 +3248,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6c39a18b9a7349d8ad42b6c3f6c7684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HomePageIntroController
-  assistant: {fileID: 145446289}
+  assistantTransform: {fileID: 145446289}
+  assistantImage: {fileID: 145446290}
+  assistantCanvasGroup: {fileID: 145446293}
+  allItems:
+  - {fileID: 11400000, guid: 6b0bf1de2ff92406083dea4f606dbfd4, type: 2}
+  - {fileID: 11400000, guid: c027fe92dddb54ca895c3a63ca952d80, type: 2}
+  - {fileID: 11400000, guid: 4fb8bd897c600482baf0ef1bd2697452, type: 2}
+  - {fileID: 11400000, guid: b25a8ad21d2b047188a39c364e65f93e, type: 2}
+  - {fileID: 11400000, guid: bfd4b38287df94322b15ca86a726e1c0, type: 2}
+  - {fileID: 11400000, guid: fa98e8f6e85824e21a9dd7aa27c5bee8, type: 2}
+  - {fileID: 11400000, guid: 4bbced7d302d043b8bc512926bae96de, type: 2}
+  - {fileID: 11400000, guid: 614d784c9527b490b8483e1388310a2e, type: 2}
+  defaultBoy: {fileID: 21300000, guid: 7e877a6e0ef6d41fa987ec3a2c9e429c, type: 3}
+  defaultGirl: {fileID: 21300000, guid: 6e538b7f72e4c4b1d8952b495ff5ae4b, type: 3}
   bubbleEmpty: {fileID: 128918691}
   bubbleWithText: {fileID: 1826886837}
   startButton: {fileID: 772322568}
@@ -3166,8 +3274,6 @@ MonoBehaviour:
   - {fileID: 1544630066}
   - {fileID: 1984720232}
   - {fileID: 1646355561}
-  sparkleRadius: 180
-  sparkleSpinSpeed: 180
   magicStars:
   - {fileID: 84590006}
   - {fileID: 32375211}
@@ -3175,13 +3281,12 @@ MonoBehaviour:
   - {fileID: 1749599396}
   - {fileID: 965197039}
   - {fileID: 1311692793}
+  sparkleRadius: 180
+  sparkleSpinSpeed: 180
   magicAudio: {fileID: 615530985}
   appearClip: {fileID: 8300000, guid: f06a3d03673f14bc6b086923f6318eaf, type: 3}
   homeAudioController: {fileID: 1748871654}
   assistantDelay: 0.2
-  bubbleDelay: 0.4
-  bubbleTextDelay: 0.3
-  startButtonDelay: 0.3
   assistantAppearDuration: 1.2
   assistantStartScale: 0.25
   assistantEndScale: 1
@@ -3266,6 +3371,7 @@ GameObject:
   - component: {fileID: 1749599396}
   - component: {fileID: 1749599398}
   - component: {fileID: 1749599397}
+  - component: {fileID: 1749599399}
   m_Layer: 5
   m_Name: Glow 2
   m_TagString: Untagged
@@ -3330,6 +3436,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749599395}
   m_CullTransparentMesh: 1
+--- !u!225 &1749599399
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749599395}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &1800407071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3655,6 +3773,7 @@ GameObject:
   - component: {fileID: 1984720232}
   - component: {fileID: 1984720234}
   - component: {fileID: 1984720233}
+  - component: {fileID: 1984720235}
   m_Layer: 5
   m_Name: Glow " 2 "
   m_TagString: Untagged
@@ -3719,6 +3838,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984720231}
   m_CullTransparentMesh: 1
+--- !u!225 &1984720235
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984720231}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
