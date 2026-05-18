@@ -6972,7 +6972,8 @@ MonoBehaviour:
   m_FontFeatureTable:
     m_GlyphPairAdjustmentRecords: []
   fallbackFontAssets: []
-  m_FallbackFontAssetTable: []
+  m_FallbackFontAssetTable:
+  - {fileID: 11400000, guid: 7ee7bef9f0df6479397c888724bfcb23, type: 2}
   m_CreationSettings:
     sourceFontFileName: 
     sourceFontFileGUID: d27fea9f375545a44a22e82850e4bb4a
@@ -6983,8 +6984,8 @@ MonoBehaviour:
     atlasWidth: 512
     atlasHeight: 512
     characterSetSelectionMode: 6
-    characterSequence: 0600-06FF,0750-077F,FB50-FDFF,FE70-FEFF
-    referencedFontAssetGUID: 
+    characterSequence: 0615,0621-063A,0640-0658,0660-066C,066E-0671,0679,067E,0686,0688,0691,0698,069C,06A1-06A2,06A4-06A5,06A7-06A9,06AF,06BA-06BB,06BE,06C1-06C3,06CC,06D2-06D3,06F0-06F9,FB51,FB56-FB59,FB67-FB6D,FB7A-FB7D,FB89,FB8B,FB8D-FB95,FB9F,FBA7-FBA9,FBAB-FBAD,FBAF,FBB1,FBE8-FBE9,FBFC-FBFF,FC5E-FC63,FDF2,FE80,FE82,FE84,FE86,FE88,FE8A-FEFC,0600-06FF,0750-077F,08A0-08FF,FB50-FDFF,FE70-FEFF
+    referencedFontAssetGUID: 8131a155667d81146b91d5f111088b2a
     referencedTextAssetGUID: 
     fontStyle: 0
     fontStyleModifier: 0
@@ -7117,7 +7118,7 @@ Material:
     m_Colors:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
     - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
-    - _FaceColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
     - _GlowColor: {r: 0, g: 1, b: 0, a: 0.5}
     - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
     - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
