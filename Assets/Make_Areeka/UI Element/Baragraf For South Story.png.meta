@@ -1,0 +1,3653 @@
+fileFormatVersion: 2
+guid: 7758e3c3d372a40dd807f5e9b1022b05
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3510444734023072432
+    second: Baragraf For South Story_0
+  - first:
+      213: 1078866236386839977
+    second: Baragraf For South Story_1
+  - first:
+      213: -7066300701756165523
+    second: Baragraf For South Story_2
+  - first:
+      213: -7005238505022658369
+    second: Baragraf For South Story_3
+  - first:
+      213: 3260292676164344864
+    second: Baragraf For South Story_4
+  - first:
+      213: 6514720700675714394
+    second: Baragraf For South Story_5
+  - first:
+      213: -8879473679229021260
+    second: Baragraf For South Story_6
+  - first:
+      213: -5795385073219590673
+    second: Baragraf For South Story_7
+  - first:
+      213: -8761611637985355951
+    second: Baragraf For South Story_8
+  - first:
+      213: -5473385267039314408
+    second: Baragraf For South Story_9
+  - first:
+      213: 6323788274022044521
+    second: Baragraf For South Story_10
+  - first:
+      213: -4415876512508369320
+    second: Baragraf For South Story_11
+  - first:
+      213: 6475338275491927247
+    second: Baragraf For South Story_12
+  - first:
+      213: -7022619086194366671
+    second: Baragraf For South Story_13
+  - first:
+      213: 5810815035252419374
+    second: Baragraf For South Story_14
+  - first:
+      213: -4680179512997551263
+    second: Baragraf For South Story_15
+  - first:
+      213: 2099203633115375556
+    second: Baragraf For South Story_16
+  - first:
+      213: 2651894503191369007
+    second: Baragraf For South Story_17
+  - first:
+      213: -2799694284819304849
+    second: Baragraf For South Story_18
+  - first:
+      213: 3030191148003013432
+    second: Baragraf For South Story_19
+  - first:
+      213: 8646157761936286931
+    second: Baragraf For South Story_20
+  - first:
+      213: -2453187685752155968
+    second: Baragraf For South Story_21
+  - first:
+      213: 5955313613165398116
+    second: Baragraf For South Story_22
+  - first:
+      213: -8315544781723134851
+    second: Baragraf For South Story_23
+  - first:
+      213: 4546645597516651809
+    second: Baragraf For South Story_24
+  - first:
+      213: 6536763544436230642
+    second: Baragraf For South Story_25
+  - first:
+      213: -4335720615308441496
+    second: Baragraf For South Story_26
+  - first:
+      213: -2758937446018164597
+    second: Baragraf For South Story_27
+  - first:
+      213: -3041895551542846631
+    second: Baragraf For South Story_28
+  - first:
+      213: -7672104336428717802
+    second: Baragraf For South Story_29
+  - first:
+      213: 7234998184309640265
+    second: Baragraf For South Story_30
+  - first:
+      213: 3858737859435134790
+    second: Baragraf For South Story_31
+  - first:
+      213: 1657576871188169559
+    second: Baragraf For South Story_32
+  - first:
+      213: -7739229440616787502
+    second: Baragraf For South Story_33
+  - first:
+      213: 8299568060026790252
+    second: Baragraf For South Story_34
+  - first:
+      213: 702952719341717817
+    second: Baragraf For South Story_35
+  - first:
+      213: -5637586994889005504
+    second: Baragraf For South Story_36
+  - first:
+      213: -2566171115496436195
+    second: Baragraf For South Story_37
+  - first:
+      213: -1894939841664683930
+    second: Baragraf For South Story_38
+  - first:
+      213: -3537918647632457930
+    second: Baragraf For South Story_39
+  - first:
+      213: 3151877753194711380
+    second: Baragraf For South Story_40
+  - first:
+      213: 422184026239937093
+    second: Baragraf For South Story_41
+  - first:
+      213: -465089160597684868
+    second: Baragraf For South Story_42
+  - first:
+      213: -8232019627639829863
+    second: Baragraf For South Story_43
+  - first:
+      213: -4939620722459916717
+    second: Baragraf For South Story_44
+  - first:
+      213: -6559422141628306913
+    second: Baragraf For South Story_45
+  - first:
+      213: -8971967676180355936
+    second: Baragraf For South Story_46
+  - first:
+      213: 5849145120257714501
+    second: Baragraf For South Story_47
+  - first:
+      213: -9152779319641447089
+    second: Baragraf For South Story_48
+  - first:
+      213: 3621602308919910824
+    second: Baragraf For South Story_49
+  - first:
+      213: 1516942675454905781
+    second: Baragraf For South Story_50
+  - first:
+      213: -6879735318116534202
+    second: Baragraf For South Story_51
+  - first:
+      213: 3776447856380680736
+    second: Baragraf For South Story_52
+  - first:
+      213: -7318026800968783511
+    second: Baragraf For South Story_53
+  - first:
+      213: 505086213485910
+    second: Baragraf For South Story_54
+  - first:
+      213: -232185780580095292
+    second: Baragraf For South Story_55
+  - first:
+      213: -4972159565853584287
+    second: Baragraf For South Story_56
+  - first:
+      213: 3405763018179255198
+    second: Baragraf For South Story_57
+  - first:
+      213: 3894679653660603043
+    second: Baragraf For South Story_58
+  - first:
+      213: 4663073783904139114
+    second: Baragraf For South Story_59
+  - first:
+      213: -3922172027188607885
+    second: Baragraf For South Story_60
+  - first:
+      213: -3988600663649897918
+    second: Baragraf For South Story_61
+  - first:
+      213: 7435778961318958368
+    second: Baragraf For South Story_62
+  - first:
+      213: -6855151207012911524
+    second: Baragraf For South Story_63
+  - first:
+      213: -2060114345779106794
+    second: Baragraf For South Story_64
+  - first:
+      213: -224496533284818363
+    second: Baragraf For South Story_65
+  - first:
+      213: 5165485907209687805
+    second: Baragraf For South Story_66
+  - first:
+      213: 7760912334340179158
+    second: Baragraf For South Story_67
+  - first:
+      213: 6542074874273908788
+    second: Baragraf For South Story_68
+  - first:
+      213: 1962447735453340826
+    second: Baragraf For South Story_69
+  - first:
+      213: -6974714367808473767
+    second: Baragraf For South Story_70
+  - first:
+      213: -5752146123946532126
+    second: Baragraf For South Story_71
+  - first:
+      213: -3424098927273627701
+    second: Baragraf For South Story_72
+  - first:
+      213: -5058519338874700253
+    second: Baragraf For South Story_73
+  - first:
+      213: 4929915947110693550
+    second: Baragraf For South Story_74
+  - first:
+      213: 3054116120857427707
+    second: Baragraf For South Story_75
+  - first:
+      213: 2292929000879259040
+    second: Baragraf For South Story_76
+  - first:
+      213: -9106802358214516736
+    second: Baragraf For South Story_77
+  - first:
+      213: 4003694383419832661
+    second: Baragraf For South Story_78
+  - first:
+      213: -7111109010325528323
+    second: Baragraf For South Story_79
+  - first:
+      213: 5163429207344492507
+    second: Baragraf For South Story_80
+  - first:
+      213: 3449892370673435672
+    second: Baragraf For South Story_81
+  - first:
+      213: 2249563091165065146
+    second: Baragraf For South Story_82
+  - first:
+      213: 3102850838695870166
+    second: Baragraf For South Story_83
+  - first:
+      213: 524130643146563469
+    second: Baragraf For South Story_84
+  - first:
+      213: -4083783498445256902
+    second: Baragraf For South Story_85
+  - first:
+      213: 3282627245601016292
+    second: Baragraf For South Story_86
+  - first:
+      213: -5176785569775312940
+    second: Baragraf For South Story_87
+  - first:
+      213: 4917633995359862245
+    second: Baragraf For South Story_88
+  - first:
+      213: 2390820830838931314
+    second: Baragraf For South Story_89
+  - first:
+      213: -1368542339843038762
+    second: Baragraf For South Story_90
+  - first:
+      213: -6984559660423458118
+    second: Baragraf For South Story_91
+  - first:
+      213: 3671276304368931169
+    second: Baragraf For South Story_92
+  - first:
+      213: -6644255521308657835
+    second: Baragraf For South Story_93
+  - first:
+      213: 5532908670124463835
+    second: Baragraf For South Story_94
+  - first:
+      213: -9168879012687087545
+    second: Baragraf For South Story_95
+  - first:
+      213: 1969205254816411399
+    second: Baragraf For South Story_96
+  - first:
+      213: 3504829887010974187
+    second: Baragraf For South Story_97
+  - first:
+      213: -4367320255528002361
+    second: Baragraf For South Story_98
+  - first:
+      213: -8301544221847883935
+    second: Baragraf For South Story_99
+  - first:
+      213: 2206774513266939140
+    second: Baragraf For South Story_100
+  - first:
+      213: 8880065409725557996
+    second: Baragraf For South Story_101
+  - first:
+      213: -5388310885968671813
+    second: Baragraf For South Story_102
+  - first:
+      213: -6017560195456398997
+    second: Baragraf For South Story_103
+  - first:
+      213: 1608678149828024055
+    second: Baragraf For South Story_104
+  - first:
+      213: -3028686704916880706
+    second: Baragraf For South Story_105
+  - first:
+      213: -3029918002643341339
+    second: Baragraf For South Story_106
+  - first:
+      213: -7913918739642418870
+    second: Baragraf For South Story_107
+  - first:
+      213: -6890922225195880870
+    second: Baragraf For South Story_108
+  - first:
+      213: -8172769167753975
+    second: Baragraf For South Story_109
+  - first:
+      213: 306562909233132693
+    second: Baragraf For South Story_110
+  - first:
+      213: 1254362144867944030
+    second: Baragraf For South Story_111
+  - first:
+      213: 3424644182090716098
+    second: Baragraf For South Story_112
+  - first:
+      213: 7820033011509201529
+    second: Baragraf For South Story_113
+  - first:
+      213: -1616805605794635062
+    second: Baragraf For South Story_114
+  - first:
+      213: 8415220547732432968
+    second: Baragraf For South Story_115
+  - first:
+      213: -7020382267932208414
+    second: Baragraf For South Story_116
+  - first:
+      213: 338064494171130367
+    second: Baragraf For South Story_117
+  - first:
+      213: -6239545366974764198
+    second: Baragraf For South Story_118
+  - first:
+      213: 4254965542862689090
+    second: Baragraf For South Story_119
+  - first:
+      213: 2392108688074645025
+    second: Baragraf For South Story_120
+  - first:
+      213: 7354162134393273023
+    second: Baragraf For South Story_121
+  - first:
+      213: -116461733948974067
+    second: Baragraf For South Story_122
+  - first:
+      213: 5467637742775987779
+    second: Baragraf For South Story_123
+  - first:
+      213: -7784514519652470250
+    second: Baragraf For South Story_124
+  - first:
+      213: -1102924753304713271
+    second: Baragraf For South Story_125
+  - first:
+      213: 3164821648453925880
+    second: Baragraf For South Story_126
+  - first:
+      213: 3201916481720105231
+    second: Baragraf For South Story_127
+  - first:
+      213: -2827334690429384215
+    second: Baragraf For South Story_128
+  - first:
+      213: -768921036314632678
+    second: Baragraf For South Story_129
+  - first:
+      213: 3905190068789215180
+    second: Baragraf For South Story_130
+  - first:
+      213: 584319094667288562
+    second: Baragraf For South Story_131
+  - first:
+      213: 3530987116262322085
+    second: Baragraf For South Story_132
+  - first:
+      213: 1702405443645456421
+    second: Baragraf For South Story_133
+  - first:
+      213: -6221363657117133969
+    second: Baragraf For South Story_134
+  - first:
+      213: -8788162100552307048
+    second: Baragraf For South Story_135
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Baragraf For South Story_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 501
+        width: 85
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0550ae01d15684fc0800000000000000
+      internalID: -3510444734023072432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_1
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 501
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad000c3027e8fe00800000000000000
+      internalID: 1078866236386839977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_2
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 567
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d62fabb53f47fed90800000000000000
+      internalID: -7066300701756165523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_3
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 501
+        width: 133
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb86c3de1b468ce90800000000000000
+      internalID: -7005238505022658369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_4
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 480
+        width: 134
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02c559a4ae2ee3d20800000000000000
+      internalID: 3260292676164344864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_5
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 504
+        width: 17
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5de8a6f5ffe86a50800000000000000
+      internalID: 6514720700675714394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_6
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 504
+        width: 17
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b39f15fbb5c5c480800000000000000
+      internalID: -8879473679229021260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_7
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 501
+        width: 17
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5252e2bf7a29fa0800000000000000
+      internalID: -5795385073219590673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_8
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 584
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15754f1e2a0886680800000000000000
+      internalID: -8761611637985355951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_9
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 480
+        width: 213
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ed34f4911aa04b0800000000000000
+      internalID: -5473385267039314408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_10
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 504
+        width: 18
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9635ddb2eeb92c750800000000000000
+      internalID: 6323788274022044521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_11
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 501
+        width: 121
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 856a2fb45b7a7b2c0800000000000000
+      internalID: -4415876512508369320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_12
+      rect:
+        serializedVersion: 2
+        x: 2512
+        y: 479
+        width: 176
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc4df2f8ad50dd950800000000000000
+      internalID: 6475338275491927247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_13
+      rect:
+        serializedVersion: 2
+        x: 2694
+        y: 504
+        width: 18
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 137a1860625aa8e90800000000000000
+      internalID: -7022619086194366671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_14
+      rect:
+        serializedVersion: 2
+        x: 2738
+        y: 473
+        width: 87
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b28bfcc7924a050800000000000000
+      internalID: 5810815035252419374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_15
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 501
+        width: 18
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16368b29789ac0fb0800000000000000
+      internalID: -4680179512997551263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_16
+      rect:
+        serializedVersion: 2
+        x: 2977
+        y: 501
+        width: 121
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c72d0f059ed12d10800000000000000
+      internalID: 2099203633115375556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_17
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 556
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f255884100c6dc420800000000000000
+      internalID: 2651894503191369007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_18
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 556
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e67a1a1ec7529d0800000000000000
+      internalID: -2799694284819304849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_19
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 502
+        width: 18
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 833b0426bc66d0a20800000000000000
+      internalID: 3030191148003013432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_20
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 556
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4e238dca25df770800000000000000
+      internalID: 8646157761936286931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_21
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 479
+        width: 196
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c0516f1cc684fdd0800000000000000
+      internalID: -2453187685752155968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_22
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 566
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46885c6bd2685a250800000000000000
+      internalID: 5955313613165398116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_23
+      rect:
+        serializedVersion: 2
+        x: 2935
+        y: 566
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d741a832410499c80800000000000000
+      internalID: -8315544781723134851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 219
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12dd29fe41ee81f30800000000000000
+      internalID: 4546645597516651809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_25
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 493
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f948d67fcf37ba50800000000000000
+      internalID: 6536763544436230642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_26
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 501
+        width: 82
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 868c33f621d64d3c0800000000000000
+      internalID: -4335720615308441496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_27
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 501
+        width: 108
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b885094a20946b9d0800000000000000
+      internalID: -2758937446018164597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_28
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 479
+        width: 122
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95b927ecc1409c5d0800000000000000
+      internalID: -3041895551542846631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_29
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 544
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619ae6b21c5378590800000000000000
+      internalID: -7672104336428717802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_30
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 501
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c4f561480e76460800000000000000
+      internalID: 7234998184309640265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_31
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 501
+        width: 101
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f7bf083adfc8530800000000000000
+      internalID: 3858737859435134790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_32
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 476
+        width: 118
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7530313d165e00710800000000000000
+      internalID: 1657576871188169559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_33
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 501
+        width: 101
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d19ac4f3dbb89490800000000000000
+      internalID: -7739229440616787502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_34
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 479
+        width: 53
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6123177d2dfd2370800000000000000
+      internalID: 8299568060026790252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_35
+      rect:
+        serializedVersion: 2
+        x: 2444
+        y: 501
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 939024a16c361c900800000000000000
+      internalID: 702952719341717817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_36
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 480
+        width: 99
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04667435f7443c1b0800000000000000
+      internalID: -5637586994889005504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_37
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 500
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1e87f377f0236cd0800000000000000
+      internalID: -2566171115496436195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_38
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 495
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66077daf042d3b5e0800000000000000
+      internalID: -1894939841664683930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_39
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 470
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63f03a31cb9c6eec0800000000000000
+      internalID: -3537918647632457930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_40
+      rect:
+        serializedVersion: 2
+        x: 2467
+        y: 484
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45980aefd18bdbb20800000000000000
+      internalID: 3151877753194711380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_41
+      rect:
+        serializedVersion: 2
+        x: 2829
+        y: 470
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a20e19226ebd500800000000000000
+      internalID: 422184026239937093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_42
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 483
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7db0b16fdbab89f0800000000000000
+      internalID: -465089160597684868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_43
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 461
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a0c7683cdf1cd80800000000000000
+      internalID: -8232019627639829863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_44
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 320
+        width: 53
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3564e98cf11f27bb0800000000000000
+      internalID: -4939620722459916717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_45
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 344
+        width: 18
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1aa964c05048f4a0800000000000000
+      internalID: -6559422141628306913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_46
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 341
+        width: 73
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a4abfc1fea2d7380800000000000000
+      internalID: -8971967676180355936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_47
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 344
+        width: 18
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 549abac2f765c2150800000000000000
+      internalID: 5849145120257714501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_48
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 406
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f45ea39c3bbcaf080800000000000000
+      internalID: -9152779319641447089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_49
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 319
+        width: 291
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a1e7e4ac14824230800000000000000
+      internalID: 3621602308919910824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_50
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 340
+        width: 119
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bdce1383534d0510800000000000000
+      internalID: 1516942675454905781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_51
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 414
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64874f6bd254680a0800000000000000
+      internalID: -6879735318116534202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_52
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 344
+        width: 18
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a1b502153a86430800000000000000
+      internalID: 3776447856380680736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_53
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 320
+        width: 157
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 969a777a565217a90800000000000000
+      internalID: -7318026800968783511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_54
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 344
+        width: 18
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 655f55c8f5bc10000800000000000000
+      internalID: 505086213485910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_55
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 319
+        width: 210
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca60a2434c17ccf0800000000000000
+      internalID: -232185780580095292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_56
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 344
+        width: 18
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1649cbee7375ffab0800000000000000
+      internalID: -4972159565853584287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_57
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 407
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9b9cb7ab63b34f20800000000000000
+      internalID: 3405763018179255198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_58
+      rect:
+        serializedVersion: 2
+        x: 2399
+        y: 341
+        width: 310
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2b166928eac0630800000000000000
+      internalID: 3894679653660603043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_59
+      rect:
+        serializedVersion: 2
+        x: 2824
+        y: 402
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a67fa0386e096b040800000000000000
+      internalID: 4663073783904139114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_60
+      rect:
+        serializedVersion: 2
+        x: 2862
+        y: 319
+        width: 240
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37403736255a199c0800000000000000
+      internalID: -3922172027188607885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_61
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 319
+        width: 53
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 242b24434d4a5a8c0800000000000000
+      internalID: -3988600663649897918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_62
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 319
+        width: 61
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0255db1a191313760800000000000000
+      internalID: 7435778961318958368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_63
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 319
+        width: 227
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c56b7602c4c9dd0a0800000000000000
+      internalID: -6855151207012911524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_64
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 341
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c662fdae00963e0800000000000000
+      internalID: -2060114345779106794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_65
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 320
+        width: 37
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5427048a79d62ecf0800000000000000
+      internalID: -224496533284818363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_66
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 319
+        width: 123
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2158f801e7fa740800000000000000
+      internalID: 5165485907209687805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_67
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 384
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d44b4526ac44bb60800000000000000
+      internalID: 7760912334340179158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_68
+      rect:
+        serializedVersion: 2
+        x: 1916
+        y: 341
+        width: 105
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 438ca1fcf6e1aca50800000000000000
+      internalID: 6542074874273908788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_69
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 397
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9457f161d30c3b10800000000000000
+      internalID: 1962447735453340826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_70
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 319
+        width: 241
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95576f07c36d43f90800000000000000
+      internalID: -6974714367808473767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_71
+      rect:
+        serializedVersion: 2
+        x: 2313
+        y: 384
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2e60293954c20b0800000000000000
+      internalID: -5752146123946532126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_72
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 342
+        width: 17
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf2f04da282b70d0800000000000000
+      internalID: -3424098927273627701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_73
+      rect:
+        serializedVersion: 2
+        x: 2772
+        y: 341
+        width: 84
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32efde466778cc9b0800000000000000
+      internalID: -5058519338874700253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_74
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 341
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaaf0102f649a6440800000000000000
+      internalID: 4929915947110693550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_75
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 341
+        width: 63
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe30863e66626a20800000000000000
+      internalID: 3054116120857427707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_76
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 319
+        width: 53
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad799027ce12df10800000000000000
+      internalID: 2292929000879259040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_77
+      rect:
+        serializedVersion: 2
+        x: 2741
+        y: 341
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0002fee41832e9180800000000000000
+      internalID: -9106802358214516736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_78
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 237
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55937f844daff8730800000000000000
+      internalID: 4003694383419832661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_79
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 181
+        width: 109
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df0a7780804405d90800000000000000
+      internalID: -7111109010325528323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_80
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 184
+        width: 18
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf25aec18f28a740800000000000000
+      internalID: 5163429207344492507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_81
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 235
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814025335da70ef20800000000000000
+      internalID: 3449892370673435672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_82
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 161
+        width: 164
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf29b476bd083f10800000000000000
+      internalID: 2249563091165065146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_83
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 233
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de7d7fe56a8f0b20800000000000000
+      internalID: 3102850838695870166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_84
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 236
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8fd5a00b06164700800000000000000
+      internalID: 524130643146563469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_85
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 239
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3781938b8c7357c0800000000000000
+      internalID: -4083783498445256902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_86
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 184
+        width: 18
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e94118761c3e8d20800000000000000
+      internalID: 3282627245601016292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_87
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 181
+        width: 78
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df9c2bb3fc5828b0800000000000000
+      internalID: -5176785569775312940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_88
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 184
+        width: 18
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed3fc46012fe3440800000000000000
+      internalID: 4917633995359862245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_89
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 160
+        width: 120
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27f32c7e0e6ed2120800000000000000
+      internalID: 2390820830838931314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_90
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 184
+        width: 18
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d1e2952ef5f10de0800000000000000
+      internalID: -1368542339843038762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_91
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 184
+        width: 18
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2dfef9efbd11f90800000000000000
+      internalID: -6984559660423458118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_92
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 247
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161183af85ef2f230800000000000000
+      internalID: 3671276304368931169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_93
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 182
+        width: 17
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557387f5eccdac3a0800000000000000
+      internalID: -6644255521308657835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_94
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 239
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd69271fe17d8cc40800000000000000
+      internalID: 5532908670124463835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_95
+      rect:
+        serializedVersion: 2
+        x: 2190
+        y: 236
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7487044ed1991c080800000000000000
+      internalID: -9168879012687087545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_96
+      rect:
+        serializedVersion: 2
+        x: 2243
+        y: 181
+        width: 174
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f2a27feb5045b10800000000000000
+      internalID: 1969205254816411399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_97
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 163
+        width: 29
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be9267d7638a3a030800000000000000
+      internalID: 3504829887010974187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_98
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 177
+        width: 51
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc92ecdd592463c0800000000000000
+      internalID: -4367320255528002361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_99
+      rect:
+        serializedVersion: 2
+        x: 2833
+        y: 180
+        width: 52
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f6f81838dfacc80800000000000000
+      internalID: -8301544221847883935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_100
+      rect:
+        serializedVersion: 2
+        x: 2892
+        y: 245
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40559a25ab900ae10800000000000000
+      internalID: 2206774513266939140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_101
+      rect:
+        serializedVersion: 2
+        x: 3112
+        y: 163
+        width: 27
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cecece801745c3b70800000000000000
+      internalID: 8880065409725557996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_102
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 181
+        width: 111
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb87763ccfd835b0800000000000000
+      internalID: -5388310885968671813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_103
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 175
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b698a4772e45d7ca0800000000000000
+      internalID: -6017560195456398997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_104
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 181
+        width: 135
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f69e6e014c235610800000000000000
+      internalID: 1608678149828024055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_105
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 181
+        width: 220
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb22b711d71f7f5d0800000000000000
+      internalID: -3028686704916880706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_106
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 159
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5efe1e931a193f5d0800000000000000
+      internalID: -3029918002643341339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_107
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 181
+        width: 51
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a497e4606dc1c2290800000000000000
+      internalID: -7913918739642418870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_108
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 181
+        width: 109
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5eea50feb68e50a0800000000000000
+      internalID: -6890922225195880870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_109
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 159
+        width: 53
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90dbce4e8e6f2eff0800000000000000
+      internalID: -8172769167753975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_110
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 181
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 594b62a7751214400800000000000000
+      internalID: 306562909233132693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_111
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 181
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e560d8099b3686110800000000000000
+      internalID: 1254362144867944030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_112
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 160
+        width: 102
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c310a33db7c68f20800000000000000
+      internalID: 3424644182090716098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_113
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 159
+        width: 53
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a85d67796568c60800000000000000
+      internalID: 7820033011509201529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_114
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 181
+        width: 51
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac220c32ed3ff89e0800000000000000
+      internalID: -1616805605794635062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_115
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 181
+        width: 101
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 848e82e908ed8c470800000000000000
+      internalID: 8415220547732432968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_116
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 160
+        width: 219
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2137cd587929e90800000000000000
+      internalID: -7020382267932208414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_117
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 159
+        width: 52
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff90e36cddb01b400800000000000000
+      internalID: 338064494171130367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_118
+      rect:
+        serializedVersion: 2
+        x: 2503
+        y: 181
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5be8891c8ea869a0800000000000000
+      internalID: -6239545366974764198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_119
+      rect:
+        serializedVersion: 2
+        x: 2628
+        y: 180
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2439bd11e9cac0b30800000000000000
+      internalID: 4254965542862689090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_120
+      rect:
+        serializedVersion: 2
+        x: 2697
+        y: 178
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12e90d88d2a723120800000000000000
+      internalID: 2392108688074645025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_121
+      rect:
+        serializedVersion: 2
+        x: 2767
+        y: 180
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbab3294f7b3f0660800000000000000
+      internalID: 7354162134393273023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_122
+      rect:
+        serializedVersion: 2
+        x: 2892
+        y: 178
+        width: 18
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c9b068bae326ef0800000000000000
+      internalID: -116461733948974067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_123
+      rect:
+        serializedVersion: 2
+        x: 2917
+        y: 180
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e6eaaee83f0eb40800000000000000
+      internalID: 5467637742775987779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_124
+      rect:
+        serializedVersion: 2
+        x: 2987
+        y: 178
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6127e3bd949d7f390800000000000000
+      internalID: -7784514519652470250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_125
+      rect:
+        serializedVersion: 2
+        x: 3057
+        y: 180
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c78949c7cf91b0f0800000000000000
+      internalID: -1102924753304713271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_126
+      rect:
+        serializedVersion: 2
+        x: 2334
+        y: 163
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fbff857584bbeb20800000000000000
+      internalID: 3164821648453925880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_127
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 1
+        width: 309
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f09356d531e7f6c20800000000000000
+      internalID: 3201916481720105231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_128
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 0
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e941d3341a43c8d0800000000000000
+      internalID: -2827334690429384215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_129
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 20
+        width: 172
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e1422346e3455f0800000000000000
+      internalID: -768921036314632678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_130
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 77
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf709e4da5023630800000000000000
+      internalID: 3905190068789215180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_131
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 0
+        width: 102
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff1f19ee1beb1800800000000000000
+      internalID: 584319094667288562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_132
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 24
+        width: 18
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5afeb430316900130800000000000000
+      internalID: 3530987116262322085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_133
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 0
+        width: 313
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520cd243bb820a710800000000000000
+      internalID: 1702405443645456421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_134
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 20
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f63120f47b649a9a0800000000000000
+      internalID: -6221363657117133969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Baragraf For South Story_135
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 15
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89e6708912d2a0680800000000000000
+      internalID: -8788162100552307048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Baragraf For South Story_0: -3510444734023072432
+      Baragraf For South Story_1: 1078866236386839977
+      Baragraf For South Story_10: 6323788274022044521
+      Baragraf For South Story_100: 2206774513266939140
+      Baragraf For South Story_101: 8880065409725557996
+      Baragraf For South Story_102: -5388310885968671813
+      Baragraf For South Story_103: -6017560195456398997
+      Baragraf For South Story_104: 1608678149828024055
+      Baragraf For South Story_105: -3028686704916880706
+      Baragraf For South Story_106: -3029918002643341339
+      Baragraf For South Story_107: -7913918739642418870
+      Baragraf For South Story_108: -6890922225195880870
+      Baragraf For South Story_109: -8172769167753975
+      Baragraf For South Story_11: -4415876512508369320
+      Baragraf For South Story_110: 306562909233132693
+      Baragraf For South Story_111: 1254362144867944030
+      Baragraf For South Story_112: 3424644182090716098
+      Baragraf For South Story_113: 7820033011509201529
+      Baragraf For South Story_114: -1616805605794635062
+      Baragraf For South Story_115: 8415220547732432968
+      Baragraf For South Story_116: -7020382267932208414
+      Baragraf For South Story_117: 338064494171130367
+      Baragraf For South Story_118: -6239545366974764198
+      Baragraf For South Story_119: 4254965542862689090
+      Baragraf For South Story_12: 6475338275491927247
+      Baragraf For South Story_120: 2392108688074645025
+      Baragraf For South Story_121: 7354162134393273023
+      Baragraf For South Story_122: -116461733948974067
+      Baragraf For South Story_123: 5467637742775987779
+      Baragraf For South Story_124: -7784514519652470250
+      Baragraf For South Story_125: -1102924753304713271
+      Baragraf For South Story_126: 3164821648453925880
+      Baragraf For South Story_127: 3201916481720105231
+      Baragraf For South Story_128: -2827334690429384215
+      Baragraf For South Story_129: -768921036314632678
+      Baragraf For South Story_13: -7022619086194366671
+      Baragraf For South Story_130: 3905190068789215180
+      Baragraf For South Story_131: 584319094667288562
+      Baragraf For South Story_132: 3530987116262322085
+      Baragraf For South Story_133: 1702405443645456421
+      Baragraf For South Story_134: -6221363657117133969
+      Baragraf For South Story_135: -8788162100552307048
+      Baragraf For South Story_14: 5810815035252419374
+      Baragraf For South Story_15: -4680179512997551263
+      Baragraf For South Story_16: 2099203633115375556
+      Baragraf For South Story_17: 2651894503191369007
+      Baragraf For South Story_18: -2799694284819304849
+      Baragraf For South Story_19: 3030191148003013432
+      Baragraf For South Story_2: -7066300701756165523
+      Baragraf For South Story_20: 8646157761936286931
+      Baragraf For South Story_21: -2453187685752155968
+      Baragraf For South Story_22: 5955313613165398116
+      Baragraf For South Story_23: -8315544781723134851
+      Baragraf For South Story_24: 4546645597516651809
+      Baragraf For South Story_25: 6536763544436230642
+      Baragraf For South Story_26: -4335720615308441496
+      Baragraf For South Story_27: -2758937446018164597
+      Baragraf For South Story_28: -3041895551542846631
+      Baragraf For South Story_29: -7672104336428717802
+      Baragraf For South Story_3: -7005238505022658369
+      Baragraf For South Story_30: 7234998184309640265
+      Baragraf For South Story_31: 3858737859435134790
+      Baragraf For South Story_32: 1657576871188169559
+      Baragraf For South Story_33: -7739229440616787502
+      Baragraf For South Story_34: 8299568060026790252
+      Baragraf For South Story_35: 702952719341717817
+      Baragraf For South Story_36: -5637586994889005504
+      Baragraf For South Story_37: -2566171115496436195
+      Baragraf For South Story_38: -1894939841664683930
+      Baragraf For South Story_39: -3537918647632457930
+      Baragraf For South Story_4: 3260292676164344864
+      Baragraf For South Story_40: 3151877753194711380
+      Baragraf For South Story_41: 422184026239937093
+      Baragraf For South Story_42: -465089160597684868
+      Baragraf For South Story_43: -8232019627639829863
+      Baragraf For South Story_44: -4939620722459916717
+      Baragraf For South Story_45: -6559422141628306913
+      Baragraf For South Story_46: -8971967676180355936
+      Baragraf For South Story_47: 5849145120257714501
+      Baragraf For South Story_48: -9152779319641447089
+      Baragraf For South Story_49: 3621602308919910824
+      Baragraf For South Story_5: 6514720700675714394
+      Baragraf For South Story_50: 1516942675454905781
+      Baragraf For South Story_51: -6879735318116534202
+      Baragraf For South Story_52: 3776447856380680736
+      Baragraf For South Story_53: -7318026800968783511
+      Baragraf For South Story_54: 505086213485910
+      Baragraf For South Story_55: -232185780580095292
+      Baragraf For South Story_56: -4972159565853584287
+      Baragraf For South Story_57: 3405763018179255198
+      Baragraf For South Story_58: 3894679653660603043
+      Baragraf For South Story_59: 4663073783904139114
+      Baragraf For South Story_6: -8879473679229021260
+      Baragraf For South Story_60: -3922172027188607885
+      Baragraf For South Story_61: -3988600663649897918
+      Baragraf For South Story_62: 7435778961318958368
+      Baragraf For South Story_63: -6855151207012911524
+      Baragraf For South Story_64: -2060114345779106794
+      Baragraf For South Story_65: -224496533284818363
+      Baragraf For South Story_66: 5165485907209687805
+      Baragraf For South Story_67: 7760912334340179158
+      Baragraf For South Story_68: 6542074874273908788
+      Baragraf For South Story_69: 1962447735453340826
+      Baragraf For South Story_7: -5795385073219590673
+      Baragraf For South Story_70: -6974714367808473767
+      Baragraf For South Story_71: -5752146123946532126
+      Baragraf For South Story_72: -3424098927273627701
+      Baragraf For South Story_73: -5058519338874700253
+      Baragraf For South Story_74: 4929915947110693550
+      Baragraf For South Story_75: 3054116120857427707
+      Baragraf For South Story_76: 2292929000879259040
+      Baragraf For South Story_77: -9106802358214516736
+      Baragraf For South Story_78: 4003694383419832661
+      Baragraf For South Story_79: -7111109010325528323
+      Baragraf For South Story_8: -8761611637985355951
+      Baragraf For South Story_80: 5163429207344492507
+      Baragraf For South Story_81: 3449892370673435672
+      Baragraf For South Story_82: 2249563091165065146
+      Baragraf For South Story_83: 3102850838695870166
+      Baragraf For South Story_84: 524130643146563469
+      Baragraf For South Story_85: -4083783498445256902
+      Baragraf For South Story_86: 3282627245601016292
+      Baragraf For South Story_87: -5176785569775312940
+      Baragraf For South Story_88: 4917633995359862245
+      Baragraf For South Story_89: 2390820830838931314
+      Baragraf For South Story_9: -5473385267039314408
+      Baragraf For South Story_90: -1368542339843038762
+      Baragraf For South Story_91: -6984559660423458118
+      Baragraf For South Story_92: 3671276304368931169
+      Baragraf For South Story_93: -6644255521308657835
+      Baragraf For South Story_94: 5532908670124463835
+      Baragraf For South Story_95: -9168879012687087545
+      Baragraf For South Story_96: 1969205254816411399
+      Baragraf For South Story_97: 3504829887010974187
+      Baragraf For South Story_98: -4367320255528002361
+      Baragraf For South Story_99: -8301544221847883935
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
