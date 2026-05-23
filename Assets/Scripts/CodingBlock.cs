@@ -70,7 +70,7 @@ public class CodingBlock : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         }
     }
 
-    private void PrepareForDrag()
+    public void PrepareForDrag()
     {
         transform.SetParent(rootCanvas.transform);
         canvasGroup.alpha = 0.7f;

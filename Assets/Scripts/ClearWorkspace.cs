@@ -10,7 +10,6 @@ public class ClearWorkspace : MonoBehaviour
 
     private void Awake()
     {
-        // Get the AudioSource on the delete button
         audioSource = GetComponent<AudioSource>();
 
         if (solutionSheet == null)
@@ -20,34 +19,36 @@ public class ClearWorkspace : MonoBehaviour
         }
 
         Button btn = GetComponent<Button>();
-        if (btn != null)
-        {
-            btn.onClick.AddListener(DeleteAllBlocks);
-        }
+        if (btn != null) btn.onClick.AddListener(DeleteAllBlocks);
     }
 
     public void DeleteAllBlocks()
     {
-        // 1. Play the sound immediately when clicked
-        if (audioSource != null && audioSource.clip != null)
-        {
-            audioSource.Play();
-        }
+        if (solutionSheet == null) return;
 
-        // 2. Logic to clear the blocks
+        // Play sound immediately
+        if (audioSource != null && audioSource.clip != null)
+            audioSource.Play();
+
+        // Release all SnapSlots anywhere inside the solution sheet first,
+        // so no slot holds a stale reference to a block we're about to destroy.
+        foreach (SnapSlot slot in solutionSheet.GetComponentsInChildren<SnapSlot>())
+            slot.ReleaseBlock();
+
+        // Destroy every direct child that is a DraggableBlock.
+        // Iterate backwards so the index stays valid as children are removed.
         int deletedCount = 0;
         for (int i = solutionSheet.childCount - 1; i >= 0; i--)
         {
             GameObject child = solutionSheet.GetChild(i).gameObject;
-
-            if (child.GetComponent<CodingBlock>() != null)
+            if (child.GetComponent<DraggableBlock>() != null)
             {
                 Destroy(child);
                 deletedCount++;
             }
         }
 
-        // Only log if we actually cleared something
-        if (deletedCount > 0) Debug.Log("Workspace cleared!");
+        if (deletedCount > 0)
+            Debug.Log($"Workspace cleared! Destroyed {deletedCount} root blocks.");
     }
 }

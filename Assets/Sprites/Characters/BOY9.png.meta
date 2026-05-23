@@ -1,0 +1,4364 @@
+fileFormatVersion: 2
+guid: 6db0a09d10a3641bf8c7df6a5cb7fbd0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7445915596413473755
+    second: BOY9_0
+  - first:
+      213: 6244851918033724041
+    second: BOY9_1
+  - first:
+      213: 5702380693654149872
+    second: BOY9_2
+  - first:
+      213: 3464259938823473988
+    second: BOY9_3
+  - first:
+      213: -6794550518531112135
+    second: BOY9_4
+  - first:
+      213: 3519939791446337687
+    second: BOY9_5
+  - first:
+      213: 7306217210590283630
+    second: BOY9_6
+  - first:
+      213: 6545236552431035102
+    second: BOY9_7
+  - first:
+      213: 6545056680813272166
+    second: BOY9_8
+  - first:
+      213: 4935330633748637068
+    second: BOY9_9
+  - first:
+      213: -4656770923706266942
+    second: BOY9_10
+  - first:
+      213: -2759717546119002136
+    second: BOY9_11
+  - first:
+      213: -6554499130611046323
+    second: BOY9_12
+  - first:
+      213: 806873207461117481
+    second: BOY9_13
+  - first:
+      213: 5444908719490206302
+    second: BOY9_14
+  - first:
+      213: 7909951571692605005
+    second: BOY9_15
+  - first:
+      213: -6535290199716908926
+    second: BOY9_16
+  - first:
+      213: 7349860050282641440
+    second: BOY9_17
+  - first:
+      213: -5269595911909656921
+    second: BOY9_18
+  - first:
+      213: -8077805690790456857
+    second: BOY9_19
+  - first:
+      213: 8963356191249739594
+    second: BOY9_20
+  - first:
+      213: 1381069360662652385
+    second: BOY9_21
+  - first:
+      213: 7472082110482322280
+    second: BOY9_22
+  - first:
+      213: -4169373130196906531
+    second: BOY9_23
+  - first:
+      213: 4609893414941279331
+    second: BOY9_24
+  - first:
+      213: -2440214905331469465
+    second: BOY9_25
+  - first:
+      213: 8736135167568491630
+    second: BOY9_26
+  - first:
+      213: 7490043857512032432
+    second: BOY9_27
+  - first:
+      213: -6565259766096016171
+    second: BOY9_28
+  - first:
+      213: 2876944418972746341
+    second: BOY9_29
+  - first:
+      213: -8361948282266253372
+    second: BOY9_30
+  - first:
+      213: -6078181851414239058
+    second: BOY9_31
+  - first:
+      213: 8796070440064009319
+    second: BOY9_32
+  - first:
+      213: -5739332705471397579
+    second: BOY9_33
+  - first:
+      213: -4859243987471738155
+    second: BOY9_34
+  - first:
+      213: -7559591053629998884
+    second: BOY9_35
+  - first:
+      213: -526325820835034626
+    second: BOY9_36
+  - first:
+      213: 4044722674911703054
+    second: BOY9_37
+  - first:
+      213: -1068006261076487202
+    second: BOY9_38
+  - first:
+      213: -7314457350071302212
+    second: BOY9_39
+  - first:
+      213: 5863507191451090068
+    second: BOY9_40
+  - first:
+      213: 8939860044404130319
+    second: BOY9_41
+  - first:
+      213: -9158835840683616748
+    second: BOY9_42
+  - first:
+      213: -5915223630769331780
+    second: BOY9_43
+  - first:
+      213: -7896237527621987237
+    second: BOY9_44
+  - first:
+      213: -4651273409349333740
+    second: BOY9_45
+  - first:
+      213: -2307789365838233947
+    second: BOY9_46
+  - first:
+      213: 4772611789173095449
+    second: BOY9_47
+  - first:
+      213: 8046458265943091723
+    second: BOY9_48
+  - first:
+      213: 7922676441452189398
+    second: BOY9_49
+  - first:
+      213: 7844980518759245970
+    second: BOY9_50
+  - first:
+      213: 5079787607791645738
+    second: BOY9_51
+  - first:
+      213: -8179679991779042140
+    second: BOY9_52
+  - first:
+      213: 7165009675699169661
+    second: BOY9_53
+  - first:
+      213: -8472851290727695564
+    second: BOY9_54
+  - first:
+      213: -3309213390020400405
+    second: BOY9_55
+  - first:
+      213: -1714151955020351936
+    second: BOY9_56
+  - first:
+      213: -5857567117163467612
+    second: BOY9_57
+  - first:
+      213: -3889848202913154933
+    second: BOY9_58
+  - first:
+      213: -1768861333256709381
+    second: BOY9_59
+  - first:
+      213: -5681223459382553474
+    second: BOY9_60
+  - first:
+      213: -6553885183271025557
+    second: BOY9_61
+  - first:
+      213: 3036859653170422342
+    second: BOY9_62
+  - first:
+      213: 2746111488804644776
+    second: BOY9_63
+  - first:
+      213: 2915659601749307821
+    second: BOY9_64
+  - first:
+      213: -8030433877733443205
+    second: BOY9_65
+  - first:
+      213: -2026653714082611673
+    second: BOY9_66
+  - first:
+      213: 8505321117261048798
+    second: BOY9_67
+  - first:
+      213: -3878496003804562256
+    second: BOY9_68
+  - first:
+      213: -8883390954025685692
+    second: BOY9_69
+  - first:
+      213: -6234203340585100673
+    second: BOY9_70
+  - first:
+      213: -4091717933477672101
+    second: BOY9_71
+  - first:
+      213: -6584991157328840340
+    second: BOY9_72
+  - first:
+      213: -5961115459512997261
+    second: BOY9_73
+  - first:
+      213: -8639460054624789186
+    second: BOY9_74
+  - first:
+      213: 5091124557620151196
+    second: BOY9_75
+  - first:
+      213: -8745196375786479404
+    second: BOY9_76
+  - first:
+      213: 770802178831922551
+    second: BOY9_77
+  - first:
+      213: 3857676593652809246
+    second: BOY9_78
+  - first:
+      213: -313306066789009464
+    second: BOY9_79
+  - first:
+      213: -135636046154691000
+    second: BOY9_80
+  - first:
+      213: 6203468689872110770
+    second: BOY9_81
+  - first:
+      213: 3453800538449454406
+    second: BOY9_82
+  - first:
+      213: 5842206678553256270
+    second: BOY9_83
+  - first:
+      213: 994933522125940240
+    second: BOY9_84
+  - first:
+      213: -3007061772739293527
+    second: BOY9_85
+  - first:
+      213: 42520992167766990
+    second: BOY9_86
+  - first:
+      213: 322838290344464440
+    second: BOY9_87
+  - first:
+      213: -6195898464094242019
+    second: BOY9_88
+  - first:
+      213: -1678320733139804648
+    second: BOY9_89
+  - first:
+      213: -106837299306164832
+    second: BOY9_90
+  - first:
+      213: -7177320864841714134
+    second: BOY9_91
+  - first:
+      213: 2621201073780502258
+    second: BOY9_92
+  - first:
+      213: -5116307040345835788
+    second: BOY9_93
+  - first:
+      213: -1460234665750378757
+    second: BOY9_94
+  - first:
+      213: -5301984445656494724
+    second: BOY9_95
+  - first:
+      213: -6825714951891195406
+    second: BOY9_96
+  - first:
+      213: -8635279178778704701
+    second: BOY9_97
+  - first:
+      213: 5253480641276763782
+    second: BOY9_98
+  - first:
+      213: -2770320521414867304
+    second: BOY9_99
+  - first:
+      213: 2105369859208789221
+    second: BOY9_100
+  - first:
+      213: 1498256702192393158
+    second: BOY9_101
+  - first:
+      213: -3927845114086263012
+    second: BOY9_102
+  - first:
+      213: 872859153850950994
+    second: BOY9_103
+  - first:
+      213: -4840989786594817430
+    second: BOY9_104
+  - first:
+      213: -6471140130891105348
+    second: BOY9_105
+  - first:
+      213: 2988171702419148064
+    second: BOY9_106
+  - first:
+      213: -6116691680903439722
+    second: BOY9_107
+  - first:
+      213: -1495592482950839050
+    second: BOY9_108
+  - first:
+      213: -8802001741378737340
+    second: BOY9_109
+  - first:
+      213: 2921756284355764301
+    second: BOY9_110
+  - first:
+      213: 6043743241399303172
+    second: BOY9_111
+  - first:
+      213: 4565186352850793963
+    second: BOY9_112
+  - first:
+      213: 8905481842847829801
+    second: BOY9_113
+  - first:
+      213: -205685016116924980
+    second: BOY9_114
+  - first:
+      213: -9214977563576445960
+    second: BOY9_115
+  - first:
+      213: 6280824976519653361
+    second: BOY9_116
+  - first:
+      213: -9056373873179863989
+    second: BOY9_117
+  - first:
+      213: 276967443940914575
+    second: BOY9_118
+  - first:
+      213: 8129105841930670362
+    second: BOY9_119
+  - first:
+      213: -6997592974161819901
+    second: BOY9_120
+  - first:
+      213: 8335055974247783329
+    second: BOY9_121
+  - first:
+      213: -1492273038072047933
+    second: BOY9_122
+  - first:
+      213: -122051242216309897
+    second: BOY9_123
+  - first:
+      213: 2612835661901196002
+    second: BOY9_124
+  - first:
+      213: 3560075832759373842
+    second: BOY9_125
+  - first:
+      213: 1197898223093214138
+    second: BOY9_126
+  - first:
+      213: -8863443599582546706
+    second: BOY9_127
+  - first:
+      213: 6124166587814392504
+    second: BOY9_128
+  - first:
+      213: 4116599542186750074
+    second: BOY9_129
+  - first:
+      213: -51362612855193259
+    second: BOY9_130
+  - first:
+      213: 6206620814293150200
+    second: BOY9_131
+  - first:
+      213: 7425959924927204906
+    second: BOY9_132
+  - first:
+      213: -7628336738921927931
+    second: BOY9_133
+  - first:
+      213: 1349236675517303735
+    second: BOY9_134
+  - first:
+      213: -568489332157269544
+    second: BOY9_135
+  - first:
+      213: -7113055267725166691
+    second: BOY9_136
+  - first:
+      213: 1618804285086543748
+    second: BOY9_137
+  - first:
+      213: -8704300898210608712
+    second: BOY9_138
+  - first:
+      213: 4272877621760829194
+    second: BOY9_139
+  - first:
+      213: 6812470654841857484
+    second: BOY9_140
+  - first:
+      213: -3723346494669053069
+    second: BOY9_141
+  - first:
+      213: 6111987257021885656
+    second: BOY9_142
+  - first:
+      213: 7420844381779333351
+    second: BOY9_143
+  - first:
+      213: -81108395551752421
+    second: BOY9_144
+  - first:
+      213: 788591049680324088
+    second: BOY9_145
+  - first:
+      213: 438414080012938810
+    second: BOY9_146
+  - first:
+      213: 976077733445664678
+    second: BOY9_147
+  - first:
+      213: 5492274317207389861
+    second: BOY9_148
+  - first:
+      213: 6087220072246014839
+    second: BOY9_149
+  - first:
+      213: 3667262992105160159
+    second: BOY9_150
+  - first:
+      213: -5521147494404688559
+    second: BOY9_151
+  - first:
+      213: 4505377327259863747
+    second: BOY9_152
+  - first:
+      213: 3698114295099324392
+    second: BOY9_153
+  - first:
+      213: -4723523649203715824
+    second: BOY9_154
+  - first:
+      213: -811096202709846156
+    second: BOY9_155
+  - first:
+      213: 4795574998469195018
+    second: BOY9_156
+  - first:
+      213: 220014753122782054
+    second: BOY9_157
+  - first:
+      213: -8802830286090946905
+    second: BOY9_158
+  - first:
+      213: -4876017100823011936
+    second: BOY9_159
+  - first:
+      213: -2738606950322301623
+    second: BOY9_160
+  - first:
+      213: 5432363320686869156
+    second: BOY9_161
+  - first:
+      213: 2238112639296234985
+    second: BOY9_162
+  - first:
+      213: -3778516067868645936
+    second: BOY9_163
+  - first:
+      213: -1470868415253293949
+    second: BOY9_164
+  - first:
+      213: -4351826139889248076
+    second: BOY9_165
+  - first:
+      213: -8276881103340578273
+    second: BOY9_166
+  - first:
+      213: 3511322998824357409
+    second: BOY9_167
+  - first:
+      213: 7975320573236902161
+    second: BOY9_168
+  - first:
+      213: -63435860467809229
+    second: BOY9_169
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BOY9_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1825
+        width: 224
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ceb38173bcaa890800000000000000
+      internalID: -7445915596413473755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 3
+        width: 1457
+        height: 1988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98221599bbb2aa650800000000000000
+      internalID: 6244851918033724041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_2
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 1910
+        width: 10
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa1d43470de22f40800000000000000
+      internalID: 5702380693654149872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_3
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 1963
+        width: 6
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b80375f06831030800000000000000
+      internalID: 3464259938823473988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_4
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 1283
+        width: 160
+        height: 708
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933c18e6d48e4b1a0800000000000000
+      internalID: -6794550518531112135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_5
+      rect:
+        serializedVersion: 2
+        x: 2076
+        y: 3
+        width: 851
+        height: 1988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 798ebe3479659d030800000000000000
+      internalID: 3519939791446337687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_6
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 1920
+        width: 6
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e674411d7d5e46560800000000000000
+      internalID: 7306217210590283630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_7
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1913
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2ed8e57f955da50800000000000000
+      internalID: 6545236552431035102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_8
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1899
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66c1caebf56b4da50800000000000000
+      internalID: 6545056680813272166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_9
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1854
+        width: 10
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85e0b91011dd7440800000000000000
+      internalID: 4935330633748637068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_10
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 1862
+        width: 7
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cace1c7483df5fb0800000000000000
+      internalID: -4656770923706266942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_11
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 1857
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e70a2f638383b9d0800000000000000
+      internalID: -2759717546119002136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_12
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 1925
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48625794cdb905a0800000000000000
+      internalID: -6554499130611046323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_13
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 1884
+        width: 6
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92eff7d38e6923b00800000000000000
+      internalID: 806873207461117481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_14
+      rect:
+        serializedVersion: 2
+        x: 2076
+        y: 1563
+        width: 50
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a04abc1a3309b40800000000000000
+      internalID: 5444908719490206302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_15
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1837
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ec745bb0bc5cd60800000000000000
+      internalID: 7909951571692605005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_16
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1821
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28038c5503cfd45a0800000000000000
+      internalID: -6535290199716908926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_17
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 1823
+        width: 7
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0287ee546c2fff560800000000000000
+      internalID: 7349860050282641440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_18
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 987
+        width: 291
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a636c80072aed6b0800000000000000
+      internalID: -5269595911909656921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_19
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1806
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e15ec3b58ed5ef80800000000000000
+      internalID: -8077805690790456857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_20
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1790
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4f2dbe47fc346c70800000000000000
+      internalID: 8963356191249739594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_21
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 1761
+        width: 36
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e5297c244b8a2310800000000000000
+      internalID: 1381069360662652385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_22
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 1765
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86399d7371b22b760800000000000000
+      internalID: 7472082110482322280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_23
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 1683
+        width: 6
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd0e867a396326c0800000000000000
+      internalID: -4169373130196906531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_24
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 1738
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 364ccf9f2a1a9ff30800000000000000
+      internalID: 4609893414941279331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_25
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 1748
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 763ba10f87d922ed0800000000000000
+      internalID: -2440214905331469465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_26
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1728
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64b7bc16acfc3970800000000000000
+      internalID: 8736135167568491630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_27
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1712
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8e917543bf1f760800000000000000
+      internalID: 7490043857512032432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_28
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1650
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dccea7e60383e4a0800000000000000
+      internalID: -6565259766096016171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_29
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1635
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 562c963d4b5fce720800000000000000
+      internalID: 2876944418972746341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_30
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1615
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c7055d375464fb80800000000000000
+      internalID: -8361948282266253372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_31
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 1621
+        width: 6
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea86a3a4fc5f5aba0800000000000000
+      internalID: -6078181851414239058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_32
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1588
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 764445f267be11a70800000000000000
+      internalID: 8796070440064009319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_33
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 1605
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 531889a005bc950b0800000000000000
+      internalID: -5739332705471397579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_34
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1572
+        width: 40
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da5bc9b65f709cb0800000000000000
+      internalID: -4859243987471738155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_35
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 1567
+        width: 7
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd8b9293dffe61790800000000000000
+      internalID: -7559591053629998884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_36
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1493
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef9030d547d12b8f0800000000000000
+      internalID: -526325820835034626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_37
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1522
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00741dc7ddb12830800000000000000
+      internalID: 4044722674911703054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_38
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1450
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed394aec6fdad21f0800000000000000
+      internalID: -1068006261076487202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_39
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 1465
+        width: 36
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb741443bc3dd7a90800000000000000
+      internalID: -7314457350071302212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_40
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 1495
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49cf36479bc5f5150800000000000000
+      internalID: 5863507191451090068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_41
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 1453
+        width: 7
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f028a605853c01c70800000000000000
+      internalID: 8939860044404130319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_42
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1430
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 416dfe7145745e080800000000000000
+      internalID: -9158835840683616748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_43
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 1434
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb16ff0b277e8eda0800000000000000
+      internalID: -5915223630769331780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_44
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1267
+        width: 46
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b549bfffdcdea6290800000000000000
+      internalID: -7896237527621987237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_45
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1417
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d438a4a7b537fb0800000000000000
+      internalID: -4651273409349333740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_46
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 1403
+        width: 6
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aeb9c88cc519ffd0800000000000000
+      internalID: -2307789365838233947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_47
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1351
+        width: 12
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91cf088c229bb3240800000000000000
+      internalID: 4772611789173095449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_48
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 1387
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a2b813923caaf60800000000000000
+      internalID: 8046458265943091723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_49
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 1379
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d61d135f3003fd60800000000000000
+      internalID: 7922676441452189398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_50
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 1364
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2982182a738fedc60800000000000000
+      internalID: 7844980518759245970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_51
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1335
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a243ad85ae70f7640800000000000000
+      internalID: 5079787607791645738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_52
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1323
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4acd3a1a260fb7e80800000000000000
+      internalID: -8179679991779042140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_53
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 1325
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d792944965a3f6360800000000000000
+      internalID: 7165009675699169661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_54
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 1327
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43b377564a26a6a80800000000000000
+      internalID: -8472851290727695564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_55
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1306
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bea2ed964ff4312d0800000000000000
+      internalID: -3309213390020400405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_56
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 1263
+        width: 7
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04678fdf0eb1638e0800000000000000
+      internalID: -1714151955020351936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_57
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 1310
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ac667dddbdb5bea0800000000000000
+      internalID: -5857567117163467612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_58
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1288
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b887b233bab740ac0800000000000000
+      internalID: -3889848202913154933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_59
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 987
+        width: 89
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfa5f4e3dfdb377e0800000000000000
+      internalID: -1768861333256709381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_60
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 1271
+        width: 6
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7413e53d5d3821b0800000000000000
+      internalID: -5681223459382553474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_61
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1261
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b644f68562ceb05a0800000000000000
+      internalID: -6553885183271025557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_62
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 1281
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64260fbb3c7152a20800000000000000
+      internalID: 3036859653170422342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_63
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 1216
+        width: 7
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a7e1db79d52c1620800000000000000
+      internalID: 2746111488804644776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_64
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 1154
+        width: 8
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da17930c5f0867820800000000000000
+      internalID: 2915659601749307821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_65
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 1252
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b797f6d6fea2e8090800000000000000
+      internalID: -8030433877733443205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_66
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 1235
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e31694f21efd3e0800000000000000
+      internalID: -2026653714082611673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_67
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 1251
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb29f63e78f80670800000000000000
+      internalID: 8505321117261048798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_68
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 1185
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bcf4760f60dc2ac0800000000000000
+      internalID: -3878496003804562256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_69
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1204
+        width: 45
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44d61685efad7b480800000000000000
+      internalID: -8883390954025685692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_70
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1152
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a1fda8719ab79a0800000000000000
+      internalID: -6234203340585100673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_71
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1059
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5bc7f5e73c4737c0800000000000000
+      internalID: -4091717933477672101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_72
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 1061
+        width: 56
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6973526e696d94a0800000000000000
+      internalID: -6584991157328840340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_73
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 967
+        width: 7
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a63aaa21dd54da0800000000000000
+      internalID: -5961115459512997261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_74
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 1064
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d99e8aad87a1880800000000000000
+      internalID: -8639460054624789186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_75
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 1096
+        width: 8
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93873cafce47a640800000000000000
+      internalID: 5091124557620151196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_76
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 1074
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d0a632fa32d2a680800000000000000
+      internalID: -8745196375786479404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_77
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 975
+        width: 6
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 775bf5d6f7072ba00800000000000000
+      internalID: 770802178831922551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_78
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1065
+        width: 47
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1eb30f4c68398530800000000000000
+      internalID: 3857676593652809246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_79
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 1073
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c7f01fcac9e6abf0800000000000000
+      internalID: -313306066789009464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_80
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1039
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e06321cbf1e1ef0800000000000000
+      internalID: -135636046154691000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_81
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1018
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b4c513f7e5271650800000000000000
+      internalID: 6203468689872110770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_82
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1028
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 645255b6a4d5eef20800000000000000
+      internalID: 3453800538449454406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_83
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 997
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41e4935500b31150800000000000000
+      internalID: 5842206678553256270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_84
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 977
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016e17954c6becd00800000000000000
+      internalID: 994933522125940240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_85
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 629
+        width: 92
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aec732ff35c446d0800000000000000
+      internalID: -3007061772739293527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_86
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 936
+        width: 10
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb28a9fd90179000800000000000000
+      internalID: 42520992167766990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_87
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 936
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83050efe6b3fa7400800000000000000
+      internalID: 322838290344464440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_88
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 944
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1b36479c2fb30aa0800000000000000
+      internalID: -6195898464094242019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_89
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 964
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e57027f2865b8e0800000000000000
+      internalID: -1678320733139804648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_90
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 955
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad0816da00748ef0800000000000000
+      internalID: -106837299306164832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_91
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 903
+        width: 41
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a263c1453b8056c90800000000000000
+      internalID: -7177320864841714134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_92
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 915
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe2f872d70606420800000000000000
+      internalID: 2621201073780502258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_93
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 905
+        width: 7
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f63b5aaad93ff8b0800000000000000
+      internalID: -5116307040345835788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_94
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 905
+        width: 6
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf6cc33ee443cbbe0800000000000000
+      internalID: -1460234665750378757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_95
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 888
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d8fffdc319b66b0800000000000000
+      internalID: -5301984445656494724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_96
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 858
+        width: 52
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f9e37a5a603641a0800000000000000
+      internalID: -6825714951891195406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_97
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 893
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c4819ca653592880800000000000000
+      internalID: -8635279178778704701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_98
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 639
+        width: 148
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68e51b12fcc18e840800000000000000
+      internalID: 5253480641276763782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_99
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 872
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 896871fd928dd89d0800000000000000
+      internalID: -2770320521414867304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_100
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 853
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ec34f27bb6c73d10800000000000000
+      internalID: 2105369859208789221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_101
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 796
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb96845880eac410800000000000000
+      internalID: 1498256702192393158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_102
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 759
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17722aedad7d79c0800000000000000
+      internalID: -3927845114086263012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_103
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 701
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 255eb3c96c40d1c00800000000000000
+      internalID: 872859153850950994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_104
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 681
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ac8b0107951dcb0800000000000000
+      internalID: -4840989786594817430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_105
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 604
+        width: 10
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbbf5762654e136a0800000000000000
+      internalID: -6471140130891105348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_106
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 843
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d4192d45e187920800000000000000
+      internalID: 2988171702419148064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_107
+      rect:
+        serializedVersion: 2
+        x: 1773
+        y: 648
+        width: 77
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ad927e2552d1ba0800000000000000
+      internalID: -6116691680903439722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_108
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 687
+        width: 9
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f488fc8f869e3be0800000000000000
+      internalID: -1495592482950839050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_109
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 827
+        width: 7
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b20cc1d0209d580800000000000000
+      internalID: -8802001741378737340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_110
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 656
+        width: 6
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d406a494cd92c8820800000000000000
+      internalID: 2921756284355764301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_111
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 656
+        width: 14
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40cf549f470bfd350800000000000000
+      internalID: 6043743241399303172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_112
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 675
+        width: 46
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be5f12fecccca5f30800000000000000
+      internalID: 4565186352850793963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_113
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 784
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92fc2a48d80a69b70800000000000000
+      internalID: 8905481842847829801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_114
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 808
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccdeabe4192452df0800000000000000
+      internalID: -205685016116924980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_115
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 792
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3d4dd9ab2dd1080800000000000000
+      internalID: -9214977563576445960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_116
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 767
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7ead5f909f92750800000000000000
+      internalID: 6280824976519653361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_117
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 625
+        width: 9
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b445cffe1fb415280800000000000000
+      internalID: -9056373873179863989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_118
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 639
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85327e3c6cf7d300800000000000000
+      internalID: 276967443940914575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_119
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 644
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1194d181b260d070800000000000000
+      internalID: 8129105841930670362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_120
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 469
+        width: 56
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 307c05cc34e83ee90800000000000000
+      internalID: -6997592974161819901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_121
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 462
+        width: 92
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab59006f311ca370800000000000000
+      internalID: 8335055974247783329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_122
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 532
+        width: 8
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c692d904916a4be0800000000000000
+      internalID: -1492273038072047933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_123
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 602
+        width: 7
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b3d47ba036e4ef0800000000000000
+      internalID: -122051242216309897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_124
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 597
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eae71ce038a24420800000000000000
+      internalID: 2612835661901196002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_125
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 592
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21053199b1ee76130800000000000000
+      internalID: 3560075832759373842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_126
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 576
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbea80561acf9010800000000000000
+      internalID: 1197898223093214138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_127
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 502
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee43c28b109bef480800000000000000
+      internalID: -8863443599582546706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_128
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 514
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b23efb70196df450800000000000000
+      internalID: 6124166587814392504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_129
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 561
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70b3921979112930800000000000000
+      internalID: 4116599542186750074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_130
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 516
+        width: 6
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 551c70ac9f5894ff0800000000000000
+      internalID: -51362612855193259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_131
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 462
+        width: 8
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f92d7b1fb8522650800000000000000
+      internalID: 6206620814293150200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_132
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 520
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e8291153f4e0760800000000000000
+      internalID: 7425959924927204906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_133
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 485
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50b2f711724b22690800000000000000
+      internalID: -7628336738921927931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_134
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 500
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb432a9b9379b210800000000000000
+      internalID: 1349236675517303735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_135
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 450
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d9ba22e6f15c18f0800000000000000
+      internalID: -568489332157269544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_136
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 436
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d97358babe9594d90800000000000000
+      internalID: -7113055267725166691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_137
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 468
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48fa675abe5277610800000000000000
+      internalID: 1618804285086543748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_138
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 438
+        width: 7
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b90b00537c143780800000000000000
+      internalID: -8704300898210608712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_139
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 6
+        width: 89
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0725cdee8f4c4b30800000000000000
+      internalID: 4272877621760829194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_140
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 427
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc52f9077f1ca8e50800000000000000
+      internalID: 6812470654841857484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_141
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 446
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3732e891714045cc0800000000000000
+      internalID: -3723346494669053069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_142
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 421
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dce08e070422d450800000000000000
+      internalID: 6111987257021885656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_143
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 422
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e0196dd5a22cf660800000000000000
+      internalID: 7420844381779333351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_144
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 405
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ff5de0858dfdef0800000000000000
+      internalID: -81108395551752421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_145
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 360
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f58f3da163a1fa00800000000000000
+      internalID: 788591049680324088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_146
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 100
+        width: 8
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e63bf684f851600800000000000000
+      internalID: 438414080012938810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_147
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 390
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af723fe689bb8d00800000000000000
+      internalID: 976077733445664678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_148
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 281
+        width: 18
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a6c526646a783c40800000000000000
+      internalID: 5492274317207389861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_149
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 174
+        width: 52
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773f9db77662a7450800000000000000
+      internalID: 6087220072246014839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_150
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 348
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdd3d56e24cb4e230800000000000000
+      internalID: 3667262992105160159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_151
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 246
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 155787b2b91f063b0800000000000000
+      internalID: -5521147494404688559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_152
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 174
+        width: 10
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca4c620fc0568e30800000000000000
+      internalID: 4505377327259863747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_153
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 189
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e77032ab57525330800000000000000
+      internalID: 3698114295099324392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_154
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 119
+        width: 6
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0114e01744ca27eb0800000000000000
+      internalID: -4723523649203715824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_155
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 177
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477bfce0d486eb4f0800000000000000
+      internalID: -811096202709846156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_156
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 110
+        width: 7
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0530859d0e4d8240800000000000000
+      internalID: 4795574998469195018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_157
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 96
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b8a359046ad0300800000000000000
+      internalID: 220014753122782054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_158
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 78
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a6bf738e7016d580800000000000000
+      internalID: -8802830286090946905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_159
+      rect:
+        serializedVersion: 2
+        x: 1773
+        y: 47
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0add6b2f748e45cb0800000000000000
+      internalID: -4876017100823011936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_160
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 18
+        width: 7
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9459f9a0d738ef9d0800000000000000
+      internalID: -2738606950322301623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_161
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 83
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aaf66488a1a36b40800000000000000
+      internalID: 5432363320686869156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_162
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e56090669f5f0f10800000000000000
+      internalID: 2238112639296234985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_163
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 63
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5659cd7a3009bc0800000000000000
+      internalID: -3778516067868645936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_164
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 49
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3845c7528fc669be0800000000000000
+      internalID: -1470868415253293949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_165
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 12
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b854a7ce253b93c0800000000000000
+      internalID: -4351826139889248076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_166
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 2
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1add334d7c922d80800000000000000
+      internalID: -8276881103340578273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_167
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 10
+        width: 6
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ec594e9a9bab030800000000000000
+      internalID: 3511322998824357409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_168
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 1
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11976a96ec70eae60800000000000000
+      internalID: 7975320573236902161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOY9_169
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 2
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3348bc6cb61ae1ff0800000000000000
+      internalID: -63435860467809229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BOY9_0: -7445915596413473755
+      BOY9_1: 6244851918033724041
+      BOY9_10: -4656770923706266942
+      BOY9_100: 2105369859208789221
+      BOY9_101: 1498256702192393158
+      BOY9_102: -3927845114086263012
+      BOY9_103: 872859153850950994
+      BOY9_104: -4840989786594817430
+      BOY9_105: -6471140130891105348
+      BOY9_106: 2988171702419148064
+      BOY9_107: -6116691680903439722
+      BOY9_108: -1495592482950839050
+      BOY9_109: -8802001741378737340
+      BOY9_11: -2759717546119002136
+      BOY9_110: 2921756284355764301
+      BOY9_111: 6043743241399303172
+      BOY9_112: 4565186352850793963
+      BOY9_113: 8905481842847829801
+      BOY9_114: -205685016116924980
+      BOY9_115: -9214977563576445960
+      BOY9_116: 6280824976519653361
+      BOY9_117: -9056373873179863989
+      BOY9_118: 276967443940914575
+      BOY9_119: 8129105841930670362
+      BOY9_12: -6554499130611046323
+      BOY9_120: -6997592974161819901
+      BOY9_121: 8335055974247783329
+      BOY9_122: -1492273038072047933
+      BOY9_123: -122051242216309897
+      BOY9_124: 2612835661901196002
+      BOY9_125: 3560075832759373842
+      BOY9_126: 1197898223093214138
+      BOY9_127: -8863443599582546706
+      BOY9_128: 6124166587814392504
+      BOY9_129: 4116599542186750074
+      BOY9_13: 806873207461117481
+      BOY9_130: -51362612855193259
+      BOY9_131: 6206620814293150200
+      BOY9_132: 7425959924927204906
+      BOY9_133: -7628336738921927931
+      BOY9_134: 1349236675517303735
+      BOY9_135: -568489332157269544
+      BOY9_136: -7113055267725166691
+      BOY9_137: 1618804285086543748
+      BOY9_138: -8704300898210608712
+      BOY9_139: 4272877621760829194
+      BOY9_14: 5444908719490206302
+      BOY9_140: 6812470654841857484
+      BOY9_141: -3723346494669053069
+      BOY9_142: 6111987257021885656
+      BOY9_143: 7420844381779333351
+      BOY9_144: -81108395551752421
+      BOY9_145: 788591049680324088
+      BOY9_146: 438414080012938810
+      BOY9_147: 976077733445664678
+      BOY9_148: 5492274317207389861
+      BOY9_149: 6087220072246014839
+      BOY9_15: 7909951571692605005
+      BOY9_150: 3667262992105160159
+      BOY9_151: -5521147494404688559
+      BOY9_152: 4505377327259863747
+      BOY9_153: 3698114295099324392
+      BOY9_154: -4723523649203715824
+      BOY9_155: -811096202709846156
+      BOY9_156: 4795574998469195018
+      BOY9_157: 220014753122782054
+      BOY9_158: -8802830286090946905
+      BOY9_159: -4876017100823011936
+      BOY9_16: -6535290199716908926
+      BOY9_160: -2738606950322301623
+      BOY9_161: 5432363320686869156
+      BOY9_162: 2238112639296234985
+      BOY9_163: -3778516067868645936
+      BOY9_164: -1470868415253293949
+      BOY9_165: -4351826139889248076
+      BOY9_166: -8276881103340578273
+      BOY9_167: 3511322998824357409
+      BOY9_168: 7975320573236902161
+      BOY9_169: -63435860467809229
+      BOY9_17: 7349860050282641440
+      BOY9_18: -5269595911909656921
+      BOY9_19: -8077805690790456857
+      BOY9_2: 5702380693654149872
+      BOY9_20: 8963356191249739594
+      BOY9_21: 1381069360662652385
+      BOY9_22: 7472082110482322280
+      BOY9_23: -4169373130196906531
+      BOY9_24: 4609893414941279331
+      BOY9_25: -2440214905331469465
+      BOY9_26: 8736135167568491630
+      BOY9_27: 7490043857512032432
+      BOY9_28: -6565259766096016171
+      BOY9_29: 2876944418972746341
+      BOY9_3: 3464259938823473988
+      BOY9_30: -8361948282266253372
+      BOY9_31: -6078181851414239058
+      BOY9_32: 8796070440064009319
+      BOY9_33: -5739332705471397579
+      BOY9_34: -4859243987471738155
+      BOY9_35: -7559591053629998884
+      BOY9_36: -526325820835034626
+      BOY9_37: 4044722674911703054
+      BOY9_38: -1068006261076487202
+      BOY9_39: -7314457350071302212
+      BOY9_4: -6794550518531112135
+      BOY9_40: 5863507191451090068
+      BOY9_41: 8939860044404130319
+      BOY9_42: -9158835840683616748
+      BOY9_43: -5915223630769331780
+      BOY9_44: -7896237527621987237
+      BOY9_45: -4651273409349333740
+      BOY9_46: -2307789365838233947
+      BOY9_47: 4772611789173095449
+      BOY9_48: 8046458265943091723
+      BOY9_49: 7922676441452189398
+      BOY9_5: 3519939791446337687
+      BOY9_50: 7844980518759245970
+      BOY9_51: 5079787607791645738
+      BOY9_52: -8179679991779042140
+      BOY9_53: 7165009675699169661
+      BOY9_54: -8472851290727695564
+      BOY9_55: -3309213390020400405
+      BOY9_56: -1714151955020351936
+      BOY9_57: -5857567117163467612
+      BOY9_58: -3889848202913154933
+      BOY9_59: -1768861333256709381
+      BOY9_6: 7306217210590283630
+      BOY9_60: -5681223459382553474
+      BOY9_61: -6553885183271025557
+      BOY9_62: 3036859653170422342
+      BOY9_63: 2746111488804644776
+      BOY9_64: 2915659601749307821
+      BOY9_65: -8030433877733443205
+      BOY9_66: -2026653714082611673
+      BOY9_67: 8505321117261048798
+      BOY9_68: -3878496003804562256
+      BOY9_69: -8883390954025685692
+      BOY9_7: 6545236552431035102
+      BOY9_70: -6234203340585100673
+      BOY9_71: -4091717933477672101
+      BOY9_72: -6584991157328840340
+      BOY9_73: -5961115459512997261
+      BOY9_74: -8639460054624789186
+      BOY9_75: 5091124557620151196
+      BOY9_76: -8745196375786479404
+      BOY9_77: 770802178831922551
+      BOY9_78: 3857676593652809246
+      BOY9_79: -313306066789009464
+      BOY9_8: 6545056680813272166
+      BOY9_80: -135636046154691000
+      BOY9_81: 6203468689872110770
+      BOY9_82: 3453800538449454406
+      BOY9_83: 5842206678553256270
+      BOY9_84: 994933522125940240
+      BOY9_85: -3007061772739293527
+      BOY9_86: 42520992167766990
+      BOY9_87: 322838290344464440
+      BOY9_88: -6195898464094242019
+      BOY9_89: -1678320733139804648
+      BOY9_9: 4935330633748637068
+      BOY9_90: -106837299306164832
+      BOY9_91: -7177320864841714134
+      BOY9_92: 2621201073780502258
+      BOY9_93: -5116307040345835788
+      BOY9_94: -1460234665750378757
+      BOY9_95: -5301984445656494724
+      BOY9_96: -6825714951891195406
+      BOY9_97: -8635279178778704701
+      BOY9_98: 5253480641276763782
+      BOY9_99: -2770320521414867304
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
