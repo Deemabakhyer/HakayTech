@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
-public class StoryIntroAnimation : MonoBehaviour
+    public class SouthStoryAnimation : MonoBehaviour
 {
     [Header("Main Panel")]
     public RectTransform storyPanel;
