@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: c70dde9ba4afb44a99f52822ff548c03
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7668076368816379459
+    second: pupup3_0
+  - first:
+      213: -7868847510864066284
+    second: pupup3_1
+  - first:
+      213: 5342797024327234649
+    second: pupup3_2
+  - first:
+      213: 6483747635827412541
+    second: pupup3_3
+  - first:
+      213: -2890201241731090827
+    second: pupup3_4
+  - first:
+      213: -6852256860038018127
+    second: pupup3_5
+  - first:
+      213: -8596841537804512548
+    second: pupup3_6
+  - first:
+      213: 4084960902389782452
+    second: pupup3_7
+  - first:
+      213: 1863420174257381955
+    second: pupup3_8
+  - first:
+      213: -1944804024107905971
+    second: pupup3_9
+  - first:
+      213: -3612271182538813425
+    second: pupup3_10
+  - first:
+      213: -6744818118184761388
+    second: pupup3_11
+  - first:
+      213: 7242908152226173775
+    second: pupup3_12
+  - first:
+      213: 3955447705722043930
+    second: pupup3_13
+  - first:
+      213: -4717166234573213688
+    second: pupup3_14
+  - first:
+      213: -3432991675339323132
+    second: pupup3_15
+  - first:
+      213: -358523906971878521
+    second: pupup3_16
+  - first:
+      213: -3337253668760915252
+    second: pupup3_17
+  - first:
+      213: 6727946022861606586
+    second: pupup3_18
+  - first:
+      213: -325259078001543231
+    second: pupup3_19
+  - first:
+      213: -6442304047451668431
+    second: pupup3_20
+  - first:
+      213: 7003839666818745881
+    second: pupup3_21
+  - first:
+      213: -4181492159822103133
+    second: pupup3_22
+  - first:
+      213: -7293485945534177822
+    second: pupup3_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pupup3_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 133
+        width: 22
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9e1267b25859590800000000000000
+      internalID: -7668076368816379459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_1
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 133
+        width: 23
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4190b3b31ec3cc290800000000000000
+      internalID: -7868847510864066284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_2
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 133
+        width: 22
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 954f906169d652a40800000000000000
+      internalID: 5342797024327234649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_3
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 111
+        width: 165
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e85c65f16eaf950800000000000000
+      internalID: 6483747635827412541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_4
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 109
+        width: 113
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 576b9399841f3e7d0800000000000000
+      internalID: -2890201241731090827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_5
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 133
+        width: 22
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb43bbc0b4e7e0a0800000000000000
+      internalID: -6852256860038018127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_6
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 131
+        width: 74
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2d6dc5b22e1b880800000000000000
+      internalID: -8596841537804512548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_7
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 133
+        width: 22
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b75d443c42b0b830800000000000000
+      internalID: 4084960902389782452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_8
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 131
+        width: 70
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34268e196c23cd910800000000000000
+      internalID: 1863420174257381955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_9
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 133
+        width: 22
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c4c494b0ba205e0800000000000000
+      internalID: -1944804024107905971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_10
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 194
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00d4648f72aeddc0800000000000000
+      internalID: -3612271182538813425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 131
+        width: 36
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d78af638a79562a0800000000000000
+      internalID: -6744818118184761388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_12
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 131
+        width: 90
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f43d832079af38460800000000000000
+      internalID: 7242908152226173775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_13
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 131
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e32334bb294e630800000000000000
+      internalID: 3955447705722043930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_14
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 111
+        width: 286
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 800fbc16d42498eb0800000000000000
+      internalID: -4717166234573213688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_15
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 176
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 409c68292409b50d0800000000000000
+      internalID: -3432991675339323132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_16
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 111
+        width: 145
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78bb479f764460bf0800000000000000
+      internalID: -358523906971878521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_17
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 103
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc2f2244871bfa1d0800000000000000
+      internalID: -3337253668760915252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_18
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 110
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe0ba8f2477e5d50800000000000000
+      internalID: 6727946022861606586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_19
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 19
+        width: 120
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c73fb387927c7bf0800000000000000
+      internalID: -325259078001543231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_20
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 0
+        width: 123
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13005940a965896a0800000000000000
+      internalID: -6442304047451668431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_21
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 21
+        width: 22
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916858ca113a23160800000000000000
+      internalID: 7003839666818745881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_22
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 93
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3adf8bef80b58f5c0800000000000000
+      internalID: -4181492159822103133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pupup3_23
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ed9122dc2558ca90800000000000000
+      internalID: -7293485945534177822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pupup3_0: -7668076368816379459
+      pupup3_1: -7868847510864066284
+      pupup3_10: -3612271182538813425
+      pupup3_11: -6744818118184761388
+      pupup3_12: 7242908152226173775
+      pupup3_13: 3955447705722043930
+      pupup3_14: -4717166234573213688
+      pupup3_15: -3432991675339323132
+      pupup3_16: -358523906971878521
+      pupup3_17: -3337253668760915252
+      pupup3_18: 6727946022861606586
+      pupup3_19: -325259078001543231
+      pupup3_2: 5342797024327234649
+      pupup3_20: -6442304047451668431
+      pupup3_21: 7003839666818745881
+      pupup3_22: -4181492159822103133
+      pupup3_23: -7293485945534177822
+      pupup3_3: 6483747635827412541
+      pupup3_4: -2890201241731090827
+      pupup3_5: -6852256860038018127
+      pupup3_6: -8596841537804512548
+      pupup3_7: 4084960902389782452
+      pupup3_8: 1863420174257381955
+      pupup3_9: -1944804024107905971
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

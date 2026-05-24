@@ -1,0 +1,2353 @@
+fileFormatVersion: 2
+guid: b63d00d444daf46ceacdf49de026d88d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8781659409622210758
+    second: Code make_areeka_0
+  - first:
+      213: 2318600809419964796
+    second: Code make_areeka_1
+  - first:
+      213: -5958724666204477565
+    second: Code make_areeka_2
+  - first:
+      213: 1991339849446042427
+    second: Code make_areeka_3
+  - first:
+      213: 1242805413686171453
+    second: Code make_areeka_4
+  - first:
+      213: 8494369988985294716
+    second: Code make_areeka_5
+  - first:
+      213: 659878767113763508
+    second: Code make_areeka_6
+  - first:
+      213: 401140081028268920
+    second: Code make_areeka_7
+  - first:
+      213: 114263845915128337
+    second: Code make_areeka_8
+  - first:
+      213: 1282091154466583700
+    second: Code make_areeka_9
+  - first:
+      213: -6276887282417400331
+    second: Code make_areeka_10
+  - first:
+      213: 1891654350763510530
+    second: Code make_areeka_11
+  - first:
+      213: 4407726956390965357
+    second: Code make_areeka_12
+  - first:
+      213: -4786862732634443153
+    second: Code make_areeka_13
+  - first:
+      213: 8055870829426806788
+    second: Code make_areeka_14
+  - first:
+      213: -5956358376382590318
+    second: Code make_areeka_15
+  - first:
+      213: -6487938653464926721
+    second: Code make_areeka_16
+  - first:
+      213: 1297667752078885385
+    second: Code make_areeka_17
+  - first:
+      213: 4949374877829402991
+    second: Code make_areeka_18
+  - first:
+      213: -270464437700222130
+    second: Code make_areeka_19
+  - first:
+      213: 6712825287871386578
+    second: Code make_areeka_20
+  - first:
+      213: -1880132131094290176
+    second: Code make_areeka_21
+  - first:
+      213: 8392165220052786105
+    second: Code make_areeka_22
+  - first:
+      213: -4897198248612657100
+    second: Code make_areeka_23
+  - first:
+      213: 1385398251805628906
+    second: Code make_areeka_24
+  - first:
+      213: -4722054095796548947
+    second: Code make_areeka_25
+  - first:
+      213: -6049156095190203549
+    second: Code make_areeka_26
+  - first:
+      213: -4988017158485119820
+    second: Code make_areeka_27
+  - first:
+      213: 8921868350063995383
+    second: Code make_areeka_28
+  - first:
+      213: -4916267185919483357
+    second: Code make_areeka_29
+  - first:
+      213: -5625256339244307026
+    second: Code make_areeka_30
+  - first:
+      213: -144156177582831043
+    second: Code make_areeka_31
+  - first:
+      213: -778820972152853599
+    second: Code make_areeka_32
+  - first:
+      213: 3034539160041788361
+    second: Code make_areeka_33
+  - first:
+      213: 3700465321584685321
+    second: Code make_areeka_34
+  - first:
+      213: -6456984047791692735
+    second: Code make_areeka_35
+  - first:
+      213: 2278459955445515591
+    second: Code make_areeka_36
+  - first:
+      213: -3709339994043934502
+    second: Code make_areeka_37
+  - first:
+      213: 8481920314684896859
+    second: Code make_areeka_38
+  - first:
+      213: 3491506028842591153
+    second: Code make_areeka_39
+  - first:
+      213: -6300134095264637295
+    second: Code make_areeka_40
+  - first:
+      213: -686366743768552745
+    second: Code make_areeka_41
+  - first:
+      213: 6355215509031334690
+    second: Code make_areeka_42
+  - first:
+      213: 1613695957986039101
+    second: Code make_areeka_43
+  - first:
+      213: 2467327654800958848
+    second: Code make_areeka_44
+  - first:
+      213: -835746553953171060
+    second: Code make_areeka_45
+  - first:
+      213: 4205621552118023657
+    second: Code make_areeka_46
+  - first:
+      213: -1396603276224771955
+    second: Code make_areeka_47
+  - first:
+      213: -5243107065040268774
+    second: Code make_areeka_48
+  - first:
+      213: 8871526653811246236
+    second: Code make_areeka_49
+  - first:
+      213: 3352504067049285944
+    second: Code make_areeka_50
+  - first:
+      213: -4443116147199878386
+    second: Code make_areeka_51
+  - first:
+      213: 1019897854462019697
+    second: Code make_areeka_52
+  - first:
+      213: 7855427772009879547
+    second: Code make_areeka_53
+  - first:
+      213: -550617612938852118
+    second: Code make_areeka_54
+  - first:
+      213: 6214715743742154094
+    second: Code make_areeka_55
+  - first:
+      213: -4668944125276204226
+    second: Code make_areeka_56
+  - first:
+      213: 3651883396338075778
+    second: Code make_areeka_57
+  - first:
+      213: 3117994037535438570
+    second: Code make_areeka_58
+  - first:
+      213: -8525279526317254136
+    second: Code make_areeka_59
+  - first:
+      213: 3617812092999251999
+    second: Code make_areeka_60
+  - first:
+      213: 1101671884161402674
+    second: Code make_areeka_61
+  - first:
+      213: -363245146517129694
+    second: Code make_areeka_62
+  - first:
+      213: -771426312133779507
+    second: Code make_areeka_63
+  - first:
+      213: -5373832761612348282
+    second: Code make_areeka_64
+  - first:
+      213: -1766354191844940007
+    second: Code make_areeka_65
+  - first:
+      213: 403610026697823714
+    second: Code make_areeka_66
+  - first:
+      213: 2311293732808397408
+    second: Code make_areeka_67
+  - first:
+      213: -3841929299284630345
+    second: Code make_areeka_68
+  - first:
+      213: 2450702323456620539
+    second: Code make_areeka_69
+  - first:
+      213: -7857941746041380341
+    second: Code make_areeka_70
+  - first:
+      213: -3083222714858732388
+    second: Code make_areeka_71
+  - first:
+      213: -3114682967046917264
+    second: Code make_areeka_72
+  - first:
+      213: -7264625337915006500
+    second: Code make_areeka_73
+  - first:
+      213: -9097741746752501543
+    second: Code make_areeka_74
+  - first:
+      213: -8557036340623775420
+    second: Code make_areeka_75
+  - first:
+      213: 4774504047856312072
+    second: Code make_areeka_76
+  - first:
+      213: -4563650427226368713
+    second: Code make_areeka_77
+  - first:
+      213: -2437890195732257647
+    second: Code make_areeka_78
+  - first:
+      213: -2275598598042426833
+    second: Code make_areeka_79
+  - first:
+      213: 7027891989492193177
+    second: Code make_areeka_80
+  - first:
+      213: 3831990909246760601
+    second: Code make_areeka_81
+  - first:
+      213: 1276514344119161858
+    second: Code make_areeka_82
+  - first:
+      213: -2695003245850831303
+    second: Code make_areeka_83
+  - first:
+      213: -6612629147938570696
+    second: Code make_areeka_84
+  - first:
+      213: -8917995891721230443
+    second: Code make_areeka_85
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Code make_areeka_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 538
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c89ff0b4b8bed970800000000000000
+      internalID: 8781659409622210758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 539
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c710965d6235d2020800000000000000
+      internalID: 2318600809419964796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_2
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 538
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 387268c9c7b5e4da0800000000000000
+      internalID: -5958724666204477565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_3
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 539
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3baf41ea09a2ab10800000000000000
+      internalID: 1991339849446042427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_4
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 539
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3752b760f45f3110800000000000000
+      internalID: 1242805413686171453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_5
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 538
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f0538ff7012e570800000000000000
+      internalID: 8494369988985294716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_6
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 584
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba73a41e3c582900800000000000000
+      internalID: 659878767113763508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_7
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 539
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8738cd247c2219500800000000000000
+      internalID: 401140081028268920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_8
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 538
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 112f07acc52f59100800000000000000
+      internalID: 114263845915128337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_9
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 537
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 494b6a7bc17eac110800000000000000
+      internalID: 1282091154466583700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_10
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 538
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f50854e54404e8a0800000000000000
+      internalID: -6276887282417400331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_11
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 538
+        width: 45
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20bc41f0c91804a10800000000000000
+      internalID: 1891654350763510530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_12
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 539
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d60e89e40546b2d30800000000000000
+      internalID: 4407726956390965357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_13
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 538
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f62b4c0e4b5a19db0800000000000000
+      internalID: -4786862732634443153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_14
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 540
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4009a6866d33ccf60800000000000000
+      internalID: 8055870829426806788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_15
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 539
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2921bc46d93c65da0800000000000000
+      internalID: -5956358376382590318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_16
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 539
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff562b35b2636f5a0800000000000000
+      internalID: -6487938653464926721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_17
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 538
+        width: 45
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9024427f1fd320210800000000000000
+      internalID: 1297667752078885385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_18
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 538
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f61934d7a36bfa440800000000000000
+      internalID: 4949374877829402991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_19
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 527
+        width: 24
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e43a082e60e1f3cf0800000000000000
+      internalID: -270464437700222130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_20
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 527
+        width: 24
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d355d2880fb82d50800000000000000
+      internalID: 6712825287871386578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_21
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 527
+        width: 29
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 001a353c9cd68e5e0800000000000000
+      internalID: -1880132131094290176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_22
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 527
+        width: 36
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb52a5ddc5f67470800000000000000
+      internalID: 8392165220052786105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_23
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 450
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43807cca328a90cb0800000000000000
+      internalID: -4897198248612657100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_24
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 450
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae9525fae5ce93310800000000000000
+      internalID: 1385398251805628906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_25
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 450
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa4ed181d4e77eb0800000000000000
+      internalID: -4722054095796548947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_26
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 449
+        width: 54
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3638c4bc4941d0ca0800000000000000
+      internalID: -6049156095190203549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_27
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 451
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bce0fe62d007cab0800000000000000
+      internalID: -4988017158485119820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_28
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 451
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f96d5a8ef7d0db70800000000000000
+      internalID: 8921868350063995383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_29
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 452
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3222c5aba09e5cbb0800000000000000
+      internalID: -4916267185919483357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_30
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 439
+        width: 24
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead24d0d9231fe1b0800000000000000
+      internalID: -5625256339244307026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_31
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 439
+        width: 25
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a4ff268badffdf0800000000000000
+      internalID: -144156177582831043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_32
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 483
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab6433c3721135f0800000000000000
+      internalID: -778820972152853599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_33
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 439
+        width: 36
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c39d43d949dc1a20800000000000000
+      internalID: 3034539160041788361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_34
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 442
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 901f4b4aa91ba5330800000000000000
+      internalID: 3700465321584685321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_35
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 362
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1442307183f2466a0800000000000000
+      internalID: -6456984047791692735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_36
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 363
+        width: 52
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7454847f147be9f10800000000000000
+      internalID: 2278459955445515591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_37
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 362
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad89cd7ade6c58cc0800000000000000
+      internalID: -3709339994043934502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_38
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 348
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5676f94695d5b570800000000000000
+      internalID: 8481920314684896859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_39
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 362
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b32c440c32547030800000000000000
+      internalID: 3491506028842591153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_40
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 363
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e9c6e7b6d6198a0800000000000000
+      internalID: -6300134095264637295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_41
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 363
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7daa80445198976f0800000000000000
+      internalID: -686366743768552745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_42
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 351
+        width: 24
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 223bdd685d2423850800000000000000
+      internalID: 6355215509031334690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_43
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 351
+        width: 24
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35dd3f8ceff46610800000000000000
+      internalID: 1613695957986039101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_44
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 395
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085a8e8fd65bd3220800000000000000
+      internalID: 2467327654800958848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_45
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 351
+        width: 36
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c894d59efe4d664f0800000000000000
+      internalID: -835746553953171060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_46
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 354
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5c8b1f48e5d5a30800000000000000
+      internalID: 4205621552118023657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_47
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 274
+        width: 45
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88c97448b44e9ce0800000000000000
+      internalID: -1396603276224771955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_48
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 274
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a121fec47edbc37b0800000000000000
+      internalID: -5243107065040268774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_49
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 275
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9444dffc7efd1b70800000000000000
+      internalID: 8871526653811246236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_50
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 274
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8396688cfac768e20800000000000000
+      internalID: 3352504067049285944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_51
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 274
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b595e9761e652c0800000000000000
+      internalID: -4443116147199878386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_52
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 263
+        width: 24
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178446ae1b7672e00800000000000000
+      internalID: 1019897854462019697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_53
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 263
+        width: 24
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf7136550f5140d60800000000000000
+      internalID: 7855427772009879547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_54
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 307
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8c4b5c230db58f0800000000000000
+      internalID: -550617612938852118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_55
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 266
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6557cdba0b1f3650800000000000000
+      internalID: 6214715743742154094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_56
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 186
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e33d3c02e04943fb0800000000000000
+      internalID: -4668944125276204226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_57
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 186
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288c0e7b9981ea230800000000000000
+      internalID: 3651883396338075778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_58
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 186
+        width: 51
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae6f51bae07554b20800000000000000
+      internalID: 3117994037535438570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_59
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 187
+        width: 51
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a13fe807f10b980800000000000000
+      internalID: -8525279526317254136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_60
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 186
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18355b3eec053230800000000000000
+      internalID: 3617812092999251999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_61
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 187
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237c972edbce94f00800000000000000
+      internalID: 1101671884161402674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_62
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 187
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 226367bb67e75faf0800000000000000
+      internalID: -363245146517129694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_63
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 187
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcf50e63bd75b45f0800000000000000
+      internalID: -771426312133779507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_64
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 175
+        width: 25
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6845db9339f4c65b0800000000000000
+      internalID: -5373832761612348282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_65
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 175
+        width: 24
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9176f879836ac77e0800000000000000
+      internalID: -1766354191844940007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_66
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 219
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e51c1d4e29e99500800000000000000
+      internalID: 403610026697823714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_67
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 175
+        width: 36
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06291ab776d531020800000000000000
+      internalID: 2311293732808397408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_68
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 178
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b469ff58a9beaac0800000000000000
+      internalID: -3841929299284630345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_69
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 99
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf73bdf57c4a20220800000000000000
+      internalID: 2450702323456620539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_70
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 99
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b02ad797d9bf2f290800000000000000
+      internalID: -7857941746041380341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_71
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 100
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c940e65c6413635d0800000000000000
+      internalID: -3083222714858732388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_72
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 100
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0737531085c66c4d0800000000000000
+      internalID: -3114682967046917264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_73
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 99
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd1264baebdde2b90800000000000000
+      internalID: -7264625337915006500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_74
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 84
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d8439e45145eb180800000000000000
+      internalID: -9097741746752501543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_75
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 99
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 449e20b09cc4f3980800000000000000
+      internalID: -8557036340623775420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_76
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 99
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80fd3279222724240800000000000000
+      internalID: 4774504047856312072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_77
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 99
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735dc1e9d18aaa0c0800000000000000
+      internalID: -4563650427226368713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_78
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 99
+        width: 37
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 194a8f198cfda2ed0800000000000000
+      internalID: -2437890195732257647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_79
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 99
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f22ed48b1237b60e0800000000000000
+      internalID: -2275598598042426833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_80
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 87
+        width: 24
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997de717786188160800000000000000
+      internalID: 7027891989492193177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_81
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 87
+        width: 24
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 996ed20ed67fd2530800000000000000
+      internalID: 3831990909246760601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_82
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204d9ef580717b110800000000000000
+      internalID: 1276514344119161858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_83
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 87
+        width: 36
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 936598e93dc699ad0800000000000000
+      internalID: -2695003245850831303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_84
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 90
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e3abd33d83b34a0800000000000000
+      internalID: -6612629147938570696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Code make_areeka_85
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 0
+        width: 30
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 597209d6cf9ec3480800000000000000
+      internalID: -8917995891721230443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Code make_areeka_0: 8781659409622210758
+      Code make_areeka_1: 2318600809419964796
+      Code make_areeka_10: -6276887282417400331
+      Code make_areeka_11: 1891654350763510530
+      Code make_areeka_12: 4407726956390965357
+      Code make_areeka_13: -4786862732634443153
+      Code make_areeka_14: 8055870829426806788
+      Code make_areeka_15: -5956358376382590318
+      Code make_areeka_16: -6487938653464926721
+      Code make_areeka_17: 1297667752078885385
+      Code make_areeka_18: 4949374877829402991
+      Code make_areeka_19: -270464437700222130
+      Code make_areeka_2: -5958724666204477565
+      Code make_areeka_20: 6712825287871386578
+      Code make_areeka_21: -1880132131094290176
+      Code make_areeka_22: 8392165220052786105
+      Code make_areeka_23: -4897198248612657100
+      Code make_areeka_24: 1385398251805628906
+      Code make_areeka_25: -4722054095796548947
+      Code make_areeka_26: -6049156095190203549
+      Code make_areeka_27: -4988017158485119820
+      Code make_areeka_28: 8921868350063995383
+      Code make_areeka_29: -4916267185919483357
+      Code make_areeka_3: 1991339849446042427
+      Code make_areeka_30: -5625256339244307026
+      Code make_areeka_31: -144156177582831043
+      Code make_areeka_32: -778820972152853599
+      Code make_areeka_33: 3034539160041788361
+      Code make_areeka_34: 3700465321584685321
+      Code make_areeka_35: -6456984047791692735
+      Code make_areeka_36: 2278459955445515591
+      Code make_areeka_37: -3709339994043934502
+      Code make_areeka_38: 8481920314684896859
+      Code make_areeka_39: 3491506028842591153
+      Code make_areeka_4: 1242805413686171453
+      Code make_areeka_40: -6300134095264637295
+      Code make_areeka_41: -686366743768552745
+      Code make_areeka_42: 6355215509031334690
+      Code make_areeka_43: 1613695957986039101
+      Code make_areeka_44: 2467327654800958848
+      Code make_areeka_45: -835746553953171060
+      Code make_areeka_46: 4205621552118023657
+      Code make_areeka_47: -1396603276224771955
+      Code make_areeka_48: -5243107065040268774
+      Code make_areeka_49: 8871526653811246236
+      Code make_areeka_5: 8494369988985294716
+      Code make_areeka_50: 3352504067049285944
+      Code make_areeka_51: -4443116147199878386
+      Code make_areeka_52: 1019897854462019697
+      Code make_areeka_53: 7855427772009879547
+      Code make_areeka_54: -550617612938852118
+      Code make_areeka_55: 6214715743742154094
+      Code make_areeka_56: -4668944125276204226
+      Code make_areeka_57: 3651883396338075778
+      Code make_areeka_58: 3117994037535438570
+      Code make_areeka_59: -8525279526317254136
+      Code make_areeka_6: 659878767113763508
+      Code make_areeka_60: 3617812092999251999
+      Code make_areeka_61: 1101671884161402674
+      Code make_areeka_62: -363245146517129694
+      Code make_areeka_63: -771426312133779507
+      Code make_areeka_64: -5373832761612348282
+      Code make_areeka_65: -1766354191844940007
+      Code make_areeka_66: 403610026697823714
+      Code make_areeka_67: 2311293732808397408
+      Code make_areeka_68: -3841929299284630345
+      Code make_areeka_69: 2450702323456620539
+      Code make_areeka_7: 401140081028268920
+      Code make_areeka_70: -7857941746041380341
+      Code make_areeka_71: -3083222714858732388
+      Code make_areeka_72: -3114682967046917264
+      Code make_areeka_73: -7264625337915006500
+      Code make_areeka_74: -9097741746752501543
+      Code make_areeka_75: -8557036340623775420
+      Code make_areeka_76: 4774504047856312072
+      Code make_areeka_77: -4563650427226368713
+      Code make_areeka_78: -2437890195732257647
+      Code make_areeka_79: -2275598598042426833
+      Code make_areeka_8: 114263845915128337
+      Code make_areeka_80: 7027891989492193177
+      Code make_areeka_81: 3831990909246760601
+      Code make_areeka_82: 1276514344119161858
+      Code make_areeka_83: -2695003245850831303
+      Code make_areeka_84: -6612629147938570696
+      Code make_areeka_85: -8917995891721230443
+      Code make_areeka_9: 1282091154466583700
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

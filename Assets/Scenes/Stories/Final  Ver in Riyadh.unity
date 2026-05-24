@@ -421,14 +421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc406c57bfe45401dae871d4fb248845, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlockExecutionController
-  selectedBlocksPanel: {fileID: 874948748}
-  character: {fileID: 1650844062}
-  pointStart: {fileID: 1363335924}
-  pointForward1: {fileID: 581848181}
-  pointRightWrong: {fileID: 365024356}
-  pointStop: {fileID: 1108617645}
-  pointForward2: {fileID: 114836468}
-  pointEnd: {fileID: 507062139}
 --- !u!114 &31449415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,17 +433,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b03baf36fff4f28a2fd7458405529f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerPathController
-  playerCharacter: {fileID: 1650844062}
-  pointStart: {fileID: 1363335924}
-  pointForward1: {fileID: 581848181}
-  pointRight: {fileID: 365024356}
-  pointStop: {fileID: 1108617645}
-  pointLeft: {fileID: 744938955}
-  pointForward2: {fileID: 114836468}
-  pointEnd: {fileID: 507062139}
-  moveDuration: 0.55
-  popScale: 1.08
-  useStopPoint: 0
 --- !u!82 &31449416
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1837,8 +1818,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4981e81dc97a04023a5d973a8893e1c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlockDragScaleEffect
-  normalScale: {x: 1, y: 1, z: 1}
-  dragScale: {x: 1.08, y: 1.08, z: 1}
 --- !u!114 &196952737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1851,14 +1830,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ba9d2966ae1e4477880a23f9adbd378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlockEffects
-  blockImage: {fileID: 0}
-  normalSprite: {fileID: 0}
-  wrongSprite: {fileID: 0}
-  audioSource: {fileID: 0}
-  errorClip: {fileID: 0}
-  shakeDuration: 0.35
-  shakeStrength: 12
-  isWrongMarked: 0
 --- !u!114 &196952738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2693,9 +2664,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DragBlock
   blockID: Start
   isTemplate: 1
-  visualToScale: {fileID: 0}
-  blockAudio: {fileID: 2101108820}
-  dragClip: {fileID: 8300000, guid: 05818ae716db6412f9718b9bc1d33237, type: 3}
 --- !u!114 &316691186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2708,14 +2676,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ba9d2966ae1e4477880a23f9adbd378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlockEffects
-  blockImage: {fileID: 316691182}
-  normalSprite: {fileID: -5800920367153671432, guid: 8ae8295ffeaaa457899bc2c72ca182ee, type: 3}
-  wrongSprite: {fileID: 7090022251165901959, guid: d183f56e83ddc4d3a8a1e029d7f9785e, type: 3}
-  audioSource: {fileID: 316691187}
-  errorClip: {fileID: 8300000, guid: 12e833c96d6c24909a62d8a832572dc6, type: 3}
-  shakeDuration: 0.35
-  shakeStrength: 12
-  isWrongMarked: 0
 --- !u!82 &316691187
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4237,9 +4197,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a95a1dc8056c443ba80a192c6f259805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrashDropArea
-  blockChecker: {fileID: 2101108819}
-  trashAudio: {fileID: 506268930}
-  trashClip: {fileID: 8300000, guid: f09110396ab00439bb67092e80dbe4d3, type: 3}
 --- !u!82 &506268930
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7484,9 +7441,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DragBlock
   blockID: TurnRight
   isTemplate: 1
-  visualToScale: {fileID: 0}
-  blockAudio: {fileID: 2101108820}
-  dragClip: {fileID: 8300000, guid: 05818ae716db6412f9718b9bc1d33237, type: 3}
 --- !u!114 &1152676073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7499,14 +7453,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ba9d2966ae1e4477880a23f9adbd378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlockEffects
-  blockImage: {fileID: 0}
-  normalSprite: {fileID: 4382631314378041893, guid: d5916afd9a1934a1bbd75683d2fc21c1, type: 3}
-  wrongSprite: {fileID: 7090022251165901959, guid: d183f56e83ddc4d3a8a1e029d7f9785e, type: 3}
-  audioSource: {fileID: 1152676074}
-  errorClip: {fileID: 8300000, guid: 12e833c96d6c24909a62d8a832572dc6, type: 3}
-  shakeDuration: 0.35
-  shakeStrength: 12
-  isWrongMarked: 0
 --- !u!82 &1152676074
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7889,7 +7835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1235913852
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8704,9 +8650,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DragBlock
   blockID: TurnLeft
   isTemplate: 1
-  visualToScale: {fileID: 0}
-  blockAudio: {fileID: 2101108820}
-  dragClip: {fileID: 8300000, guid: 05818ae716db6412f9718b9bc1d33237, type: 3}
 --- !u!114 &1403102910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8719,14 +8662,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ba9d2966ae1e4477880a23f9adbd378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlockEffects
-  blockImage: {fileID: 2104006866}
-  normalSprite: {fileID: 6208417068578914655, guid: 2c1119bfe3e0840bd81fc5e66e20f60d, type: 3}
-  wrongSprite: {fileID: 7090022251165901959, guid: d183f56e83ddc4d3a8a1e029d7f9785e, type: 3}
-  audioSource: {fileID: 1403102911}
-  errorClip: {fileID: 8300000, guid: d16c6f317a9ad44f98b0b9872c7c402e, type: 3}
-  shakeDuration: 0.35
-  shakeStrength: 12
-  isWrongMarked: 0
 --- !u!82 &1403102911
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9097,7 +9032,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1440785452
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12197,7 +12132,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 606b0cde00abb4b8cbc6853327f89dc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  blockChecker: {fileID: 2101108819}
 --- !u!114 &1937947092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13665,27 +13599,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4aa759fc7194d23a459decca5719be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlockChecker
-  selectedBlocksPanel: {fileID: 1937947088}
-  correctOrder:
-  - Start
-  - MoveForward
-  - TurnRight
-  - Stop
-  - TurnLeft
-  - MoveForward
-  - End
-  aiController: {fileID: 1151016981}
-  screenStateVisual: {fileID: 492939943}
-  playerPathController: {fileID: 31449415}
-  successCelebration: {fileID: 64849080}
-  startState: 5
-  firstMoveForwardState: 6
-  turnRightState: 8
-  stopState: 9
-  turnLeftState: 12
-  secondMoveForwardState: 13
-  endState: 15
-  wrongState: 8
 --- !u!82 &2101108820
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13891,9 +13804,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DragBlock
   blockID: End
   isTemplate: 1
-  visualToScale: {fileID: 0}
-  blockAudio: {fileID: 2101108820}
-  dragClip: {fileID: 8300000, guid: 05818ae716db6412f9718b9bc1d33237, type: 3}
 --- !u!114 &2101908918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13906,14 +13816,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ba9d2966ae1e4477880a23f9adbd378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlockEffects
-  blockImage: {fileID: 2101908914}
-  normalSprite: {fileID: -6625885572439757835, guid: 9e40562ff765b4516b9176a28028dd1f, type: 3}
-  wrongSprite: {fileID: 7090022251165901959, guid: d183f56e83ddc4d3a8a1e029d7f9785e, type: 3}
-  audioSource: {fileID: 2101908919}
-  errorClip: {fileID: 8300000, guid: a755d9bd31831423a915d996ae2630ee, type: 3}
-  shakeDuration: 0.35
-  shakeStrength: 12
-  isWrongMarked: 0
 --- !u!82 &2101908919
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14127,9 +14029,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   blockID: MoveForward
   isTemplate: 1
-  visualToScale: {fileID: 0}
-  blockAudio: {fileID: 2101108820}
-  dragClip: {fileID: 8300000, guid: 05818ae716db6412f9718b9bc1d33237, type: 3}
 --- !u!225 &2104006869
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -14154,14 +14053,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ba9d2966ae1e4477880a23f9adbd378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlockEffects
-  blockImage: {fileID: 2104006866}
-  normalSprite: {fileID: 1485749508150936505, guid: 1bc4caf576ef94a559445457cf25adda, type: 3}
-  wrongSprite: {fileID: 7090022251165901959, guid: d183f56e83ddc4d3a8a1e029d7f9785e, type: 3}
-  audioSource: {fileID: 2104006871}
-  errorClip: {fileID: 8300000, guid: 12e833c96d6c24909a62d8a832572dc6, type: 3}
-  shakeDuration: 0.35
-  shakeStrength: 12
-  isWrongMarked: 0
 --- !u!82 &2104006871
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14462,9 +14353,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DragBlock
   blockID: Stop
   isTemplate: 1
-  visualToScale: {fileID: 0}
-  blockAudio: {fileID: 2101108820}
-  dragClip: {fileID: 8300000, guid: 05818ae716db6412f9718b9bc1d33237, type: 3}
 --- !u!114 &2125605545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14477,14 +14365,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ba9d2966ae1e4477880a23f9adbd378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlockEffects
-  blockImage: {fileID: 2125605541}
-  normalSprite: {fileID: -4645223463015171400, guid: 45b01206114ef4ae1ad87a8fcca145ee, type: 3}
-  wrongSprite: {fileID: 7090022251165901959, guid: d183f56e83ddc4d3a8a1e029d7f9785e, type: 3}
-  audioSource: {fileID: 2125605546}
-  errorClip: {fileID: 8300000, guid: 12e833c96d6c24909a62d8a832572dc6, type: 3}
-  shakeDuration: 0.35
-  shakeStrength: 12
-  isWrongMarked: 0
 --- !u!82 &2125605546
 AudioSource:
   m_ObjectHideFlags: 0
