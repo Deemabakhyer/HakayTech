@@ -137,6 +137,8 @@ public class HomePageIntroController : MonoBehaviour
 
         assistantImage.preserveAspect = true;
     }
+
+
     IEnumerator IntroRoutine()
     {
         // 1. تجهيز وضعية المساعد (خلف الكواليس)

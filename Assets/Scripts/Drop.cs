@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
+/// <summary>
+/// Drop: Handles the logic when a draggable block is dropped into the area, 
+/// parenting it to the solution sheet and initializing specialized block features.
+/// </summary>
 public class Drop : MonoBehaviour, DropArea
 {
     public void OnDrop(Drag drag)
@@ -14,18 +18,17 @@ public class Drop : MonoBehaviour, DropArea
             {
                 loopLogic.EnableInput();
             }
-            // If the block is a variable, add it to the list
-            // This code only works if there is a VariableManager in the Scene
+
             VariableManager manager = FindObjectOfType<VariableManager>();
             if (manager != null && drag.TryGetComponent(out VariableBlock varBlock))
             {
                 varBlock.PopulateDropdown(manager.GetSavedVariables());
                 manager.RegisterPlacedBlock(varBlock);
             }
-            else
-            {
-                Debug.LogError("SolutionSheet reference is missing!");
-            }
+        }
+        else
+        {
+            Debug.LogError("SolutionSheet reference is missing!");
         }
     }
 }

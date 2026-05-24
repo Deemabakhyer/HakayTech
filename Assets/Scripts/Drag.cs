@@ -24,8 +24,8 @@ public class Drag : MonoBehaviour
         cam = Camera.main;
         snap = GetComponent<BlockSnap>();
 
-        // Ensure there is an AudioSource to play Drag/Drop sounds
-        audioSource = GetComponent<AudioSource>();
+        // Ensure there is an AudioSource to play Drag/Drop sounds
+        audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
         {
             audioSource = gameObject.AddComponent<AudioSource>();
@@ -63,8 +63,8 @@ public class Drag : MonoBehaviour
             return;
         }
 
-        // Non-template block → drag itself
-        BeginDrag();
+        // Non-template block → drag itself
+        BeginDrag();
     }
 
 
@@ -72,8 +72,8 @@ public class Drag : MonoBehaviour
     {
         startPos = transform.position;
 
-        // Detach from parent when dragging (important for chains)
-        transform.SetParent(null);
+        // Detach from parent when dragging (important for chains)
+        transform.SetParent(null);
         PlaySound(dragSound);
     }
 
@@ -90,14 +90,14 @@ public class Drag : MonoBehaviour
 
         bool snapped = false;
 
-        // Try snapping to another block
-        if (snap != null)
+        // Try snapping to another block
+        if (snap != null)
         {
             snapped = snap.TrySnap();
         }
 
-        // If not snapped, try drop areas
-        if (!snapped)
+        // If not snapped, try drop areas
+        if (!snapped)
         {
             col.enabled = false;
             Collider2D hit = Physics2D.OverlapPoint(GetMouseWorldPos());

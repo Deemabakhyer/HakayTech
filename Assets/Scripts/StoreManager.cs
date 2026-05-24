@@ -2,11 +2,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
-using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 /// <summary>
-/// Manages the virtual store, item purchasing, and equipment logic.
-/// Delegating coin display updates to the UserCoinsDisplay component.
+/// StoreManager: Manages virtual store transactions and equipment flows, ensuring strict 
+/// gender-to-item sequence validation before triggering any visual rendering updates.
 /// </summary>
 public class StoreManager : MonoBehaviour
 {
@@ -22,7 +21,7 @@ public class StoreManager : MonoBehaviour
     public GameObject itemCardPrefab;
 
     [Header("Currency Integration")]
-    public UserCoinsDisplay userCoinsDisplay; // اسحبي سكربت عرض الكوينز هنا
+    public UserCoinsDisplay userCoinsDisplay;
     [Header("Companion Integration")]
     public AiCompanionDisplay aiDisplay;
 
@@ -31,50 +30,88 @@ public class StoreManager : MonoBehaviour
     private int currentCoins;
     private List<string> ownedItemIds = new List<string>();
     private string equippedItemId = "";
+    private List<ItemCard> spawnedCards = new List<ItemCard>();
+
+    void Awake()
+    {
+        currentUserId = PlayerPrefs.GetString("currentUserId", "");
+        currentGender = PlayerPrefs.GetString("pendingGender", "انثى");
+
+        // حماية: نضمن أن الصورة مخفية تماماً ولا تعرض أي مربع أبيض أو مظهر افتراضي في البداية
+        if (characterDisplay != null)
+        {
+            characterDisplay.enabled = false;
+        }
+    }
 
     void Start()
     {
-        currentUserId = PlayerPrefs.GetString("currentUserId");
+        LoadCachedDisplay();
         StartCoroutine(LoadUserData());
     }
 
+    void LoadCachedDisplay()
+    {
+        equippedItemId = PlayerPrefs.GetString("LastEquipped_" + currentUserId, "");
 
-    /// <summary>
-    /// Fetches all necessary user data from Firestore and synchronizes independent UI components.
-    /// This includes coins, the AI companion appearance, and purchased store items.
-    /// </summary>
+        // التسلسل المطلوب: نبحث أولاً عن الزي بناءً على الجنس، ولا نعرض أي شيء إلا بعد التحقق
+        if (!string.IsNullOrEmpty(equippedItemId))
+        {
+            ApplyEquippedSprite(equippedItemId);
+        }
+        else
+        {
+            // إذا لم يكن هناك زي مجهز نهائياً، هنا فقط نعتمد الديفولت المباشر للجنس
+            bool isGirl = currentGender == "أنثى" || currentGender == "انثى" || currentGender == "female";
+            characterDisplay.sprite = isGirl ? girlSprite : boySprite;
+            if (characterDisplay != null) characterDisplay.enabled = true;
+        }
+
+        InitializeStoreCards();
+    }
+
     IEnumerator LoadUserData()
     {
         yield return StartCoroutine(FirestoreManager.Instance.LoadUser(
             currentUserId,
             (user) =>
             {
-            currentGender = user.gender; 
+                currentGender = user.gender;
                 currentCoins = user.accumulatedCoins;
 
                 if (userCoinsDisplay != null)
-            userCoinsDisplay.RefreshDisplay(); 
+                    userCoinsDisplay.RefreshDisplay();
 
                 if (aiDisplay != null)
-            aiDisplay.RefreshCompanion(); 
-
-                equippedItemId = PlayerPrefs.GetString("LastEquipped_" + currentUserId, ""); 
+                    aiDisplay.RefreshCompanion();
 
                 StartCoroutine(FirestoreManager.Instance.LoadOwnedItems(
                     currentUserId,
                     (items) => {
-                    ownedItemIds.Clear();
-                    foreach (var item in items)
-                    {
-                        ownedItemIds.Add(item.itemId);
-                        if (item.equipped) equippedItemId = item.itemId; 
+                        ownedItemIds.Clear();
+                        foreach (var item in items)
+                        {
+                            if (item != null)
+                            {
+                                ownedItemIds.Add(item.itemId);
+                                if (item.equipped) equippedItemId = item.itemId;
+                            }
                         }
 
+                        // إعادة التحقق والتأكد بعد جلب بيانات السيرفر الحديثة
                         if (!string.IsNullOrEmpty(equippedItemId))
-                            ApplyEquippedSprite(equippedItemId); 
+                        {
+                            ApplyEquippedSprite(equippedItemId);
+                        }
+                        else
+                        {
+                            bool isGirl = currentGender == "أنثى" || currentGender == "انثى" || currentGender == "female";
+                            characterDisplay.sprite = isGirl ? girlSprite : boySprite;
+                            if (characterDisplay != null) characterDisplay.enabled = true;
+                        }
 
-    LoadItems(); 
-},
+                        RefreshAllCards();
+                    },
                     (error) => Debug.LogError("Error fetching owned items: " + error)
                 ));
             },
@@ -82,6 +119,75 @@ public class StoreManager : MonoBehaviour
         ));
     }
 
+    void ApplyEquippedSprite(string itemId)
+    {
+        // 1. تحديد الجنس أولاً بدقة
+        bool isGirl = currentGender == "أنثى" || currentGender == "انثى" || currentGender == "female";
+        ItemData[] items = isGirl ? girlItems : boyItems;
+        bool found = false;
+
+        // 2. البحث عن الزي المطابق داخل قائمة هذا الجنس فوراً
+        foreach (var item in items)
+        {
+            if (item != null && item.itemId == itemId)
+            {
+                characterDisplay.sprite = item.characterSprite;
+                found = true;
+                break;
+            }
+        }
+
+        // 3. التحكم في العرض: لا يظهر المينتور إلا إذا وجدنا الزي المطابق بنجاح، وإلا يرجع للديفولت الآمن
+        if (found)
+        {
+            if (characterDisplay != null)
+            {
+                characterDisplay.enabled = true;
+            }
+        }
+        else
+        {
+            characterDisplay.sprite = isGirl ? girlSprite : boySprite;
+            if (characterDisplay != null)
+            {
+                characterDisplay.enabled = true;
+            }
+        }
+    }
+
+    void InitializeStoreCards()
+    {
+        foreach (Transform child in itemsContainer)
+            Destroy(child.gameObject);
+
+        spawnedCards.Clear();
+
+        bool isGirl = currentGender == "أنثى" || currentGender == "انثى" || currentGender == "female";
+        ItemData[] items = isGirl ? girlItems : boyItems;
+
+        foreach (ItemData item in items)
+        {
+            if (item == null) continue;
+            GameObject card = Instantiate(itemCardPrefab, itemsContainer);
+            ItemCard itemCard = card.GetComponent<ItemCard>();
+            itemCard.Setup(item, this);
+            spawnedCards.Add(itemCard);
+        }
+    }
+
+    void RefreshAllCards()
+    {
+        bool isGirl = currentGender == "أنثى" || currentGender == "انثى" || currentGender == "female";
+        ItemData[] items = isGirl ? girlItems : boyItems;
+
+        for (int i = 0; i < spawnedCards.Count; i++)
+        {
+            if (i < items.Length && spawnedCards[i] != null)
+            {
+                spawnedCards[i].Setup(items[i], this);
+            }
+        }
+    }
 
     public void BuyItem(ItemData item)
     {
@@ -91,15 +197,13 @@ public class StoreManager : MonoBehaviour
             return;
         }
 
-        // 1. الخصم محلياً
         currentCoins -= item.price;
         ownedItemIds.Add(item.itemId);
+        RefreshAllCards();
 
-        // 2. تحديث الداتابيس
         StartCoroutine(FirestoreManager.Instance.UpdateCoins(
             currentUserId, currentCoins,
             () => {
-                // 3. تحديث الواجهة فورياً عبر السكربت المشترك بعد التأكد من نجاح الخصم
                 if (userCoinsDisplay != null) userCoinsDisplay.RefreshDisplay();
             },
             (error) => Debug.LogError(error)
@@ -115,24 +219,9 @@ public class StoreManager : MonoBehaviour
 
         StartCoroutine(FirestoreManager.Instance.SaveOwnedItem(
             newItem,
-            () => LoadItems(),
+            () => RefreshAllCards(),
             (error) => Debug.LogError(error)
         ));
-    }
-    void LoadItems()
-    {
-        foreach (Transform child in itemsContainer)
-            Destroy(child.gameObject);
-
-        bool isGirl = currentGender == "أنثى" || currentGender == "female";
-        ItemData[] items = isGirl ? girlItems : boyItems;
-
-        foreach (ItemData item in items)
-        {
-            GameObject card = Instantiate(itemCardPrefab, itemsContainer);
-            ItemCard itemCard = card.GetComponent<ItemCard>();
-            itemCard.Setup(item, this);
-        }
     }
 
     public bool IsOwned(string itemId) => ownedItemIds.Contains(itemId);
@@ -143,21 +232,6 @@ public class StoreManager : MonoBehaviour
         equippedItemId = item.itemId;
         characterDisplay.sprite = item.characterSprite;
         PlayerPrefs.SetString("LastEquipped_" + currentUserId, item.itemId);
-        LoadItems();
-    }
-
-    void ApplyEquippedSprite(string itemId)
-    {
-        bool isGirl = currentGender == "أنثى" || currentGender == "female";
-        ItemData[] items = isGirl ? girlItems : boyItems;
-
-        foreach (var item in items)
-        {
-            if (item.itemId == itemId)
-            {
-                characterDisplay.sprite = item.characterSprite;
-                break;
-            }
-        }
+        RefreshAllCards();
     }
 }

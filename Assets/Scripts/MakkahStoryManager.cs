@@ -44,6 +44,12 @@ public class MakkahStoryManager : MonoBehaviour
     [Tooltip("Should the audio fade out smoothly at the end?")]
     public bool fadeAudioAtEnd = true;
 
+    [Header("Success UI")]
+    public CompletionPopupController completionPopup;
+
+    private Coroutine tawafCoroutine;
+    private Coroutine slideCoroutine;
+
     void Start()
     {
         // Cache references and set initial states
@@ -67,7 +73,6 @@ public class MakkahStoryManager : MonoBehaviour
     /// </summary>
     public void OnItmamClick()
     {
-        // Locate the active loop block in the solution sheet
         LoopBlockLogic activeLoop = Drag.solutionSheet.GetComponentInChildren<LoopBlockLogic>();
 
         if (activeLoop != null)
@@ -77,17 +82,19 @@ public class MakkahStoryManager : MonoBehaviour
             {
                 Debug.Log("Logic Validated: Starting Tawaf.");
 
-                // Cleanup: Remove the standing/idle model before starting movement
                 Transform standingChild = character.transform.Find("StandingModel");
                 if (standingChild != null)
                 {
                     Destroy(standingChild.gameObject);
                 }
 
-                // Execute UI Slide and Tawaf Movement
-                StopAllCoroutines();
-                StartCoroutine(SlideBlock(true)); // Slide UI Down
-                StartCoroutine(PerformTawaf());   // Start Character Movement
+                // إيقاف مخصص للكوروتينات القديمة بدون إيقاف النظام كاملاً
+                if (tawafCoroutine != null) StopCoroutine(tawafCoroutine);
+                if (slideCoroutine != null) StopCoroutine(slideCoroutine);
+
+                // تشغيل منفصل وآمن
+                slideCoroutine = StartCoroutine(SlideBlock(true));
+                tawafCoroutine = StartCoroutine(PerformTawaf());
             }
             // CHECK 2: Wrong Loop Count
             else if (!activeLoop.IsInputCorrect())
@@ -101,7 +108,6 @@ public class MakkahStoryManager : MonoBehaviour
             }
         }
     }
-
     /// <summary>
     /// Animates the hanging UI block sliding in or out of the scene.
     /// </summary>
@@ -131,11 +137,11 @@ public class MakkahStoryManager : MonoBehaviour
             if (tawafAudioSource != null)
             {
                 tawafAudioSource.Play();
-                tawafAudioSource.loop = true; // نضمن أنه يستمر طوال الأشواط
+                tawafAudioSource.loop = true;
             }
             // Update Lap Counter UI
             if (lapCounterText != null)
-                lapCounterText.text = "الشوط " + (i + 1);
+                lapCounterText.text = (i + 1).ToString();
 
             // Iterate through each point on the Tawaf path
             foreach (Transform point in tawafPathPoints)
@@ -154,29 +160,22 @@ public class MakkahStoryManager : MonoBehaviour
             }
         }
 
-        // --- 2. إيقاف الصوت عند انتهاء الأشواط السبعة ---
+        // --- stop sound ---
         if (tawafAudioSource != null)
         {
             if (fadeAudioAtEnd)
-                StartCoroutine(FadeOutAudio(1.5f)); // يتلاشى خلال ثانية ونصف
+                StartCoroutine(FadeOutAudio(1.5f)); 
             else
                 tawafAudioSource.Stop();
         }
 
         // --- Sequence Completion ---
+        slideCoroutine = StartCoroutine(SlideBlock(false));
 
-        // 1. Hide the Lap Counter UI smoothly
-        if (hangingBlockSprite != null)
-        {
-            yield return StartCoroutine(SlideBlock(false));
-        }
-
-        // 2. Disable moving character and show success feedback
         if (successObject != null)
         {
             character.SetActive(false);
 
-            // Position the success object at the predefined fixed point
             if (successSpawnPoint != null)
                 successObject.transform.position = successSpawnPoint.position;
             else
@@ -187,7 +186,18 @@ public class MakkahStoryManager : MonoBehaviour
             if (lapCounterText != null)
                 lapCounterText.text = "Done";
 
-            Debug.Log("Story Completed: Success object activated.");
+            Debug.Log("Story Completed: Activating completion popup next.");
+
+            yield return new WaitForSeconds(1.0f);
+
+            if (completionPopup != null)
+            {
+                completionPopup.ShowPopup();
+            }
+            else
+            {
+                Debug.LogError("MakkahStoryManager: CompletionPopup reference is MISSING in the Inspector!");
+            }
         }
     }
 
@@ -208,6 +218,6 @@ public class MakkahStoryManager : MonoBehaviour
         }
 
         tawafAudioSource.Stop();
-        tawafAudioSource.volume = startVolume; // إعادة القوة للأصل للمرة القادمة
+        tawafAudioSource.volume = startVolume;
     }
 }

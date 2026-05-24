@@ -135,7 +135,7 @@ public class CompletionPopupController : MonoBehaviour
         yield return new WaitForSeconds(starDelay);
         yield return PopStar(star3);
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(1.2f);
         yield return AnimateCoinCounter();
     }
 
@@ -152,7 +152,7 @@ public class CompletionPopupController : MonoBehaviour
             int currentDisplay = (int)Mathf.Lerp(0, winCoins, elapsed / duration);
 
             if (coinsAmountText.text != "+" + currentDisplay && coinTickClip != null)
-                audioSource.PlayOneShot(coinTickClip, 0.4f);
+                audioSource.PlayOneShot(coinTickClip, 0.02f);
             coinsAmountText.text = "+" + currentDisplay;
             yield return null;
         }
@@ -162,8 +162,6 @@ public class CompletionPopupController : MonoBehaviour
     private void ResetVisualsOnly()
     {
         if (panel != null) panel.localScale = Vector3.zero;
-        // هنا قمنا بإزالة السطر الذي يصفر النص (coinsAmountText.text = "+0")
-        // لكي يظل الرقم الذي جلبناه من السيرفر (initialTotalCoins) ظاهراً
         if (star1 != null) star1.localScale = Vector3.zero;
         if (star2 != null) star2.localScale = Vector3.zero;
         if (star3 != null) star3.localScale = Vector3.zero;

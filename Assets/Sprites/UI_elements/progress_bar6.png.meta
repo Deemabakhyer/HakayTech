@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< Updated upstream:Assets/Sprites/bakraj.png.meta
-guid: 0f4c014feb80b4f618d8b953170e139f
-========
-guid: 57da1a48bdcd54df9b6435a66b2b1888
->>>>>>>> Stashed changes:Assets/Sprites/Characters/Chr_girl_Companion_Uniform2.png.meta
+guid: 239e10a4b4916405296890e639e4094e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

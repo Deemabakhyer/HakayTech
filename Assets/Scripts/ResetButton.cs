@@ -21,8 +21,6 @@ public class ResetButton : MonoBehaviour
 
         if (executionController != null)
             executionController.ResetPreview();
-
-        // انتظر فريم واحد ضمنيًا بعد الحذف ثم حدّث الحالة
         Invoke(nameof(RefreshAfterReset), 0.02f);
     }
 

@@ -2,6 +2,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+/// <summary>
+/// ItemCard: Controls the visual state and interactive behavior of store item cards, 
+/// toggling price configurations, lock overlays, and custom checkmark assets based on item ownership.
+/// </summary>
 public class ItemCard : MonoBehaviour
 {
     public Image itemImage;
@@ -11,6 +15,10 @@ public class ItemCard : MonoBehaviour
     public TMP_Text buttonText;
     public GameObject lockIcon;
     public GameObject pricePanel;
+
+    [Header("Custom Icons")]
+    public GameObject checkmarkIcon;
+
     private ItemData itemData;
     private StoreManager store;
 
@@ -26,35 +34,40 @@ public class ItemCard : MonoBehaviour
 
     void UpdateCardState()
     {
-        // سطر جوهري: امسحي أي برمجة سابقة للزر لتجنب تداخل الأوامر
         actionButton.onClick.RemoveAllListeners();
 
         if (store.IsEquipped(itemData.itemId))
         {
-            // حالة: مجهز ✓
             lockIcon.SetActive(false);
             pricePanel.SetActive(false);
-            buttonText.text = "مجهز ✓";
-            actionButton.interactable = false; // الزر لا يحتاج ضغط هنا
+
+            if (checkmarkIcon != null) checkmarkIcon.SetActive(true);
+
+            buttonText.text = "مجهز";
+            actionButton.interactable = false;
         }
         else if (store.IsOwned(itemData.itemId))
         {
-            // حالة: مشترى - جاهز للتجهيز
             lockIcon.SetActive(false);
             pricePanel.SetActive(false);
+
+            if (checkmarkIcon != null) checkmarkIcon.SetActive(false);
+
             buttonText.text = "تجهيز";
             actionButton.interactable = true;
-            actionButton.onClick.AddListener(() => store.EquipItem(itemData)); //[cite: 1]
+            actionButton.onClick.AddListener(() => store.EquipItem(itemData));
         }
         else
         {
-            // حالة: مقفل - يحتاج شراء[cite: 1]
             lockIcon.SetActive(true);
             pricePanel.SetActive(true);
+
+            if (checkmarkIcon != null) checkmarkIcon.SetActive(false);
+
             priceText.text = itemData.price.ToString();
-            buttonText.text = ""; // اتركيه فارغاً لأن السعر كافٍ بصرياً
+            buttonText.text = "";
             actionButton.interactable = true;
-            actionButton.onClick.AddListener(() => store.BuyItem(itemData)); //[cite: 1]
+            actionButton.onClick.AddListener(() => store.BuyItem(itemData));
         }
     }
 }

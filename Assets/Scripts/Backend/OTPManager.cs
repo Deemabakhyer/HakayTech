@@ -31,8 +31,8 @@ public class OTPManager : MonoBehaviour
         {
             infoText.text = $"ادخل الرمز المرسل الى البريد\n{MaskEmail(email)}";
         }
-        StartTimer();
-        resendButton.gameObject.SetActive(false);
+
+        StartTimer(); // هذي الدالة الحين بتتكفل بقفل الزر وتشغيل التايمر ونصوصك ظاهرة
     }
 
 
@@ -57,14 +57,37 @@ public class OTPManager : MonoBehaviour
         timeRemaining -= Time.deltaTime;
         int minutes = Mathf.FloorToInt(timeRemaining / 60);
         int seconds = Mathf.FloorToInt(timeRemaining % 60);
-        timerText.text = $"{minutes:00}:{seconds:00}";
+
+        if (timerText != null)
+        {
+            timerText.text = $"{minutes:00}:{seconds:00}";
+        }
 
         if (timeRemaining <= 0)
         {
             timerRunning = false;
-            timerText.text = "00:00";
-            resendButton.gameObject.SetActive(true);
-            ShowError("OTP expired! Please resend.");
+
+            // 1. عند انتهاء الوقت، نجعل نص العداد يعرض أصفاراً ثابته
+            if (timerText != null)
+            {
+                timerText.text = "00:00";
+            }
+
+            // 2. الوصول إلى النص الموجود داخل الزر وتغييره إلى "إعادة إرسال" بالكامل
+            if (resendButton != null)
+            {
+                resendButton.interactable = true; // تفعيل الزر للضغط قسراً
+
+                // هنا نبحث عن النص الملحق بالزر لتحديث كلمته ولونه للأسود النشط
+                TMP_Text buttonText = resendButton.GetComponentInChildren<TMP_Text>();
+                if (buttonText != null)
+                {
+                    buttonText.text = "إعادة إرسال";
+                    buttonText.color = Color.black; // قلبه للأسود الواضح بدلاً من الرمادي الميت
+                }
+            }
+
+            ShowError("انتهى وقت الرمز! اضغط إعادة إرسال");
         }
     }
 
@@ -93,13 +116,25 @@ public class OTPManager : MonoBehaviour
         StartCoroutine(VerifyOTP());
     }
 
-
     void StartTimer()
     {
-        timeRemaining = 120f;
+        timeRemaining = 120f; // أو 30f حسب الوقت المعتمد عندكِ
         timerRunning = true;
-        resendButton.gameObject.SetActive(false);
+
+        if (resendButton != null)
+        {
+            resendButton.interactable = false; // قفل الزر فوراً لمنع السبام
+
+            // التعديل هنا: إعادة النص واللون لوضع الانتظار بمجرد بدء المؤقت
+            TMP_Text buttonText = resendButton.GetComponentInChildren<TMP_Text>();
+            if (buttonText != null)
+            {
+                buttonText.text = "إعادة الإرسال خلال";
+                buttonText.color = new Color(0.3f, 0.3f, 0.3f, 0.6f); // تحويله للرمادي الباهت ليفهم الطفل أنه غير نشط حالياً
+            }
+        }
     }
+
 
     /// <summary>
     /// Validates the entered 6-digit code against the locally stored OTP and checks for expiration.
