@@ -4166,8 +4166,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.43}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -399.403, y: -276.279}
-  m_SizeDelta: {x: 43.613, y: 29.189}
+  m_AnchoredPosition: {x: -394.98825, y: -278.48636}
+  m_SizeDelta: {x: 52.4425, y: 33.6037}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &506268926
 MonoBehaviour:
@@ -4263,8 +4263,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71dab3626b0db4365b879abcfee84e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrashDropArea
-  audioSource: {fileID: 0}
-  trashClip: {fileID: 0}
+  audioSource: {fileID: 506268930}
+  trashClip: {fileID: 8300000, guid: f09110396ab00439bb67092e80dbe4d3, type: 3}
 --- !u!82 &506268930
 AudioSource:
   m_ObjectHideFlags: 0
