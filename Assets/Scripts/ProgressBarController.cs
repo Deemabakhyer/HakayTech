@@ -13,6 +13,17 @@ public class ProgressBarController : MonoBehaviour
     [Header("Progress Visuals")]
     public Sprite[] progressSprites;
 
+    [Header("Official Firebase Story IDs Order")]
+    [Tooltip("اكتبي هنا الـ IDs الرسمية للقصص بنفس الترتيب وبنفس طريقة كتابتها في الفايربيس بالضبط")]
+    public List<string> officialStoryIDs = new List<string> {
+        "North_Story",
+        "Eastern_Story", 
+        "Qassim_Story",
+        "Mecca_Story",
+        "South_Story",
+        "Riyadh_Story"
+    };
+
     private Image progressBarImage;
     private string currentUserId;
 
@@ -62,24 +73,36 @@ public class ProgressBarController : MonoBehaviour
         }, (error) =>
         {
             Debug.LogError("ProgressBarController: Failed to load progress from server: " + error);
-            dataLoaded = true; 
+            dataLoaded = true;
         }));
 
         while (!dataLoaded)
         {
             yield return null;
         }
+
         int completedCount = 0;
-        if (userProgress != null)
+
+        if (userProgress != null && officialStoryIDs != null)
         {
-            foreach (var progress in userProgress)
+            foreach (string officialID in officialStoryIDs)
             {
-                if (progress != null && !string.IsNullOrEmpty(progress.state) && progress.state.ToLower().Trim() == "completed")
+                bool isDone = userProgress.Exists(p =>
+                    p != null &&
+                    !string.IsNullOrEmpty(p.storyChallengeId) &&
+                    p.storyChallengeId.Trim() == officialID.Trim() &&
+                    !string.IsNullOrEmpty(p.state) &&
+                    p.state.ToLower().Trim() == "completed"
+                );
+
+                if (isDone)
                 {
                     completedCount++;
                 }
             }
         }
+
+        Debug.Log($"ProgressBar: Total verified completed stories is ({completedCount}) out of ({officialStoryIDs.Count})");
 
         if (progressSprites == null || progressSprites.Length == 0)
         {
@@ -93,7 +116,7 @@ public class ProgressBarController : MonoBehaviour
         if (progressSprites[completedCount] != null)
         {
             progressBarImage.sprite = progressSprites[completedCount];
-            progressBarImage.enabled = true; 
+            progressBarImage.enabled = true;
         }
     }
 }

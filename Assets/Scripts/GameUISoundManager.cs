@@ -25,7 +25,7 @@ public class GameUISoundManager : MonoBehaviour
 
     [Header("AI Arrival Layered Sound")]
     public AudioSource backgroundAudio;
-    public AudioClip aiArrivalClip; // الصوت الموحد
+    public AudioClip aiArrivalClip;  
     public float aiArrivalVolume = 1f;
     public float normalBackgroundVolume = 0.10f;
     public float loweredBackgroundVolume = 0.03f;
@@ -45,7 +45,6 @@ public class GameUISoundManager : MonoBehaviour
     {
         int currentScene = SceneManager.GetActiveScene().buildIndex;
 
-        // إذا نحن ضمن نطاق النزول، شغّل الصوت الموحد
         if (currentScene >= aiArrivalStartScene && currentScene <= aiArrivalEndScene)
         {
             if (!aiArrivalPlayed)

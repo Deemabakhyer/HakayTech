@@ -50,7 +50,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Stories/Riyadh Remas.unity
     guid: f9576715232814ec89ace541766dbbcf
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Overviews/Qassim-Overview.unity
     guid: dbabbce54a22d4853bfcebd6baa40f18
   - enabled: 1
@@ -71,4 +71,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Overviews/North-Intro.unity
     guid: 2eab3e541986046dfa2c83b8f0ba3a34
+  - enabled: 1
+    path: Assets/Scenes/Stories/Make_Areeka Story.unity
+    guid: 0eb5d25419b87410ca954dfabe7d6ee7
+  - enabled: 1
+    path: Assets/Scenes/Stories/Qassim-Story.unity
+    guid: 473851b96532da14c856bf9fbedf3a1f
+  - enabled: 1
+    path: Assets/Scenes/Overviews/Last Intro For South.unity
+    guid: a6972663d9d1c406c80f10dff441e1df
+  - enabled: 1
+    path: Assets/Scenes/Overviews/qaseem_Intro.unity
+    guid: ff47768f008594f33afde97f319d516a
   m_configObjects: {}

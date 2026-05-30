@@ -36,7 +36,7 @@ public class StoryScenePlayer : MonoBehaviour
     public FootstepSceneController footstepController;
 
     [Header("Optional")]
-    public GameObject successPopup;
+    public CompletionPopupController successPopup;
 
     private Coroutine storyRoutine;
 
@@ -113,7 +113,7 @@ public class StoryScenePlayer : MonoBehaviour
         }
 
         if (successPopup != null)
-            successPopup.SetActive(true);
+            successPopup.ShowPopup();
     }
 
     public void ContinueAfterBoardClick()

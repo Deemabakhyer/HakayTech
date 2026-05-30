@@ -14,13 +14,13 @@ public class CompletionPopupController : MonoBehaviour
     public RectTransform star3;
 
     [Header("Firebase Progress")]
-    public string storyID; // اكتب هنا اسم القصة (story1 مثلاً) لتطابق الداتابيس
-    public int winCoins = 50;
+    public string storyID;
+    public int winCoins = 0;
 
     [Header("Coin UI Animation")]
     public TextMeshProUGUI coinsAmountText;
     public RectTransform coinsIcon;
-    private int initialTotalCoins = 0; // الرصيد قبل الزيادة
+    private int initialTotalCoins = 0;
 
     [Header("Timing")]
     public float showDelay = 0.8f;
@@ -33,11 +33,10 @@ public class CompletionPopupController : MonoBehaviour
     public AudioClip starClip;
     public AudioClip coinTickClip;
 
-    private string currentUserId; // نفس تعريف المتجر
+    private string currentUserId;
 
     void Awake()
     {
-        // جلب المعرف بنفس مفتاح المتجر لضمان الربط
         currentUserId = PlayerPrefs.GetString("currentUserId");
         if (popupRoot == null) popupRoot = gameObject;
         ResetVisualsOnly();
@@ -49,67 +48,54 @@ public class CompletionPopupController : MonoBehaviour
         popupRoot.transform.SetAsLastSibling();
 
         StopAllCoroutines();
-        StartCoroutine(ShowRoutine());
+        ResetVisualsOnly();
 
-        // 1. نبدأ بجلب البيانات أولاً قبل الأنيميشن
         if (!string.IsNullOrEmpty(currentUserId))
         {
             StartCoroutine(FetchAndStartSequence());
         }
-
-        // تنفيذ الحفظ للسيرفر
-        if (!string.IsNullOrEmpty(currentUserId))
-        {
-            SaveGameProgress();
-        }
         else
         {
             Debug.LogError("CompletionPopup: No currentUserId found in PlayerPrefs!");
+            StartCoroutine(ShowRoutine());
         }
     }
 
     IEnumerator FetchAndStartSequence()
     {
-        // جلب الرصيد الحالي من السيرفر قبل البدء
         bool dataLoaded = false;
+
         yield return StartCoroutine(FirestoreManager.Instance.LoadUser(currentUserId, (user) => {
             initialTotalCoins = user.accumulatedCoins;
-            // عرض الرصيد الحالي فوراً (بدل الصفر)
-            coinsAmountText.text = initialTotalCoins.ToString();
+            if (coinsAmountText != null) coinsAmountText.text = initialTotalCoins.ToString();
             dataLoaded = true;
         }, (err) => {
-            dataLoaded = true; // نفتح القفل حتى لو فشل لجعل اللعبة تستمر
+            dataLoaded = true;
         }));
 
         while (!dataLoaded) yield return null;
 
-        // 2. البدء في أنيميشن اللوحة والنجوم
-        StartCoroutine(ShowRoutine());
-
-        // 3. حفظ البيانات في السيرفر في الخلفية
         SaveGameProgress();
+
+        yield return StartCoroutine(ShowRoutine());
     }
 
-    // --- منطق الفايربيس (مطابق للوجك المتجر) ---
     private void SaveGameProgress()
     {
-        // 1. جلب بيانات المستخدم الحالية للتأكد من رصيد الكوينز
         StartCoroutine(FirestoreManager.Instance.LoadUser(currentUserId, (user) =>
         {
-            // 2. تحديث الكوينز
             int newTotal = user.accumulatedCoins + winCoins;
             StartCoroutine(FirestoreManager.Instance.UpdateCoins(currentUserId, newTotal, () =>
             {
                 Debug.Log("Coins updated in Firebase: " + newTotal);
             }, null));
 
-            // 3. حفظ التقدم (Progress)
             ProgressData progress = new ProgressData
             {
                 progressId = currentUserId + "_" + storyID,
                 userId = currentUserId,
                 storyChallengeId = storyID,
-                state = "completed", // تأكدي أنها حروف صغيرة
+                state = "completed",
                 coins = winCoins
             };
 
@@ -121,10 +107,8 @@ public class CompletionPopupController : MonoBehaviour
         }, (error) => Debug.LogError("Failed to load user for update: " + error)));
     }
 
-    // --- الأنيميشن والعرض البصري ---
     IEnumerator ShowRoutine()
     {
-        ResetVisualsOnly();
         yield return new WaitForSeconds(showDelay);
         yield return Pop(panel, 0f, 1f, popupDuration);
 
@@ -156,9 +140,10 @@ public class CompletionPopupController : MonoBehaviour
             coinsAmountText.text = "+" + currentDisplay;
             yield return null;
         }
+
+        coinsAmountText.text = "+" + winCoins;
     }
 
-    // --- الدوال المساعدة ---
     private void ResetVisualsOnly()
     {
         if (panel != null) panel.localScale = Vector3.zero;

@@ -678,10 +678,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 307ce8fa4464342b486e7667c3322aae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pausePopup: {fileID: 1134270858}
-  confirmPopup: {fileID: 1134270857}
-  uiAudio: {fileID: 0}
-  popupSound: {fileID: 8300000, guid: fe50d2d35e0ec4051a2fa1cb9c7ca9ea, type: 3}
 --- !u!114 &149292569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1453,7 +1449,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Last Intro For South
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &559963107
@@ -2352,11 +2348,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1539951209568321198, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 6.7918
+      value: 6.87
       objectReference: {fileID: 0}
     - target: {fileID: 1539951209568321198, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0728
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 1539951209568321198, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2385,7 +2381,7 @@ PrefabInstance:
     - target: {fileID: 2068877838040055259, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 149292568}
+      objectReference: {fileID: 2110945300}
     - target: {fileID: 2068877838040055259, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: HidePausePopup
@@ -2401,7 +2397,7 @@ PrefabInstance:
     - target: {fileID: 4616986220931616806, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 149292568}
+      objectReference: {fileID: 2110945300}
     - target: {fileID: 4616986220931616806, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: BackToPause
@@ -2468,11 +2464,11 @@ PrefabInstance:
       objectReference: {fileID: 149292569}
     - target: {fileID: 6585548282668805920, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SendMessage
+      value: LoadScene
       objectReference: {fileID: 0}
     - target: {fileID: 6585548282668805920, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.Component, UnityEngine
+      value: SceneManeger, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6776511378803549120, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
       propertyPath: m_Name
@@ -2483,12 +2479,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6976896821103203504, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976896821103203504, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 149292569}
     - target: {fileID: 6976896821103203504, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976896821103203504, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneManeger, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6976896821103203504, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -2501,7 +2505,7 @@ PrefabInstance:
     - target: {fileID: 7120763221905661969, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 149292568}
+      objectReference: {fileID: 2110945300}
     - target: {fileID: 7120763221905661969, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShowConfirmPopup
@@ -2515,16 +2519,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8667521730385072060, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667521730385072060, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 149292568}
+      objectReference: {fileID: 2110945300}
     - target: {fileID: 8667521730385072060, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: HidePausePopup
       objectReference: {fileID: 0}
+    - target: {fileID: 8667521730385072060, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PopupHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8990366020842406208, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
       propertyPath: storyID
       value: Mecca_Story
+      objectReference: {fileID: 0}
+    - target: {fileID: 8990366020842406208, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
+      propertyPath: winCoins
+      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -2543,16 +2559,6 @@ PrefabInstance:
       addedObject: {fileID: 236672370}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
---- !u!1 &1134270857 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1822249253225136214, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
-  m_PrefabInstance: {fileID: 1134270856}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1134270858 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7228682945122916530, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
-  m_PrefabInstance: {fileID: 1134270856}
-  m_PrefabAsset: {fileID: 0}
 --- !u!82 &1136370485 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 417239701715341732, guid: 19e3b295046fd4dc0abafefc36989a4d, type: 3}
@@ -4415,6 +4421,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2110945300 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6914548677415770275, guid: c6e5f516aa7cd41fb8736d7165187cef, type: 3}
+  m_PrefabInstance: {fileID: 1134270856}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a7036f3a55c46e9a473a0e0926835d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2120112489
 GameObject:
   m_ObjectHideFlags: 0
@@ -4622,7 +4639,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 149292568}
+      - m_Target: {fileID: 2110945300}
         m_TargetAssemblyTypeName: PopupHandler, Assembly-CSharp
         m_MethodName: ShowPausePopup
         m_Mode: 1

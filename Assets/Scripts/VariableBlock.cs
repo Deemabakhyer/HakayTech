@@ -18,7 +18,6 @@ public class VariableBlock : MonoBehaviour
         dropdown.ClearOptions();
         dropdown.AddOptions(new List<string>(savedVariables.Keys));
 
-        // اختار الأول تلقائياً
         if (dropdown.options.Count > 0)
         {
             string first = dropdown.options[0].text;

@@ -34,8 +34,6 @@ public class BlockDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        // ملاحظة: تم حذف صوت البلوك من هنا
-        // عشان الصوت يطلع فقط وقت تثبيت البلوك في منطقة الحل
 
         if (isTemplate)
         {

@@ -24,7 +24,6 @@ public class LoginManager : MonoBehaviour
             return;
         }
 
-        // ✅ هنا الصح
         PlayerPrefs.SetString("loginMode", "login");
         StartCoroutine(LoginFlow());
     }

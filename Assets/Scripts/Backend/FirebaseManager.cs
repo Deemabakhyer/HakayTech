@@ -111,10 +111,8 @@ public class FirebaseManager : MonoBehaviour
     /// 
     public IEnumerator CheckEmailExists(string email, System.Action<bool> onResult, System.Action<string> onError)
     {
-        // الرابط المخصص للاستعلام (RunQuery)
         string url = $"https://firestore.googleapis.com/v1/projects/{FirebaseConfig.ProjectId}/databases/(default)/documents:runQuery";
 
-        // إنشاء الطلب بصيغة JSON للبحث عن الإيميل تحديداً
         string jsonQuery = "{ \"structuredQuery\": { \"from\": [ { \"collectionId\": \"users\" } ], \"where\": { \"fieldFilter\": { \"field\": { \"fieldPath\": \"email\" }, \"op\": \"EQUAL\", \"value\": { \"stringValue\": \"" + email + "\" } } } } }";
 
         UnityWebRequest request = new UnityWebRequest(url, "POST");
@@ -129,8 +127,6 @@ public class FirebaseManager : MonoBehaviour
         {
             string response = request.downloadHandler.text;
 
-            // إذا كانت الإجابة تحتوي على "document"، فهذا يعني أنه وجد تطابقاً
-            // الاستعلام يرجع مصفوفة فارغة [ {} ] إذا لم يجد الإيميل
             bool exists = response.Contains("\"document\"");
 
             Debug.Log("Firebase Response: " + response);

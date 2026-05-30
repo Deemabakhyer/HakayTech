@@ -27,7 +27,7 @@ public class VariableManager : MonoBehaviour
     private int currentShellID;
 
     [Header("Girl Animation")]
-    public Animator girlAnimator; // اسحبي أوبجكت الطفلة (child) هنا في الـ Inspector
+    public Animator girlAnimator; 
 
     private Dictionary<string, int> savedVariables = new Dictionary<string, int>();
 
@@ -38,14 +38,14 @@ public class VariableManager : MonoBehaviour
     public GameObject[] beachShells;
 
     [Header("Magic Box")]
-    public Transform magicBox; // اسحبي الصندوق هنا
+    public Transform magicBox; 
 
     [Header("Submit & Reveal")]
     public Transform shellSpawnPoint;
     public float delayBetweenShells = 1f;
 
     [Header("Success UI")]
-    public CompletionPopupController completionPopup; // اسحبي كائن البوب أب هنا في الانسبكتور
+    public CompletionPopupController completionPopup; 
 
 
     void Start()
@@ -66,7 +66,6 @@ public class VariableManager : MonoBehaviour
         return savedVariables;
     }
 
-    // --- 1. دوال الـ Animation Events ---
 
     public void PlayBoxOpenEffect()
     {
@@ -87,11 +86,9 @@ public class VariableManager : MonoBehaviour
     {
         currentShellID = shellID;
 
-        // 👇 اخفاء الصدفة من الأرض
         if (beachShells != null && beachShells.Length > shellID)
             beachShells[shellID].SetActive(false);
 
-        // إيقاف الأنيمشن عند فتح البوب اب
         if (girlAnimator != null)
             girlAnimator.speed = 0f;
 
@@ -108,7 +105,6 @@ public class VariableManager : MonoBehaviour
     }
 
 
-    // --- 2. نظام التسمية والحفظ ---
 
     public void OpenPopup()
     {
@@ -119,68 +115,55 @@ public class VariableManager : MonoBehaviour
 
     public void SaveVariable()
     {
-        // 1. تنظيف النص من المسافات الزائدة في البداية والنهاية
         string varName = inputField.text.Trim();
 
-        // 2. التحقق: هل الحقل فارغ؟
         if (string.IsNullOrEmpty(varName))
         {
             validationText.text = "يا بطل، اكتب اسم للصدفة أولاً!";
-            return; // توقف ولا تكمل الحفظ
+            return; 
         }
 
-        // 3. القيد البرمجي: منع البدء برقم
         if (char.IsDigit(varName[0]))
         {
             validationText.text = "خطأ: اسم المتغير لا يمكن أن يبدأ برقم!";
-            return; // توقف
+            return; 
         }
-
-        // 4. القيد البرمجي: منع وجود مسافات داخل الاسم
         if (varName.Contains(" "))
         {
             validationText.text = "خطأ: لا تستخدم المسافات في اسم المتغير.";
-            return; // توقف
+            return; 
         }
 
-        // 5. التحقق من تكرار الاسم (قاعدة البيانات الفريدة)
         if (savedVariables.ContainsKey(varName))
         {
             validationText.text = "هذا الاسم محجوز لصدفة أخرى، اختر اسماً جديداً.";
-            return; // توقف
+            return; 
         }
 
-        // 6. التأكد من عدم تجاوز عدد الأصداف المسموح به (منطقك الأصلي)
         if (container.childCount < 3)
         {
-            // --- مرحلة الحفظ الفعلي (الاسم الآن سليم 100%) ---
 
             savedVariables.Add(varName, currentShellID);
             Debug.Log($"تم الحفظ: {varName} مرتبطة بالصدفة رقم {currentShellID}");
 
-            // إرجاع الصدفة للأرض (تفعيلها في المشهد)
             if (beachShells != null && beachShells.Length > currentShellID)
             {
                 beachShells[currentShellID].SetActive(true);
             }
 
-            // إنشاء البلوك الصغير في القائمة الجانبية
             GameObject newVar = Instantiate(variablePrefab, container, false);
 
-            // تحديث النص داخل البلوك الصغير
             TextMeshProUGUI textComp = newVar.GetComponentInChildren<TextMeshProUGUI>();
             if (textComp != null)
             {
                 textComp.text = varName;
             }
 
-            // إذا وصلنا لـ 3 أصداف، ننشئ بلوك المتغيرات النهائي (Dropdown Block)
             if (container.childCount == 3)
             {
                 CreateFinalVariableBlock();
             }
 
-            // تصفير رسالة التنبيه وإغلاق النافذة بنجاح
             validationText.text = "";
             ClosePopup();
         }
@@ -196,12 +179,10 @@ public class VariableManager : MonoBehaviour
     {
         popupPanel.SetActive(false);
 
-        // استئناف الأنيمشن بعد إغلاق البوب اب
         if (girlAnimator != null)
             girlAnimator.speed = 1f;
     }
 
-    // --- 3. نظام الصندوق السحري ---
 
     public void MagicBoxExtract(string chosenName)
     {
@@ -233,7 +214,6 @@ public class VariableManager : MonoBehaviour
         GameObject shell = beachShells[shellID];
         if (shell == null) return;
 
-        // تتحرك للصندوق في ثانية وتختفي
         shell.transform
             .DOMove(magicBox.position, 0.8f)
             .SetEase(Ease.InBack)
@@ -243,7 +223,6 @@ public class VariableManager : MonoBehaviour
     }
 
 
-    // قائمة البلوكات المرتبة في الحل
     private List<VariableBlock> placedBlocks = new List<VariableBlock>();
 
     public void RegisterPlacedBlock(VariableBlock block)
@@ -284,7 +263,7 @@ public class VariableManager : MonoBehaviour
 
     IEnumerator RevealShells(List<int> order)
     {
-        float spacing = 1.5f; // المسافة بين كل صدفة
+        float spacing = 1.5f; 
         int index = 0;
 
         foreach (int shellID in order)
@@ -297,7 +276,6 @@ public class VariableManager : MonoBehaviour
             shell.SetActive(true);
             shell.transform.position = magicBox.position;
 
-            // كل صدفة تنزل في موقع مختلف على المحور X
             Vector3 targetPos = shellSpawnPoint.position + new Vector3(index * spacing, 0, 0);
 
             shell.transform
@@ -308,11 +286,8 @@ public class VariableManager : MonoBehaviour
             yield return new WaitForSeconds(delayBetweenShells);
         }
 
-        // --- الإضافة هنا ---
-        // ننتظر ثانية واحدة مثلاً بعد خروج آخر صدفة واستقرارها
         yield return new WaitForSeconds(1.0f);
 
-        // إظهار بوب أب النجاح
         if (completionPopup != null)
         {
             completionPopup.ShowPopup();
@@ -329,7 +304,7 @@ public class VariableManager : MonoBehaviour
     {
         if (celebrationSound != null)
             myAudioSource.PlayOneShot(celebrationSound);
-            myAudioSource.PlayOneShot(celebrationSound, 1f); // 1f = أعلى صوت
+            myAudioSource.PlayOneShot(celebrationSound, 1f); 
     }
 
 

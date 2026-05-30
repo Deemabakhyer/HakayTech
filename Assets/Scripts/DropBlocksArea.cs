@@ -5,7 +5,7 @@ public class DropBlocksArea : MonoBehaviour
     public static DropBlocksArea Instance;
 
     [Header("AI Dialogue")]
-    public AIDialogueController aiDialogue;
+    public SouthAIDialogueController aiDialogue;
 
     private void Awake()
     {

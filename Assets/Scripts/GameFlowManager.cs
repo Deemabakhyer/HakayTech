@@ -18,7 +18,10 @@ public class GameFlowManager : MonoBehaviour
     public StoryScenePlayer storyScenePlayer;
 
     [Header("AI Dialogue")]
-    public AIDialogueController aiDialogue;
+    public SouthAIDialogueController aiDialogue;
+
+    [Header("Success UI Popup")]
+    public CompletionPopupController completionPopup;
 
     private bool animationStarted = false;
 

@@ -26,7 +26,6 @@ public class ScreenBubbleSequence : MonoBehaviour
 
     IEnumerator PlaySequence()
     {
-        // نضمن ظهور AI والفقاعة في البداية
         if (aiMentorImage != null)
             aiMentorImage.enabled = true;
 
@@ -35,7 +34,6 @@ public class ScreenBubbleSequence : MonoBehaviour
 
         yield return new WaitForSeconds(0.2f);
 
-        // الفقاعة الأولى
         if (bubbleController != null)
             bubbleController.ShowFirstBubbleImage();
 
@@ -48,7 +46,6 @@ public class ScreenBubbleSequence : MonoBehaviour
 
         yield return new WaitForSeconds(delayBetweenBubbles);
 
-        // الفقاعة الثانية
         if (bubbleController != null)
             bubbleController.ShowSecondBubbleImage();
 
@@ -57,14 +54,12 @@ public class ScreenBubbleSequence : MonoBehaviour
         yield return new WaitForSeconds(secondBubbleVisibleTime);
         yield return new WaitForSeconds(delayBeforeHideAll);
 
-        // نخفي فقط صورة AI والفقاعة
         if (dialogueBubble != null)
             dialogueBubble.SetActive(false);
 
         if (aiMentorImage != null)
             aiMentorImage.enabled = false;
 
-        // بعدها نظهر شخصية اللعب
         if (playerSpawnIntro != null)
             playerSpawnIntro.PlaySpawn();
     }

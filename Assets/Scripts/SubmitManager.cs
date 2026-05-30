@@ -11,14 +11,14 @@ public class SubmitManager : MonoBehaviour
     public Animator characterAnimator;
 
     [Header("Success UI")]
-    public CompletionPopupController completionPopup; // اسحبي كائن البوب أب هنا في الانسبكتور
+    public CompletionPopupController completionPopup; 
 
     [Header("Win Condition")]
     // Enter these exactly as they appear in the block's animationTriggerName
     public List<string> correctSequence = new List<string> { 
         "Boil", "AddCoffee", "AddCardamom", "Pour" 
     };
-    public string successTrigger = "BoySuccess"; // The trigger name for the boy's happy animation
+    public string successTrigger = "BoySuccess";
 
     private void Awake()
     {
@@ -50,7 +50,6 @@ public class SubmitManager : MonoBehaviour
 
             if (!string.IsNullOrEmpty(triggerName) && characterAnimator != null)
             {
-                // --- ADD THIS LINE ---
                 block.PlayActionSound();
 
                 characterAnimator.SetTrigger(triggerName);
@@ -72,15 +71,11 @@ public class SubmitManager : MonoBehaviour
         else
         {
             Debug.Log("Sequence Incorrect or Incomplete.");
-            // Optional: Trigger a "fail" or "confused" animation here
         }
 
         submitButton.interactable = true;
-        // --- الإضافة هنا ---
-        // ننتظر ثانية واحدة مثلاً بعد خروج آخر صدفة واستقرارها
         yield return new WaitForSeconds(1.0f);
 
-        // إظهار بوب أب النجاح
         if (completionPopup != null)
         {
             completionPopup.ShowPopup();
@@ -89,12 +84,10 @@ public class SubmitManager : MonoBehaviour
 
     private bool CheckIfSequenceIsCorrect(List<CodingBlock> playerBlocks)
     {
-        // If the count doesn't match, it's immediately wrong
         if (playerBlocks.Count != correctSequence.Count) return false;
 
         for (int i = 0; i < correctSequence.Count; i++)
         {
-            // Compare the trigger name of the block to our master list
             if (playerBlocks[i].animationTriggerName != correctSequence[i])
             {
                 return false; 

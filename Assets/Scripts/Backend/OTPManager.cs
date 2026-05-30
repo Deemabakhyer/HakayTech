@@ -32,7 +32,7 @@ public class OTPManager : MonoBehaviour
             infoText.text = $"ادخل الرمز المرسل الى البريد\n{MaskEmail(email)}";
         }
 
-        StartTimer(); // هذي الدالة الحين بتتكفل بقفل الزر وتشغيل التايمر ونصوصك ظاهرة
+        StartTimer();
     }
 
 
@@ -67,23 +67,19 @@ public class OTPManager : MonoBehaviour
         {
             timerRunning = false;
 
-            // 1. عند انتهاء الوقت، نجعل نص العداد يعرض أصفاراً ثابته
             if (timerText != null)
             {
                 timerText.text = "00:00";
             }
-
-            // 2. الوصول إلى النص الموجود داخل الزر وتغييره إلى "إعادة إرسال" بالكامل
             if (resendButton != null)
             {
-                resendButton.interactable = true; // تفعيل الزر للضغط قسراً
+                resendButton.interactable = true; 
 
-                // هنا نبحث عن النص الملحق بالزر لتحديث كلمته ولونه للأسود النشط
                 TMP_Text buttonText = resendButton.GetComponentInChildren<TMP_Text>();
                 if (buttonText != null)
                 {
                     buttonText.text = "إعادة إرسال";
-                    buttonText.color = Color.black; // قلبه للأسود الواضح بدلاً من الرمادي الميت
+                    buttonText.color = Color.black; 
                 }
             }
 
@@ -118,14 +114,13 @@ public class OTPManager : MonoBehaviour
 
     void StartTimer()
     {
-        timeRemaining = 120f; // أو 30f حسب الوقت المعتمد عندكِ
+        timeRemaining = 120f; 
         timerRunning = true;
 
         if (resendButton != null)
         {
-            resendButton.interactable = false; // قفل الزر فوراً لمنع السبام
+            resendButton.interactable = false; 
 
-            // التعديل هنا: إعادة النص واللون لوضع الانتظار بمجرد بدء المؤقت
             TMP_Text buttonText = resendButton.GetComponentInChildren<TMP_Text>();
             if (buttonText != null)
             {
@@ -163,9 +158,9 @@ public class OTPManager : MonoBehaviour
             Debug.Log("MODE: " + mode);
 
             if (mode == "login")
-                StartCoroutine(LoadUserAndProceed()); // تسجيل دخول
+                StartCoroutine(LoadUserAndProceed()); 
             else
-                StartCoroutine(SaveUserAndProceed()); // تسجيل جديد
+                StartCoroutine(SaveUserAndProceed()); 
         }
         else
         {
@@ -264,7 +259,7 @@ public class OTPManager : MonoBehaviour
     public void OnResendClicked()
     {
         StartCoroutine(FirebaseManager.Instance.SendOTP(
-            email, // غيّرناها من idToken لـ email ✓
+            email, 
             (response) =>
             {
                 Debug.Log("OTP Resent!");

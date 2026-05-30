@@ -8,7 +8,7 @@ public class IntroPopupHandler : MonoBehaviour
     public Button startButton;
 
     [Header("AI Dialogue")]
-    public AIDialogueController aiDialogue;
+    public SouthAIDialogueController aiDialogue;
 
     private void Awake()
     {

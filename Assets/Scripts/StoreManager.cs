@@ -37,7 +37,6 @@ public class StoreManager : MonoBehaviour
         currentUserId = PlayerPrefs.GetString("currentUserId", "");
         currentGender = PlayerPrefs.GetString("pendingGender", "انثى");
 
-        // حماية: نضمن أن الصورة مخفية تماماً ولا تعرض أي مربع أبيض أو مظهر افتراضي في البداية
         if (characterDisplay != null)
         {
             characterDisplay.enabled = false;
@@ -54,14 +53,12 @@ public class StoreManager : MonoBehaviour
     {
         equippedItemId = PlayerPrefs.GetString("LastEquipped_" + currentUserId, "");
 
-        // التسلسل المطلوب: نبحث أولاً عن الزي بناءً على الجنس، ولا نعرض أي شيء إلا بعد التحقق
         if (!string.IsNullOrEmpty(equippedItemId))
         {
             ApplyEquippedSprite(equippedItemId);
         }
         else
         {
-            // إذا لم يكن هناك زي مجهز نهائياً، هنا فقط نعتمد الديفولت المباشر للجنس
             bool isGirl = currentGender == "أنثى" || currentGender == "انثى" || currentGender == "female";
             characterDisplay.sprite = isGirl ? girlSprite : boySprite;
             if (characterDisplay != null) characterDisplay.enabled = true;
@@ -98,7 +95,6 @@ public class StoreManager : MonoBehaviour
                             }
                         }
 
-                        // إعادة التحقق والتأكد بعد جلب بيانات السيرفر الحديثة
                         if (!string.IsNullOrEmpty(equippedItemId))
                         {
                             ApplyEquippedSprite(equippedItemId);
@@ -121,12 +117,10 @@ public class StoreManager : MonoBehaviour
 
     void ApplyEquippedSprite(string itemId)
     {
-        // 1. تحديد الجنس أولاً بدقة
         bool isGirl = currentGender == "أنثى" || currentGender == "انثى" || currentGender == "female";
         ItemData[] items = isGirl ? girlItems : boyItems;
         bool found = false;
 
-        // 2. البحث عن الزي المطابق داخل قائمة هذا الجنس فوراً
         foreach (var item in items)
         {
             if (item != null && item.itemId == itemId)
@@ -137,7 +131,6 @@ public class StoreManager : MonoBehaviour
             }
         }
 
-        // 3. التحكم في العرض: لا يظهر المينتور إلا إذا وجدنا الزي المطابق بنجاح، وإلا يرجع للديفولت الآمن
         if (found)
         {
             if (characterDisplay != null)

@@ -15,7 +15,6 @@ public class PopupButtons : MonoBehaviour
 
     public void Next()
     {
-        // الرياض آخر مرحلة → يرجع للخريطة
         SceneManager.LoadScene("Map");
     }
 }

@@ -32,10 +32,8 @@ public class BlockSnap : MonoBehaviour
             if (other == this) continue;
             if (other.drag != null && other.drag.isTemplate) continue;
 
-            // 1. اختبار الالتصاق تحت البلوك (عادي)
             float distToBottom = Vector2.Distance(topSnap.position, other.bottomSnap.position);
 
-            // 2. اختبار الالتصاق داخل اللوب (إذا كان الآخر لديه نقطة داخلية)
             float distToInner = float.MaxValue;
             if (other.innerSnap != null)
             {
@@ -62,16 +60,12 @@ public class BlockSnap : MonoBehaviour
     {
         transform.SetParent(target.transform);
 
-        // حساب المسافة الأصلية
         Vector3 offset = transform.position - topSnap.position;
 
-        // إضافة إزاحة بسيطة (يمكنك تعديل هذه القيم لتناسب مقاسات بلوكاتك)
-        // x يدفعه لليمين قليلًا، و y يضبط الارتفاع داخل الفتحة
         Vector3 adjustment = new Vector3(0.2f, -0.1f, 0);
 
         transform.position = snapPoint.position + offset + adjustment;
 
-        // Enable the Arabic input field only when the block is correctly placed in the workspace
         if (TryGetComponent(out LoopBlockLogic loopLogic))
         {
             loopLogic.EnableInput();

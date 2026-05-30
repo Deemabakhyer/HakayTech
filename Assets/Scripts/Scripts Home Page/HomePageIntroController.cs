@@ -1,23 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-
 /// <summary>
-/// يتحكم في ظهور المينتور في الصفحة الرئيسية بناءً على اللبس المجهز في المتجر
-/// ويضمن عدم بدء الأنيميشن إلا بعد اكتمال تحميل الصورة الصحيحة.
+/// Controls the visual rendering of the AI Companion on the home page based on the equipped store item.
+/// Ensures the introduction sequence initiates only after the correct character sprite is fully loaded.
 /// </summary>
 public class HomePageIntroController : MonoBehaviour
 {
     [Header("Mentor/Assistant Elements")]
-    public RectTransform assistantTransform; // الكائن المسؤول عن الحركة
-    public Image assistantImage;             // الكائن المسؤول عن السبرايت (اللبس)
+    public RectTransform assistantTransform; 
+    public Image assistantImage;             
     public CanvasGroup assistantCanvasGroup;
 
     [Header("Equipment Data")]
-    public ItemData[] allItems;              // اسحبي كل الـ ItemData هنا من الـ Project
-    public Sprite defaultBoy;                // صورة الولد الافتراضية
-    public Sprite defaultGirl;               // صورة البنت الافتراضية
+    public ItemData[] allItems;              
+    public Sprite defaultBoy;               
+    public Sprite defaultGirl;               
 
     [Header("Bubble & Buttons UI")]
     public RectTransform bubbleEmpty;
@@ -50,8 +50,6 @@ public class HomePageIntroController : MonoBehaviour
     public float idleFloatSpeed = 1.2f;
     public float idleRotateAmount = 2f;
     public float idleScaleAmount = 0.02f;
-
-    // متغيرات داخلية للتحكم
     private CanvasGroup glowCanvasGroup;
     private CanvasGroup bubbleTextCanvasGroup;
     private Vector2 assistantOriginalPosition;
@@ -60,7 +58,6 @@ public class HomePageIntroController : MonoBehaviour
 
     void Awake()
     {
-        // خطوة 1: إخفاء كل العناصر تماماً لمنع ظهور المربع الأبيض قبل التحميل
         if (assistantTransform != null) assistantTransform.gameObject.SetActive(false);
         if (assistantCanvasGroup != null) assistantCanvasGroup.alpha = 0f;
 
@@ -72,9 +69,9 @@ public class HomePageIntroController : MonoBehaviour
     void Start()
     {
         SetupCanvasGroups();
-        // خطوة 2: البدء بجلب البيانات أولاً
         StartCoroutine(LoadUserDataAndInitialize());
     }
+
 
     IEnumerator LoadUserDataAndInitialize()
     {
@@ -82,29 +79,22 @@ public class HomePageIntroController : MonoBehaviour
 
         if (!string.IsNullOrEmpty(currentUserId))
         {
-            // جلب البيانات من الفايربيس
             yield return StartCoroutine(FirestoreManager.Instance.LoadUser(currentUserId, (user) => {
 
-                // جلب الـ ID الخاص باللبس المجهز من الـ PlayerPrefs (نفس لوجك المتجر)
                 string lastEquipped = PlayerPrefs.GetString("LastEquipped_" + currentUserId, "");
-
-                // تعيين السبرايت المناسب قبل ظهور المينتور
                 ApplyEquipment(user.gender, lastEquipped);
                 isDataLoaded = true;
             }, (error) => {
                 Debug.LogError("Home Loader: Failed to load user, using defaults.");
-                isDataLoaded = true; // نفتح القفل حتى لو فشل لعرض الشكل الافتراضي
+                isDataLoaded = true; 
             }));
         }
         else
         {
             isDataLoaded = true;
         }
-
-        // الانتظار حتى نضمن أن السبرايت تم تعيينه
         while (!isDataLoaded) yield return null;
 
-        // خطوة 3: الآن الصورة جاهزة، نبدأ تسلسل الأنيميشن
         StartCoroutine(IntroRoutine());
     }
 
@@ -113,7 +103,6 @@ public class HomePageIntroController : MonoBehaviour
         if (assistantImage == null) return;
 
         bool itemFound = false;
-        // نستخدم حروف صغيرة للمقارنة لضمان الدقة
         string genderLower = gender.ToLower();
 
         if (!string.IsNullOrEmpty(equippedItemId))
@@ -138,25 +127,18 @@ public class HomePageIntroController : MonoBehaviour
         assistantImage.preserveAspect = true;
     }
 
-
     IEnumerator IntroRoutine()
     {
-        // 1. تجهيز وضعية المساعد (خلف الكواليس)
         if (assistantTransform != null)
         {
-            // نضمن أن الشفافية (Alpha) صفر تماماً في البداية لمنع الوميض
             if (assistantCanvasGroup != null) assistantCanvasGroup.alpha = 0f;
 
-            // ضبط الموقع والحجم والزاوية الابتدائية قبل تفعيل الكائن
             assistantTransform.anchoredPosition = assistantOriginalPosition + new Vector2(0, assistantStartOffsetY);
             assistantTransform.localScale = Vector3.one * assistantStartScale;
             assistantTransform.localRotation = Quaternion.identity;
-
-            // تفعيل الكائن (الآن السبرايت المجهز مفترض تم وضعه في ApplyEquipment)
             assistantTransform.gameObject.SetActive(true);
         }
 
-        // 2. تجهيز التوهج (Glow) خلف المساعد
         if (assistantGlow != null)
         {
             assistantGlow.gameObject.SetActive(true);
@@ -164,25 +146,19 @@ public class HomePageIntroController : MonoBehaviour
             if (glowCanvasGroup != null) glowCanvasGroup.alpha = 0f;
         }
 
-        // 3. إخفاء العناصر الجانبية لتبدأ بالتسلسل
         if (sparklesRoot != null) sparklesRoot.gameObject.SetActive(false);
         if (bubbleEmpty != null) bubbleEmpty.gameObject.SetActive(false);
         if (bubbleWithText != null) bubbleWithText.gameObject.SetActive(false);
         if (startButton != null) startButton.localScale = Vector3.one * 0.9f;
 
-        // 4. انتظار بسيط (Assistant Delay) قبل بدء "السحر"
         yield return new WaitForSeconds(assistantDelay);
 
-        // 5. التحكم في الصوت والموسيقى
         if (homeAudioController != null) homeAudioController.DuckMusic(0.6f);
         if (magicAudio != null && appearClip != null)
             magicAudio.PlayOneShot(appearClip);
 
-        // 6. تشغيل أنيميشن الظهور السحري (الدوران وتغيير الشفافية)
-        // ملاحظة: تأكدي أن هذا الفنكشن لا يحتوي على سطر يغير assistantImage.sprite
         yield return MagicAppearAssistant();
 
-        // 7. تسلسل ظهور فقاعة الكلام الفارغة (Pop Effect)
         yield return new WaitForSeconds(0.4f);
         if (bubbleEmpty != null)
         {
@@ -191,7 +167,6 @@ public class HomePageIntroController : MonoBehaviour
             yield return Pop(bubbleEmpty, 0f, 1f, 0.35f);
         }
 
-        // 8. ظهور النص داخل الفقاعة (Fade Effect)
         yield return new WaitForSeconds(0.3f);
         if (bubbleWithText != null)
         {
@@ -199,13 +174,10 @@ public class HomePageIntroController : MonoBehaviour
             if (bubbleTextCanvasGroup != null)
                 yield return FadeCanvasGroup(bubbleTextCanvasGroup, 0f, 1f, 0.35f);
         }
-
-        // 9. تفعيل زر البداية مع تأثير النبض المستمر (Pulse)
         yield return new WaitForSeconds(0.3f);
         if (startButton != null)
             StartCoroutine(ButtonPulse());
 
-        // 10. تشغيل دوران النجوم السحرية في الخلفية
         StartCoroutine(StarsLoop());
     }
 
@@ -246,8 +218,6 @@ public class HomePageIntroController : MonoBehaviour
 
             yield return null;
         }
-
-        // تثبيت القيم النهائية
         assistantTransform.anchoredPosition = assistantOriginalPosition;
         assistantTransform.localScale = Vector3.one;
         assistantTransform.localRotation = Quaternion.identity;
@@ -257,8 +227,6 @@ public class HomePageIntroController : MonoBehaviour
 
         idleRoutine = StartCoroutine(AssistantIdleLoop());
     }
-
-    // --- الدوال المساعدة (Idle, Sparkles, Pop, Buttons) ---
 
     IEnumerator AssistantIdleLoop()
     {

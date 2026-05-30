@@ -11,7 +11,7 @@ using System.Collections.Generic;
 public class ProfileManager : MonoBehaviour
 {
     [Header("Currency Integration")]
-    public UserCoinsDisplay userCoinsDisplay; // اسحبي سكربت عرض الكوينز هنا
+    public UserCoinsDisplay userCoinsDisplay; 
 
     [Header("UI Display")]
     public Image profileAvatar;
@@ -35,8 +35,8 @@ public class ProfileManager : MonoBehaviour
 
     void Start()
     {
-        currentUserId = PlayerPrefs.GetString("currentUserId"); //
-        SetFieldsInteractable(false); // البداية عرض فقط
+        currentUserId = PlayerPrefs.GetString("currentUserId");
+        SetFieldsInteractable(false); 
         StartCoroutine(LoadProfileData());
     }
 
@@ -49,15 +49,12 @@ public class ProfileManager : MonoBehaviour
         {
             currentUser = user;
 
-            // 1. تحديث الكوينز عبر السكربت الموحد
             if (userCoinsDisplay != null) userCoinsDisplay.RefreshDisplay(); //
 
-            // 2. عرض المعلومات الأساسية
             nameField.text = user.name;
             gradeField.text = user.grade;
             genderField.text = user.gender;
 
-            // 3. عرض الشارات (Badges)
             DisplayBadges(user.earnedBadges);
         },
         (error) => Debug.LogError("فشل تحميل البروفايل: " + error)));
@@ -72,7 +69,6 @@ public class ProfileManager : MonoBehaviour
         foreach (string bId in badgeIds)
         {
             GameObject badgeObj = Instantiate(badgePrefab, badgesContainer);
-            // ملاحظة: يمكنك هنا ربط أيقونة الشارة بناءً على المعرف bId
         }
     }
 

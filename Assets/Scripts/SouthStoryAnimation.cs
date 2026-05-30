@@ -41,45 +41,34 @@ using UnityEngine;
 
         yield return new WaitForSeconds(startDelay);
 
-        // 1. تشغيل صوت الظهور
         if (magicWhoosh != null && showClip != null)
             magicWhoosh.PlayOneShot(showClip);
 
-        // 2. تعتيم الخلفية (Dim Overlay)
         yield return FadeDim();
 
-        // 3. ظهور اللوحة الرئيسية (Story Panel)
         yield return ShowPanel();
 
-        // 4. ظهور زر الإغلاق (Close Button)
         yield return ShowItem(closeButton, new Vector2(-25, 25));
         yield return new WaitForSeconds(itemDelay);
 
-        // 5. ظهور العنوان (Title)
         yield return ShowItem(title, new Vector2(0, 35));
         yield return new WaitForSeconds(itemDelay);
 
-        // 6. ظهور صف الأيقونات (Icons Row)
         yield return ShowItem(iconsRow, new Vector2(0, 25));
         yield return new WaitForSeconds(itemDelay);
 
-        // 7. ظهور الوصف (Description)
         yield return ShowItem(description, new Vector2(0, 25));
         yield return new WaitForSeconds(itemDelay);
 
-        // 8. ظهور إطار العرض (Preview Frame)
         yield return ShowItem(previewFrame, new Vector2(-35, 0));
         yield return new WaitForSeconds(itemDelay);
 
-        // 9. ظهور زر ابدأ (Start Button)
         yield return ShowItem(startButton, new Vector2(0, -35));
 
-        // 10. تفعيل التأثيرات المستمرة (النبض والتوهج)
         StartCoroutine(StartButtonPulse());
         StartCoroutine(PanelGlowLoop());
     }
 
-    // --- الدوال المساعدة (تأكدي أنكِ لم تعدلي في داخلها) ---
 
     void Setup()
     {
@@ -116,7 +105,6 @@ using UnityEngine;
         }
         if (dimOverlayGroup != null) dimOverlayGroup.alpha = 0f;
 
-        // تجهيز كل العناصر لتكون مخفية (حجمها صفر)
         PrepareItem(closeButton);
         PrepareItem(title);
         PrepareItem(iconsRow);

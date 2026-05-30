@@ -88,11 +88,9 @@ public class MakkahStoryManager : MonoBehaviour
                     Destroy(standingChild.gameObject);
                 }
 
-                // إيقاف مخصص للكوروتينات القديمة بدون إيقاف النظام كاملاً
                 if (tawafCoroutine != null) StopCoroutine(tawafCoroutine);
                 if (slideCoroutine != null) StopCoroutine(slideCoroutine);
 
-                // تشغيل منفصل وآمن
                 slideCoroutine = StartCoroutine(SlideBlock(true));
                 tawafCoroutine = StartCoroutine(PerformTawaf());
             }

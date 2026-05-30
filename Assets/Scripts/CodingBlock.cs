@@ -28,17 +28,13 @@ public class CodingBlock : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         if (rootCanvas != null) rootCanvas = rootCanvas.rootCanvas;
     }
 
-    // Called by SubmitManager when it's this block's turn to play
     public IEnumerator PlayAnimation()
     {
         if (blockAnimator != null && !string.IsNullOrEmpty(animationTriggerName))
         {
             blockAnimator.SetTrigger(animationTriggerName);
 
-            // Wait for the animation to start
             yield return null;
-
-            // Wait for the animation to finish
             AnimatorStateInfo stateInfo = blockAnimator.GetCurrentAnimatorStateInfo(0);
             while (blockAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f
                    || blockAnimator.IsInTransition(0))
@@ -48,7 +44,6 @@ public class CodingBlock : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         }
         else
         {
-            // No animation assigned, just wait a moment
             yield return new WaitForSeconds(0.5f);
         }
     }
@@ -163,13 +158,13 @@ public class CodingBlock : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     }
 
     [Header("Audio")]
-    public AudioClip actionSound; // Drag the specific sound (e.g., water bubbling) here
+    public AudioClip actionSound; 
 
     public void PlayActionSound()
     {
         if (audioSource != null && actionSound != null)
         {
-            // PlayOneShot is best because it doesn't interrupt other sounds
+
             audioSource.PlayOneShot(actionSound);
         }
     }
