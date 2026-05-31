@@ -125,7 +125,7 @@ public class OTPManager : MonoBehaviour
             if (buttonText != null)
             {
                 buttonText.text = "إعادة الإرسال خلال";
-                buttonText.color = new Color(0.3f, 0.3f, 0.3f, 0.6f); // تحويله للرمادي الباهت ليفهم الطفل أنه غير نشط حالياً
+                buttonText.color = new Color(0.3f, 0.3f, 0.3f, 0.6f); 
             }
         }
     }
@@ -209,17 +209,39 @@ public class OTPManager : MonoBehaviour
     /// </summary>
     IEnumerator SaveUserAndProceed()
     {
-        Debug.Log("🔥 SAVING USER NOW");
-        string userId = PlayerPrefs.GetString("pendingUserId");
+        string email = PlayerPrefs.GetString("pendingEmail");
+        string password = PlayerPrefs.GetString("pendingPassword");
         string gender = PlayerPrefs.GetString("pendingGender");
-        string aiCompanion = (gender == "انثى" || gender == "female")
-            ? "girl_comp"
-            : "boy_comp";
+
+        string idToken = "";
+        string userId = "";
+
+        PerformanceLogger.Instance.StartMeasure("Firebase_SignUp");
+        yield return StartCoroutine(FirebaseManager.Instance.SignUp(
+            email, password,
+            (response) => {
+                PerformanceLogger.Instance.StopMeasure("Firebase_SignUp");
+                var data = Newtonsoft.Json.JsonConvert.DeserializeObject
+                    <System.Collections.Generic.Dictionary<string, object>>(response);
+                idToken = data["idToken"].ToString();
+                userId = data["localId"].ToString();
+            },
+            (error) => {
+                PerformanceLogger.Instance.StopMeasure("Firebase_SignUp");
+                ShowError("فشل إنشاء الحساب: " + error);
+            }
+        ));
+
+        if (string.IsNullOrEmpty(userId)) yield break;
+
+        string aiCompanion = (gender == "انثى" || gender == "أنثى")
+            ? "girl_comp" : "boy_comp";
+
         UserGameData newUser = new UserGameData
         {
             userId = userId,
             name = PlayerPrefs.GetString("pendingName"),
-            email = PlayerPrefs.GetString("pendingEmail"),
+            email = email,
             age = PlayerPrefs.GetInt("pendingAge"),
             gender = gender,
             grade = PlayerPrefs.GetString("pendingGrade"),
@@ -230,18 +252,26 @@ public class OTPManager : MonoBehaviour
         };
 
         Debug.Log("USER DATA: " + JsonUtility.ToJson(newUser));
+
         bool saved = false;
+        PerformanceLogger.Instance.StartMeasure("Firestore_SaveUser");
         yield return StartCoroutine(FirestoreManager.Instance.SaveUser(
             newUser,
-            () => saved = true,
-            (error) => ShowError("Failed to save user! " + error)
+            () => {
+                PerformanceLogger.Instance.StopMeasure("Firestore_SaveUser");
+                saved = true;
+            },
+            (error) => {
+                PerformanceLogger.Instance.StopMeasure("Firestore_SaveUser");
+                ShowError("Failed to save user! " + error);
+            }
         ));
 
         if (saved)
         {
             Debug.Log("✅ USER SAVED SUCCESSFULLY");
-
             PlayerPrefs.SetString("currentUserId", userId);
+            PlayerPrefs.DeleteKey("pendingPassword");
             PlayerPrefs.DeleteKey("pendingIdToken");
             PlayerPrefs.DeleteKey("pendingUserId");
             PlayerPrefs.DeleteKey("pendingEmail");
@@ -249,7 +279,6 @@ public class OTPManager : MonoBehaviour
             PlayerPrefs.DeleteKey("pendingAge");
             PlayerPrefs.DeleteKey("pendingGender");
             PlayerPrefs.DeleteKey("pendingGrade");
-
             UnityEngine.SceneManagement.SceneManager.LoadScene("Home_Page");
         }
     }

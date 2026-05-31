@@ -220,7 +220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3756919984307519692, guid: 3bdbf2158a7f241b2973418d29ad69cd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0000019073486
+      value: -0.0000038146973
       objectReference: {fileID: 0}
     - target: {fileID: 4311070551890676216, guid: 3bdbf2158a7f241b2973418d29ad69cd, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag

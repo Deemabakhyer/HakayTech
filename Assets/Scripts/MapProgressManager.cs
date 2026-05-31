@@ -32,6 +32,8 @@ public class MapProgressManager : MonoBehaviour
 
     IEnumerator UpdateMapProgress(string userId)
     {
+        PerformanceLogger.Instance.StartMeasure("Map_Load");
+
         bool dataLoaded = false;
         List<ProgressData> userProgress = new List<ProgressData>();
 
@@ -44,7 +46,7 @@ public class MapProgressManager : MonoBehaviour
         }));
 
         while (!dataLoaded) yield return null;
-
+        PerformanceLogger.Instance.StopMeasure("Map_Load");
         ApplyLockLogic(userProgress);
     }
 

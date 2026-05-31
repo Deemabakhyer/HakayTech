@@ -75,6 +75,7 @@ public class HomePageIntroController : MonoBehaviour
 
     IEnumerator LoadUserDataAndInitialize()
     {
+        PerformanceLogger.Instance.StartMeasure("HomePage_CharacterLoad");
         string currentUserId = PlayerPrefs.GetString("currentUserId", "");
 
         if (!string.IsNullOrEmpty(currentUserId))
@@ -94,8 +95,12 @@ public class HomePageIntroController : MonoBehaviour
             isDataLoaded = true;
         }
         while (!isDataLoaded) yield return null;
+        PerformanceLogger.Instance.StopMeasure("HomePage_CharacterLoad");
+
+
 
         StartCoroutine(IntroRoutine());
+
     }
 
     void ApplyEquipment(string gender, string equippedItemId)
@@ -120,7 +125,7 @@ public class HomePageIntroController : MonoBehaviour
 
         if (!itemFound)
         {
-            bool isGirl = genderLower == "أنثى" || genderLower == "female";
+            bool isGirl = genderLower == "أنثى" || genderLower == "انثى";
             assistantImage.sprite = isGirl ? defaultGirl : defaultBoy;
         }
 

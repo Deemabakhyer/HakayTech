@@ -69,6 +69,8 @@ public class StoreManager : MonoBehaviour
 
     IEnumerator LoadUserData()
     {
+        PerformanceLogger.Instance.StartMeasure("Store_Load");
+
         yield return StartCoroutine(FirestoreManager.Instance.LoadUser(
             currentUserId,
             (user) =>
@@ -106,12 +108,19 @@ public class StoreManager : MonoBehaviour
                             if (characterDisplay != null) characterDisplay.enabled = true;
                         }
 
+                        PerformanceLogger.Instance.StopMeasure("Store_Load");
                         RefreshAllCards();
                     },
-                    (error) => Debug.LogError("Error fetching owned items: " + error)
+                     (error) => {
+                         PerformanceLogger.Instance.StopMeasure("Store_Load"); 
+                         Debug.LogError("Error fetching owned items: " + error);
+                     }
                 ));
             },
-            (error) => Debug.LogError("Failed to load user: " + error)
+            (error) => {
+                PerformanceLogger.Instance.StopMeasure("Store_Load"); 
+                Debug.LogError("Failed to load user: " + error);
+            }
         ));
     }
 

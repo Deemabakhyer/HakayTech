@@ -45,19 +45,27 @@ public class ProfileManager : MonoBehaviour
     /// </summary>
     IEnumerator LoadProfileData()
     {
+        PerformanceLogger.Instance.StartMeasure("Profile_Load");
+
         yield return StartCoroutine(FirestoreManager.Instance.LoadUser(currentUserId, (user) =>
         {
             currentUser = user;
 
-            if (userCoinsDisplay != null) userCoinsDisplay.RefreshDisplay(); //
+            if (userCoinsDisplay != null) userCoinsDisplay.RefreshDisplay(); 
 
             nameField.text = user.name;
             gradeField.text = user.grade;
             genderField.text = user.gender;
 
             DisplayBadges(user.earnedBadges);
+            PerformanceLogger.Instance.StopMeasure("Profile_Load");
+
         },
-        (error) => Debug.LogError("فشل تحميل البروفايل: " + error)));
+        (error) => {
+            PerformanceLogger.Instance.StopMeasure("Profile_Load");
+            Debug.LogError("فشل تحميل البروفايل: " + error);
+        }));
+
     }
 
     void DisplayBadges(List<string> badgeIds)
