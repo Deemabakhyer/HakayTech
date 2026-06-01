@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class Drag : MonoBehaviour
 {
@@ -11,11 +11,26 @@ public class Drag : MonoBehaviour
     private Camera cam;
     private BlockSnap snap;
 
+    [Header("Audio Settings")]
+    [Tooltip("Sound when you start dragging the block")]
+    public AudioClip dragSound;
+    [Tooltip("Sound when you release the block without a snap")]
+    public AudioClip dropSound;
+    private AudioSource audioSource;
+
     private void Awake()
     {
         col = GetComponent<Collider2D>();
         cam = Camera.main;
         snap = GetComponent<BlockSnap>();
+
+        // Ensure there is an AudioSource to play Drag/Drop sounds
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+        audioSource.playOnAwake = false;
 
         if (solutionSheet == null)
         {
@@ -24,8 +39,13 @@ public class Drag : MonoBehaviour
                 solutionSheet = sheet.transform;
         }
 
+        if (solutionSheet == null)
+        {
+            GameObject sheet = GameObject.Find("SolutionSheet");
+            if (sheet != null)
+                solutionSheet = sheet.transform;
+        }
     }
-
     private void OnMouseDown()
     {
         if (isTemplate)
@@ -43,8 +63,8 @@ public class Drag : MonoBehaviour
             return;
         }
 
-        // Non-template block → drag itself
-        BeginDrag();
+        // Non-template block → drag itself
+        BeginDrag();
     }
 
 
@@ -52,8 +72,9 @@ public class Drag : MonoBehaviour
     {
         startPos = transform.position;
 
-        // Detach from parent when dragging (important for chains)
-        transform.SetParent(null);
+        // Detach from parent when dragging (important for chains)
+        transform.SetParent(null);
+        PlaySound(dragSound);
     }
 
     private void OnMouseDrag()
@@ -69,14 +90,14 @@ public class Drag : MonoBehaviour
 
         bool snapped = false;
 
-        // Try snapping to another block
-        if (snap != null)
+        // Try snapping to another block
+        if (snap != null)
         {
             snapped = snap.TrySnap();
         }
 
-        // If not snapped, try drop areas
-        if (!snapped)
+        // If not snapped, try drop areas
+        if (!snapped)
         {
             col.enabled = false;
             Collider2D hit = Physics2D.OverlapPoint(GetMouseWorldPos());
@@ -85,13 +106,36 @@ public class Drag : MonoBehaviour
             if (hit != null && hit.TryGetComponent(out DropArea drop))
             {
                 drop.OnDrop(this);
+                PlaySound(dropSound);
             }
             else
             {
                 transform.position = startPos;
+                PlaySound(dropSound);
             }
         }
+
+        // استدعاء نظام التحقق الصوتي في الوقت الفعلي عند إفلات أو شبك أي بلوك
+        MakkahStoryManager manager = FindObjectOfType<MakkahStoryManager>();
+        if (manager != null)
+        {
+            manager.CheckRealTimeSequence();
+        }
     }
+
+    public void ResetToStartPos()
+    {
+        transform.position = startPos;
+    }
+
+    private void PlaySound(AudioClip clip)
+    {
+        if (clip != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
+    }
+
 
     private Vector3 GetMouseWorldPos()
     {

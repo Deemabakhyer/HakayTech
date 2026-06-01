@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:Assets/Sprites/hail.png.meta
 guid: 2a4d58dffce84c64794202bb5eca5513
+=======
+guid: 21337b4d60bbc4829ac0a31b25d2487a
+>>>>>>> Stashed changes:Assets/Fonts/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

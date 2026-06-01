@@ -2,12 +2,19 @@
 
 public class BlockSnap : MonoBehaviour
 {
+    [Header("Snapping Points")]
     public Transform topSnap;
     public Transform bottomSnap;
+    public Transform innerSnap; 
 
-    public float snapDistance = 0.3f;
-
+    [Header("Settings")]
+    public float snapDistance = 0.5f;
     private Drag drag;
+
+    [Header("Audio")]
+    [Tooltip("Attach the snap sound effect here (e.g., Click or Pop)")]
+    public AudioClip snapSound; 
+
 
     private void Awake()
     {
@@ -16,42 +23,69 @@ public class BlockSnap : MonoBehaviour
 
     public bool TrySnap()
     {
-        // Templates should never snap
-        if (drag != null && drag.isTemplate)
-            return false;
+        if (drag != null && drag.isTemplate) return false;
 
         BlockSnap[] allBlocks = FindObjectsOfType<BlockSnap>();
 
         foreach (BlockSnap other in allBlocks)
         {
             if (other == this) continue;
+            if (other.drag != null && other.drag.isTemplate) continue;
 
-            // Ignore template blocks
-            if (other.drag != null && other.drag.isTemplate)
-                continue;
+            float distToBottom = Vector2.Distance(topSnap.position, other.bottomSnap.position);
 
-            float dist = Vector2.Distance(
-                bottomSnap.position,
-                other.topSnap.position
-            );
-
-            if (dist <= snapDistance)
+            float distToInner = float.MaxValue;
+            if (other.innerSnap != null)
             {
-                SnapTo(other);
+                distToInner = Vector2.Distance(topSnap.position, other.innerSnap.position);
+            }
+
+            if (distToBottom <= snapDistance)
+            {
+                SnapTo(other, other.bottomSnap);
+                PlaySnapSound();
+                return true;
+            }
+            else if (distToInner <= snapDistance)
+            {
+                SnapTo(other, other.innerSnap);
+                PlaySnapSound();
                 return true;
             }
         }
-
         return false;
     }
 
-    private void SnapTo(BlockSnap target)
+    private void SnapTo(BlockSnap target, Transform snapPoint)
     {
-        // Parent to target
         transform.SetParent(target.transform);
 
-        // Align bottom snap to target top snap
-        Vector3 offset = transform.position - bottomSnap.position;
-        transform.position = target.topSnap.position + offset;
+        Vector3 offset = transform.position - topSnap.position;
+
+        Vector3 adjustment = new Vector3(0.2f, -0.1f, 0);
+
+        transform.position = snapPoint.position + offset + adjustment;
+
+        if (TryGetComponent(out LoopBlockLogic loopLogic))
+        {
+            loopLogic.EnableInput();
+        }
+    }
+
+    /// <summary>
+    /// Plays the snapping sound effect at the block's current position.
+    /// </summary>
+    private void PlaySnapSound()
+    {
+        if (snapSound != null)
+        {
+            // PlayClipAtPoint creates a temporary audio object that destroys itself after finishing
+            AudioSource.PlayClipAtPoint(snapSound, Camera.main.transform.position, 1.0f);
+        }
     }
 }
+
+
+
+
+

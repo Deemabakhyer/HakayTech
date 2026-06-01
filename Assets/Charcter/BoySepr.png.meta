@@ -1,0 +1,2665 @@
+fileFormatVersion: 2
+guid: 5a98915e8500d4294b70593997a92af7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4303862256447125249
+    second: BoySepr_0
+  - first:
+      213: -1175568100771636424
+    second: BoySepr_1
+  - first:
+      213: -4559090777054001447
+    second: BoySepr_2
+  - first:
+      213: -2151272124730403027
+    second: BoySepr_3
+  - first:
+      213: 5648077277810642915
+    second: BoySepr_4
+  - first:
+      213: 4831458893212622362
+    second: BoySepr_5
+  - first:
+      213: 965198793203306665
+    second: BoySepr_6
+  - first:
+      213: -2349055581896727221
+    second: BoySepr_7
+  - first:
+      213: -1884843208926015792
+    second: BoySepr_8
+  - first:
+      213: 6269322122021095637
+    second: BoySepr_9
+  - first:
+      213: 111420155491746409
+    second: BoySepr_10
+  - first:
+      213: 2593952905182971308
+    second: BoySepr_11
+  - first:
+      213: -6346356594212504752
+    second: BoySepr_12
+  - first:
+      213: 2592661919064724918
+    second: BoySepr_13
+  - first:
+      213: -451496873792749385
+    second: BoySepr_14
+  - first:
+      213: 6180755645633963546
+    second: BoySepr_15
+  - first:
+      213: -9050967483291810675
+    second: BoySepr_16
+  - first:
+      213: -931516576317788645
+    second: BoySepr_17
+  - first:
+      213: -5779677521905269152
+    second: BoySepr_18
+  - first:
+      213: -6306844088507754414
+    second: BoySepr_19
+  - first:
+      213: -3522911360631907878
+    second: BoySepr_20
+  - first:
+      213: 8775010110896130211
+    second: BoySepr_21
+  - first:
+      213: 5854630127969186414
+    second: BoySepr_22
+  - first:
+      213: -6081536272324434683
+    second: BoySepr_23
+  - first:
+      213: -2529776829919747141
+    second: BoySepr_24
+  - first:
+      213: -8871718343958557285
+    second: BoySepr_25
+  - first:
+      213: 2699298010969136932
+    second: BoySepr_26
+  - first:
+      213: 8017377512821872143
+    second: BoySepr_27
+  - first:
+      213: 2484894472272176653
+    second: BoySepr_28
+  - first:
+      213: 4262928768317486008
+    second: BoySepr_29
+  - first:
+      213: -6758908266382668331
+    second: BoySepr_30
+  - first:
+      213: -6460725649584182307
+    second: BoySepr_31
+  - first:
+      213: 5687731393292535318
+    second: BoySepr_32
+  - first:
+      213: 7225957723277037939
+    second: BoySepr_33
+  - first:
+      213: -6799308482863399979
+    second: BoySepr_34
+  - first:
+      213: 1499354951159362991
+    second: BoySepr_35
+  - first:
+      213: 8745728867759125164
+    second: BoySepr_36
+  - first:
+      213: 4501708570293878211
+    second: BoySepr_37
+  - first:
+      213: 4768561406531652211
+    second: BoySepr_38
+  - first:
+      213: 8583787817804350724
+    second: BoySepr_39
+  - first:
+      213: 4526285229454965490
+    second: BoySepr_40
+  - first:
+      213: -3055554157555566910
+    second: BoySepr_41
+  - first:
+      213: -2547080103185013764
+    second: BoySepr_42
+  - first:
+      213: -1376861862432433391
+    second: BoySepr_43
+  - first:
+      213: 5120325716137111587
+    second: BoySepr_44
+  - first:
+      213: 8414256444270848797
+    second: BoySepr_45
+  - first:
+      213: -5202593244026126745
+    second: BoySepr_46
+  - first:
+      213: 6548404978753177083
+    second: BoySepr_47
+  - first:
+      213: 3493115258608000755
+    second: BoySepr_48
+  - first:
+      213: 5872987181968080394
+    second: BoySepr_49
+  - first:
+      213: -1210701096548746912
+    second: BoySepr_50
+  - first:
+      213: 4121271773930759665
+    second: BoySepr_51
+  - first:
+      213: 2688257321943703932
+    second: BoySepr_52
+  - first:
+      213: 5962305625542516740
+    second: BoySepr_53
+  - first:
+      213: 910189886541215769
+    second: BoySepr_54
+  - first:
+      213: 3969334930343298108
+    second: BoySepr_55
+  - first:
+      213: -7476384264462998044
+    second: BoySepr_56
+  - first:
+      213: 4236799003923557357
+    second: BoySepr_57
+  - first:
+      213: 2240964872057228729
+    second: BoySepr_58
+  - first:
+      213: -6177345825825366612
+    second: BoySepr_59
+  - first:
+      213: 6305664306499664214
+    second: BoySepr_60
+  - first:
+      213: -7415074669289023407
+    second: BoySepr_61
+  - first:
+      213: 1912503385416491677
+    second: BoySepr_62
+  - first:
+      213: -7468397193913642867
+    second: BoySepr_63
+  - first:
+      213: -2553337927155984579
+    second: BoySepr_64
+  - first:
+      213: -2784768576848453447
+    second: BoySepr_65
+  - first:
+      213: 4913776417747032928
+    second: BoySepr_66
+  - first:
+      213: 8289176646078098111
+    second: BoySepr_67
+  - first:
+      213: -7808737926164211039
+    second: BoySepr_68
+  - first:
+      213: 1464602799325990610
+    second: BoySepr_69
+  - first:
+      213: -5182052869194748732
+    second: BoySepr_70
+  - first:
+      213: 9034357137718115676
+    second: BoySepr_71
+  - first:
+      213: 954630053866853887
+    second: BoySepr_72
+  - first:
+      213: -4098460592381875266
+    second: BoySepr_73
+  - first:
+      213: 6154034483862665593
+    second: BoySepr_74
+  - first:
+      213: -3479685248755900895
+    second: BoySepr_75
+  - first:
+      213: 3285546197023764410
+    second: BoySepr_76
+  - first:
+      213: 5555542604268529318
+    second: BoySepr_77
+  - first:
+      213: -3682907689428622143
+    second: BoySepr_78
+  - first:
+      213: -8843484033487230382
+    second: BoySepr_79
+  - first:
+      213: 5892309804028334354
+    second: BoySepr_80
+  - first:
+      213: 750945394450901403
+    second: BoySepr_81
+  - first:
+      213: 433805059447277627
+    second: BoySepr_82
+  - first:
+      213: 5671574456839766289
+    second: BoySepr_83
+  - first:
+      213: -3596277355567627222
+    second: BoySepr_84
+  - first:
+      213: -581341913836611736
+    second: BoySepr_85
+  - first:
+      213: -8250469880924288361
+    second: BoySepr_86
+  - first:
+      213: 6693461815063682938
+    second: BoySepr_87
+  - first:
+      213: 8082829942458613328
+    second: BoySepr_88
+  - first:
+      213: 5766246947728782866
+    second: BoySepr_89
+  - first:
+      213: 7384784377291674815
+    second: BoySepr_90
+  - first:
+      213: -6874365767108932740
+    second: BoySepr_91
+  - first:
+      213: 3593596740263014284
+    second: BoySepr_92
+  - first:
+      213: -7882353042901805931
+    second: BoySepr_93
+  - first:
+      213: -3577039329669366369
+    second: BoySepr_94
+  - first:
+      213: 5704155474845602616
+    second: BoySepr_95
+  - first:
+      213: 5988965509683176526
+    second: BoySepr_96
+  - first:
+      213: 5605338899217652282
+    second: BoySepr_97
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BoySepr_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 0
+        width: 645
+        height: 1716
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff80242a41c9544c0800000000000000
+      internalID: -4303862256447125249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 549
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83bd9307a0b8fafe0800000000000000
+      internalID: -1175568100771636424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1252
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d6cfe6e71bdab0c0800000000000000
+      internalID: -4559090777054001447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_3
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 442
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d279e3686652522e0800000000000000
+      internalID: -2151272124730403027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_4
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1353
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3efcbdffb50026e40800000000000000
+      internalID: 5648077277810642915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_5
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1073
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e17d4e34acc0340800000000000000
+      internalID: 4831458893212622362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_6
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1045
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a0d4864033156d00800000000000000
+      internalID: 965198793203306665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_7
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 643
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b45a563e46a766fd0800000000000000
+      internalID: -2349055581896727221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_8
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 577
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de48aa7611b7d5e0800000000000000
+      internalID: -1884843208926015792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_9
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 523
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d8c091f04b110750800000000000000
+      internalID: 6269322122021095637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_10
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 508
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96287e48a08db8100800000000000000
+      internalID: 111420155491746409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_11
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 482
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca506858c629ff320800000000000000
+      internalID: 2593952905182971308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_12
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 416
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05b71005d463de7a0800000000000000
+      internalID: -6346356594212504752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_13
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 388
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b51984674cfaf320800000000000000
+      internalID: 2592661919064724918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_14
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 147
+        width: 11
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b042644cf5fbb9f0800000000000000
+      internalID: -451496873792749385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_15
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1663
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a16a08d338476c550800000000000000
+      internalID: 6180755645633963546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_16
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1556
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d84c7cc2701846280800000000000000
+      internalID: -9050967483291810675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_17
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1542
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ea036fb969213f0800000000000000
+      internalID: -931516576317788645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_18
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1489
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 066c6867ae57acfa0800000000000000
+      internalID: -5779677521905269152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_19
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1475
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25819b277b69978a0800000000000000
+      internalID: -6306844088507754414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_20
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1381
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad9d85e58ca1c1fc0800000000000000
+      internalID: -3522911360631907878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_21
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1368
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8cc60343917c970800000000000000
+      internalID: 8775010110896130211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_22
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1291
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6237ec0513df3150800000000000000
+      internalID: 5854630127969186414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_23
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1220
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 505e27f4bfa0a9ba0800000000000000
+      internalID: -6081536272324434683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_24
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1190
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb3ae93606d64ecd0800000000000000
+      internalID: -2529776829919747141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_25
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1150
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9d8809ab2351e480800000000000000
+      internalID: -8871718343958557285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_26
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1140
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42fdbbe4d35d57520800000000000000
+      internalID: 2699298010969136932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_27
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1125
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f06d3f9be52734f60800000000000000
+      internalID: 8017377512821872143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_28
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1113
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d066d146b5e1c7220800000000000000
+      internalID: 2484894472272176653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_29
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1100
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b37b5af027f82b30800000000000000
+      internalID: 4262928768317486008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_30
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1019
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dd4fc0fdb88332a0800000000000000
+      internalID: -6758908266382668331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_31
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1006
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddba7498044e656a0800000000000000
+      internalID: -6460725649584182307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_32
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 898
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6160a0b3191eeee40800000000000000
+      internalID: 5687731393292535318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_33
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 858
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3711be9b342c74460800000000000000
+      internalID: 7225957723277037939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_34
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 831
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5db70a885f004a1a0800000000000000
+      internalID: -6799308482863399979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_35
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 751
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa5b3185267cec410800000000000000
+      internalID: 1499354951159362991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_36
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 691
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca279a081121f5970800000000000000
+      internalID: 8745728867759125164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_37
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 657
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cdb2b6f718497e30800000000000000
+      internalID: 4501708570293878211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_38
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 496
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ac4f595555d2240800000000000000
+      internalID: 4768561406531652211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_39
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 456
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405cd8b9a8dbf1770800000000000000
+      internalID: 8583787817804350724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_40
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 429
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fab2c55f6890de30800000000000000
+      internalID: 4526285229454965490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_41
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 374
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6bee6cead7895d0800000000000000
+      internalID: -3055554157555566910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_42
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 348
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf321332424f6acd0800000000000000
+      internalID: -2547080103185013764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_43
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 328
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b9ee85e6764ece0800000000000000
+      internalID: -1376861862432433391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_44
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 308
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32076a43c1d0f0740800000000000000
+      internalID: 5120325716137111587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_45
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 214
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1b2ec9c7a175c470800000000000000
+      internalID: 8414256444270848797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_46
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 94
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76eb9f2520dacc7b0800000000000000
+      internalID: -5202593244026126745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_47
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 66
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf58bfb12ab90ea50800000000000000
+      internalID: 6548404978753177083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_48
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 40
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fe93d402d90a7030800000000000000
+      internalID: 3493115258608000755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_49
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1516
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0e31afb9ba018150800000000000000
+      internalID: 5872987181968080394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_50
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1086
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 069390b64c9b23fe0800000000000000
+      internalID: -1210701096548746912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_51
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 992
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f5acfbc7d2b13930800000000000000
+      internalID: 4121271773930759665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_52
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 885
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c712c439acb9e4520800000000000000
+      internalID: 2688257321943703932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_53
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 845
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40066c4706d5eb250800000000000000
+      internalID: 5962305625542516740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_54
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 362
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918317121e4a1ac00800000000000000
+      internalID: 910189886541215769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_55
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 1233
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3489a5b619e51730800000000000000
+      internalID: 3969334930343298108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_56
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 0
+        width: 975
+        height: 1716
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5ec508f1c8e3890800000000000000
+      internalID: -7476384264462998044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_57
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 80
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deba79d1f322cca30800000000000000
+      internalID: 4236799003923557357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_58
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 40
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd89119da1891f10800000000000000
+      internalID: 2240964872057228729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_59
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 53
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caddfec43b8a54aa0800000000000000
+      internalID: -6177345825825366612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_60
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 13
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 659b5c52748328750800000000000000
+      internalID: 6305664306499664214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_61
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 67
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 158d70200ec581990800000000000000
+      internalID: -7415074669289023407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_62
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 335
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d926b7732b39a8a10800000000000000
+      internalID: 1912503385416491677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_63
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 1603
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d80d047425cea5890800000000000000
+      internalID: -7468397193913642867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_64
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 1
+        width: 834
+        height: 1715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37d554fea8b09cd0800000000000000
+      internalID: -2553337927155984579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_65
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 322
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b02743dbb38a59d0800000000000000
+      internalID: -2784768576848453447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_66
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 1663
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06bd08d1e9d313440800000000000000
+      internalID: 4913776417747032928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_67
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 1583
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbae2fddd32190370800000000000000
+      internalID: 8289176646078098111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_68
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 1502
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa9cd68a3ac1a390800000000000000
+      internalID: -7808737926164211039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_69
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 1395
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de4ed67c70535410800000000000000
+      internalID: 1464602799325990610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_70
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 1355
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cc6a540f56a518b0800000000000000
+      internalID: -5182052869194748732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_71
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 1261
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5df3bf53fb706d70800000000000000
+      internalID: 9034357137718115676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_72
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 1140
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff555a4e9f68f3d00800000000000000
+      internalID: 954630053866853887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_73
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 1099
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebb24294ec75f17c0800000000000000
+      internalID: -4098460592381875266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_74
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 1073
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9797322f1c5876550800000000000000
+      internalID: 6154034483862665593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_75
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 979
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12edcb1d3bca5bfc0800000000000000
+      internalID: -3479685248755900895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_76
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 831
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abfacbecbda989d20800000000000000
+      internalID: 3285546197023764410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_77
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 751
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a669f56090491d40800000000000000
+      internalID: 5555542604268529318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_78
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 724
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c46d0728fea3ecc0800000000000000
+      internalID: -3682907689428622143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_79
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 617
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25aa7275022a54580800000000000000
+      internalID: -8843484033487230382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_80
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 603
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21119a74c80b5c150800000000000000
+      internalID: 5892309804028334354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_81
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 588
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9926f98bd4eb6a00800000000000000
+      internalID: 750945394450901403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_82
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 483
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b384f16376f250600800000000000000
+      internalID: 433805059447277627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_83
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 456
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1110d115bea75be40800000000000000
+      internalID: 5671574456839766289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_84
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 401
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a244c9b8cc4771ec0800000000000000
+      internalID: -3596277355567627222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_85
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 388
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86719b40c98aee7f0800000000000000
+      internalID: -581341913836611736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_86
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 375
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ac27d2b51708d80800000000000000
+      internalID: -8250469880924288361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_87
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 335
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7f138cae04f3ec50800000000000000
+      internalID: 6693461815063682938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_88
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 267
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ef22c020bfb2070800000000000000
+      internalID: 8082829942458613328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_89
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 107
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216fd8e4c03d50050800000000000000
+      internalID: 5766246947728782866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_90
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 89
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb4135fc3460c7660800000000000000
+      internalID: 7384784377291674815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_91
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 53
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7bcd5bb1c85990a0800000000000000
+      internalID: -6874365767108932740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_92
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 0
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8fe06112350fd130800000000000000
+      internalID: 3593596740263014284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_93
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 1521
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5945e938ba14c9290800000000000000
+      internalID: -7882353042901805931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_94
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 1180
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9db47f7eadcb5ec0800000000000000
+      internalID: -3577039329669366369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_95
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 1328
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83395c5be2b392f40800000000000000
+      internalID: 5704155474845602616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_96
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 1023
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e446bb076641d1350800000000000000
+      internalID: 5988965509683176526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoySepr_97
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 31
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a1c8dc70a2acd40800000000000000
+      internalID: 5605338899217652282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BoySepr_0: -4303862256447125249
+      BoySepr_1: -1175568100771636424
+      BoySepr_10: 111420155491746409
+      BoySepr_11: 2593952905182971308
+      BoySepr_12: -6346356594212504752
+      BoySepr_13: 2592661919064724918
+      BoySepr_14: -451496873792749385
+      BoySepr_15: 6180755645633963546
+      BoySepr_16: -9050967483291810675
+      BoySepr_17: -931516576317788645
+      BoySepr_18: -5779677521905269152
+      BoySepr_19: -6306844088507754414
+      BoySepr_2: -4559090777054001447
+      BoySepr_20: -3522911360631907878
+      BoySepr_21: 8775010110896130211
+      BoySepr_22: 5854630127969186414
+      BoySepr_23: -6081536272324434683
+      BoySepr_24: -2529776829919747141
+      BoySepr_25: -8871718343958557285
+      BoySepr_26: 2699298010969136932
+      BoySepr_27: 8017377512821872143
+      BoySepr_28: 2484894472272176653
+      BoySepr_29: 4262928768317486008
+      BoySepr_3: -2151272124730403027
+      BoySepr_30: -6758908266382668331
+      BoySepr_31: -6460725649584182307
+      BoySepr_32: 5687731393292535318
+      BoySepr_33: 7225957723277037939
+      BoySepr_34: -6799308482863399979
+      BoySepr_35: 1499354951159362991
+      BoySepr_36: 8745728867759125164
+      BoySepr_37: 4501708570293878211
+      BoySepr_38: 4768561406531652211
+      BoySepr_39: 8583787817804350724
+      BoySepr_4: 5648077277810642915
+      BoySepr_40: 4526285229454965490
+      BoySepr_41: -3055554157555566910
+      BoySepr_42: -2547080103185013764
+      BoySepr_43: -1376861862432433391
+      BoySepr_44: 5120325716137111587
+      BoySepr_45: 8414256444270848797
+      BoySepr_46: -5202593244026126745
+      BoySepr_47: 6548404978753177083
+      BoySepr_48: 3493115258608000755
+      BoySepr_49: 5872987181968080394
+      BoySepr_5: 4831458893212622362
+      BoySepr_50: -1210701096548746912
+      BoySepr_51: 4121271773930759665
+      BoySepr_52: 2688257321943703932
+      BoySepr_53: 5962305625542516740
+      BoySepr_54: 910189886541215769
+      BoySepr_55: 3969334930343298108
+      BoySepr_56: -7476384264462998044
+      BoySepr_57: 4236799003923557357
+      BoySepr_58: 2240964872057228729
+      BoySepr_59: -6177345825825366612
+      BoySepr_6: 965198793203306665
+      BoySepr_60: 6305664306499664214
+      BoySepr_61: -7415074669289023407
+      BoySepr_62: 1912503385416491677
+      BoySepr_63: -7468397193913642867
+      BoySepr_64: -2553337927155984579
+      BoySepr_65: -2784768576848453447
+      BoySepr_66: 4913776417747032928
+      BoySepr_67: 8289176646078098111
+      BoySepr_68: -7808737926164211039
+      BoySepr_69: 1464602799325990610
+      BoySepr_7: -2349055581896727221
+      BoySepr_70: -5182052869194748732
+      BoySepr_71: 9034357137718115676
+      BoySepr_72: 954630053866853887
+      BoySepr_73: -4098460592381875266
+      BoySepr_74: 6154034483862665593
+      BoySepr_75: -3479685248755900895
+      BoySepr_76: 3285546197023764410
+      BoySepr_77: 5555542604268529318
+      BoySepr_78: -3682907689428622143
+      BoySepr_79: -8843484033487230382
+      BoySepr_8: -1884843208926015792
+      BoySepr_80: 5892309804028334354
+      BoySepr_81: 750945394450901403
+      BoySepr_82: 433805059447277627
+      BoySepr_83: 5671574456839766289
+      BoySepr_84: -3596277355567627222
+      BoySepr_85: -581341913836611736
+      BoySepr_86: -8250469880924288361
+      BoySepr_87: 6693461815063682938
+      BoySepr_88: 8082829942458613328
+      BoySepr_89: 5766246947728782866
+      BoySepr_9: 6269322122021095637
+      BoySepr_90: 7384784377291674815
+      BoySepr_91: -6874365767108932740
+      BoySepr_92: 3593596740263014284
+      BoySepr_93: -7882353042901805931
+      BoySepr_94: -3577039329669366369
+      BoySepr_95: 5704155474845602616
+      BoySepr_96: 5988965509683176526
+      BoySepr_97: 5605338899217652282
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
