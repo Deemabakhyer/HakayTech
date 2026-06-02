@@ -1,0 +1,209 @@
+{
+  "stories": [
+    {
+      "key": "north",
+      "title": "صناعة القهوة السعودية",
+      "region": "المنطقة الشمالية",
+      "concept": "التسلسل",
+      "level": "مبتدئ",
+      "intro": "أهلاً بك يا صديقي المبرمج الصغير! اليوم، رحلتنا ستأخذنا إلى شمال مملكتنا الحبيبة، حيث الدفء والكرم ورائحة القهوة الأصيلة. قبل أن نبدأ مغامرتنا، سنتعلم معاً سراً من أسرار البرمجة القوية، وهو التسلسل. التسلسل ببساطة، يعني أن كل شيء يجب أن يحدث بالترتيب الصحيح، خطوة بخطوة. تماماً مثلما تلبس الشراب أولاً، ثم الحذاء! في البرمجة، أوامرنا تشبه هذه الخطوات، يجب أن نضعها بالتسلسل الصحيح ليعمل برنامجنا بنجاح. في قصتنا اليوم، سيحتاج صديقنا نايف لمساعدتك في اكتشاف التسلسل الصحيح لإعداد ألذ قهوة سعودية. مهمتك هي أن ترشده لوضع البلوكات البرمجية بالترتيب الصحيح. هل أنت مستعد للتحدي؟ هيا بنا نبدأ!",
+      "success_msg": "أحسنت أيها الشيف الصغير! رتبت الخطوات بالترتيب الصحيح تماماً مثل المبرمج الحقيقي!",
+      "blocks_order": ["غلي الماء", "إضافة البن", "إضافة الهيل", "صب القهوة"],
+      "blocks_data": [
+        { "block_name": "غلي الماء",   "requires_input": false, "correct_value": null, "input_label": null, "validation_type": null },
+        { "block_name": "إضافة البن",  "requires_input": false, "correct_value": null, "input_label": null, "validation_type": null },
+        { "block_name": "إضافة الهيل", "requires_input": false, "correct_value": null, "input_label": null, "validation_type": null },
+        { "block_name": "صب القهوة",   "requires_input": false, "correct_value": null, "input_label": null, "validation_type": null }
+      ]
+    },
+    {
+      "key": "east",
+      "title": "لؤلؤة في الشاطئ",
+      "region": "المنطقة الشرقية",
+      "concept": "المتغيرات",
+      "level": "مبتدئ",
+      "intro": "مرحباً يا صديقي المبرمج الصغير! اليوم رحلتنا ستكون على أحد شواطئ المنطقة الشرقية المطلة على الخليج العربي، حيث النسيم العليل، وأمواج البحر الهادئة، وصديقتنا لولوة اللي تحب تجمع الأصداف الجميلة. لولوة عندها علبة تحفظ فيها كل الأصداف اللي تلاقيها، وكل ما تلتقط صدفة، تسميها باسم خاص عشان تعرفها لاحقاً. خلينا نتخيل مع بعض: العلبة تشبه مكان تخزين البيانات في البرمجة، يعني مثل الذاكرة. أما الأصداف، فهي المتغيرات اللي نخزنها داخل العلبة. والاسم اللي تعطيه لولوة لكل صدفة، هو مثل المعرف في البرمجة. جاهز تتعلم كيف نسمي متغيراتنا ونخزن فيها البيانات مثل لولوة وعلبتها؟ هيا بنا نبدأ مغامرتنا على الشاطئ!",
+      "success_msg": "عمل مدهش! لقد ساعدت لولوة في تنظيم أصدافها تماماً مثل المبرمج المحترف. لقد تعلمت اليوم كيف ننشئ المتغيرات ونعطيها أسماءً فريدة ونخزنها في الذاكرة لنستخدمها وقتما نريد.",
+      "blocks_order": ["إنشاء متغير", "تسمية المتغير", "تخزين القيمة", "استرجاع المتغير"],
+      "blocks_data": [
+        {
+          "block_name": "إنشاء متغير",
+          "requires_input": false,
+          "correct_value": null,
+          "input_label": null,
+          "validation_type": null
+        },
+        {
+          "block_name": "تسمية المتغير",
+          "requires_input": true,
+          "correct_value": "shell1",
+          "input_label": "اسم المتغير",
+          "validation_type": "naming_rules"
+        },
+        {
+          "block_name": "تخزين القيمة",
+          "requires_input": false,
+          "correct_value": null,
+          "input_label": null,
+          "validation_type": null
+        },
+        {
+          "block_name": "استرجاع المتغير",
+          "requires_input": true,
+          "correct_value": "shell1",
+          "input_label": "اسم المتغير المراد استرجاعه",
+          "validation_type": "naming_rules"
+        }
+      ]
+    },
+    {
+      "key": "qassim",
+      "title": "تمور القصيم",
+      "region": "القصيم",
+      "concept": "الجملة الشرطية",
+      "level": "متوسط",
+      "intro": "أهلاً بك يا صديقي المبرمج الصغير! اليوم، رحلتنا ستأخذنا إلى قلب مملكتنا النابض بالحياة، إلى منطقة القصيم، المشهورة بمزارع النخيل الشاسعة وألذ أنواع التمور. قبل أن نبدأ مغامرتنا، سنتعلم معاً قوة برمجية مدهشة، وهي قوة اتخاذ القرار باستخدام الجملة الشرطية. ببساطة، فكر فيها هكذا: إذا كانت السماء تمطر، فإنك تأخذ مظلتك. في قصتنا اليوم، سنقابل صديقنا اللاعب وهو يساعد والده في مهرجان التمور. إذا طلب الزبون تمر سكري، فإن السعر سيكون 20 ريالاً. لكن إذا طلب تمر الإخلاص، سيتغير السعر ليصبح 30. هل أنت مستعد لمساعدة اللاعب في اتخاذ القرارات الصحيحة؟ هيا بنا إلى مهرجان التمور!",
+      "success_msg": "أحسنت يا بطل! بفضلك، استطاع اللاعب خدمة جميع الزبائن بسرعة ودقة. لقد تعلمت اليوم كيف تجعل برنامجك ذكياً باستخدام الجمل الشرطية لاتخاذ القرارات.",
+      "blocks_order": ["إذا طلب سكري", "السعر = 20", "إذا طلب إخلاص", "السعر = 30"],
+      "blocks_data": [
+        {
+          "block_name": "إذا طلب سكري",
+          "requires_input": false,
+          "correct_value": null,
+          "input_label": null,
+          "validation_type": null
+        },
+        {
+          "block_name": "السعر = 20",
+          "requires_input": true,
+          "correct_value": "20",
+          "input_label": "سعر تمر السكري (بالريال)",
+          "validation_type": "number"
+        },
+        {
+          "block_name": "إذا طلب إخلاص",
+          "requires_input": false,
+          "correct_value": null,
+          "input_label": null,
+          "validation_type": null
+        },
+        {
+          "block_name": "السعر = 30",
+          "requires_input": true,
+          "correct_value": "30",
+          "input_label": "سعر تمر الإخلاص (بالريال)",
+          "validation_type": "number"
+        }
+      ]
+    },
+    {
+      "key": "mecca",
+      "title": "الطواف حول الكعبة",
+      "region": "مكة المكرمة",
+      "concept": "التكرار",
+      "level": "متوسط",
+      "intro": "مرحباً يا مبرمجنا الصغير! رحلتنا اليوم في أطهر مكان على وجه الأرض، مكة المكرمة. تخيل معي: الطفل الآن يطوف حول الكعبة مع والده، يكرر نفس الخطوة سبع مرات خطوةً بخطوة. هذا بالضبط يشبه فكرة التكرار في البرمجة أو ما نسميه بالـ Loop. بدل ما نكتب نفس الكود سبع مرات، نخلي الحاسوب يعيد نفس العملية تلقائياً. جاهز تساعد الطفل يبرمج خطوات الطواف باستخدام التكرار؟ يلا نبدأ!",
+      "success_msg": "بطل! شفت كيف اللوب سهّل علينا كتابة الخطوات؟ تماماً مثل الطفل اللي كرر نفس الطواف سبع مرات بدون ما يعيد من البداية كل مرة.",
+      "blocks_order": ["بلوك التكرار", "العدد 7", "حركة المشي"],
+      "blocks_data": [
+        {
+          "block_name": "بلوك التكرار",
+          "requires_input": false,
+          "correct_value": null,
+          "input_label": null,
+          "validation_type": null
+        },
+        {
+          "block_name": "العدد 7",
+          "requires_input": true,
+          "correct_value": "7",
+          "input_label": "عدد مرات الطواف",
+          "validation_type": "number"
+        },
+        {
+          "block_name": "حركة المشي",
+          "requires_input": false,
+          "correct_value": null,
+          "input_label": null,
+          "validation_type": null
+        }
+      ]
+    },
+    {
+      "key": "south",
+      "title": "عريكة للضيوف",
+      "region": "المنطقة الجنوبية",
+      "concept": "الدوال",
+      "level": "متقدم",
+      "intro": "مرحباً يا مبرمجنا الصغير! اليوم رحلتنا إلى الجنوب، حيث البيوت الجميلة والمجالس الدافئة. الطفل ذهب لجدته وقال لها: علميني كيف أسوي عريكة للضيوف. لاحظ أنه كل مرة يحتاج يكرر نفس الخطوات: إضافة الدقيق، خلطه مع السمن، تشكيل العريكة، إضافة التمر والعسل. في البرمجة عندنا شيء مشابه اسمه function. الدالة تجمع مجموعة أوامر معاً وتنفذها وقت الاستدعاء. بدل ما نكتب نفس الخطوات كل مرة، نضعها داخل دالة وننادي عليها باسمها وتسوي كل الخطوات تلقائياً. هل أنت مستعد تساعد الطفل يسوي العريكة باستخدام الدالة؟ يلا نبدأ!",
+      "success_msg": "بطل! كل ضيف حصل على العريكة بسهولة. رأيت الفرق بين الـ Loop الذي يكرر نفس الشيء والـ Function التي تجمع خطوات مختلفة وتنفذها عند الحاجة.",
+      "blocks_order": [
+        "تعريف الدالة make_areeka",
+        "إضافة الدقيق",
+        "إضافة السمن",
+        "تشكيل العريكة",
+        "إضافة التمر والعسل",
+        "استدعاء make_areeka"
+      ],
+      "blocks_data": [
+        {
+          "block_name": "تعريف الدالة make_areeka",
+          "requires_input": true,
+          "correct_value": "make_areeka",
+          "input_label": "اسم الدالة",
+          "validation_type": "naming_rules"
+        },
+        {
+          "block_name": "إضافة الدقيق",
+          "requires_input": false,
+          "correct_value": null,
+          "input_label": null,
+          "validation_type": null
+        },
+        {
+          "block_name": "إضافة السمن",
+          "requires_input": false,
+          "correct_value": null,
+          "input_label": null,
+          "validation_type": null
+        },
+        {
+          "block_name": "تشكيل العريكة",
+          "requires_input": false,
+          "correct_value": null,
+          "input_label": null,
+          "validation_type": null
+        },
+        {
+          "block_name": "إضافة التمر والعسل",
+          "requires_input": false,
+          "correct_value": null,
+          "input_label": null,
+          "validation_type": null
+        },
+        {
+          "block_name": "استدعاء make_areeka",
+          "requires_input": true,
+          "correct_value": "make_areeka",
+          "input_label": "اسم الدالة المراد استدعاؤها",
+          "validation_type": "naming_rules"
+        }
+      ]
+    },
+    {
+      "key": "riyadh",
+      "title": "تحدي Debugging في Esports World Cup",
+      "region": "الرياض",
+      "concept": "تصحيح الأخطاء",
+      "level": "متقدم",
+      "intro": "يا بطل! يبدو أن هناك بعض الأخطاء في أوامر الشخصية. وصل الطفل إلى ركن الألعاب التفاعلي في Esports World Cup، وأمام الشاشة الكبيرة بدأت الألوان والأصوات تحيط به من كل جانب. الشاشة تعرض تحدياً: شخصية رقمية تتحرك في عالم افتراضي مليء بالعقبات والطفل هو من سيبرمج خطواتها لتتجاوزها. بدأ الطفل بوضع الأوامر لكنه لاحظ أن الشخصية تتحرك بطريقة غير متوقعة. دعنا نبحث عن الأخطاء معاً ونصححها خطوةً بخطوة!",
+      "success_msg": "عمل رائع! بهذا تعلمت أن تصحيح الأخطاء خطوةً بخطوة يجعل برنامجك يعمل تماماً كما تريد. الأخطاء جزء طبيعي من البرمجة والـ Debugging يجعل أي برنامج يعمل بشكل أفضل!",
+      "blocks_order": ["اكتشاف الخطأ", "تصحيح الاتجاه", "اختبار الحل"],
+      "blocks_data": [
+        { "block_name": "اكتشاف الخطأ",  "requires_input": false, "correct_value": null, "input_label": null, "validation_type": null },
+        { "block_name": "تصحيح الاتجاه", "requires_input": false, "correct_value": null, "input_label": null, "validation_type": null },
+        { "block_name": "اختبار الحل",   "requires_input": false, "correct_value": null, "input_label": null, "validation_type": null }
+      ]
+    }
+  ]
+}

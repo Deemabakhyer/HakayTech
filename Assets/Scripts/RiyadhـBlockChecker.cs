@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 public class RiyadhBlockChecker : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class RiyadhBlockChecker : MonoBehaviour
     [Header("Success Celebration")]
     public SuccessCelebrationTrigger successCelebration;
 
+    [Header("AI Feedback")]
+    public StageAIFeedback aiFeedback = new StageAIFeedback { storyKey = "riyadh" };
+
     [Header("Block State Mapping")]
     public int startState = 5;
     public int firstMoveForwardState = 6;
@@ -25,6 +29,20 @@ public class RiyadhBlockChecker : MonoBehaviour
 
     [Header("Wrong States")]
     public int wrongState = 8;
+    private bool challengeCompleted;
+
+    void Start()
+    {
+        if (aiFeedback != null)
+        {
+            aiFeedback.EnsureInitialized(this, "riyadh");
+        }
+
+        if (AICompanionController.Instance != null)
+        {
+            AICompanionController.Instance.RequestStoryIntro();
+        }
+    }
 
     public void EvaluateLiveState()
     {
@@ -58,6 +76,9 @@ public class RiyadhBlockChecker : MonoBehaviour
 
     public void CheckBlocks()
     {
+        if (challengeCompleted)
+            return;
+
         if (selectedBlocksPanel == null)
         {
             Debug.LogError("[BlockChecker] selectedBlocksPanel is NULL on object: " + name);
@@ -69,6 +90,12 @@ public class RiyadhBlockChecker : MonoBehaviour
         if (placedBlocks.Count != correctOrder.Count)
         {
             Debug.Log("Not complete yet.");
+            aiFeedback.RequestWrong(
+                this,
+                "riyadh",
+                "riyadh_incomplete:" + BuildBlocksSignature(placedBlocks),
+                BuildRiyadhFeedbackLine(placedBlocks)
+            );
 
             if (screenStateVisual != null)
                 screenStateVisual.ShowError();
@@ -83,28 +110,81 @@ public class RiyadhBlockChecker : MonoBehaviour
 
         if (wrongIndex == -1)
         {
-            Debug.Log("SUCCESS: Correct order!");
-
-            if (screenStateVisual != null)
-                screenStateVisual.ShowCompletedPath();
-
-            if (aiController != null)
-                aiController.ShowSuccessMessage();
-
-            if (successCelebration != null)
-                successCelebration.PlaySuccess();
-            else
-                Debug.LogWarning("Success Celebration is not assigned in BlockChecker.");
+            challengeCompleted = true;
+            StartCoroutine(SuccessFlowRoutine());
         }
         else
         {
             Debug.Log("WRONG ORDER");
+            aiFeedback.RequestWrong(
+                this,
+                "riyadh",
+                "riyadh_wrong:" + BuildBlocksSignature(placedBlocks),
+                BuildRiyadhFeedbackLine(placedBlocks)
+            );
 
             if (screenStateVisual != null)
                 screenStateVisual.ShowError();
 
             if (aiController != null)
                 aiController.ShowErrorMessage();
+        }
+    }
+    IEnumerator SuccessFlowRoutine()
+    {
+        Debug.Log("SUCCESS: Correct order! Starting cinematic flow...");
+
+        if (screenStateVisual != null)
+            screenStateVisual.ShowCompletedPath();
+
+        if (aiController != null)
+            aiController.ShowSuccessMessage();
+
+        // 1. تشغيل أنميشن الاحتفال بالبطولة فوراً
+        if (successCelebration != null)
+        {
+            successCelebration.gameObject.SetActive(true);
+            successCelebration.PlaySuccess();
+        }
+
+        // 2. بث صوت المساعد الرقمي للتهنئة
+        aiFeedback.RequestSuccess(
+            this,
+            "riyadh",
+            "riyadh_success",
+            "أحسنت، صححت الاتجاه واختبرت الحل بنجاح."
+        );
+
+        yield return new WaitForSeconds(2.0f);
+
+        float safetyTimer = 0f;
+        float maxVoiceWaitTime = 2.5f; // أقصى مدة انتظار للصوت قبل التجاوز تلقائياً
+
+        if (AICompanionController.Instance != null)
+        {
+            AudioSource aiVoice = AICompanionController.Instance.GetComponentInChildren<AudioSource>();
+            if (aiVoice != null)
+            {
+                while (aiVoice.isPlaying && safetyTimer < maxVoiceWaitTime)
+                {
+                    safetyTimer += Time.deltaTime;
+                    yield return null;
+                }
+            }
+        }
+
+        GameEvents.OnChallengeComplete?.Invoke();
+
+        var mainPopup = FindFirstObjectByType<CompletionPopupController>();
+        if (mainPopup != null)
+        {
+            mainPopup.ShowPopup();
+            Debug.Log("[UI Safety Flow] تم إظهار البوب آب بنجاح وتجاوز قفل الشبكة!");
+        }
+        else if (successCelebration != null)
+        {
+            var popupInScene = FindObjectOfType<CompletionPopupController>(true);
+            if (popupInScene != null) popupInScene.ShowPopup();
         }
     }
 
@@ -148,13 +228,11 @@ public class RiyadhBlockChecker : MonoBehaviour
     private int CountBlock(List<DragBlock> placedBlocks, string blockID)
     {
         int count = 0;
-
         for (int i = 0; i < placedBlocks.Count; i++)
         {
             if (placedBlocks[i].blockID.Trim() == blockID)
                 count++;
         }
-
         return count;
     }
 
@@ -171,22 +249,59 @@ public class RiyadhBlockChecker : MonoBehaviour
             if (playerID != correctID)
                 return i;
         }
-
         return -1;
+    }
+
+    private string BuildRiyadhFeedbackLine(List<DragBlock> placedBlocks)
+    {
+        if (placedBlocks.Count == 0)
+            return "ضع أول خطوة لتصحيح مسار الشخصية.";
+
+        int wrongIndex = GetFirstWrongIndex(placedBlocks);
+        if (wrongIndex >= 0 && wrongIndex < correctOrder.Count)
+            return "الخطوة " + GetArabicStepLabel(wrongIndex) + " غير مناسبة لمسار التصحيح.";
+
+        if (placedBlocks.Count < correctOrder.Count)
+            return "الخطوات ناقصة؛ أكمل التصحيح ثم اختبر الحل.";
+
+        if (placedBlocks.Count > correctOrder.Count)
+            return "هناك خطوة زائدة؛ أبق خطوات التصحيح المطلوبة فقط.";
+
+        return "راجع ترتيب خطوات التصحيح قبل الاختبار.";
+    }
+
+    private string GetArabicStepLabel(int index)
+    {
+        switch (index)
+        {
+            case 0: return "الأولى";
+            case 1: return "الثانية";
+            case 2: return "الثالثة";
+            case 3: return "الرابعة";
+            case 4: return "الخامسة";
+            case 5: return "السادسة";
+            default: return "الحالية";
+        }
     }
 
     private List<DragBlock> GetPlacedBlocks()
     {
         List<DragBlock> placedBlocks = new List<DragBlock>();
-
         for (int i = 0; i < selectedBlocksPanel.childCount; i++)
         {
             DragBlock block = selectedBlocksPanel.GetChild(i).GetComponent<DragBlock>();
-
             if (block != null)
                 placedBlocks.Add(block);
         }
-
         return placedBlocks;
+    }
+
+    private string BuildBlocksSignature(List<DragBlock> placedBlocks)
+    {
+        List<string> blockIds = new List<string>();
+        foreach (DragBlock block in placedBlocks)
+            blockIds.Add(block != null ? block.blockID.Trim() : "");
+
+        return string.Join("|", blockIds);
     }
 }

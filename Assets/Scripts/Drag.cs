@@ -114,6 +114,18 @@ public class Drag : MonoBehaviour
                 PlaySound(dropSound);
             }
         }
+
+        // استدعاء نظام التحقق الصوتي في الوقت الفعلي عند إفلات أو شبك أي بلوك
+        MakkahStoryManager manager = FindObjectOfType<MakkahStoryManager>();
+        if (manager != null)
+        {
+            manager.CheckRealTimeSequence();
+        }
+    }
+
+    public void ResetToStartPos()
+    {
+        transform.position = startPos;
     }
 
     private void PlaySound(AudioClip clip)

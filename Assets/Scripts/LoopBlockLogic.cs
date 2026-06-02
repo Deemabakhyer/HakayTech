@@ -34,15 +34,47 @@ public class LoopBlockLogic : MonoBehaviour
     /// <returns>True if input matches correctNumber, false otherwise.</returns>
     public bool IsInputCorrect()
     {
-        // Prevent errors if the field is missing or empty
         if (iterationInput == null || string.IsNullOrEmpty(iterationInput.text))
         {
             Debug.LogWarning("Input Field is empty or not assigned!");
             return false;
         }
 
-        // Trim whitespace to ensure clean comparison
         return iterationInput.text.Trim() == correctNumber.ToString();
+    }
+
+    // --- الدالة الناقصة الأولى: جلب القيمة النصية المدخلة من الطفل ---
+    public string GetIterationValue()
+    {
+        return iterationInput != null ? iterationInput.text.Trim() : "";
+    }
+
+    // --- الدالة الناقصة الثانية: جلب أسماء البلوكات مرتبة برمجياً من الأعلى للأسفل بناءً على لوجيك غلا الصادي ---
+    public List<string> GetSortedNestedBlockNames()
+    {
+        List<Transform> sortedTransforms = new List<Transform>();
+        List<string> cleanNames = new List<string>();
+
+        foreach (Transform child in transform.GetComponentsInChildren<Transform>())
+        {
+            string nameLower = child.name.ToLower();
+            if (child != this.transform && nameLower.Contains("block") &&
+                (nameLower.Contains("(clone)") || nameLower.Contains("_copy") || nameLower.Contains("copy")))
+            {
+                sortedTransforms.Add(child);
+            }
+        }
+
+        // استخدام نفس لوجيك غلا في الترتيب الصادي العمودي لضمان التطابق
+        sortedTransforms.Sort((a, b) => b.position.y.CompareTo(a.position.y));
+
+        foreach (Transform t in sortedTransforms)
+        {
+            string cleanName = t.name.Replace("_Copy", "").Replace("(Clone)", "").Trim();
+            cleanNames.Add(cleanName);
+        }
+
+        return cleanNames;
     }
 
     /// <summary>
@@ -53,32 +85,25 @@ public class LoopBlockLogic : MonoBehaviour
     /// </summary>
     public bool IsSequenceCorrect()
     {
-        // Step 1: Validate the iteration count first
         if (!IsInputCorrect()) return false;
 
         List<Transform> sortedBlocks = new List<Transform>();
 
-        // Step 2: Retrieve all nested transforms to find child blocks
-        // This handles cases where blocks are nested within each other (Parent-Child chain)
         foreach (Transform child in transform.GetComponentsInChildren<Transform>())
         {
             string nameLower = child.name.ToLower();
 
-            // Filter to only include active block clones, excluding snap points or the loop itself
-            if (child != this.transform && nameLower.Contains("block") && nameLower.Contains("(clone)"))
+            if (child != this.transform && nameLower.Contains("block") &&
+                (nameLower.Contains("(clone)") || nameLower.Contains("_copy") || nameLower.Contains("copy")))
             {
                 sortedBlocks.Add(child);
             }
         }
 
-        // Step 3: Sort blocks based on their vertical (Y) world position
-        // This ensures validation follows what the child sees visually (Top to Bottom)
         sortedBlocks.Sort((a, b) => b.position.y.CompareTo(a.position.y));
 
-        // Step 4: Verify the sorted sequence matches the educational requirement
         if (sortedBlocks.Count >= 2)
         {
-            // Block2 (Movement) must be at index 0, Block3 (Speech) at index 1
             bool isOrderCorrect = sortedBlocks[0].name.ToLower().Contains("block2") &&
                                  sortedBlocks[1].name.ToLower().Contains("block3");
 

@@ -39,6 +39,7 @@ public class StoryScenePlayer : MonoBehaviour
     public CompletionPopupController successPopup;
 
     private Coroutine storyRoutine;
+    private System.Action onStoryCompleted;
 
     private void Start()
     {
@@ -46,11 +47,12 @@ public class StoryScenePlayer : MonoBehaviour
             ShowOnlyScene(0);
     }
 
-    public void PlayStory()
+    public void PlayStory(System.Action completedCallback = null)
     {
         if (storyRoutine != null)
             StopCoroutine(storyRoutine);
 
+        onStoryCompleted = completedCallback;
         waitingForBoardClick = false;
         storyRoutine = StartCoroutine(PlayStoryRoutine());
     }
@@ -111,6 +113,10 @@ public class StoryScenePlayer : MonoBehaviour
             else
                 yield return new WaitForSeconds(secondsPerScene);
         }
+
+        System.Action completedCallback = onStoryCompleted;
+        onStoryCompleted = null;
+        completedCallback?.Invoke();
 
         if (successPopup != null)
             successPopup.ShowPopup();

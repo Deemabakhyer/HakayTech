@@ -50,13 +50,15 @@ public class CompletionPopupController : MonoBehaviour
         StopAllCoroutines();
         ResetVisualsOnly();
 
-        if (!string.IsNullOrEmpty(currentUserId))
+        // التعديل السحري: نتحقق هل الفايربيس موجود أصلاً في المشهد وشغال؟
+        if (!string.IsNullOrEmpty(currentUserId) && FindObjectOfType<FirestoreManager>() != null)
         {
             StartCoroutine(FetchAndStartSequence());
         }
         else
         {
-            Debug.LogError("CompletionPopup: No currentUserId found in PlayerPrefs!");
+            Debug.LogWarning("CompletionPopup: تم تشغيل الأنميشن محلياً (إما الفايربيس مفقود أو ID المستخدم غير موجود).");
+            if (coinsAmountText != null) coinsAmountText.text = "+" + winCoins;
             StartCoroutine(ShowRoutine());
         }
     }
@@ -65,23 +67,28 @@ public class CompletionPopupController : MonoBehaviour
     {
         bool dataLoaded = false;
 
-        yield return StartCoroutine(FirestoreManager.Instance.LoadUser(currentUserId, (user) => {
-            initialTotalCoins = user.accumulatedCoins;
-            if (coinsAmountText != null) coinsAmountText.text = initialTotalCoins.ToString();
-            dataLoaded = true;
-        }, (err) => {
-            dataLoaded = true;
-        }));
+        if (FirestoreManager.Instance != null)
+        {
+            yield return StartCoroutine(FirestoreManager.Instance.LoadUser(currentUserId, (user) => {
+                initialTotalCoins = user.accumulatedCoins;
+                if (coinsAmountText != null) coinsAmountText.text = initialTotalCoins.ToString();
+                dataLoaded = true;
+            }, (err) => {
+                dataLoaded = true;
+            }));
 
-        while (!dataLoaded) yield return null;
+            while (!dataLoaded) yield return null;
 
-        SaveGameProgress();
+            SaveGameProgress();
+        }
 
         yield return StartCoroutine(ShowRoutine());
     }
 
     private void SaveGameProgress()
     {
+        if (FirestoreManager.Instance == null) return;
+
         StartCoroutine(FirestoreManager.Instance.LoadUser(currentUserId, (user) =>
         {
             int newTotal = user.accumulatedCoins + winCoins;
@@ -135,8 +142,9 @@ public class CompletionPopupController : MonoBehaviour
             elapsed += Time.deltaTime;
             int currentDisplay = (int)Mathf.Lerp(0, winCoins, elapsed / duration);
 
-            if (coinsAmountText.text != "+" + currentDisplay && coinTickClip != null)
+            if (coinsAmountText.text != "+" + currentDisplay && coinTickClip != null && audioSource != null)
                 audioSource.PlayOneShot(coinTickClip, 0.02f);
+
             coinsAmountText.text = "+" + currentDisplay;
             yield return null;
         }

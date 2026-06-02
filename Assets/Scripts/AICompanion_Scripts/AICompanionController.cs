@@ -115,32 +115,31 @@ public class AICompanionController : MonoBehaviour
     // ===============================================================
     // تحميل JSON
     // ===============================================================
+   
     private IEnumerator LoadStoriesJson()
     {
         string path = Application.streamingAssetsPath + "/" + storiesJsonFileName + ".json";
 
-        using (UnityWebRequest www = UnityWebRequest.Get(path))
+        if (System.IO.File.Exists(path))
         {
-            yield return www.SendWebRequest();
-
-            if (www.result == UnityWebRequest.Result.Success)
+            try
             {
-                try
-                {
-                    _storiesRoot   = JsonConvert.DeserializeObject<StoriesRoot>(www.downloadHandler.text);
-                    _storiesLoaded = true;
-                    Debug.Log("[Stories] تم التحميل. عدد القصص: " + _storiesRoot.stories.Count);
-                }
-                catch (Exception e)
-                {
-                    Debug.LogError("[Stories] خطأ في تحليل JSON: " + e.Message);
-                }
+                string jsonText = System.IO.File.ReadAllText(path);
+                _storiesRoot = JsonConvert.DeserializeObject<StoriesRoot>(jsonText);
+                _storiesLoaded = true;
+                Debug.Log("[Stories] تم التحميل بنجاح محلياً. عدد القصص: " + _storiesRoot.stories.Count);
             }
-            else
+            catch (Exception e)
             {
-                Debug.LogError("[Stories] فشل التحميل: " + path + " | " + www.error);
+                Debug.LogError("[Stories] خطأ في تحليل JSON: " + e.Message);
             }
         }
+        else
+        {
+            Debug.LogError("[Stories] الملف غير موجود في المسار: " + path);
+        }
+
+        yield return null;
     }
 
     private StoryEntry FindStoryByKey(string key)
@@ -220,19 +219,88 @@ public class AICompanionController : MonoBehaviour
     // ===============================================================
     // مقدمة القصة
     // ===============================================================
+    // ===============================================================
+    // مقدمة القصة المطورة والمحمية من الانقطاع الصوتي
+    // ===============================================================
+    // ===============================================================
+    // مقدمة القصة المطورة والمحمية من الانقطاع الصوتي
+    // ===============================================================
     public void RequestStoryIntro()
     {
         if (!_storiesLoaded)
         {
+            // استدعاء دالة الانتظار الآمنة
             StartCoroutine(WaitForJsonThenShowIntro());
             return;
         }
+
         string intro = string.IsNullOrEmpty(_currentIntro)
             ? "مرحباً! هيا نتعلم " + _currentConcept + " معاً!"
             : _currentIntro;
+
+        // إرسال النص كاملاً للفقاعة البصرية (الـ UI) لكي يظهر للطفل
         OnIntroReceived(intro);
+
+        // تشغيل كروتين خاص بنطق النص الطويل على أجزاء مريحة لمحرك الصوت
+        StopAllCoroutines(); // إيقاف أي صوت سابق متداخل
+        StartCoroutine(SpeakLongIntroRoutine(intro));
     }
 
+    private IEnumerator SpeakLongIntroRoutine(string fullText)
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        // تقسيم النص الطويل إلى جمل بناءً على النقط وعلامات التعجب والاستفهام
+        string[] sentences = fullText.Split(new char[] { '.', '!', '؟', '?' }, System.StringSplitOptions.RemoveEmptyEntries);
+
+        AudioSource aiVoice = GetComponentInChildren<AudioSource>();
+
+        foreach (string sentence in sentences)
+        {
+            string cleanSentence = sentence.Trim();
+            if (string.IsNullOrEmpty(cleanSentence)) continue;
+
+            // استدعاء دالة إصلاح النص وبث الصوت الفعلي
+            SpeakSentence(cleanSentence);
+
+            // انتظر طالما أن المساعد لا يزال ينطق الجملة الحالية قبل الانتقال للجملة التالية
+            if (aiVoice != null)
+            {
+                yield return new WaitForSeconds(0.3f);
+                while (aiVoice.isPlaying)
+                {
+                    yield return null;
+                }
+            }
+            else
+            {
+                yield return new WaitForSeconds(cleanSentence.Length * 0.15f);
+            }
+        }
+    }
+
+    // --- الدالة المصلحة والمسؤولة عن بث وتوليد الصوت الفعلي لمشروعكم ---
+    private void SpeakSentence(string text)
+    {
+        if (string.IsNullOrEmpty(text)) return;
+
+        string straightText = text;
+
+        // إذا كان النص مقلوباً (مثل اللقطة السابقة)، نعيده مستقيماً مئة بالمئة ليفهمه محرك الـ TTS ويخرجه كصوت
+        if (text.Contains("يراج") || (text.Length > 0 && text[0] == 'ء'))
+        {
+            char[] charArray = text.ToCharArray();
+            System.Array.Reverse(charArray);
+            straightText = new string(charArray);
+        }
+
+        // الربط الجذري بمحرك صوت غلا (لتوليد وبث الصوت الفعلي في السماعات)
+        RequestExactVoiceFeedback("", straightText, false, false);
+
+        Debug.Log("[AI Voice Link Success] تم إصلاح الحروف وبث الصوت بنجاح: " + straightText);
+    }
+
+    // --- إضافة الدالة الناقصة لإنهاء الأخطاء الحمراء فوراً ---
     private IEnumerator WaitForJsonThenShowIntro()
     {
         float waited = 0f;

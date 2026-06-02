@@ -178,3 +178,5 @@ public class PlayerPathController : MonoBehaviour
         moveRoutine = null;
     }
 }
+
+

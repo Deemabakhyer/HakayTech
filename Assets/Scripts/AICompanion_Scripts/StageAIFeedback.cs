@@ -119,18 +119,32 @@ public class StageAIFeedback
         if (string.IsNullOrWhiteSpace(targetName))
             return;
 
-        TextMeshProUGUI targetText = FindFeedbackText(owner, targetName, true);
-        if (targetText == null)
+        GameObject targetObj = GameObject.Find(targetName);
+        if (targetObj == null)
         {
             Debug.LogWarning("[AI Text Box] لم يتم العثور على " + targetName + " في مشهد: " + owner.gameObject.scene.name);
             return;
         }
 
-        ActivateHierarchyToTarget(targetText.transform, targetName);
-        targetText.gameObject.SetActive(true);
-        ArabicTextFormatter.ApplyTo(targetText, message);
+        var rtlText = targetObj.GetComponentInChildren<RTLTMPro.RTLTextMeshPro>(true);
+        if (rtlText != null)
+        {
+            ActivateHierarchyToTarget(rtlText.transform, targetName);
+            rtlText.gameObject.SetActive(true);
 
-        Debug.Log("[AI Text Box] " + message);
+            rtlText.text = message;
+            Debug.Log("[AI RTL Box Success] " + message);
+            return;
+        }
+
+        TextMeshProUGUI targetText = FindFeedbackText(owner, targetName, true);
+        if (targetText != null)
+        {
+            ActivateHierarchyToTarget(targetText.transform, targetName);
+            targetText.gameObject.SetActive(true);
+            ArabicTextFormatter.ApplyTo(targetText, message);
+            Debug.Log("[AI Standard Box Success] " + message);
+        }
     }
 
     private string GetFeedbackTextObjectName(string key)
@@ -409,7 +423,7 @@ public static class ArabicTextFormatter
 
         text.isRightToLeftText = true;
         text.alignment = TextAlignmentOptions.Right;
-        text.text = Format(value, text.font);
+        text.text = ReverseForTextMeshPro(Format(value, text.font));
         text.ForceMeshUpdate();
     }
 

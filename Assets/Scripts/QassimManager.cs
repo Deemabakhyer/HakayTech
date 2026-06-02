@@ -29,12 +29,26 @@ public class QassimManager : MonoBehaviour
     [Header("Success UI Popup")]
     public CompletionPopupController completionPopup;
 
+    [Header("AI Feedback")]
+    public StageAIFeedback aiFeedback = new StageAIFeedback { storyKey = "qassim" };
+
     private bool isSequenceActive = false;
+    private bool storyCompleted = false;
 
     void Start()
     {
         textBubble.SetActive(false);
         LoadCustomerLevel(currentCustomerIndex);
+
+        if (aiFeedback != null)
+        {
+            aiFeedback.EnsureInitialized(this, "qassim");
+        }
+
+        if (AICompanionController.Instance != null)
+        {
+            AICompanionController.Instance.RequestStoryIntro();
+        }
     }
 
     void LoadCustomerLevel(int index)
@@ -53,7 +67,6 @@ public class QassimManager : MonoBehaviour
         if (customerAnimator != null && data.animatorCtrl != null)
             customerAnimator.runtimeAnimatorController = data.animatorCtrl;
 
-        // Force animator back to Entry walk clip state loop
         customerAnimator.Play("Walking", 0, 0f);
 
         if (bubbleText != null)
@@ -90,7 +103,7 @@ public class QassimManager : MonoBehaviour
 
     public void OnSubmitButtonPressed()
     {
-        if (isSequenceActive) return;
+        if (isSequenceActive || storyCompleted) return;
 
         if (CheckPlayerSolution())
         {
@@ -98,8 +111,25 @@ public class QassimManager : MonoBehaviour
         }
         else
         {
+            aiFeedback.RequestWrong(
+                this,
+                "qassim",
+                "qassim_submit_" + currentCustomerIndex + ":" + BuildSolutionSignature(),
+                BuildCustomerFeedbackLine()
+            );
             StartCoroutine(FailureRoutine());
         }
+    }
+
+    private string BuildCustomerFeedbackLine()
+    {
+        if (currentCustomerIndex == 0)
+            return "حاوية إذا تحتاج شرط الإخلاص وسعره معًا.";
+
+        if (currentCustomerIndex == 1)
+            return "حاوية وإلا إذا تحتاج السكري وسعره معًا.";
+
+        return "راجع الشرط والسعر داخل الحاوية المناسبة.";
     }
 
     [Header("Puzzle Settings")]
@@ -112,12 +142,10 @@ public class QassimManager : MonoBehaviour
         bool khlasHas20 = false;
         bool sukkariHas30 = false;
 
-        // --- LEVEL 1 VALIDATION (Customer 1: Khlas) ---
         if (currentCustomerIndex == 0)
         {
             foreach (DraggableBlock block in allBlocks)
             {
-                // Checks only if IF Khlas contains the 20 Riyals block
                 if (block.blockIdentity == BlockIdentity.Khlas)
                 {
                     if (IsValueAttachedToSameContainer(block, BlockIdentity._20riyals))
@@ -126,19 +154,12 @@ public class QassimManager : MonoBehaviour
                     }
                 }
             }
-
-            Debug.Log($"[Level 1 Check] Khlas with 20: {khlasHas20} (Standalone Validation Passed)");
-
-            // MODIFIED: Returns true based purely on the primary rule being correct
             return khlasHas20;
         }
-
-        // --- LEVEL 2 VALIDATION (Customer 2: Sukkari) ---
         else if (currentCustomerIndex == 1)
         {
             foreach (DraggableBlock block in allBlocks)
             {
-                // Must explicitly have an ELSE_IF container wrapping Sukkari -> 30
                 if (block.blockIdentity == BlockIdentity.Sukkari)
                 {
                     if (IsValueAttachedToSpecificContainer(block, BlockIdentity._30riyals, "ELSE_IF"))
@@ -147,26 +168,21 @@ public class QassimManager : MonoBehaviour
                     }
                 }
             }
-
-            Debug.Log($"[Level 2 Check] Else If Sukkari with 30: {sukkariHas30}");
             return sukkariHas30;
         }
 
         return false;
     }
 
-    // Helper: Validates standalone pure "ELSE" blocks strictly avoiding "ELSE_IF"
     private bool IsPrice30InsidePureElseContainer(DraggableBlock[] allBlocks)
     {
         foreach (DraggableBlock block in allBlocks)
         {
-            // UPDATE: Make sure this looks for your exact 30 Riyals identity value
             if (block.blockIdentity == BlockIdentity._30riyals)
             {
                 Transform parentContainer = block.transform.parent;
                 while (parentContainer != null && parentContainer != solutionSheetPanel)
                 {
-                    // Matches the exact hierarchy name of your pure Else block
                     if (parentContainer.gameObject.name == "ELSE")
                     {
                         return true;
@@ -178,7 +194,6 @@ public class QassimManager : MonoBehaviour
         return false;
     }
 
-    // Helper: Validates if a value block shares an IfElse container structure
     private bool IsValueAttachedToSameContainer(DraggableBlock conditionBlock, BlockIdentity targetValue)
     {
         Transform container = conditionBlock.transform.parent;
@@ -198,7 +213,6 @@ public class QassimManager : MonoBehaviour
         return false;
     }
 
-    // Helper: Targets a specific named container explicitly (e.g., "ELSE_IF")
     private bool IsValueAttachedToSpecificContainer(DraggableBlock conditionBlock, BlockIdentity targetValue, string containerName)
     {
         Transform container = conditionBlock.transform.parent;
@@ -242,10 +256,34 @@ public class QassimManager : MonoBehaviour
 
         currentCustomerIndex++;
         isSequenceActive = false;
+        aiFeedback.ClearWrongRepeat();
 
         if (currentCustomerIndex >= customerLevels.Count)
         {
+            storyCompleted = true;
             Debug.Log("Qassim Story Fully Completed! Triggering Firebase & Completion Popup...");
+
+            aiFeedback.RequestSuccess(
+                this,
+                "qassim",
+                "qassim_success",
+                "أحسنت، أنهيت طلبات القصيم بنجاح."
+            );
+
+            GameEvents.OnChallengeComplete?.Invoke();
+
+            if (AICompanionController.Instance != null)
+            {
+                AudioSource aiVoice = AICompanionController.Instance.GetComponentInChildren<AudioSource>();
+                if (aiVoice != null)
+                {
+                    yield return new WaitForSeconds(0.5f);
+                    while (aiVoice.isPlaying)
+                    {
+                        yield return null;
+                    }
+                }
+            }
 
             if (completionPopup != null)
             {
@@ -269,5 +307,28 @@ public class QassimManager : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         boyAnimator.SetTrigger("Thinking");
         isSequenceActive = false;
+    }
+
+    private string BuildSolutionSignature()
+    {
+        if (solutionSheetPanel == null)
+            return "no-solution-sheet";
+
+        DraggableBlock[] blocks = solutionSheetPanel.GetComponentsInChildren<DraggableBlock>();
+        List<string> parts = new List<string>();
+
+        foreach (DraggableBlock block in blocks)
+        {
+            if (block == null || block.isTemplate)
+                continue;
+
+            string parentName = block.transform.parent != null
+                ? block.transform.parent.name
+                : "";
+
+            parts.Add(block.blockIdentity + "@" + parentName);
+        }
+
+        return string.Join("|", parts);
     }
 }

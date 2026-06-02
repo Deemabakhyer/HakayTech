@@ -9123,6 +9123,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1656943816}
   m_CullTransparentMesh: 1
+--- !u!1 &1667082881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1667082883}
+  - component: {fileID: 1667082882}
+  m_Layer: 0
+  m_Name: AI_Companion_Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1667082882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667082881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbeb27a86db5e40e69e72e91138ddb7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  geminiApiKey: AIzaSyALPqg4fyA7n1PyIFl-OWl75aMRJ71954M
+  useGeminiTts: 1
+  maleGeminiTtsVoiceName: Kore
+  femaleGeminiTtsVoiceName: Puck
+  playerGender: male
+  wrongAttemptCount: 0
+  hintCooldown: 3
+  maxMemoryMessages: 6
+  storiesJsonFileName: stories
+--- !u!4 &1667082883
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667082881}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 456.08563, y: 146.76207, z: -9.437424}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1682796696
 GameObject:
   m_ObjectHideFlags: 0
@@ -11107,6 +11160,10 @@ MonoBehaviour:
   screenStateVisual: {fileID: 492939943}
   playerPathController: {fileID: 31449415}
   successCelebration: {fileID: 88671786}
+  aiFeedback:
+    aiCompanion: {fileID: 0}
+    storyKey: riyadh
+    defaultGender: male
   startState: 5
   firstMoveForwardState: 6
   turnRightState: 8
@@ -12031,3 +12088,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 2146093551}
   - {fileID: 1509804175}
+  - {fileID: 1667082883}

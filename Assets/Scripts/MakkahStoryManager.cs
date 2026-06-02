@@ -2,6 +2,8 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 /// <summary>
 /// MakkahStoryManager: Handles the logic for the Makkah story scene, 
@@ -47,40 +49,89 @@ public class MakkahStoryManager : MonoBehaviour
     [Header("Success UI")]
     public CompletionPopupController completionPopup;
 
+    [Header("Submit Button")]
+    public Button itmamButton;
+
+    [Header("AI Feedback")]
+    public AICompanionController aiCompanion;
+    public string aiStoryKey = "mecca";
+    public string defaultAIGender = "male";
+
+    [Header("AI Text Output")]
+    [Tooltip("النص الموجود داخل text_box/Canvas/Text - RTLTMP لعرض التلميح المنطوق.")]
+    public TextMeshProUGUI aiFeedbackText;
+
     private Coroutine tawafCoroutine;
     private Coroutine slideCoroutine;
+    private bool aiFeedbackInitialized;
+    private bool challengeCompleted;
+    private bool successFeedbackPlayed;
+    private bool successSequenceStarted;
+    private string lastWrongFeedbackSignature = "";
+    private string lastSubmitFeedbackSignature = "";
+    private readonly HashSet<string> playedWrongFeedbackSignatures = new HashSet<string>();
+    private static bool makkahCompletionLocked;
 
     void Start()
     {
-        // Cache references and set initial states
+        makkahCompletionLocked = false;
+
         if (character != null)
             characterRenderer = character.GetComponent<SpriteRenderer>();
 
         if (hangingBlockSprite != null)
         {
             startPosition = hangingBlockSprite.transform.position;
-            // Hide the hanging block above the screen at start
             hangingBlockSprite.transform.position = startPosition + hiddenPositionOffset;
         }
 
         if (successObject != null)
             successObject.SetActive(false);
+
+        CacheItmamButton();
+        CacheAIFeedbackText();
+        InitializeAIFeedback();
+
+        // --- التحسين المطور: تشغيل مقدمة قصة مكة ومفهوم التكرار تلقائياً فور بدء المرحلة ---
+        if (AICompanionController.Instance != null)
+        {
+            AICompanionController.Instance.RequestStoryIntro();
+        }
     }
 
-    /// <summary>
-    /// Called when the 'Itmam' (Submit) button is clicked.
-    /// Validates the player's code before starting the animation.
-    /// </summary>
     public void OnItmamClick()
     {
-        LoopBlockLogic activeLoop = Drag.solutionSheet.GetComponentInChildren<LoopBlockLogic>();
+        if (challengeCompleted || successSequenceStarted || makkahCompletionLocked)
+            return;
+
+        LoopBlockLogic activeLoop = GetActiveLoop();
+        aiCompanion = GetAICompanion();
+
+        if (activeLoop == null)
+        {
+            MarkSubmitFeedback("submit:no-loop");
+            SendWrongBlockFeedback(new List<string> { "لم يتم وضع بلوك التكرار" });
+            return;
+        }
 
         if (activeLoop != null)
         {
-            // CHECK 1: Correct Sequence (Logic)
             if (activeLoop.IsSequenceCorrect())
             {
                 Debug.Log("Logic Validated: Starting Tawaf.");
+
+                makkahCompletionLocked = true;
+                challengeCompleted = true;
+                successSequenceStarted = true;
+                lastWrongFeedbackSignature = "";
+                lastSubmitFeedbackSignature = "";
+                playedWrongFeedbackSignatures.Clear();
+                SetItmamButtonInteractable(false);
+
+                AICompanionController companion = GetAICompanion();
+                if (companion != null)
+                    companion.CancelPendingVoiceFeedback();
+                AICompanionController.CancelAllPendingVoiceFeedback();
 
                 Transform standingChild = character.transform.Find("StandingModel");
                 if (standingChild != null)
@@ -94,21 +145,340 @@ public class MakkahStoryManager : MonoBehaviour
                 slideCoroutine = StartCoroutine(SlideBlock(true));
                 tawafCoroutine = StartCoroutine(PerformTawaf());
             }
-            // CHECK 2: Wrong Loop Count
             else if (!activeLoop.IsInputCorrect())
             {
                 Debug.LogWarning("Execution Failed: Incorrect Loop Number.");
+                string submitSignature = BuildSubmitFeedbackSignature("wrong-number", activeLoop);
+                MarkSubmitFeedback(submitSignature);
+                SendWrongNumberFeedback(activeLoop);
             }
-            // CHECK 3: Wrong Block Order
             else
             {
                 Debug.LogWarning("Execution Failed: Invalid Sequence Order.");
+
+                if (aiCompanion != null)
+                {
+                    List<string> currentOrder = new List<string>();
+                    foreach (Transform child in activeLoop.transform.GetComponentsInChildren<Transform>())
+                    {
+                        string nameLower = child.name.ToLower();
+                        if (child != activeLoop.transform && nameLower.Contains("block") &&
+                            (nameLower.Contains("(clone)") || nameLower.Contains("_copy") || nameLower.Contains("copy")))
+                        {
+                            string cleanName = child.name.Replace("_Copy", "").Replace("(Clone)", "").Trim();
+                            currentOrder.Add(cleanName);
+                        }
+                    }
+
+                    if (currentOrder.Count == 0)
+                    {
+                        currentOrder.Add("مساحة تكرار فارغة");
+                    }
+
+                    string submitSignature = BuildSubmitFeedbackSignature(
+                        "wrong-blocks",
+                        activeLoop.GetIterationValue(),
+                        currentOrder
+                    );
+
+                    MarkSubmitFeedback(submitSignature);
+                    SendWrongBlockFeedback(currentOrder);
+                }
             }
         }
     }
-    /// <summary>
-    /// Animates the hanging UI block sliding in or out of the scene.
-    /// </summary>
+
+    public void OnLoopIterationEdited(LoopBlockLogic editedLoop)
+    {
+        if (editedLoop == null || challengeCompleted ||
+            successSequenceStarted || makkahCompletionLocked)
+            return;
+
+        string enteredValue = editedLoop.GetIterationValue();
+
+        if (string.IsNullOrWhiteSpace(enteredValue))
+        {
+            lastWrongFeedbackSignature = "";
+            lastSubmitFeedbackSignature = "";
+            return;
+        }
+
+        if (!editedLoop.IsInputCorrect())
+            SendWrongNumberFeedback(editedLoop);
+    }
+
+    private LoopBlockLogic GetActiveLoop()
+    {
+        if (Drag.solutionSheet != null)
+        {
+            LoopBlockLogic activeLoop =
+                Drag.solutionSheet.GetComponentInChildren<LoopBlockLogic>();
+
+            if (activeLoop != null)
+                return activeLoop;
+        }
+
+        return loopBlock;
+    }
+
+    private AICompanionController GetAICompanion()
+    {
+        if (aiCompanion != null)
+            return aiCompanion;
+
+        if (AICompanionController.Instance != null)
+        {
+            aiCompanion = AICompanionController.Instance;
+            return aiCompanion;
+        }
+
+        aiCompanion = FindObjectOfType<AICompanionController>();
+        if (aiCompanion == null)
+            aiCompanion = gameObject.AddComponent<AICompanionController>();
+
+        return aiCompanion;
+    }
+
+    private void InitializeAIFeedback()
+    {
+        AICompanionController companion = GetAICompanion();
+
+        if (companion == null || aiFeedbackInitialized)
+            return;
+
+        companion.InitializeCompanion(aiStoryKey, ResolveAIGender());
+        aiFeedbackInitialized = true;
+    }
+
+    private string ResolveAIGender()
+    {
+        return PlayerVoiceResolver.GetStoredGender(defaultAIGender);
+    }
+
+    private void SendWrongNumberFeedback(LoopBlockLogic activeLoop)
+    {
+        AICompanionController companion = GetAICompanion();
+
+        if (companion == null || activeLoop == null)
+            return;
+
+        string enteredValue = activeLoop.GetIterationValue();
+        if (string.IsNullOrWhiteSpace(enteredValue))
+            enteredValue = "فارغ";
+
+        string signature = "number:" + enteredValue.Trim();
+        companion.CancelPendingVoiceFeedback();
+        AICompanionController.CancelAllPendingVoiceFeedback();
+
+        string feedbackLine = "عدد التكرار غير صحيح؛ راجع خانة التكرار.";
+        ShowAIFeedbackText(feedbackLine);
+
+        bool feedbackStarted = companion.RequestExactVoiceFeedback(
+            "",
+            feedbackLine,
+            false,
+            false
+        );
+
+        if (feedbackStarted)
+        {
+            MarkWrongFeedbackPlayed(signature);
+            GameEvents.OnWrongAttempt?.Invoke(companion.GetAttemptCount());
+        }
+    }
+
+    private void SendWrongBlockFeedback(LoopBlockLogic activeLoop)
+    {
+        List<string> currentOrder = activeLoop != null
+            ? activeLoop.GetSortedNestedBlockNames()
+            : new List<string>();
+
+        if (currentOrder.Count == 0)
+            currentOrder.Add("لم يتم وضع بلوكات داخل التكرار");
+
+        SendWrongBlockFeedback(currentOrder);
+    }
+
+    private void SendWrongBlockFeedback(List<string> currentOrder)
+    {
+        AICompanionController companion = GetAICompanion();
+
+        if (companion == null)
+            return;
+
+        if (currentOrder == null)
+            currentOrder = new List<string>();
+
+        string signature = "blocks:" + string.Join("|", currentOrder);
+        companion.CancelPendingVoiceFeedback();
+        AICompanionController.CancelAllPendingVoiceFeedback();
+
+        string feedbackLine = "راجع ترتيب بلوكات الطواف داخل التكرار.";
+        ShowAIFeedbackText(feedbackLine);
+
+        bool feedbackStarted = companion.RequestExactVoiceFeedback(
+            "",
+            feedbackLine,
+            false,
+            false
+        );
+
+        if (feedbackStarted)
+        {
+            MarkWrongFeedbackPlayed(signature);
+            GameEvents.OnWrongAttempt?.Invoke(companion.GetAttemptCount());
+        }
+    }
+
+    private void SendSuccessFeedback()
+    {
+        if (successFeedbackPlayed)
+            return;
+
+        successFeedbackPlayed = true;
+
+        AICompanionController companion = GetAICompanion();
+
+        if (companion != null)
+        {
+            companion.CancelPendingVoiceFeedback();
+            AICompanionController.CancelAllPendingVoiceFeedback();
+
+            string successLine = "أحسنت، أكملت تكرار الطواف بنجاح.";
+            ShowAIFeedbackText(successLine);
+
+            if (companion.RequestExactVoiceFeedback(
+                "makkah_success",
+                successLine,
+                true,
+                true
+            )) { }
+        }
+
+        GameEvents.OnChallengeComplete?.Invoke();
+    }
+
+    private bool IsRepeatedWrongFeedback(string signature)
+    {
+        return !string.IsNullOrEmpty(signature) &&
+               (signature == lastWrongFeedbackSignature ||
+                playedWrongFeedbackSignatures.Contains(signature));
+    }
+
+    private void MarkWrongFeedbackPlayed(string signature)
+    {
+        lastWrongFeedbackSignature = signature ?? "";
+        if (!string.IsNullOrEmpty(signature))
+            playedWrongFeedbackSignatures.Add(signature);
+    }
+
+    private string BuildSubmitFeedbackSignature(string resultType, LoopBlockLogic activeLoop)
+    {
+        List<string> currentOrder = activeLoop != null
+            ? activeLoop.GetSortedNestedBlockNames()
+            : new List<string>();
+
+        string enteredValue = activeLoop != null ? activeLoop.GetIterationValue() : "";
+        return BuildSubmitFeedbackSignature(resultType, enteredValue, currentOrder);
+    }
+
+    private string BuildSubmitFeedbackSignature(
+        string resultType,
+        string enteredValue,
+        List<string> currentOrder)
+    {
+        return resultType + ":" +
+               (enteredValue ?? "").Trim() + ":" +
+               string.Join("|", currentOrder ?? new List<string>());
+    }
+
+    private void SetItmamButtonInteractable(bool interactable)
+    {
+        CacheItmamButton();
+        Button targetButton = itmamButton;
+
+        if (targetButton == null && EventSystem.current != null &&
+            EventSystem.current.currentSelectedGameObject != null)
+        {
+            targetButton = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
+        }
+
+        if (targetButton != null)
+        {
+            itmamButton = targetButton;
+            itmamButton.interactable = interactable;
+        }
+    }
+
+    private void CacheItmamButton()
+    {
+        if (itmamButton != null) return;
+
+        Button[] buttons = FindObjectsByType<Button>(FindObjectsSortMode.None);
+        foreach (Button button in buttons)
+        {
+            int eventCount = button.onClick.GetPersistentEventCount();
+            for (int i = 0; i < eventCount; i++)
+            {
+                if (button.onClick.GetPersistentTarget(i) == this &&
+                    button.onClick.GetPersistentMethodName(i) == nameof(OnItmamClick))
+                {
+                    itmamButton = button;
+                    return;
+                }
+            }
+        }
+    }
+
+    private void CacheAIFeedbackText()
+    {
+        if (aiFeedbackText != null) return;
+
+        GameObject textBox = GameObject.Find("text_box");
+        if (textBox != null)
+        {
+            aiFeedbackText = textBox.GetComponentInChildren<TextMeshProUGUI>(true);
+            if (aiFeedbackText != null) return;
+        }
+    }
+
+    // --- التحسين المطور: معالجة كتابة النص العربي وتوجيهه لسكربت RTL المتقدم في مشروعك لمنع الكركبة ---
+    private void ShowAIFeedbackText(string message)
+    {
+        if (string.IsNullOrWhiteSpace(message)) return;
+
+        CacheAIFeedbackText();
+        if (aiFeedbackText == null) return;
+
+        ActivateHierarchy(aiFeedbackText.transform);
+        aiFeedbackText.gameObject.SetActive(true);
+
+        // إذا كان يحمل حزمة RTL المتطورة
+        var rtlTextComp = aiFeedbackText.GetComponent<RTLTMPro.RTLTextMeshPro>();
+        if (rtlTextComp != null)
+        {
+            rtlTextComp.text = message;
+            rtlTextComp.UpdateText();
+        }
+        else
+        {
+            ArabicTextFormatter.ApplyTo(aiFeedbackText, message);
+        }
+    }
+
+    private void ActivateHierarchy(Transform child)
+    {
+        Transform current = child;
+        while (current != null)
+        {
+            if (!current.gameObject.activeSelf)
+                current.gameObject.SetActive(true);
+
+            if (current.name == "text_box") break;
+            current = current.parent;
+        }
+    }
+
     IEnumerator SlideBlock(bool show)
     {
         float elapsed = 0;
@@ -124,30 +494,23 @@ public class MakkahStoryManager : MonoBehaviour
         hangingBlockSprite.transform.position = targetPos;
     }
 
-    /// <summary>
-    /// Core Coroutine: Cycles through 7 laps, updating character position and sprites.
-    /// Ends with a cleanup and activation of the success feedback.
-    /// </summary>
     IEnumerator PerformTawaf()
     {
         for (int i = 0; i < 7; i++)
         {
-            if (tawafAudioSource != null)
+            if (tawafAudioSource != null && !tawafAudioSource.isPlaying)
             {
                 tawafAudioSource.Play();
                 tawafAudioSource.loop = true;
             }
-            // Update Lap Counter UI
             if (lapCounterText != null)
                 lapCounterText.text = (i + 1).ToString();
 
-            // Iterate through each point on the Tawaf path
             foreach (Transform point in tawafPathPoints)
             {
                 character.transform.position = point.position;
                 character.transform.localScale = point.localScale;
 
-                // Sync the character's sprite with the path point's sprite
                 SpriteRenderer pointRenderer = point.GetComponent<SpriteRenderer>();
                 if (characterRenderer != null && pointRenderer != null)
                 {
@@ -158,16 +521,12 @@ public class MakkahStoryManager : MonoBehaviour
             }
         }
 
-        // --- stop sound ---
         if (tawafAudioSource != null)
         {
-            if (fadeAudioAtEnd)
-                StartCoroutine(FadeOutAudio(1.5f)); 
-            else
-                tawafAudioSource.Stop();
+            if (fadeAudioAtEnd) StartCoroutine(FadeOutAudio(1.5f));
+            else tawafAudioSource.Stop();
         }
 
-        // --- Sequence Completion ---
         slideCoroutine = StartCoroutine(SlideBlock(false));
 
         if (successObject != null)
@@ -184,10 +543,26 @@ public class MakkahStoryManager : MonoBehaviour
             if (lapCounterText != null)
                 lapCounterText.text = "Done";
 
-            Debug.Log("Story Completed: Activating completion popup next.");
-
             yield return new WaitForSeconds(1.0f);
 
+            // 1. تشغيل صوت التهنئة للمساعد
+            SendSuccessFeedback();
+
+            // 2. التحسين التوقيتي السينمائي: ننتظر صمت المساعد بالكامل قبل قذف البوب آب
+            if (AICompanionController.Instance != null)
+            {
+                AudioSource aiVoice = AICompanionController.Instance.GetComponentInChildren<AudioSource>();
+                if (aiVoice != null)
+                {
+                    yield return new WaitForSeconds(0.5f);
+                    while (aiVoice.isPlaying)
+                    {
+                        yield return null;
+                    }
+                }
+            }
+
+            // 3. يفتح بوب آب النجاح المطور محلياً بكل نظافة وأمان
             if (completionPopup != null)
             {
                 completionPopup.ShowPopup();
@@ -199,10 +574,6 @@ public class MakkahStoryManager : MonoBehaviour
         }
     }
 
-
-    /// <summary>
-    /// Smoothly lowers the volume before stopping the audio.
-    /// </summary>
     IEnumerator FadeOutAudio(float duration)
     {
         float startVolume = tawafAudioSource.volume;
@@ -218,4 +589,72 @@ public class MakkahStoryManager : MonoBehaviour
         tawafAudioSource.Stop();
         tawafAudioSource.volume = startVolume;
     }
+
+    public void CheckRealTimeSequence()
+    {
+        if (challengeCompleted || successSequenceStarted || makkahCompletionLocked)
+            return;
+
+        LoopBlockLogic activeLoop = GetActiveLoop();
+        aiCompanion = GetAICompanion();
+
+        if (activeLoop != null)
+        {
+            List<string> currentOrder = new List<string>();
+            List<Drag> dragBlocks = new List<Drag>();
+
+            foreach (Transform child in activeLoop.transform.GetComponentsInChildren<Transform>())
+            {
+                string nameLower = child.name.ToLower();
+                if (child != activeLoop.transform && nameLower.Contains("block") &&
+                    (nameLower.Contains("(clone)") || nameLower.Contains("_copy") || nameLower.Contains("copy")))
+                {
+                    Drag blockDrag = child.GetComponent<Drag>();
+                    if (blockDrag != null)
+                    {
+                        string cleanName = child.name.Replace("_Copy", "").Replace("(Clone)", "").Trim();
+                        currentOrder.Add(cleanName);
+                        dragBlocks.Add(blockDrag);
+                    }
+                }
+            }
+
+            if (currentOrder.Count == 0) return;
+
+            for (int i = 0; i < currentOrder.Count; i++)
+            {
+                bool isCorrectStep = false;
+                if (i == 0 && currentOrder[0].ToLower().Contains("block2")) isCorrectStep = true;
+                if (i == 1 && currentOrder[1].ToLower().Contains("block3")) isCorrectStep = true;
+
+                if (!isCorrectStep)
+                {
+                    Debug.LogWarning($"[Real-Time Validation] Wrong block placed at index {i}: {currentOrder[i]}. Ejecting!");
+
+                    Drag incorrectBlock = dragBlocks[i];
+                    if (incorrectBlock != null)
+                    {
+                        incorrectBlock.transform.SetParent(null);
+                        incorrectBlock.ResetToStartPos();
+                    }
+
+                    if (aiCompanion != null)
+                    {
+                        List<string> cleanOrder = new List<string>();
+                        for (int j = 0; j <= i; j++) cleanOrder.Add(currentOrder[j]);
+                        SendWrongBlockFeedback(cleanOrder);
+                    }
+                    break;
+                }
+            }
+        }
+    }
+
+    private void MarkSubmitFeedback(string signature)
+    {
+        lastSubmitFeedbackSignature = signature ?? "";
+
+    }
+
+
 }

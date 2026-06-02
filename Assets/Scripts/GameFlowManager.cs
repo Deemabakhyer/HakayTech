@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class GameFlowManager : MonoBehaviour
 {
@@ -23,7 +24,11 @@ public class GameFlowManager : MonoBehaviour
     [Header("Success UI Popup")]
     public CompletionPopupController completionPopup;
 
+    [Header("AI Feedback")]
+    public StageAIFeedback aiFeedback = new StageAIFeedback { storyKey = "south" };
+
     private bool animationStarted = false;
+    private bool successFeedbackPlayed = false;
 
     private readonly string[] correctOrder =
     {
@@ -35,6 +40,21 @@ public class GameFlowManager : MonoBehaviour
         "serve",
         "call"
     };
+
+    void Start()
+    {
+        CloseAllPopups();
+
+        if (aiFeedback != null)
+        {
+            aiFeedback.EnsureInitialized(this, "south");
+        }
+
+        if (AICompanionController.Instance != null)
+        {
+            AICompanionController.Instance.RequestStoryIntro();
+        }
+    }
 
     public void OnCompleteButtonClicked()
     {
@@ -60,11 +80,17 @@ public class GameFlowManager : MonoBehaviour
         }
         else
         {
+            aiFeedback.RequestWrong(
+                this,
+                "south",
+                "south_order:" + BuildDroppedOrderSignature(),
+                BuildOrderFeedbackLine()
+            );
+
             if (aiDialogue != null)
                 aiDialogue.ShowWrongOrder();
 
             UIShakeEffect shake = droppedBlocksArea.GetComponent<UIShakeEffect>();
-
             if (shake != null)
                 shake.PlayShake();
         }
@@ -133,11 +159,18 @@ public class GameFlowManager : MonoBehaviour
         }
         else
         {
+            // إرسال تنبيه للمساعد عند كتابة اسم دالة خاطئ لتوجيه الطفل
+            aiFeedback.RequestWrong(
+                this,
+                "south",
+                "south_function_name:" + input,
+                "اسم الدالة غير مطابق؛ اكتب اسم الاستدعاء نفسه."
+            );
+
             if (aiDialogue != null)
                 aiDialogue.ShowWrongPlace();
 
             UIShakeEffect shake = nameFunctionPopup.GetComponent<UIShakeEffect>();
-
             if (shake != null)
                 shake.PlayShake();
         }
@@ -166,8 +199,129 @@ public class GameFlowManager : MonoBehaviour
     private void StartAnimation()
     {
         if (storyScenePlayer != null)
-            storyScenePlayer.PlayStory();
+        {
+            // تعديل جوهري: نمرر دالة الاكتمل لكي يعرف السكربت متى ينتهي الأنميشن الفعلي للعريكة
+            storyScenePlayer.PlayStory(OnStoryAnimationCompleted);
+        }
         else
-            Debug.Log("StoryScenePlayer is missing");
+        {
+            Debug.LogWarning("StoryScenePlayer is missing");
+            OnStoryAnimationCompleted();
+        }
+    }
+
+    // --- اللوجيك السينمائي للنجاح المطور والمنسق مع المساعد ---
+    private void OnStoryAnimationCompleted()
+    {
+        if (successFeedbackPlayed)
+            return;
+
+        successFeedbackPlayed = true;
+        StartCoroutine(SuccessFlowRoutine());
+    }
+
+    IEnumerator SuccessFlowRoutine()
+    {
+        // 1. نطلب من المساعد الصوتي نطق عبارة النجاح والتهنئة أولاً
+        aiFeedback.RequestSuccess(
+            this,
+            "south",
+            "south_success",
+            "أحسنت، رتبت الدالة واستدعيتها بنجاح."
+        );
+
+        GameEvents.OnChallengeComplete?.Invoke();
+
+        // 2. التوقيت السينمائي المعتمد: ننتظر صمت المساعد تماماً قبل قذف النجوم
+        if (AICompanionController.Instance != null)
+        {
+            AudioSource aiVoice = AICompanionController.Instance.GetComponentInChildren<AudioSource>();
+            if (aiVoice != null)
+            {
+                yield return new WaitForSeconds(0.5f);
+                while (aiVoice.isPlaying)
+                {
+                    yield return null;
+                }
+            }
+        }
+
+        // 3. إظهار بوب آب العملات والنجوم الثلاثة بأمان محلياً واكتمال المرحلة!
+        if (completionPopup != null)
+        {
+            completionPopup.ShowPopup();
+            Debug.Log("[UI Flow] تم إنهاء مرحلة الجنوب وإظهار النجوم بنجاح كامل!");
+        }
+        else
+        {
+            Debug.LogError("GameFlowManager: CompletionPopup Reference is missing in Inspector!");
+        }
+    }
+
+    private string BuildDroppedOrderSignature()
+    {
+        if (droppedBlocksArea == null)
+            return "no-drop-area";
+
+        string[] order = new string[droppedBlocksArea.childCount];
+        for (int i = 0; i < droppedBlocksArea.childCount; i++)
+        {
+            BlockDragHandler block = droppedBlocksArea.GetChild(i).GetComponent<BlockDragHandler>();
+            order[i] = block != null ? block.blockID : "";
+        }
+        return string.Join("|", order);
+    }
+
+    private string BuildOrderFeedbackLine()
+    {
+        if (droppedBlocksArea == null || droppedBlocksArea.childCount == 0)
+            return "ضع أول خطوة داخل الدالة قبل الإتمام.";
+
+        int wrongIndex = GetFirstWrongOrderIndex();
+        if (wrongIndex >= 0 && wrongIndex < correctOrder.Length)
+            return "الخطوة " + GetArabicStepLabel(wrongIndex) + " غير مناسبة داخل الدالة.";
+
+        if (droppedBlocksArea.childCount < correctOrder.Length)
+            return "خطوات الدالة ناقصة؛ أكملها قبل الإتمام.";
+
+        if (droppedBlocksArea.childCount > correctOrder.Length)
+            return "هناك خطوة زائدة داخل الدالة؛ أزلها.";
+
+        return "راجع ترتيب خطوات الدالة قبل الإتمام.";
+    }
+
+    private int GetFirstWrongOrderIndex()
+    {
+        if (droppedBlocksArea == null)
+            return -1;
+
+        int countToCheck = Mathf.Min(droppedBlocksArea.childCount, correctOrder.Length);
+
+        for (int i = 0; i < countToCheck; i++)
+        {
+            BlockDragHandler block = droppedBlocksArea.GetChild(i).GetComponent<BlockDragHandler>();
+            if (block == null || block.blockID != correctOrder[i])
+                return i;
+        }
+
+        if (droppedBlocksArea.childCount > correctOrder.Length)
+            return correctOrder.Length;
+
+        return -1;
+    }
+
+    private string GetArabicStepLabel(int index)
+    {
+        switch (index)
+        {
+            case 0: return "الأولى";
+            case 1: return "الثانية";
+            case 2: return "الثالثة";
+            case 3: return "الرابعة";
+            case 4: return "الخامسة";
+            case 5: return "السادسة";
+            case 6: return "السابعة";
+            default: return "الحالية";
+        }
     }
 }
